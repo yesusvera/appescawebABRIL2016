@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    template="/WEB-INF/templates/defaultLogado.xhtml">
+    <ui:define name="content">
+        <h1>Equipes</h1>
+       <h:form id="formEquipe">
+			<p:dataTable var="equipe" value="#{equipeController.listaEquipes}" style=" text-align: center;">
+				
+				<p:column headerText="Nome" filterBy="#{equipe.nome}" sortBy="#{equipe.nome}">
+					<h:outputText value="#{equipe.nome}" />
+				</p:column>
+				<p:column headerText="Coordenador" filterBy="#{equipe.coordenador.nome}" sortBy="#{equipe.coordenador.nome}">
+					<p:graphicImage cache="false" value="#{usuarioController.dynamicImage}"
+						style="border-radius: 22px;vertical-align:middle" 
+						 rendered="#{equipe.coordenador.imageGraphics != null}" width="56" height="41">
+						 <f:param name="image_id" value="#{equipe.coordenador.id}"/>
+					</p:graphicImage>
+					<br/> 
+					<h:outputText value="#{equipe.coordenador.nome}" /> - <i class="fa #{equipe.coordenador.perfil.fontAweSomeIcon}"/> 
+					
+				</p:column> 
+				<p:column headerText="Data" filterBy="#{equipe.data}" sortBy="#{equipe.data}">
+					<h:outputText value="#{equipe.data}" />
+				</p:column>
+				<p:column headerText="Ações">
+					<p:commandLink action="#{equipeController.editar(equipe)}">
+						<i class="fa fa-pencil-square-o"/>
+					</p:commandLink>
+				</p:column>
+			</p:dataTable>
+			<br/>
+			<h:commandButton value="Criar Equipe" action="#{equipeController.cadastrarEquipe}"/>
+		</h:form>
+    </ui:define>
+</ui:composition>

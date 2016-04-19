@@ -1,0 +1,896 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+	<p:fieldset legend="Bloco 8 - Questão 3" toggleable="true"
+		style="margin-top:20px" toggleSpeed="500">
+		
+				<h:panelGrid columns="1" style="margin-bottom:2px">
+					<h:outputText styleClass="lblPerg"
+						value="Quais recursos são necessários por pesca? Qual a quantidade e preço unitário em 2015?" />
+				</h:panelGrid>
+				<p:panelGrid style="margin-top:20px">
+					<f:facet name="header">
+						<p:row>
+							<p:column>Recursos</p:column>
+							<p:column>Quantidade "ida e volta" (no mesmo dia)</p:column>
+							<p:column>Frequência de uso</p:column>
+							<p:column>Quantidade "decida" (mais de 1 dia)</p:column>
+							<p:column>Frequência de uso</p:column>
+							<p:column>Preço Unitário (R$)</p:column>
+						</p:row>
+					</f:facet>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Combustível " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Litros:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p1_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p1_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p1_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Litros:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p1_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p1_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p1_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p1_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Farinha " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos/Litros:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p2_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p2_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p2_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos/Litros:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p2_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p2_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p2_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p2_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Sardinha " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Latas:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p3_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p3_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p3_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Latas:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p3_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p3_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p3_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p3_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Conserva " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Latas:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p4_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p4_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p4_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Latas:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p4_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p4_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p4_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p4_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Sal " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p5_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p5_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p5_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p5_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p5_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p5_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p5_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Arroz " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p6_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p6_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p6_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p6_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p6_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p6_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p6_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Feijão " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p7_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p7_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p7_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p7_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p7_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p7_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p7_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Suco " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Pct:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p8_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p8_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p8_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Pct:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p8_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p8_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p8_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p8_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Bolacha " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Pct:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p9_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p9_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p9_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Pct:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p9_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p9_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p9_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p9_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Gelo " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p10_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p10_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p10_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p10_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p10_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p10_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p10_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Querosene " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Litros:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p11_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p11_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p11_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Litros:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p11_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p11_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p11_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p11_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Óleo Diesel (ascender fogo e repelente) " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Litros:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p12_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p12_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p12_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Litros:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p12_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p12_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p12_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p12_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Carvão " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p13_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p13_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p13_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p13_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p13_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p13_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p13_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Lenha (Beneficiamento de um cofo) " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Unid:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p14_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p14_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p14_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Unid:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p14_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p14_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p14_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p14_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Sal (beneficiamento de um cofo) " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p15_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p15_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p15_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Kilos:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p15_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p15_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p15_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p15_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Mão de Obra (Beneficiamento de um cofo) " />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Pessoas:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p16_r1').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p16_r2').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p16_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Pessoas:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p16_r4').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p16_r5').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p16_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p16_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+
+					<p:row>
+						<p:column>
+							<h:outputText value="Outros: " />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p1_r1').texto}"
+								size="10" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Unid" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p17_r2').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p17_r3').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por dia" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p17_r4').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana" />
+							</h:panelGrid>
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:outputText value=" Unid" />
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p17_r5').texto}"
+								size="4" disabled="true" />
+						</p:column>
+						<p:column style="text-align: center;">
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p17_r6').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por Viagem" />
+							</h:panelGrid>
+							<h:panelGrid columns="2">
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q57_p17_r7').opcaoBoleana}"
+									disabled="true" />
+								<h:outputText value="Por semana"/>
+							</h:panelGrid>
+						</p:column>
+						<p:column>
+							<p:inputText
+								value="#{formularioController.getResposta('q57_p17_r7').texto}"
+								size="10" disabled="true" />
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+	</p:fieldset>
+</ui:composition>

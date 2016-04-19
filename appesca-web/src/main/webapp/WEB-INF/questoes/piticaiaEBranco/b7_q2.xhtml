@@ -1,0 +1,1947 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:fieldset legend="Bloco 7 - Questão 2" toggleable="true"
+		style="margin-top:20px" toggleSpeed="500">
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Camarão Branco" />
+			<h:outputText styleClass="lblPerg"
+				value="Como é vendido o camarão branco (Filtro)? " />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r1').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Misturado inteiro fresco " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r2').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Misturado inteiro resfriado (no gelo) " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r3').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Misturado inteiro congelado " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r4').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Misturado descascado fresco " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r5').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Misturado Torrado " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r6').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Misturado Batido " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r7').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Graúdo inteiro fresco " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r8').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Graúdo inteiro resfriado (no gelo) " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r9').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Graúdo inteiro congelado " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r10').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Graúdo descascado fresco " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r11').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Graúdo torrado " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r12').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Graúdo Batido " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r13').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Médio inteiro fresco " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r14').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Médio inteiro resfriado (no gelo) " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r15').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Médio inteiro congelado " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r16').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Médio descascado fresco " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r17').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Médio torrado " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r18').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Médio Batido " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r19').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Pequeno inteiro fresco " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r20').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Pequeno inteiro resfriado (no gelo) " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r21').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Pequeno inteiro congelado " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r22').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Pequeno descascado fresco " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r23').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Pequeno torrado " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r24').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value=" Pequeno descascado batido " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p1_r25').opcaoBoleana}"
+				disabled="true" />
+			<p:outputPanel>
+				<h:outputText value=" Outros: " />
+				<p:inputText
+					value="#{formularioController.getResposta('q54_p1_r26').texto}"
+					size="20" disabled="true" />
+			</p:outputPanel>
+		</h:panelGrid>
+
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Dos produtos selecionados e/ou processados, qual é quantidade vendida?" />
+		</h:panelGrid>
+		
+		<p:panelGrid style="margin-top:20px">
+			<f:facet name="header">
+				<p:row>
+					<p:column rowspan="2">Produto</p:column>
+					<p:column rowspan="2">Período</p:column>
+					<p:column colspan="2">Quantidade Média (kg)/dia</p:column>
+					<p:column rowspan="2">Observações</p:column>
+				</p:row>
+				<p:row>
+					<p:column>Verão</p:column>
+					<p:column>Inverno</p:column>
+				</p:row>
+			</f:facet>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r1').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Misturado inteiro fresco " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p2_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p2_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p2_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p2_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p2_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r2').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Misturado inteiro resfriado (no gelo) " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p3_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p3_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p3_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p3_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p3_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r3').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Misturado inteiro congelado " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p4_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p4_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p4_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p4_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p4_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r4').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Misturado descascado fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p5_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p5_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p5_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p5_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p5_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r5').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Misturado Torrado " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p6_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p6_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p6_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p6_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p6_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r6').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Misturado batido " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p7_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p7_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p7_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p7_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p7_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r7').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Graúdo inteiro fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p8_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p8_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p8_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p8_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p8_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r8').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Graúdo inteiro resfriado (no gelo)" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p9_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p9_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p9_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p9_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p9_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r9').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Graúdo inteiro congelado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p10_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p10_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p10_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p10_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p10_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r10').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Graúdo descascado fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p11_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p11_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p11_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p11_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p11_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r11').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Graúdo torrado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p12_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p12_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p12_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p12_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p12_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r12').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Graúdo Batido" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p13_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p13_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p13_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p13_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p13_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r13').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Médio inteiro fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p14_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p14_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p14_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p14_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p14_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r14').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Médio inteiro resfriado (no gelo)" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p15_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p15_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p15_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p15_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p15_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r15').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Médio inteiro congelado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p16_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p16_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p16_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p16_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p16_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r16').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Médio descascado fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p17_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p17_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p17_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p17_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p17_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r17').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Médio torrado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p18_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p18_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p18_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p18_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p18_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r18').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Médio Batido" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p19_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p19_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p19_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p19_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p19_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r19').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Pequeno inteiro fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p20_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p20_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p20_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p20_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p20_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r20').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Pequeno inteiro resfriado (no gelo)" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p21_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p21_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p21_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p21_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p21_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r21').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Pequeno inteiro congelado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p22_r21').coluna[1] == '1' ? true : false}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p22_r21').coluna[1] == '2' ? true : false}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p22_r21').coluna[2]}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p22_r21').coluna[3]}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p22_r21').coluna[4]}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r22').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Pequeno descascado fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p23_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p23_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p23_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p23_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p23_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r23').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Pequeno torrado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p24_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p24_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p24_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p24_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p24_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r24').opcaoBoleana}" >
+				<p:column>
+					<h:outputText value="Pequeno descascado batido" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p25_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p25_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p25_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p25_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p25_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row rendered="#{formularioController.getResposta('q54_p1_r25').opcaoBoleana}" > 
+				<p:column>
+					<h:outputText value="Outros: " />
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p2_r25').coluna[0]}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:panelGrid columns="2" cellpadding="5">
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p26_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por dia" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q54_p26_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="por semana" />
+					</h:panelGrid>
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p26_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p26_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p26_r5').texto}" />
+				</p:column>
+			</p:row>
+		</p:panelGrid>
+
+		
+		
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Qual é a proporção da “quebra” (beneficiamento)" />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Quantos quilos de camarão branco fresco  é preciso para produzir 1Kg de Camarão Torrado?" />
+			<p:inputText
+				value="#{formularioController.getResposta('q54_p27_r1').texto}"
+				size="4" disabled="true" />
+			<h:outputText styleClass="lblPerg"
+				value="Quantos kilos de camarão branco torrado é preciso para produzir 1Kg de Camarão Batido?" />
+			<p:inputText
+				value="#{formularioController.getResposta('q54_p28_r1').texto}"
+				size="4" disabled="true" />
+		</h:panelGrid>
+
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="O senhor armazena o camarão branco?   " />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p29_r1').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="Não" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p29_r2').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="Sim" />
+		</h:panelGrid>
+
+
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Como o senhor armazena o camarão branco? " />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p30_r1').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="geladeira" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p30_r2').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="freezer" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p30_r3').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="câmara fria" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p30_r4').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="sacos" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p30_r5').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="caixas" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p30_r6').opcaoBoleana}"
+				disabled="true" />
+			<p:outputPanel>
+				<h:outputText value="Outros:" />
+				<p:inputText
+					value="#{formularioController.getResposta('q54_p30_r7').texto}"
+					size="50" disabled="true" />
+			</p:outputPanel>
+		</h:panelGrid>
+
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Por quanto tempo, em média o camarão branco fica armazenado?" />
+		</h:panelGrid>
+		<h:panelGrid columns="7" style="margin-bottom:10px" cellpadding="5">
+			<p:inputText
+				value="#{formularioController.getResposta('q54_p31_r1').texto}"
+				size="4" disabled="true" />
+			<h:outputText value="dias(ou)" />
+			<p:inputText
+				value="#{formularioController.getResposta('q54_p31_r2').texto}"
+				size="4" disabled="true" />
+			<h:outputText value="semanas" />
+			<h:outputText value="(ou)" />
+			<p:inputText
+				value="#{formularioController.getResposta('q54_p31_r3').texto}"
+				size="4" disabled="true" />
+			<h:outputText value="meses" />
+		</h:panelGrid>
+
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Como ocorre a venda? (pode marcar mais de uma)" />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p32_r1').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="vendido sob encomenda" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p32_r2').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="em ponto de venda próprio " />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p32_r3').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText
+				value="oferece antes da pesca a compradores/consumidores" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p32_r4').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="oferece após a pesca a compradores/consumidores" />
+		</h:panelGrid>
+
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Para quem se vende o camarão branco? (pode marcar mais de uma)" />
+		</h:panelGrid>
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText value="Na comunidade:" />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r1').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="outro pescador" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r2').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="catadeira" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r3').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="famílias" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r4').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="restaurantes" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r5').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="pousadas" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r6').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="peixarias" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r7').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="feirantes" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r8').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="pequenos comércios" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r9').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="Comerciantes locais/beneficiadores" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r10').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="cooperativa" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r11').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="Fábricas de beneficiamento" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r12').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="CONAB" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r13').opcaoBoleana}"
+				disabled="true" />
+			<p:outputPanel>
+				<h:outputText value="Outros:" />
+				<p:inputText
+					value="#{formularioController.getResposta('q54_p33_r14').texto}"
+					size="50" disabled="true" />
+			</p:outputPanel>
+		</h:panelGrid>
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText value="Fora:" />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r15').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="famílias" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r16').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="restaurantes" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r17').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="pousadas" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r18').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="peixarias" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r19').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="feirantes" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r20').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="pequenos comércios" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r21').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="compradores externos" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r22').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="cooperativa" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r23').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="frigorífico (empresa)" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r24').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="CONAB" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q54_p33_r25').opcaoBoleana}"
+				disabled="true" />
+			<p:outputPanel>
+				<h:outputText value="Outros:" />
+				<p:inputText
+					value="#{formularioController.getResposta('q54_p33_r26').texto}"
+					size="50" disabled="true" />
+			</p:outputPanel>
+		</h:panelGrid>
+
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Desses compradores/consumidores quais são os três principais?" />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText value="1o." />
+			<p:inputText
+				value="#{formularioController.getResposta('q54_p34_r1').texto}"
+				size="15" disabled="true" />
+			<h:outputText value="2o." />
+			<p:inputText
+				value="#{formularioController.getResposta('q54_p34_r2').texto}"
+				size="15" disabled="true" />
+			<h:outputText value="3o." />
+			<p:inputText
+				value="#{formularioController.getResposta('q54_p34_r3').texto}"
+				size="15" disabled="true" />
+		</h:panelGrid>
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText value="(Dos sinalizados na questão anterior)" />
+		</h:panelGrid>
+
+		<br />
+
+		<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão." />
+		</h:panelGrid>
+		<p:panelGrid style="margin-top:20px">
+			<f:facet name="header">
+				<p:row>
+					<p:column rowspan="2">Produtos</p:column>
+					<p:column colspan="2">Preço (R$)/kg do 1o.</p:column>
+					<p:column colspan="2">Preço (R$)/kg do 2o.</p:column>
+					<p:column colspan="2">Preço (R$)/kg do 3o.</p:column>
+				</p:row>
+				<p:row>
+					<p:column>Verão</p:column>
+					<p:column>Inverno</p:column>
+					<p:column>Verão</p:column>
+					<p:column>Inverno</p:column>
+					<p:column>Verão</p:column>
+					<p:column>Inverno</p:column>
+				</p:row>
+			</f:facet>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Misturado inteiro fresco " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p35_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p35_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p35_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p35_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p35_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p35_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Misturado inteiro resfriado (no gelo) " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p36_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p36_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p36_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p36_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p36_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p36_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Misturado inteiro congelado " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p37_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p37_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p37_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p37_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p37_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p37_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Misturado descascado fresco " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p38_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p38_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p38_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p38_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p38_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p38_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Misturado Torrado " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p39_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p39_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p39_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p39_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p39_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p39_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Misturado Batido " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p40_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p40_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p40_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p40_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p40_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p40_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Graúdo inteiro fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p41_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p41_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p41_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p41_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p41_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p41_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Graúdo inteiro resfriado (no gelo)" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p42_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p42_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p42_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p42_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p42_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p42_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Graúdo inteiro congelado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p43_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p43_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p43_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p43_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p43_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p43_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Graúdo descascado fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p44_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p44_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p44_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p44_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p44_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p44_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Graúdo Torrado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p45_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p45_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p45_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p45_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p45_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p45_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Graúdo Batido" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p46_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p46_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p46_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p46_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p46_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p46_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Médio inteiro fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p47_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p47_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p47_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p47_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p47_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p47_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Médio inteiro resfriado (no gelo)" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p48_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p48_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p48_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p48_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p48_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p48_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Médio inteiro congelado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p49_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p49_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p49_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p49_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p49_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p49_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Médio descascado fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p50_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p50_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p50_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p50_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p50_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p50_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Médio Torrado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p51_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p51_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p51_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p51_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p51_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p51_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Médio Batido" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p52_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p52_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p52_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p52_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p52_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p52_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Pequeno inteiro fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p53_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p53_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p53_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p53_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p53_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p53_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Pequeno inteiro resfriado (no gelo)" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p54_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p54_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p54_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p54_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p54_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p54_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Pequeno inteiro congelado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p55_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p55_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p55_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p55_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p55_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p55_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Pequeno descascado fresco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p56_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p56_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p56_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p56_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p56_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p56_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Pequeno Torrado" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p57_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p57_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p57_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p57_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p57_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p57_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<h:outputText value="Pequeno descascado batido" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p58_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p58_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p58_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p58_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p58_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p58_r6').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column style="text-align: center;">
+					<h:outputText value="Outros: " />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p59_r1').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p59_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p59_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p59_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p59_r5').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q54_p59_r6').texto}" />
+				</p:column>
+			</p:row>
+		</p:panelGrid>
+	</p:fieldset>
+
+
+
+</ui:composition>

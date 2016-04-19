@@ -1,0 +1,897 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:fieldset legend="Bloco 6 - Questão 5" toggleable="true"
+		style="margin-top:20px" toggleSpeed="500">
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg" value="Camarão Branco" />
+		</h:panelGrid>
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Em qual estação do ano realiza a pesca? (filtro da questão de produção)" />
+		</h:panelGrid>
+		<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q51_p1_r1').opcaoBoleana}"
+				disabled="true" itemLabel="Verão" style="background-color:yellow" />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q51_p1_r2').opcaoBoleana}"
+				disabled="true" itemLabel="Inverno"
+				style="background-color:blue;color:white" />
+			<h:outputText value="Inverno" />
+		</h:panelGrid>
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Em qual maré realiza a pesca?  (filtro de produção)" />
+		</h:panelGrid>
+		<h:panelGrid columns="4" style="margin-bottom:10px" cellpadding="5">
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q51_p2_r1').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="Maré Morta, Mortinha ou de Quarta." />
+			<p:selectBooleanCheckbox
+				value="#{formularioController.getResposta('q51_p2_r2').opcaoBoleana}"
+				disabled="true" />
+			<h:outputText value="Maré de Lanço ou Lançante." />
+		</h:panelGrid>
+
+		<br />
+
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Qual é quantidade média capturada/dia nas marés alta e baixa, nos períodos de inverno e verão, por arte de pesca?  Quanto tempo é gasto? Quantos dias são trabalhados? (O dia de pesca se refere tanto ao período diurno quanto noturno)" />
+		</h:panelGrid>
+
+		<!-- INVERNO -->
+		<p:panelGrid style="margin-top:20px">
+			<f:facet name="header">
+				<p:row>
+					<p:column colspan="6" style="background-color:blue;color:white">Inverno</p:column>
+				</p:row>
+				<p:row>
+					<p:column rowspan="2" style="background-color:blue;color:white">Maré</p:column>
+					<p:column rowspan="2" style="background-color:blue;color:white">Arte</p:column>
+					<p:column colspan="4" style="background-color:blue;color:white">Esforço de pesca</p:column>
+				</p:row>
+				<p:row>
+					<p:column style="background-color:blue;color:white">Quilos pescado/dia</p:column>
+					<p:column style="background-color:blue;color:white">N. lances ou despesca/dia</p:column>
+					<p:column style="background-color:blue;color:white">Tempo gasto (horas/Dia)</p:column>
+					<p:column style="background-color:blue;color:white">Dias trabalhados/semana</p:column>
+				</p:row>
+			</f:facet>
+			<p:row>
+				<p:column rowspan="9" style="font-weight: bold;">Baixa/morta</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p3_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Puça" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p3_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p3_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p3_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p3_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p4_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Zangaria" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p4_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p4_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p4_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p4_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p5_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Redinha ou Calão" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p5_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p5_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p5_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p5_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p6_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Muruada" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p6_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p6_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p6_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p6_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p7_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Calqueira" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p7_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p7_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p7_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p7_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p8_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Tarrafa" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p8_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p8_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p8_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p8_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p9_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Camaroeira/rede de saco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p9_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p9_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p9_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p9_r5').texto}" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p10_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Outros" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p10_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p10_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p10_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p10_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column colspan="6" styleClass="ui-widget-header">
+					<p:spacer height="0" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column rowspan="9" style="font-weight: bold;">Grande/alta</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p11_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Puça" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p11_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p11_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p11_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p11_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p12_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Zangaria" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p12_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p12_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p12_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p12_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p13_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Redinha ou Calão" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p13_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p13_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p13_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p13_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p14_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Muruada" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p14_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p14_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p14_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p14_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p15_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Calqueira" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p15_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p15_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p15_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p15_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p16_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Tarrafa" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p16_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p16_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p16_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p16_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p17_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Camaroeira/rede de saco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p17_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p17_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p17_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p17_r5').texto}" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p18_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Outros" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p18_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p18_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p18_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p18_r5').texto}" />
+				</p:column>
+			</p:row>
+		</p:panelGrid>
+
+
+		<br />
+
+		<!-- VERAO -->
+
+
+		<p:panelGrid style="margin-top:20px"
+			rendered="#{formularioController.getResposta('q51_p1_r1').opcaoBoleana}">
+			<f:facet name="header">
+				<p:row>
+					<p:column colspan="6" style="background-color:yellow">Verão</p:column>
+				</p:row>
+				<p:row>
+					<p:column rowspan="2" style="background-color:yellow">Maré</p:column>
+					<p:column rowspan="2" style="background-color:yellow">Arte</p:column>
+					<p:column colspan="4" style="background-color:yellow">Esforço de pesca</p:column>
+				</p:row>
+				<p:row>
+					<p:column style="background-color:yellow">Quilos pescado/dia</p:column>
+					<p:column style="background-color:yellow">N. lances ou despesca/dia</p:column>
+					<p:column style="background-color:yellow">Tempo gasto (horas/Dia)</p:column>
+					<p:column style="background-color:yellow">Dias trabalhados/semana</p:column>
+				</p:row>
+			</f:facet>
+			<p:row>
+				<p:column rowspan="9" style="font-weight: bold;">Baixa/morta</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p19_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Puça" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p19_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p19_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p19_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p19_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p20_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Zangaria" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p20_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p20_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p20_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p20_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p21_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Redinha ou Calão" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p21_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p21_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p21_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p21_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p22_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Muruada" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p22_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p22_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p22_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p22_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p23_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Calqueira" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p23_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p23_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p23_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p23_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p24_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Tarrafa" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p24_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p24_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p24_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p24_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p25_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Camaroeira/rede de saco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p25_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p25_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p25_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p25_r5').texto}" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p26_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Outros" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p26_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p26_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p26_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p26_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column colspan="6" styleClass="ui-widget-header">
+					<p:spacer height="0" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column rowspan="9" style="font-weight: bold;">Grande/alta</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p27_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Puça" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p27_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p27_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p27_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p27_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p28_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Zangaria" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p28_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p28_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p28_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p28_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p29_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Redinha ou Calão" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p29_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p29_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p29_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p29_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p30_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Muruada" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p30_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p30_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p30_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p30_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p31_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Calqueira" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p31_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p31_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p31_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p31_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p32_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Tarrafa" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p32_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p32_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p32_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p32_r5').texto}" />
+				</p:column>
+			</p:row>
+
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p33_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Camaroeira/rede de saco" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p33_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p33_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p33_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p33_r5').texto}" />
+				</p:column>
+			</p:row>
+			<p:row>
+				<p:column>
+					<p:selectBooleanCheckbox
+						value="#{formularioController.getResposta('q51_p34_r1').opcaoBoleana}"
+						disabled="true" itemLabel="Outros" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p34_r2').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p34_r3').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p34_r4').texto}" />
+				</p:column>
+				<p:column style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getResposta('q51_p34_r5').texto}" />
+				</p:column>
+			</p:row>
+		</p:panelGrid>
+
+
+		<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+			<h:outputText styleClass="lblPerg"
+				value="Quais são os pontos de pesca (pesqueiros) que o senhor mais pesca o camarão branco?" />
+			<p:inputTextarea cols="100"
+				value="#{formularioController.getResposta('q51_p35_r1').texto}"
+				disabled="true" />
+		</h:panelGrid>
+
+	</p:fieldset>
+
+
+
+</ui:composition>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    template="/WEB-INF/templates/defaultLogado.xhtml">
+    <ui:define name="content">
+        <h1>#{formularioController.titulo}</h1>
+       <h:form>
+     	  	<p:commandLink action="#{formularioController.exportar()}">
+				<i class="fa fa-file"> EXPORTAR</i>
+			</p:commandLink>
+			<br/>
+			<p:dataTable var="formulario" value="#{formularioController.listaFormularios}" emptyMessage="Nenhum formulário encontrado.">
+				<p:column headerText="Pesquisador" style="text-align: center;">
+					<h:outputText value="#{formularioController.getUsuario(formulario).nome}"/>
+				</p:column>
+				<p:column headerText="Registro" filterBy="#{formulario.idSincronizacao}" sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
+					<h:outputText value="#{formulario.idSincronizacao}" />
+				</p:column>
+				<p:column headerText="Nome Entrevistado" style="text-align: center;">
+					<h:outputText value="#{formularioController.getRespTxt(0,1,1,formulario)}"/>
+				</p:column>
+				<p:column headerText="UF"  style="text-align: center;">
+					<h:outputText value="#{formularioController.getUF(formulario)}"/> 
+					/
+					<h:outputText value="#{formularioController.getRespTxt(0,4,1,formulario)}"/>
+				</p:column>
+				<p:column headerText="Data" filterBy="#{formulario.data}" 
+						  sortBy="#{formulario.data}" 
+						  style="text-align: center;">
+					<h:outputText value="#{formulario.data}" /> <br/>
+					<h:outputText value="#{formulario.hora}" />
+				</p:column>
+				<p:column headerText="Situação" 
+						  filterBy="#{formularioController.getSituacao(formulario)}" 
+						  sortBy="#{formularioController.getSituacao(formulario)}" 
+						  style="text-align: center;">
+					<h:outputText value="#{formularioController.getSituacao(formulario)}" 
+								  style="#{formulario.situacao==2?'color:green':'color:red'}"/>
+				</p:column>
+				
+				<p:column headerText="Questões"  
+						  style="text-align: center;">
+					#{formulario.listaQuestoes.size()} de #{formularioController.getQtdeMax(formulario)} respondidas
+				</p:column>
+				<p:column headerText="Ações" 
+						  style="text-align: center;">
+					<p:commandLink action="#{formularioController.visualizar(formulario)}">
+						<i class="fa fa-info-circle"></i>
+					</p:commandLink>
+				</p:column>
+			</p:dataTable>
+		</h:form>
+    </ui:define>
+</ui:composition>

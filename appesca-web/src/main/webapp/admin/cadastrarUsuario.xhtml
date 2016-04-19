@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/templates/defaultLogado.xhtml">
+	<ui:define name="content">
+		<h1>#{usuarioController.usuario.id==null?"Cadastrar":"Alterar"} Usuário</h1>
+		<h:form id="formularioCad">
+			<p:growl id="messages" showDetail="true" />
+			<p:fieldset legend="Capturar Foto" rendered="#{usuarioController.usuario.imagem == null}"  toggleable="true" toggleSpeed="500" height="90">
+		        <h:panelGrid id="capturaFoto" columns="2">
+					<p:photoCam widgetVar="pc" forceFlash="true" listener="#{usuarioController.oncapture}" update="formularioCad" immediate="true" width="300"  />
+					<p:commandLink  onclick="PF('pc').capture()">
+						<i class="fa fa-camera"></i>
+					</p:commandLink>
+				</h:panelGrid>
+		    </p:fieldset>
+		    <br/>
+			<h:panelGrid id="pnlCadastro" columns="3" columnClasses="titleCell">
+				<h:outputLabel value="Foto capturada:" />
+				
+				<h:graphicImage value="/resources/gfx/sem_foto.png" 
+										width="60" 
+										height="60" 
+										rendered="#{usuarioController.usuario.imageGraphics == null}"/>
+		        <p:graphicImage style="border-radius: 55px;" 
+		        				cache="false" 
+		        				value="#{usuarioController.usuario.imageGraphics}" 
+		        				rendered="#{usuarioController.usuario.imageGraphics != null}" 
+		        				width="150" 
+		        				height="110"/>
+		      
+		        <p:commandLink action="#{usuarioController.tirarOutra}" immediate="true" update="formularioCad" disabled="#{usuarioController.usuario.imageGraphics == null}" >
+		       		 <i class="fa fa-camera"/>
+		        </p:commandLink>
+			
+				<h:outputLabel for="nome" value="Nome:" />
+                <h:inputText id="nome" value="#{usuarioController.usuario.nome}" required="true" requiredMessage="O nome é obrigatório"/>
+                <h:message for="nome" errorClass="invalid" />
+                
+                
+				<h:outputLabel for="email" value="Email:" />
+                <h:inputText id="email" value="#{usuarioController.usuario.email}" required="true" requiredMessage="O email é obrigatório"/>
+                <h:message for="email" errorClass="invalid" />
+                
+				<h:outputLabel for="endereco" value="Endereço:" />
+                <h:inputText id="endereco" value="#{usuarioController.usuario.endereco}" required="true" requiredMessage="O endereço é obrigatório"/>
+                <h:message for="endereco" errorClass="invalid" />
+				<h:outputLabel for="login" value="Login:" />
+                <h:inputText id="login" value="#{usuarioController.usuario.login}" required="true" requiredMessage="O login é obrigatório"/>
+                <h:message for="login" errorClass="invalid" />
+                
+                <h:outputLabel for="senha" value="Senha:" />
+                <p:password id="senha" value="#{usuarioController.usuario.senha}" 
+                						required="true" 
+                						requiredMessage="A senha é obrigatória" 
+                						redisplay="true"
+                						match="senhaConfirm"
+                						validatorMessage="As duas senhas devem ser iguais."
+                						/>
+                <h:message for="senha" errorClass="invalid" />
+                
+                <h:outputLabel for="senhaConfirm" value="Confirmar Senha:" />
+                <p:password id="senhaConfirm" value="#{usuarioController.confirmacaoSenha}" 
+                			required="true" 
+                			requiredMessage="Confirme a senha" 
+                			redisplay="true"/>
+                <h:message for="senhaConfirm" errorClass="invalid" />
+                
+                <h:outputLabel for="uf" value="UF:" />
+                <p:selectOneMenu id="uf" value="#{usuarioController.usuario.uf}" style="width:125px">
+		             <f:selectItems value="#{usuarioController.listaUFs()}"  />
+		        </p:selectOneMenu>
+                <h:message for="uf" errorClass="invalid" />
+                
+                
+                <h:outputLabel for="perfil" value="Perfil:" />
+                <p:selectOneMenu id="perfil" value="#{usuarioController.usuario.perfil}" style="width:125px">
+		             <f:selectItems value="#{usuarioController.listaPerfis()}"  />
+		        </p:selectOneMenu>
+                <h:message for="perfil" errorClass="invalid" />
+			</h:panelGrid>
+			<br/>
+			 <h:commandButton id="btnSalvar"
+                        action="#{usuarioController.salvar()}"
+                        value="Salvar"/>
+			 <h:commandButton id="btnCancelar"
+                        action="usuarios"
+                        immediate="true"
+                        value="Cancelar"/>
+		</h:form>
+	</ui:define>
+</ui:composition>

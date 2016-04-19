@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/templates/defaultLogado.xhtml">
+	<ui:define name="content">
+		<h1>Usuários</h1>
+		<h:form id="forms">
+
+			<p:dataTable var="usr" value="#{usuarioController.listaUsuarios}"
+				style=" text-align: center;">
+				<p:column width="150" headerText="Nome" filterBy="#{usr.nome}"
+					sortBy="#{usr.nome}">
+					<p:graphicImage cache="false"
+						value="#{usuarioController.dynamicImage}"
+						style="border-radius: 55px;"
+						rendered="#{usr.imageGraphics != null}" width="112" height="82">
+						<f:param name="image_id" value="#{usr.id}" />
+					</p:graphicImage>
+					<br />
+					<h:outputText value="#{usr.nome}" />
+				</p:column>
+				<p:column width="110" headerText="Login" filterBy="#{usr.login}"
+					sortBy="#{usr.login}">
+					<h:outputText value="#{usr.login}" />
+				</p:column>
+				<p:column headerText="Endereço" filterBy="#{usr.endereco}"
+					sortBy="#{usr.endereco}">
+					<h:outputText value="#{usr.endereco}" />
+				</p:column>
+				<p:column headerText="UF" sortBy="#{usr.uf}" filterBy="#{usr.uf}"
+					width="120">
+					<h:outputText value="#{usr.uf}" />
+				</p:column>
+				<p:column width="110" headerText="Perfil" filterBy="#{usr.perfil}"
+					sortBy="#{usr.perfil}">
+					<i class="fa #{usr.perfil.fontAweSomeIcon}" />
+					<br />
+					<h:outputText value="#{usr.perfil.descricao}" />
+				</p:column>
+				<p:column headerText="Ações" width="40">
+					<p:commandLink action="#{usuarioController.editar(usr)}"
+						rendered="#{identidade.eAdministrador() or identidade.eCoordenador() and usr.perfil.valor ge identidade.usuarioLogado.perfil.valor}">
+						<i class="fa fa-pencil-square-o" />
+					</p:commandLink>
+					<p:commandLink onclick="PF('dlg + #{usr.id}').show();" 
+						rendered="#{identidade.eAdministrador() or identidade.eCoordenador() and usr.perfil.valor ge identidade.usuarioLogado.perfil.valor}">
+						<i class="fa fa-map-marker" />
+					</p:commandLink>
+					<p:dialog id="gmapDialog" widgetVar="dlg + #{usr.id}" width="625" height="400"
+						modal="true">
+
+						<p:gmap id="gmap" center="#{usuarioController.getCenterMap(usr)}" zoom="10"
+							type="HYBRID" style="width:100%;height:400px" model="#{usuarioController.getMap(usr)}" />
+					</p:dialog>
+				</p:column>
+			</p:dataTable>
+			<br />
+			<p:commandButton value="Novo Usuário"
+				action="#{usuarioController.cadastrarUsuario}"
+				rendered="#{identidade.eAdministrador() or identidade.eCoordenador()}" />
+		</h:form>
+	</ui:define>
+</ui:composition>

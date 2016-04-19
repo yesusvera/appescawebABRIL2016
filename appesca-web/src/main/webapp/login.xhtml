@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    template="/WEB-INF/templates/default.xhtml"
+                xmlns:p="http://primefaces.org/ui">
+    <ui:define name="content">
+        <h1>Entrar</h1>
+
+        <h:form id="auth">
+            <h2>Faça seu login:</h2>
+            <h:panelGrid columns="3" columnClasses="titleCell">
+                <h:outputLabel for="usuario" value="Usuário:" />
+                <p:inputText id="usuario" value="#{usuario.login}" />
+                <h:message for="usuario" errorClass="invalid" />
+
+                <h:outputLabel for="senha" value="Senha:" />
+                <p:password id="senha" value="#{usuario.senha}" />
+                <h:message for="senha" errorClass="invalid" />
+            </h:panelGrid>
+            <p>
+                <h:panelGrid columns="2">
+                    <h:commandButton id="entrar"
+                        action="#{loginController.login()}"
+                        value="Entrar" styleClass="register" />
+                    <h:messages styleClass="messages"
+                        errorClass="invalid" infoClass="valid"
+                        warnClass="warning" globalOnly="true" />
+                </h:panelGrid>
+            </p>
+        </h:form>
+    </ui:define>
+</ui:composition>

@@ -1,0 +1,48 @@
+<!--
+    JBoss, Home of Professional Open Source
+    Copyright 2013, Red Hat, Inc. and/or its affiliates, and individual
+    contributors by the @authors tag. See the copyright.txt in the
+    distribution for a full listing of individual contributors.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+    http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:ui="http://java.sun.com/jsf/facelets">
+<h:head>
+    <title>Appesca - WEB</title>
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+    <h:outputStylesheet name="css/screen.css" />
+</h:head>
+<h:body>
+    <div id="cardNoBorder">
+        <div class="dualbrand">
+            <img src="resources/gfx/logo_appesca.png" width="160"/>
+        </div>
+        <div id="content">
+        		<h:form style="border:0px;">
+					<p:growl id="messages" showDetail="true" />
+				</h:form>
+            <ui:insert name="content">
+         </ui:insert>
+        </div>
+        <div id="footer">
+        	<hr/>
+           	Projeto de Pesquisa 2016 - Appesca (Versão 1.1.2 hom)
+            <br />
+        </div>
+        <h:graphicImage value="/resources/gfx/onda_footer.png"  width="865" style="margin-bottom:-20px"/>
+    </div>
+</h:body>
+</html>
