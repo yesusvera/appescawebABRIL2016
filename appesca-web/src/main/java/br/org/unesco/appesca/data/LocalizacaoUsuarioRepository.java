@@ -14,40 +14,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package br.org.unesco.appesca.service;
+package br.org.unesco.appesca.data;
 
-import java.util.List;
-
-import javax.ejb.Stateless;
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+import javax.persistence.EntityManager;
+import javax.transaction.Transactional;
 
-import br.org.unesco.appesca.data.UsuarioRepository;
-import br.org.unesco.appesca.model.Usuario;
+import br.org.unesco.appesca.model.LocalizacaoUsuario;
 
-// The @Stateless annotation eliminates the need for manual transaction demarcation
-@Stateless
-public class UsuarioService {
-
-//    @Inject
-//    private Logger log;
+@ApplicationScoped
+public class LocalizacaoUsuarioRepository {
 
     @Inject
-    private UsuarioRepository usuarioRepository;
+    private EntityManager em;
 
-
-    public List<Usuario> listAll() throws Exception {
-        return usuarioRepository.listAll();
+    public LocalizacaoUsuario findById(Integer id) {
+        return em.find(LocalizacaoUsuario.class, id);
     }
     
-    public Usuario findById(Integer id) {
-        return usuarioRepository.findById(id);
-    }
-    
-    public void save(Usuario usr){
-    	usuarioRepository.save(usr);
-    }
-    
-    public Usuario findByLogin(String loginOuEmail) {
-    	return usuarioRepository.findByLogin(loginOuEmail);
+    @Transactional
+    public void save(LocalizacaoUsuario localizacao){
+    	if(localizacao.getId()==null){
+    		em.persist(localizacao);
+    	}else{
+    		em.merge(localizacao);
+    	}
     }
 }

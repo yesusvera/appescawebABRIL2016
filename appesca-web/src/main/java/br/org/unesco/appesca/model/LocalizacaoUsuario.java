@@ -6,6 +6,7 @@ import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,6 +29,7 @@ public class LocalizacaoUsuario implements java.io.Serializable {
 	private Date dataRegistro;
 	private BigDecimal latitude;
 	private BigDecimal longitude;
+	private String provided;
 	
 	public LocalizacaoUsuario() {
 	}
@@ -43,8 +45,8 @@ public class LocalizacaoUsuario implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@ManyToOne
-	@JoinColumn(name="id_usuario")
+	@ManyToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="id_usuario", insertable=true, updatable=true)
 	public Usuario getUsuario() {
 		return this.usuario;
 	}
@@ -91,5 +93,13 @@ public class LocalizacaoUsuario implements java.io.Serializable {
 
 	public void setLongitude(BigDecimal longitude) {
 		this.longitude = longitude;
+	}
+
+	public String getProvided() {
+		return provided;
+	}
+
+	public void setProvided(String provided) {
+		this.provided = provided;
 	}
 }

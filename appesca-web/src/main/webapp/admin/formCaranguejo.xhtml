@@ -4972,40 +4972,42 @@
 				closeSpeed="500" widgetVar="panel9" style="margin-bottom:20px"
 				collapsed="true">
 
-				<br />
+				<p:fieldset legend="Bloco 9 - Questão 1" toggleable="true"
+					style="margin-top:20px" toggleSpeed="500">
+					<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+						<h:outputText
+							value="De maneira geral, quais são os principais problemas enfrentados? Quais seriam as soluções? (gravação 5 minutos) " />
+					</h:panelGrid>
 
-				<h:panelGrid id="q74" columns="1" style="margin-bottom:10px"
-					cellpadding="5">
-					<h:outputText
-						value="1. De maneira geral, quais são os principais problemas enfrentados? Quais seriam as soluções? (gravação 5 minutos) " />
-				</h:panelGrid>
-
-				<p:outputPanel
-					rendered="#{identidade.eDegravador() and formularioController.problemasF3Q74.audio}">
-					<p:growl id="growl" life="3000" />
 					<p:outputPanel>
-						<h:outputText value="Problemas " />
-						<p:editor id="problema"
-							value="#{formularioController.problemasF3Q74.texto}" />
-						<p:commandButton
-							actionListener="#{formularioController.salvarResposta(formularioController.problemasF3Q74)}"
+						<p:growl id="growl" life="3000" />
+						<p:outputPanel>
+							<h:outputText value="Problemas " />
+							<p:editor id="problema"
+								value="#{formularioController.problemasF1Q72.texto}" />
+
+						</p:outputPanel>
+						<br />
+						<h:outputText value="Soluções " />
+						<p:outputPanel>
+							<p:editor id="solucao"
+								value="#{formularioController.solucoesF1Q72.texto}" />
+						</p:outputPanel>
+
+						<!-- <p:commandButton
+							actionListener="#{formularioController.salvarResposta(formularioController.problemasF1Q72)}"
+							id="salvarProblema" update="growl" value="Salvar" title="Salvar" /> -->
+
+						<p:commandButton rendered="#{identidade.eDegravador()}"
 							id="salvarProblema" update="growl" value="Salvar" title="Salvar" />
 					</p:outputPanel>
-					<br />
-					<h:outputText value="Soluções " />
-					<p:outputPanel>
-						<p:editor id="solucao"
-							value="#{formularioController.solucoesF3Q74.texto}" />
-						<p:commandButton
-							actionListener="#{formularioController.salvarResposta(formularioController.solucoesF3Q74)}"
-							id="salvarSolucao" update="growl" value="Salvar" title="Salvar" />
-					</p:outputPanel>
-					<p:media value="#{formularioController.problemasF3Q74}" width="90%"
-						height="70" player="quicktime">
-						<f:param name="autoPlay" value="false" />
-					</p:media>
-				</p:outputPanel>
 
+					<video width="100%" height="100" controls="controls">
+						<source
+							src="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formularioController.formulario.id}"
+							type="video/mp4" />
+					</video>
+				</p:fieldset>
 			</p:panel>
 		</h:form>
 	</ui:define>

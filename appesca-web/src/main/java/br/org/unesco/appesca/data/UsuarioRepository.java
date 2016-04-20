@@ -25,6 +25,7 @@ import javax.persistence.Query;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+import javax.transaction.Transactional;
 
 import br.org.unesco.appesca.model.Usuario;
 
@@ -37,7 +38,8 @@ public class UsuarioRepository {
     public Usuario findById(Integer id) {
         return em.find(Usuario.class, id);
     }
-    
+  
+    @Transactional
     public void save(Usuario usr){
     	if(usr.getId()==null){
     		em.persist(usr);
@@ -45,6 +47,8 @@ public class UsuarioRepository {
     		em.merge(usr);
     	}
     }
+    
+ 
     
     @SuppressWarnings("unchecked")
 	public List<Usuario> listAll(){
@@ -63,6 +67,24 @@ public class UsuarioRepository {
 	        				cb.equal(usuario.get("senha"), senha)), 
 	        		cb.and(cb.equal(usuario.get("email"), loginOuEmail),
 	        				cb.equal(usuario.get("senha"), senha))
+    			)
+        );
+        try{
+        	return em.createQuery(criteria).getSingleResult();
+        }catch(javax.persistence.NoResultException nr){
+        	return null;
+        }
+    }
+    
+ 
+    public Usuario findByLogin(String loginOuEmail) {
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+        CriteriaQuery<Usuario> criteria = cb.createQuery(Usuario.class);
+        Root<Usuario> usuario = criteria.from(Usuario.class);
+        criteria.select(usuario).where(
+        		cb.or(
+	        		cb.equal(usuario.get("login"), loginOuEmail), 
+	        		cb.equal(usuario.get("email"), loginOuEmail)
     			)
         );
         try{
