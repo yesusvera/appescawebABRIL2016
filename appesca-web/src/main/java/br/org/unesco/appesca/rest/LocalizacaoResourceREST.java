@@ -1,5 +1,7 @@
 package br.org.unesco.appesca.rest;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
@@ -38,37 +40,52 @@ public class LocalizacaoResourceREST extends BaseREST {
 	@Path("/inserir")
 	@Produces(MediaType.APPLICATION_XML)
 	public String inserir(@FormParam("xmlLocalizacao") String xmlLocalizacao, @FormParam("login") String login) {
-		
-		Usuario usuario = usuarioService.findByLogin(login);
-		
 		System.out.println("Inserindo as localizações");
 		XStream xStream = new XStream(new DomDriver());
 
+		HashMap<String, Usuario> mapaUsuarios = new HashMap<>();
+		
 		try {
 			LocalizacaoREST localizacaoREST = (LocalizacaoREST) xStream.fromXML(xmlLocalizacao);
 			if(localizacaoREST!=null){
+				
 				List<LocalizacaoUsuario> lista = localizacaoREST.getListaLocalizacaoUsuario();
 				
 				if(lista!=null){
 					for(LocalizacaoUsuario loc: lista){
-							loc.setUsuario(usuario);
-//							localizacaoUsuarioRepository.save(loc);
+							loc.setId(null);
+						
+							if(loc.getUsuario()==null) continue;
+							
+							Usuario usuario = mapaUsuarios.get(loc.getUsuario().getLogin());
+							
+							if(usuario==null){
+								usuario = usuarioService.findByLogin(loc.getUsuario().getLogin());
+							}
+						
+							if(usuario!=null){
+								mapaUsuarios.put(usuario.getLogin(), usuario);
+								loc.setUsuario(usuario);
+								
+								List<LocalizacaoUsuario> listaBD =  usuario.getListaLocalizacoes();
+								if(listaBD==null){
+									listaBD = new ArrayList<>();
+								}
+								
+								listaBD.add(loc);
+								
+								
+//								usuario.setListaLocalizacoes(listaBD);
+								
+								mapaUsuarios.put(usuario.getLogin(), usuario);
+							}
+					}
+					
+					for(Usuario usr: mapaUsuarios.values()){
+						usuarioService.save(usr);
 					}
 				}
-				
-				List<LocalizacaoUsuario> listaBD =  usuario.getListaLocalizacoes();
-				if(listaBD==null){
-					listaBD = lista;
-				}else{
-					listaBD.addAll(lista);
-				}
-				
-//				usuario.setListaLocalizacoes(listaBD);
-				
-				usuarioService.save(usuario);
 			}
-			
-			
 
 			RespEnvioLocalizacao rs = new RespEnvioLocalizacao();
 			rs.setErro(false);

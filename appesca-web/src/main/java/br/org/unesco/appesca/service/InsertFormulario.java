@@ -102,6 +102,10 @@ public class InsertFormulario extends HttpServlet {
 							Q1B9.setOrdem(ordemUltQ);
 							Q1B9.setTitulo("Questão "+ordemUltQ);
 							Q1B9.setFormulario(formulario);
+							
+							if(formulario.getListaQuestoes()!=null){
+								formulario.getListaQuestoes().add(Q1B9);
+							}
 						}
 						
 						Pergunta perg = formularioService.getPerguntaPorOrdem(2, Q1B9); 
