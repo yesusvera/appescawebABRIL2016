@@ -3,6 +3,7 @@ package br.org.unesco.appesca.controller;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.Serializable;
+import java.security.Identity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,7 +50,7 @@ public class FormularioController implements Serializable {
 
 	@Inject
 	private UsuarioService usuarioService;
-
+	
 	@Produces
 	@Named
 	private List<Formulario> listaFormularios;
@@ -74,6 +75,7 @@ public class FormularioController implements Serializable {
 	public String listarFormularios(long tipoFormulario){
 		this.tipoFormulario = (int) tipoFormulario;
 		listaFormularios = formularioService.listByTipoFormulario((int)tipoFormulario);
+//		listaFormularios = formularioService.listByEquipesCoordenador(identidade.getUsuarioLogado().getId(), (int)tipoFormulario);
 		switch (this.tipoFormulario){
 	        case 1: 
 	                setTitulo("Formulário Camarão Regional");
@@ -229,6 +231,18 @@ public class FormularioController implements Serializable {
 		return formularioService.getUF(formulario);
 	}
 
+	public String getUFTabela(Formulario form){
+		return getUF(form) + " / " + getRespTxt(0,4,1,form);
+	}
+	
+	 public String labelTemDegravacao(Formulario formulario){
+		 return formularioService.temDegravacao(formulario)?"Sim":"Não";
+	 }
+	 
+	 public boolean temDegravacao(Formulario formulario){
+		 return formularioService.temDegravacao(formulario);
+	 }
+	
 	public String getRespTxt(int ordemQuestao, int ordemPergunta, int ordemResposta){
 		return formularioService.getRespostaTexto(ordemQuestao, ordemPergunta, ordemResposta, formulario);
 	}

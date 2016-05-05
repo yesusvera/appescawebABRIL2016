@@ -16,6 +16,7 @@
  */
 package br.org.unesco.appesca.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -23,7 +24,9 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 
 import br.org.unesco.appesca.data.EquipeRepository;
+import br.org.unesco.appesca.enums.PerfilEnum;
 import br.org.unesco.appesca.model.Equipe;
+import br.org.unesco.appesca.model.Usuario;
 
 // The @Stateless annotation eliminates the need for manual transaction demarcation
 @Stateless
@@ -36,6 +39,31 @@ public class EquipeService {
     private EquipeRepository equipeRepository;
 
 
+    public List<Equipe> listarPorPerfil(Usuario usuario) throws Exception{
+    	if(usuario==null){
+    		return null;
+    	}
+    	
+    	if(usuario.getPerfil().getValor() == PerfilEnum.DEGRAVADOR.getValor() 
+    			|| usuario.getPerfil().getValor() == PerfilEnum.PESQUISADOR.getValor()){
+    		return null;
+    	}else if(usuario.getPerfil().getValor() == PerfilEnum.COORDENADOR.getValor()){
+    		List<Equipe> lst = listAll();
+    		List<Equipe> listaRetorno = new ArrayList<>();
+    		if(lst!=null && !lst.isEmpty()){
+    			for(Equipe equipe: lst){
+    				if(equipe.getCoordenador().getId().intValue() == usuario.getId().intValue()){
+    					listaRetorno.add(equipe);
+    				}
+    			}
+    		}
+    		return listaRetorno;
+    	}else if(usuario.getPerfil().getValor() == PerfilEnum.ADMINISTRADOR.getValor()){
+    		return listAll();
+    	}
+    	return null;
+    }
+    
     public List<Equipe> listAll() throws Exception {
         return equipeRepository.listAll();
     }

@@ -8,7 +8,7 @@
     <ui:define name="content">
         <h1>Equipes</h1>
        <h:form id="formEquipe">
-			<p:dataTable var="equipe" value="#{equipeController.listaEquipes}" style=" text-align: center;">
+			<p:dataTable var="equipe" value="#{equipeController.listaEquipes}" style=" text-align: center;" emptyMessage="Nenhuma equipe encontrada para este usuário.">
 				
 				<p:column headerText="Nome" filterBy="#{equipe.nome}" sortBy="#{equipe.nome}">
 					<h:outputText value="#{equipe.nome}" />

@@ -11,9 +11,10 @@
      	  	<p:commandLink action="#{formularioController.exportar()}">
 				<i class="fa fa-file"> EXPORTAR</i>
 			</p:commandLink>
-			<br/>
-			<p:dataTable var="formulario" value="#{formularioController.listaFormularios}" emptyMessage="Nenhum formulário encontrado.">
-				<p:column headerText="Pesquisador" style="text-align: center;">
+			<br/><br/>
+			<i><b>#{formularioController.listaFormularios==null?'0':formularioController.listaFormularios.size()} </b></i> formulários encontrados.
+			<p:dataTable var="formulario" value="#{formularioController.listaFormularios}" emptyMessage="Nenhum formulário encontrado." style="font-size:small">
+				<p:column headerText="Pesquisador" filterBy="#{formularioController.getUsuario(formulario).nome}" sortBy="#{formularioController.getUsuario(formulario).nome}" style="text-align: center;" >
 					<h:outputText value="#{formularioController.getUsuario(formulario).nome}"/>
 				</p:column>
 				<p:column headerText="Registro" filterBy="#{formulario.idSincronizacao}" sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
@@ -22,12 +23,10 @@
 				<p:column headerText="Nome Entrevistado" style="text-align: center;">
 					<h:outputText value="#{formularioController.getRespTxt(0,1,1,formulario)}"/>
 				</p:column>
-				<p:column headerText="UF"  style="text-align: center;">
-					<h:outputText value="#{formularioController.getUF(formulario)}"/> 
-					/
-					<h:outputText value="#{formularioController.getRespTxt(0,4,1,formulario)}"/>
+				<p:column headerText="UF" filterBy="#{formularioController.getUFTabela(formulario)}"  style="text-align: center;">
+					<h:outputText value="#{formularioController.getUFTabela(formulario)}"/>
 				</p:column>
-				<p:column headerText="Data" filterBy="#{formulario.data}" 
+				<p:column headerText="Data" filterBy="#{formulario.data}"
 						  sortBy="#{formulario.data}" 
 						  style="text-align: center;">
 					<h:outputText value="#{formulario.data}" /> <br/>
@@ -51,6 +50,19 @@
 						<i class="fa fa-info-circle"></i>
 					</p:commandLink>
 				</p:column>
+				
+				<p:column headerText="Degravação" width="95" sortBy="#{formularioController.labelTemDegravacao(formulario)}">
+					<center>
+						<h:outputText value="#{formularioController.labelTemDegravacao(formulario)}"/> 	
+						<br/><br/>
+						<video width="95" height="30" controls="controls" style="margin-left:-5px;visibility: #{formularioController.temDegravacao(formulario)?'visible':'hidden'}">
+							<source
+								src="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}"
+								type="video/mp4" />
+						</video>	
+					</center>
+				</p:column>
+				
 			</p:dataTable>
 		</h:form>
     </ui:define>

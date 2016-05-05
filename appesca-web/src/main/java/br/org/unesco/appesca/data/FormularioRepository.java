@@ -57,6 +57,21 @@ public class FormularioRepository {
         return em.createQuery(criteria).getSingleResult();
     }
     
+    /**
+     * @param idCoordenadorEquipe - o coordenador neste caso pode ser perfil Coordenador ou Administrador.
+     * @return
+     */
+    public List<Formulario> listByEquipesCoordenador(int idCoordenadorEquipe, int tipoFormulario){
+    	 Query query = em.createQuery("SELECT form FROM Formulario form, Usuario usrForm, Equipe equipe "
+    			 						+ " inner join equipe.listaMembrosEquipe as eqp "
+    			 						+ " where eqp.coordenador.id = :idCoordenadorEquipe and form.idTipoFormulario = :tipoFormulario"
+    	 								);
+    	 query.setParameter("idCoordenadorEquipe", idCoordenadorEquipe);
+    	 query.setParameter("tipoFormulario", tipoFormulario);
+    	 
+    	 return (List<Formulario>) query.getResultList();
+    }
+    
     public List<Formulario> listByTipoFormulario(int tipoFormulario) {
     	
     	CriteriaBuilder cb = em.getCriteriaBuilder();

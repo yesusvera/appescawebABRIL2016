@@ -57,7 +57,8 @@ public class EquipeController implements Serializable {
     @PostConstruct
     public void inicializaNovaEquipe() {
     	try {
-			listaEquipes = equipeService.listAll();
+//			listaEquipes = equipeService.listAll();
+    		listaEquipes = equipeService.listarPorPerfil(identidade.getUsuarioLogado());
 			usuariosEscolhidos = new ArrayList<>();
 			equipe = new Equipe();
 			pegaUFCoordenador();
@@ -93,7 +94,8 @@ public class EquipeController implements Serializable {
     	
     	usuariosEscolhidos = new ArrayList<>();
     	listaUsuarios = new ArrayList<>();
-    	listaEquipes = equipeService.listAll();
+//    	listaEquipes = equipeService.listAll();
+    	listaEquipes = equipeService.listarPorPerfil(identidade.getUsuarioLogado());
     	return "equipes";
     }
     
