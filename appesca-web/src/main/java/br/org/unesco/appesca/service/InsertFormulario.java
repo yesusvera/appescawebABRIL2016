@@ -159,8 +159,6 @@ public class InsertFormulario extends HttpServlet {
 					}
 				}
 				
-				
-				
 				formularioService.save(formulario);
 				RespEnvioFormulario rs = new RespEnvioFormulario();
 				rs.setErro(false);

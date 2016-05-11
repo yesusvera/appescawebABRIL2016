@@ -3,7 +3,6 @@ package br.org.unesco.appesca.controller;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.Serializable;
-import java.security.Identity;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,6 +33,7 @@ import br.org.unesco.appesca.model.exportacao.Perg;
 import br.org.unesco.appesca.model.exportacao.Q;
 import br.org.unesco.appesca.model.exportacao.Resp;
 import br.org.unesco.appesca.service.FormularioService;
+import br.org.unesco.appesca.service.QuestaoService;
 import br.org.unesco.appesca.service.RespostaService;
 import br.org.unesco.appesca.service.UsuarioService;
 
@@ -49,20 +49,26 @@ public class FormularioController implements Serializable {
 	private RespostaService respostaService;
 
 	@Inject
+	private QuestaoService questaoService;
+
+	@Inject
 	private UsuarioService usuarioService;
-	
+
 	@Produces
 	@Named
 	private List<Formulario> listaFormularios;
 
 	private Formulario formulario;
-	
+
 	private String titulo;
-	
+
 	private String htmlExportacao;
 
 	@Inject
 	Identidade identidade;
+
+	private Resposta problemasDegravacao;
+	private Resposta solucoesDegravacao;
 
 	private Resposta problemasF1Q72;
 	private Resposta solucoesF1Q72;
@@ -71,74 +77,75 @@ public class FormularioController implements Serializable {
 	private Resposta problemasF3Q74;
 	private Resposta solucoesF3Q74;
 	private int tipoFormulario;
-	
-	public String listarFormularios(long tipoFormulario){
+
+	public String listarFormularios(long tipoFormulario) {
 		this.tipoFormulario = (int) tipoFormulario;
-		listaFormularios = formularioService.listByTipoFormulario((int)tipoFormulario);
-//		listaFormularios = formularioService.listByEquipesCoordenador(identidade.getUsuarioLogado().getId(), (int)tipoFormulario);
-		switch (this.tipoFormulario){
-	        case 1: 
-	                setTitulo("Formulário Camarão Regional");
-	                break;
-	        case 2:
-	        	setTitulo("Formulário Caranguejo");
-	                break;
-	        case 3:
-	        	setTitulo("Formulário Camarão Piticaia e Branco");
-	                break;
+		listaFormularios = formularioService.listByTipoFormulario((int) tipoFormulario);
+		// listaFormularios =
+		// formularioService.listByEquipesCoordenador(identidade.getUsuarioLogado().getId(),
+		// (int)tipoFormulario);
+		switch (this.tipoFormulario) {
+		case 1:
+			setTitulo("Formulário Camarão Regional");
+			break;
+		case 2:
+			setTitulo("Formulário Caranguejo");
+			break;
+		case 3:
+			setTitulo("Formulário Camarão Piticaia e Branco");
+			break;
 		}
 		return "listaFormularios?faces-redirect=true";
 	}
-	
-	public String getSituacao(Formulario form){
+
+	public String getSituacao(Formulario form) {
 		String ret = "";
-		if(form!=null){
-			switch (form.getSituacao()){
-	        case -1: 
-	        	ret = "Devolvido";
-	            break;
-	        case 1:
-	        	ret= "Pendente de Aprovação";
-	            break;
-	        case 2:	
-	        	ret="Finalizado";
-	            break;
+		if (form != null) {
+			switch (form.getSituacao()) {
+			case -1:
+				ret = "Devolvido";
+				break;
+			case 1:
+				ret = "Pendente de Aprovação";
+				break;
+			case 2:
+				ret = "Finalizado";
+				break;
 			}
 		}
 		return ret;
 	}
-	
-	public String exportar(){
+
+	public String exportar() {
 		FormExportacao formExp = new FormExportacao();
-		
-		for(Formulario form: listaFormularios){
-			if(form.getListaQuestoes()!=null){
-	            for(Questao questao: form.getListaQuestoes()){
-	            	
-	            	formExp.getQuestao(questao.getOrdem()).increment();
-	            	
-	                if(questao.getListaPerguntas()!=null){
-	                    for(Pergunta pergunta: questao.getListaPerguntas()){
-	                    	formExp.getQuestao(questao.getOrdem()).getPergunta(pergunta.getOrdem()).increment();
-	                    	
-	                        if(pergunta.getListaRespostas()!=null){
-	                            for(Resposta resposta: pergunta.getListaRespostas()){
-	                            	formExp.getQuestao(questao.getOrdem()).
-	                            			getPergunta(pergunta.getOrdem()).
-	                            				getResposta(resposta.getOrdem()).increment();
-	                            }
-	                        }
-	                    }
-	                }
-	            }
-		    }
+
+		for (Formulario form : listaFormularios) {
+			if (form.getListaQuestoes() != null) {
+				for (Questao questao : form.getListaQuestoes()) {
+
+					formExp.getQuestao(questao.getOrdem()).increment();
+
+					if (questao.getListaPerguntas() != null) {
+						for (Pergunta pergunta : questao.getListaPerguntas()) {
+							formExp.getQuestao(questao.getOrdem()).getPergunta(pergunta.getOrdem()).increment();
+
+							if (pergunta.getListaRespostas() != null) {
+								for (Resposta resposta : pergunta.getListaRespostas()) {
+									formExp.getQuestao(questao.getOrdem()).getPergunta(pergunta.getOrdem())
+											.getResposta(resposta.getOrdem()).increment();
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 		System.out.println(formExp);
-		
+
 		htmlExportacao = "<table border='1' style='border: 1px solid gray' width='100%'>";
-		
-		for(Q q: formExp.getMapQuestoes().values()){
-			String labelQuestao = "Questão "+ q.getOrdem();
+
+		for (Q q : formExp.getMapQuestoes().values()) {
+			String labelQuestao = "Questão " + q.getOrdem();
 			switch (q.getOrdem()) {
 			case -1:
 				labelQuestao = "Localização da residência";
@@ -149,23 +156,25 @@ public class FormularioController implements Serializable {
 			default:
 				break;
 			}
-			htmlExportacao += "<tr style='font-size:18px;color: #fff; background: #2d86c1;'><td colspan='2' align='center'><b>"+labelQuestao+"</b></td></tr>";
-			
-			for(Perg perg: q.getMapPerg().values()){
-				htmlExportacao += "<tr style='color: #fff; background: #04B45F;'><td colspan='2' >Pergunta "+perg.getOrdem()+"</td></tr>";
+			htmlExportacao += "<tr style='font-size:18px;color: #fff; background: #2d86c1;'><td colspan='2' align='center'><b>"
+					+ labelQuestao + "</b></td></tr>";
+
+			for (Perg perg : q.getMapPerg().values()) {
+				htmlExportacao += "<tr style='color: #fff; background: #04B45F;'><td colspan='2' >Pergunta "
+						+ perg.getOrdem() + "</td></tr>";
 				htmlExportacao += "<tr style='color: #fff; background: gray;'><td><i>Ordem<i/></td><td><i>Quantidade</i></td></tr>";
-				for(Resp resp: perg.getMapRespostas().values()){
-					htmlExportacao += "<tr><td>Resposta "+resp.getOrdem()+"</td><td>"+resp.getQuantidade()+"</td></tr>";
+				for (Resp resp : perg.getMapRespostas().values()) {
+					htmlExportacao += "<tr><td>Resposta " + resp.getOrdem() + "</td><td>" + resp.getQuantidade()
+							+ "</td></tr>";
 				}
 			}
 			htmlExportacao += "</tr>";
 		}
-	
-				
-		htmlExportacao += "</table>"; 
+
+		htmlExportacao += "</table>";
 		return "formExportacaoPiticaiaEBranco?faces-redirect=true";
 	}
-	
+
 	public String aprovar() {
 		try {
 			formulario.setSituacao(2);
@@ -174,10 +183,10 @@ public class FormularioController implements Serializable {
 		} catch (Exception e) {
 			addMessage("Aconteceu um problema.");
 		}
-		
+
 		return "";
 	}
-	
+
 	public String devolver() {
 		try {
 			formulario.setSituacao(-1);
@@ -186,114 +195,119 @@ public class FormularioController implements Serializable {
 		} catch (Exception e) {
 			addMessage("Aconteceu um problema.");
 		}
-		
+
 		return "";
 	}
-	
+
 	public String getTitulo() {
 		return titulo;
 	}
-
-
 
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
 
-
-
 	public String visualizar(Formulario formulario) {
 		this.formulario = formulario;
 
+		try {
+			int ult = getQtdeMax(formulario) - 2;
+
+			Resposta respProb = getResposta("q" + ult + "_p1_r1");
+			setProblemasDegravacao(respProb);
+
+			Resposta respSol = getResposta("q" + ult + "_p1_r2");
+			setSolucoesDegravacao(respSol);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 		switch (formulario.getIdTipoFormulario()) {
 		case 1:
-			carregarRespostasEditaveisRegional();
+			// carregarRespostasEditaveisRegional();
 			return "formCamaraoRegional?faces-redirect=true";
-		
+
 		case 2:
-			carregarRespostasEditaveisCaranguejo();
+			// carregarRespostasEditaveisCaranguejo();
 			return "formCaranguejo?faces-redirect=true";
 		case 3:
-			carregarRespostasEditaveisBranco();
+			// carregarRespostasEditaveisBranco();
 			return "formCamaraoPiticaiaEBranco?faces-redirect=true";
 		}
-		
-		return "";
 
+		return "";
 	}
-	
-	public Usuario getUsuario(Formulario formulario){
+
+	public Usuario getUsuario(Formulario formulario) {
 		Usuario usuario = usuarioService.findById(formulario.getIdUsuario());
 		return usuario;
 	}
-	
-	public String getUF(Formulario formulario){
+
+	public String getUF(Formulario formulario) {
 		return formularioService.getUF(formulario);
 	}
 
-	public String getUFTabela(Formulario form){
-		return getUF(form) + " / " + getRespTxt(0,4,1,form);
+	public String getUFTabela(Formulario form) {
+		return getUF(form) + " / " + getRespTxt(0, 4, 1, form);
 	}
-	
-	 public String labelTemDegravacao(Formulario formulario){
-		 return formularioService.temDegravacao(formulario)?"Sim":"Não";
-	 }
-	 
-	 public boolean temDegravacao(Formulario formulario){
-		 return formularioService.temDegravacao(formulario);
-	 }
-	
-	public String getRespTxt(int ordemQuestao, int ordemPergunta, int ordemResposta){
+
+	public String labelTemDegravacao(Formulario formulario) {
+		return formularioService.temDegravacao(formulario) ? "Sim" : "Não";
+	}
+
+	public boolean temDegravacao(Formulario formulario) {
+		return formularioService.temDegravacao(formulario);
+	}
+
+	public String getRespTxt(int ordemQuestao, int ordemPergunta, int ordemResposta) {
 		return formularioService.getRespostaTexto(ordemQuestao, ordemPergunta, ordemResposta, formulario);
 	}
-	
-	public String getRespTxt(int ordemQuestao, int ordemPergunta, int ordemResposta, Formulario form){
+
+	public String getRespTxt(int ordemQuestao, int ordemPergunta, int ordemResposta, Formulario form) {
 		return formularioService.getRespostaTexto(ordemQuestao, ordemPergunta, ordemResposta, form);
 	}
-	
 
 	public String getRespTxt(Pergunta pergunta, int ordemResposta) {
 		return formularioService.getRespostaTexto(pergunta, ordemResposta);
 	}
-	
-	public boolean getRespBool(int ordemQuestao, int ordemPergunta, int ordemResposta){
+
+	public boolean getRespBool(int ordemQuestao, int ordemPergunta, int ordemResposta) {
 		return formularioService.getRespostaBoolean(ordemQuestao, ordemPergunta, ordemResposta, formulario);
 	}
-	
-	public boolean getRespBool(int ordemQuestao, int ordemPergunta, int ordemResposta, Formulario form){
+
+	public boolean getRespBool(int ordemQuestao, int ordemPergunta, int ordemResposta, Formulario form) {
 		return formularioService.getRespostaBoolean(ordemQuestao, ordemPergunta, ordemResposta, form);
 	}
-	
 
 	public boolean getRespBool(Pergunta pergunta, int ordemResposta) {
 		return formularioService.getRespostaBoolean(pergunta, ordemResposta);
 	}
-	 
-	public List<Pergunta> getListaPerguntas(int ordemQuestao){
+
+	public List<Pergunta> getListaPerguntas(int ordemQuestao) {
 		List<Pergunta> lst = formularioService.getListaPerguntas(ordemQuestao, formulario);
-		if(lst!=null){
+		if (lst != null) {
 			return lst;
-		}else{
+		} else {
 			return new ArrayList<>();
 		}
 	}
-	
-	 public boolean perguntaTemResposta(int ordemQuestao, int ordemPergunta){
-		 return formularioService.perguntaTemResposta(ordemQuestao, ordemPergunta, formulario);
-	 }
 
-	public List<Pergunta> getListaPerguntas(int ordemQuestao, int minOrdem, int maxOrdem){
-		
-	  	List<Pergunta> lst =  formularioService.getListaPerguntas(ordemQuestao, formulario);
-	  	if(lst!=null && lst.size()>0){
-	  		List<Pergunta> lstReturn = new ArrayList<>();
-	  		for(Pergunta p: lst){
-	  			if(p.getOrdem()>=minOrdem && p.getOrdem()<=maxOrdem){
-	  				lstReturn.add(p);
-	  			}
-	  		}
-	  		return lstReturn;
-	  	}else{
+	public boolean perguntaTemResposta(int ordemQuestao, int ordemPergunta) {
+		return formularioService.perguntaTemResposta(ordemQuestao, ordemPergunta, formulario);
+	}
+
+	public List<Pergunta> getListaPerguntas(int ordemQuestao, int minOrdem, int maxOrdem) {
+
+		List<Pergunta> lst = formularioService.getListaPerguntas(ordemQuestao, formulario);
+		if (lst != null && lst.size() > 0) {
+			List<Pergunta> lstReturn = new ArrayList<>();
+			for (Pergunta p : lst) {
+				if (p.getOrdem() >= minOrdem && p.getOrdem() <= maxOrdem) {
+					lstReturn.add(p);
+				}
+			}
+			return lstReturn;
+		} else {
 			return new ArrayList<>();
 		}
 	}
@@ -354,8 +368,9 @@ public class FormularioController implements Serializable {
 			String r = indices[2].substring(1);
 
 			Resposta resp = formularioService.getResposta(new Integer(q), new Integer(p), new Integer(r), formulario);
-			
-			if(resp!=null) return resp;
+
+			if (resp != null)
+				return resp;
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -387,14 +402,72 @@ public class FormularioController implements Serializable {
 
 	public void salvarResposta(Resposta resp) {
 		try {
-			//respostaService.save(resp);
+			// respostaService.save(resp);
 			addMessage("Alteração realizada com sucesso!!");
 		} catch (Exception e) {
 			addMessage("Erro ao salvar a resposta!!");
 		}
 
 	}
+
+	public void salvarDegravacao() {
+		try {
+			if (problemasDegravacao.getId() != null && solucoesDegravacao.getId() != null) {
+				respostaService.save(problemasDegravacao);
+				respostaService.save(solucoesDegravacao);
+			} else {
+				int ult = getQtdeMax(formulario) - 2;
+				Questao quest = formularioService.getQuestaoPorOrdem(ult, formulario);
+				Pergunta perg = formularioService.getPerguntaPorOrdem(1, quest);
+
+				if (perg == null) {
+					perg = new Pergunta();
+					perg.setOrdem(1);
+					perg.setRespBooleana(false);
+					perg.setQuestao(quest);
+					if (quest.getListaPerguntas() == null) {
+						quest.setListaPerguntas(new ArrayList<Pergunta>());
+					}
+					quest.getListaPerguntas().add(perg);
+				}
+
+				if (perg.getListaRespostas() == null) {
+					perg.setListaRespostas(new ArrayList<Resposta>());
+				} else {
+					perg.getListaRespostas().clear();
+				}
+
+				problemasDegravacao.setId(null);
+				problemasDegravacao.setPergunta(perg);
+				problemasDegravacao.setOrdem(1);
+
+				problemasDegravacao.setId(null);
+				solucoesDegravacao.setPergunta(perg);
+				solucoesDegravacao.setOrdem(2);
+
+				perg.getListaRespostas().add(problemasDegravacao);
+				perg.getListaRespostas().add(solucoesDegravacao);
+
+				questaoService.save(quest);
+			}
+			addMessage("Degravação salva com sucesso!");
+
+		} catch (Exception e) {
+			addMessage("Erro ao salvar a resposta!!");
+		}
+
+	}
 	
+	public void salvarObservacao() {
+		try{
+			formularioService.save(formulario);
+			addMessage("Observação salva com sucesso!");
+
+		} catch (Exception e) {
+			addMessage("Erro ao salvar a Observação!");
+		}
+	}
+
 	public String getHtmlExportacao() {
 		return htmlExportacao;
 	}
@@ -455,50 +528,70 @@ public class FormularioController implements Serializable {
 	public void setSolucoesF3Q74(Resposta solucoesF3Q74) {
 		this.solucoesF3Q74 = solucoesF3Q74;
 	}
-	
+
 	public MapModel getMap(Formulario form) {
 		MapModel map = new DefaultMapModel();
-		
-		if(form.getLatitude()!=null && form.getLongitude()!=null){
+
+		if (form.getLatitude() != null && form.getLongitude() != null) {
 			LatLng coord = new LatLng(form.getLatitude().doubleValue(), form.getLongitude().doubleValue());
-			map.addOverlay(new Marker(coord, "Local do formulario", "konyaalti.png", "http://maps.google.com/mapfiles/ms/micons/blue-dot.png"));
+			map.addOverlay(new Marker(coord, "Local do formulario", "konyaalti.png",
+					"http://maps.google.com/mapfiles/ms/micons/blue-dot.png"));
 		}
 		return map;
 	}
 
-	
 	public StreamedContent getStream() throws IOException {
-        FacesContext context = FacesContext.getCurrentInstance();
+		FacesContext context = FacesContext.getCurrentInstance();
 
-        if (context.getCurrentPhaseId() == PhaseId.RENDER_RESPONSE) {
-            // So, we're rendering the HTML. Return a stub StreamedContent so that it will generate right URL.
-            return new DefaultStreamedContent();
-        } else {
-            // So, browser is requesting the media. Return a real StreamedContent with the media bytes.
-//            String id = context.getExternalContext().getRequestParameterMap().get("id");
-//            Media media = service.find(Long.valueOf(id));
-            return new DefaultStreamedContent(new ByteArrayInputStream(null));
-        }
-    }
+		if (context.getCurrentPhaseId() == PhaseId.RENDER_RESPONSE) {
+			// So, we're rendering the HTML. Return a stub StreamedContent so
+			// that it will generate right URL.
+			return new DefaultStreamedContent();
+		} else {
+			// So, browser is requesting the media. Return a real
+			// StreamedContent with the media bytes.
+			// String id =
+			// context.getExternalContext().getRequestParameterMap().get("id");
+			// Media media = service.find(Long.valueOf(id));
+			return new DefaultStreamedContent(new ByteArrayInputStream(null));
+		}
+	}
 
-	public int getQtdeMax(Formulario formulario){
-		
-		if(formulario==null) return 0;
+	public int getQtdeMax(Formulario formulario) {
+
+		if (formulario == null)
+			return 0;
 
 		int retorno = 0;
-		
-		switch (this.tipoFormulario){
-        case 1: //camarao
-        	retorno = 75;
-                break;
-        case 2://caranguejo
-        	retorno = 76;
-                break;
-        case 3://piticaia
-        	retorno = 63;
-                break;
+
+		switch (this.tipoFormulario) {
+		case 1: // camarao
+			retorno = 75;
+			break;
+		case 2:// caranguejo
+			retorno = 76;
+			break;
+		case 3:// piticaia
+			retorno = 63;
+			break;
 		}
-		
+
 		return retorno;
+	}
+
+	public Resposta getProblemasDegravacao() {
+		return problemasDegravacao;
+	}
+
+	public void setProblemasDegravacao(Resposta problemasDegravacao) {
+		this.problemasDegravacao = problemasDegravacao;
+	}
+
+	public Resposta getSolucoesDegravacao() {
+		return solucoesDegravacao;
+	}
+
+	public void setSolucoesDegravacao(Resposta solucoesDegravacao) {
+		this.solucoesDegravacao = solucoesDegravacao;
 	}
 }

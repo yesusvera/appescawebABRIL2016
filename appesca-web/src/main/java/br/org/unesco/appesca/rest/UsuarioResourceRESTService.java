@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response;
 
 import br.org.unesco.appesca.data.UsuarioRepository;
 import br.org.unesco.appesca.model.Equipe;
+import br.org.unesco.appesca.model.LocalizacaoUsuario;
 import br.org.unesco.appesca.model.Usuario;
 import br.org.unesco.appesca.rest.model.RespAutenticacaoREST;
 
@@ -81,5 +82,58 @@ public class UsuarioResourceRESTService extends BaseREST{
 			return null;
 		}
 		return Response.ok(new ByteArrayInputStream(usr.getImagem())).build();
+	}
+	
+	@GET
+	@Path("/csvGeoreferenciamentoTodos")
+	@Produces("text/csv")
+	public Response exportarGeoCSVAll() {
+		
+		List<Usuario> listaUsuarios = repository.listAll();
+		
+		String conteudoCSV = "DATAHORA;LAT;LONG;USUARIO;TIPOCAPTURA";
+		
+		for(Usuario usr: listaUsuarios){
+			for(LocalizacaoUsuario loc : usr.getListaLocalizacoes()){
+				conteudoCSV = concatLinhaCsv(conteudoCSV, usr, loc);
+			}
+		}
+		
+		return Response.ok(conteudoCSV).header("Content-Disposition", "attachment; filename=geoReferenciamentoTodosUsuarios.csv").build();
+	}
+
+	private String concatLinhaCsv(String conteudoCSV, Usuario usr, LocalizacaoUsuario loc) {
+		String lat = (loc.getLatitude()!=null?loc.getLatitude().doubleValue():"") + "";
+		String longit = (loc.getLongitude()!=null?loc.getLongitude().doubleValue():"")+"";
+
+		lat = lat.replace(".", ",");
+		longit = longit.replace(".", ",");
+		
+		conteudoCSV = conteudoCSV.concat("\n"+loc.getData() + " " + loc.getHora())
+			.concat(";")
+			.concat(lat)
+			.concat(";")
+			.concat(longit)
+			.concat(";")
+			.concat(usr.getNome()+"")
+			.concat(";")
+			.concat(loc.getProvided()!=null?loc.getProvided():""+"");
+		return conteudoCSV;
+	}
+	
+	@GET
+	@Path("/csvExportacaoPorUsuario")
+	@Produces("text/csv")
+	public Response exportarGeoCSVAll(@QueryParam("id") String id) {
+		
+		Usuario usuario = repository.findById(new Integer(id));
+		
+		String conteudoCSV = "DATAHORA;LAT;LONG;USUARIO;TIPOCAPTURA";
+		
+		for(LocalizacaoUsuario loc : usuario.getListaLocalizacoes()){
+			conteudoCSV = concatLinhaCsv(conteudoCSV, usuario, loc);
+		}
+		
+		return Response.ok(conteudoCSV).header("Content-Disposition", "attachment; filename=geoReferenciamentoPorUsuario.csv").build();
 	}
 }

@@ -54,7 +54,8 @@ public class Formulario implements java.io.Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "nome", nullable = false, length = 100, unique=false)
+	//agora vai ser usada como histórico.
+	@Column(name = "nome", nullable = false, unique=false)
 	public String getNome() {
 		return this.nome;
 	}

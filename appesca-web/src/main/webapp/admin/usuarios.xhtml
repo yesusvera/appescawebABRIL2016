@@ -8,7 +8,12 @@
 	<ui:define name="content">
 		<h1>Usuários</h1>
 		<h:form id="forms">
-
+		
+			<a href="/appesca-web/rest/usuario/csvGeoreferenciamentoTodos" target="_blank">
+				<i class="fa fa-file-excel-o">Exportar georeferenciamento de todos os usuários(CSV)</i>
+			</a>
+			
+			<br/><br/>
 			<p:dataTable var="usr" value="#{usuarioController.listaUsuarios}"
 				style=" text-align: center;">
 				<p:column width="150" headerText="Nome" filterBy="#{usr.nome}"
@@ -40,7 +45,7 @@
 					<br />
 					<h:outputText value="#{usr.perfil.descricao}" />
 				</p:column>
-				<p:column headerText="Ações" width="40">
+				<p:column headerText="Ações" width="60">
 					<p:commandLink action="#{usuarioController.editar(usr)}"
 						rendered="#{identidade.eAdministrador() or identidade.eCoordenador() and usr.perfil.valor ge identidade.usuarioLogado.perfil.valor}">
 						<i class="fa fa-pencil-square-o" />
@@ -49,6 +54,10 @@
 						rendered="#{identidade.eAdministrador() or identidade.eCoordenador() and usr.perfil.valor ge identidade.usuarioLogado.perfil.valor}">
 						<i class="fa fa-map-marker" />
 					</p:commandLink>
+					<a href="/appesca-web/rest/usuario/csvExportacaoPorUsuario?id=#{usr.id}" hint="Exportar Georeferenciamento por usuário." target="_blank">
+						<i class="fa fa-file-excel-o"></i>
+					</a>
+							
 					<p:dialog id="gmapDialog" widgetVar="dlg + #{usr.id}" width="625" height="400"
 						modal="true">
 

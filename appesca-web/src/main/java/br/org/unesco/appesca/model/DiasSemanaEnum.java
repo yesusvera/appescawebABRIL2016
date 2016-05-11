@@ -24,7 +24,7 @@ public enum DiasSemanaEnum implements Serializable{
 	}
 	
 	public static DiasSemanaEnum fromValue(int valor){
-		return DiasSemanaEnum.values()[valor];
+		return DiasSemanaEnum.values()[valor-1];
 	}
 	
 	public String getIcone(){

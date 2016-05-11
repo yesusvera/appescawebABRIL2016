@@ -3015,7 +3015,7 @@ na questão 1.1 e 1.2/bloco 7)
 			<p:panel header="BLOCO 8 - DADOS SOBRE BENS E GASTOS"
 				toggleable="true" closable="false" toggleSpeed="500"
 				closeSpeed="500" widgetVar="panel8" style="margin-bottom:20px"
-				collapsed="false">
+				collapsed="true">
 
 				<p:fieldset legend="Bloco 8 - Questão 1" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
@@ -6303,7 +6303,10 @@ na questão 1.1 e 1.2/bloco 7)
 				</p:fieldset>
 			</p:panel>
 
-			<p:panel header="BLOCO 9 - DADOS SOBRE GARGALOS E OPORTUNIDADES"
+			<ui:include
+				src="/WEB-INF/questoes/bloco9_generico.xhtml" />
+
+			<!-- <p:panel header="BLOCO 9 - DADOS SOBRE GARGALOS E OPORTUNIDADES"
 				toggleable="true" closable="false" toggleSpeed="500"
 				closeSpeed="500" widgetVar="panel9" style="margin-bottom:20px"
 				collapsed="true">
@@ -6318,33 +6321,36 @@ na questão 1.1 e 1.2/bloco 7)
 					<p:outputPanel>
 						<p:growl id="growl" life="3000" />
 						<p:outputPanel>
-							<h:outputText value="Problemas " />
-							<p:editor id="problema"
+							<h:outputText value="Problemas" />
+							<p:editor id="problema" disabled="#{!(identidade.eDegravador() or identidade.ePesquisador()) or !formularioController.temDegravacao(formularioController.formulario) or formularioController.formulario.situacao!=2}"
 								value="#{formularioController.problemasF1Q72.texto}" />
 
 						</p:outputPanel>
 						<br />
 						<h:outputText value="Soluções " />
 						<p:outputPanel>
-							<p:editor id="solucao"
+							<p:editor id="solucao" disabled="#{!(identidade.eDegravador() or identidade.ePesquisador()) or !formularioController.temDegravacao(formularioController.formulario) or formularioController.formulario.situacao!=2}"
 								value="#{formularioController.solucoesF1Q72.texto}" />
 						</p:outputPanel>
 
-						<!-- <p:commandButton
+						<p:commandButton
 							actionListener="#{formularioController.salvarResposta(formularioController.problemasF1Q72)}"
-							id="salvarProblema" update="growl" value="Salvar" title="Salvar" /> -->
-
-						<p:commandButton rendered="#{identidade.eDegravador()}"
 							id="salvarProblema" update="growl" value="Salvar" title="Salvar" />
+						<br/>
+						<center>
+						<p:commandButton rendered="#{ (identidade.eDegravador() or identidade.ePesquisador()) and formularioController.temDegravacao(formularioController.formulario) }"
+							disabled="#{formularioController.formulario.situacao!=2}"
+							id="salvarProblema" update="growl" value="Salvar degravação" title="Salvar" />
+						</center>
 					</p:outputPanel>
 
-					<video width="100%" height="100" controls="controls">
+					<video width="100%" height="100" controls="controls" style="visibility: #{formularioController.temDegravacao(formularioController.formulario)?'visible':'hidden'}">
 						<source
 							src="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formularioController.formulario.id}"
 							type="video/mp4" />
 					</video>
 				</p:fieldset>
-			</p:panel>
+			</p:panel> -->
 		</h:form>
 	</ui:define>
 </ui:composition>

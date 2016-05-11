@@ -851,7 +851,10 @@
 
 			</p:panel>
 
-			<p:panel header="BLOCO 9 - DADOS SOBRE GARGALOS E OPORTUNIDADES"
+			<ui:include
+				src="/WEB-INF/questoes/bloco9_generico.xhtml" />
+
+			<!-- <p:panel header="BLOCO 9 - DADOS SOBRE GARGALOS E OPORTUNIDADES"
 				toggleable="true" closable="false" toggleSpeed="500"
 				closeSpeed="500" widgetVar="panel9" style="margin-bottom:20px"
 				collapsed="true">
@@ -866,29 +869,37 @@
 						<h:outputText styleClass="lblPerg" value="Problemas" />
 						<p:editor id="problema"
 							value="#{formularioController.getResposta('q61_p1_r1').texto}" />
+							<p:editor id="problema"
+							value="#{formularioController.problemasDegravacao.texto}" />
 					</p:outputPanel>
 					<br />
 					<h:outputText styleClass="lblPerg" value="Soluções " />
 					<p:outputPanel>
 						<p:editor id="solucao"
 							value="#{formularioController.getResposta('q61_p1_r2').texto}" />
+							<p:editor id="solucao"
+							value="#{formularioController.solucoesDegravacao.texto}" />
 						
 					</p:outputPanel>
 
-<!-- 					<p:commandButton rendered="#{identidade.eDegravador()}"
+					<p:commandButton rendered="#{identidade.eDegravador()}"
 							actionListener="#{formularioController.salvarResposta(formularioController.solucoesF2Q60)}"
 							id="salvarSolucao" update="growl" value="Salvar" title="Salvar" />
- -->
-					<p:commandButton rendered="#{identidade.eDegravador()}"
-							id="salvarSolucao" update="growl" value="Salvar" title="Salvar" />
 
-					<video width="100%" height="100" controls="controls">
+					<br/>
+						<center>
+							<p:commandButton rendered="#{ (identidade.eDegravador() or identidade.ePesquisador()) and formularioController.temDegravacao(formularioController.formulario) }"
+								disabled="#{formularioController.formulario.situacao!=2}"
+								actionListener="#{formularioController.salvarDegravacao()}"
+								id="salvarProblema" update="growl" value="Salvar degravação" title="Salvar" />
+						</center>
+					<video width="100%" height="100" controls="controls" style="visibility: #{formularioController.temDegravacao(formularioController.formulario)?'visible':'hidden'}">
 						<source
 							src="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formularioController.formulario.id}"
 							type="video/mp4" />
 					</video>
 				</p:fieldset>
-			</p:panel>
+			</p:panel> -->
 		</h:form>
 	</ui:define>
 </ui:composition>

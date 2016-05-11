@@ -25,7 +25,6 @@ import javax.inject.Inject;
 
 import br.org.unesco.appesca.data.FormularioRepository;
 import br.org.unesco.appesca.model.Formulario;
-import br.org.unesco.appesca.model.Identidade;
 import br.org.unesco.appesca.model.Pergunta;
 import br.org.unesco.appesca.model.Questao;
 import br.org.unesco.appesca.model.Resposta;
