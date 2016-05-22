@@ -2,6 +2,7 @@ package br.org.unesco.appesca.model;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
+import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -12,23 +12,16 @@
 			style="#{formularioController.formulario.situacao==2?'color:green':'color:red'}" /></b>
 			
 			
-	<br/>
 	
-	<p:panel id="pnlObservacoes" header="OBSERVAÇÕES"
-		toggleable="true"
-		style="margin-bottom:20px; width:800px; margin-top:50px"
-		collapsed="true">
-		<p:editor id="observacoes" disabled="#{!identidade.eCoordenador() and !identidade.eAdministrador()}"
-							value="#{formularioController.formulario.nome}" />
-		<br/>
-		<center>
-			<p:commandButton rendered="#{identidade.eCoordenador() or identidade.eAdministrador()}"
-				actionListener="#{formularioController.salvarObservacao()}"
-				id="salvarObs" update="msgs" value="Salvar Observações" title="Salvar" />
-		</center>					
-	</p:panel>
 	<h:panelGrid columns="2" width="90%"
 		style="margin-bottom:10px; margin-top:10px">
+		<p:commandLink action="#{formularioController.reverter()}"
+			immediate="true" update="idSituacao"
+			rendered="#{identidade.eAdministrador() and formularioController.formulario.situacao==2}">
+			<i class="fa fa-thumbs-up">REVERTER</i>
+			<p:confirm header="Confirmar"
+				message="Deseja realmente reverter a situação deste formulário?" />
+		</p:commandLink>
 		<p:commandLink action="#{formularioController.aprovar()}"
 			immediate="true" update="idSituacao"
 			rendered="#{identidade.eCoordenador() and formularioController.formulario.situacao==1}">
@@ -45,6 +38,22 @@
 				message="Deseja realmente devolver este formulário para o pesquisador?" />
 		</p:commandLink>
 	</h:panelGrid>
+	
+	<br/>
+	
+	<p:panel id="pnlObservacoes" header="OBSERVAÇÕES"
+		toggleable="true"
+		style="margin-bottom:20px; width:800px; margin-top:50px"
+		collapsed="true">
+		<p:editor id="observacoes" disabled="#{!identidade.eCoordenador() and !identidade.eAdministrador()}"
+							value="#{formularioController.formulario.nome}" />
+		<br/>
+		<center>
+			<p:commandButton rendered="#{identidade.eCoordenador() or identidade.eAdministrador()}"
+				actionListener="#{formularioController.salvarObservacao()}"
+				id="salvarObs" update="msgs" value="Salvar Observações" title="Salvar" />
+		</center>					
+	</p:panel>
 
 	<p:panel header="Mapa (Local Entrevista)"
 		toggleable="true" rendered="#{formularioController.formulario.latitude != null}"

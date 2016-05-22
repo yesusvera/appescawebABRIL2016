@@ -1,0 +1,1677 @@
+0;1;dt_aplicacao;Var0001;dt_aplicacao;;Data de aplicação: 
+0;2;nome_pesquisador;Var0002;nome_pesquisador;;Pesquisador: 
+0;3;categorica exclusiva;Var0003;q-1_p1;;Local da residência: zona urbana (  )   zona rural (  )
+0;4;categorica exclusiva;Var0004;q-1_p2;;A residência está em Unidades de Conservação? Sim (  )  Não (  ) 
+0;5;textual;Var0005;q0_p1_r1;;A1 Nome completo
+0;6;textual;Var0006;q0_p2_r1;;A2 Apelido: ________________________
+0;7;textual;Var0007;q0_p3_r1;;A3 UF:_________________
+0;8;textual;Var0008;q0_p4_r1;;A4 Município: ___________________
+0;9;textual;Var0009;q0_p5_r1;;A5 Comunidade: ____________________
+0;10;Nao ha;Var0010;;;A6 Documentos pessoais: 
+0;10.1;categorica variada;Var0011;q0_p6_r1;;_ Certidão de Nascimento 
+0;10.2;categorica variada;Var0012;q0_p6_r2;;_ Carteira de Identidade (RG) 
+0;10.3;categorica variada;Var0013;q0_p6_r3;;_ Cadastro de Pessoa Física (CPF)
+0;10.4;categorica variada;Var0014;q0_p6_r4;;_ Carteira de Trabalho
+0;10.5;categorica variada;Var0015;q0_p6_r5;;_ Registro Geral da Pesca (RGP)
+0;10.6;categorica variada;Var0016;q0_p6_r6;;_ Declaração de Aptidão ao Pronaf (DAP)
+0;10.7;textual;Var0017;q0_p6_r7;q0_p6_r7;_ Outro. Qual? _________________________________
+0;11;numerica;Var0018;q0_p7_r1;;A7 Idade: 
+0;12;categorica exclusiva;Var0019;q0_p8;;Sexo: (  ) masculino (  ) feminino
+0;13;Textual-numerica;Var0020;q0_p9_r1;;A8 Telefone ou contato:______
+0;14;Nao ha;Var0021;;;A9 Acesso à comunidade:
+0;14.1;categorica variada;Var0022;q0_p10_r1;; terrestre (  )   
+0;14.2;categorica variada;Var0023;q0_p10_r2;;fluvial (  )    
+0;14.3;categorica variada;Var0024;q0_p10_r3;; marítimo (  )
+0;15;Textual-numerica;Var0025;q0_p11_r1;;A10 Distância do município mais próximo (horas/ km): ____________________
+0;16;categorica exclusiva;Var0026;q0_p12;;A13 Estado Civil: _ Casado   _ Solteiro   _ Divorciado   _ Viúvo   _ União Estável
+0;17;categorica exclusiva;Var0027;q0_p13;;"A14 Escolaridade: _ Analfabeto _ Fundamental I incompleto _ Fundamental I completo _ Fundamental II incompleto _ Fundamental II completo _ Médio incompleto _ Médio completo _ Superior incompleto_ Superior completo _ Não Sabe _ Não respondeu"
+1;1;numerica;Var0001;q1_p1_r1;;Quantas pessoas moram na sua casa? 
+1;1.1;Textual;Var0002;q1_p2_r1;;Nome
+1;1.2;categorica exclusiva;Var0003;q1_p2_r2;q1_p2_r3;Sexo
+1;1.3;numerica;Var0004;q1_p2_r4;;Idade
+1;1.4;categorica exclusiva;Var0005;q1_p2_r5;;Parentesco
+1;1.5;categorica variada;Var0006;q1_p2_r6;q1_p2_r7;Já frequentou a escola?
+1;1.6;Textual-numerica;Var0007;q1_p2_r8;;Até que ano?
+1;1.7;categorica exclusiva;Var0008;q1_p2_r9;q1_p2_r10;Atualmente estuda?
+1;1.8;Textual;Var0009;q1_p3_r1;;Nome
+1;1.9;categorica exclusiva;Var0010;q1_p3_r2;q1_p3_r3;Sexo
+1;1.10;numerica;Var0011;q1_p3_r4;;Idade
+1;1.11;categorica exclusiva;Var0012;q1_p3_r5;;Parentesco
+1;1.12;categorica variada;Var0013;q1_p3_r6;q1_p3_r7;Já frequentou a escola?
+1;1.13;Textual-numerica;Var0014;q1_p3_r8;;Até que ano?
+1;1.14;categorica exclusiva;Var0015;q1_p3_r9;q1_p3_r10;Atualmente estuda?
+1;1.15;Textual;Var0016;q1_p4_r1;;Nome
+1;1.16;categorica exclusiva;Var0017;q1_p4_r2;q1_p4_r3;Sexo
+1;1.17;numerica;Var0018;q1_p4_r4;;Idade
+1;1.18;categorica exclusiva;Var0019;q1_p4_r5;;Parentesco
+1;1.19;categorica variada;Var0020;q1_p4_r6;q1_p4_r7;Já frequentou a escola?
+1;1.20;Textual-numerica;Var0021;q1_p4_r8;;Até que ano?
+1;1.21;categorica exclusiva;Var0022;q1_p4_r9;q1_p4_r10;Atualmente estuda?
+1;1.22;Textual;Var0023;q1_p5_r1;;Nome
+1;1.23;categorica exclusiva;Var0024;q1_p5_r2;q1_p5_r3;Sexo
+1;1.24;numerica;Var0025;q1_p5_r4;;Idade
+1;1.25;categorica exclusiva;Var0026;q1_p5_r5;;Parentesco
+1;1.26;categorica variada;Var0027;q1_p5_r6;q1_p5_r7;Já frequentou a escola?
+1;1.27;Textual-numerica;Var0028;q1_p5_r8;;Até que ano?
+1;1.28;categorica exclusiva;Var0029;q1_p5_r9;q1_p5_r10;Atualmente estuda?
+1;1.29;Textual;Var0030;q1_p6_r1;;Nome
+1;1.30;categorica exclusiva;Var0031;q1_p6_r2;q1_p6_r3;Sexo
+1;1.31;numerica;Var0032;q1_p6_r4;;Idade
+1;1.32;categorica exclusiva;Var0033;q1_p6_r5;;Parentesco
+1;1.33;categorica variada;Var0034;q1_p6_r6;q1_p6_r7;Já frequentou a escola?
+1;1.34;Textual-numerica;Var0035;q1_p6_r8;;Até que ano?
+1;1.35;categorica exclusiva;Var0036;q1_p6_r9;q1_p6_r10;Atualmente estuda?
+1;1.36;Textual;Var0037;q1_p7_r1;;Nome
+1;1.37;categorica exclusiva;Var0038;q1_p7_r2;q1_p7_r3;Sexo
+1;1.38;numerica;Var0039;q1_p7_r4;;Idade
+1;1.39;categorica exclusiva;Var0040;q1_p7_r5;;Parentesco
+1;1.40;categorica variada;Var0041;q1_p7_r6;q1_p7_r7;Já frequentou a escola?
+1;1.41;Textual-numerica;Var0042;q1_p7_r8;;Até que ano?
+1;1.42;categorica exclusiva;Var0043;q1_p7_r9;q1_p7_r10;Atualmente estuda?
+1;1.43;Textual;Var0044;q1_p8_r1;;Nome
+1;1.44;categorica exclusiva;Var0045;q1_p8_r2;q1_p8_r3;Sexo
+1;1.45;numerica;Var0046;q1_p8_r4;;Idade
+1;1.46;categorica exclusiva;Var0047;q1_p8_r5;;Parentesco
+1;1.47;categorica variada;Var0048;q1_p8_r6;q1_p8_r7;Já frequentou a escola?
+1;1.48;Textual-numerica;Var0049;q1_p8_r8;;Até que ano?
+1;1.49;categorica exclusiva;Var0050;q1_p8_r9;q1_p8_r10;Atualmente estuda?
+1;1.50;Textual;Var0051;q1_p9_r1;;Nome
+1;1.51;categorica exclusiva;Var0052;q1_p9_r2;q1_p9_r3;Sexo
+1;1.52;numerica;Var0053;q1_p9_r4;;Idade
+1;1.53;categorica exclusiva;Var0054;q1_p9_r5;;Parentesco
+1;1.54;categorica variada;Var0055;q1_p9_r6;q1_p9_r7;Já frequentou a escola?
+1;1.55;Textual-numerica;Var0056;q1_p9_r8;;Até que ano?
+1;1.56;categorica exclusiva;Var0057;q1_p9_r9;q1_p9_r10;Atualmente estuda?
+1;1.57;Textual;Var0058;q1_p10_r1;;Nome
+1;1.58;categorica exclusiva;Var0059;q1_p10_r2;q1_p10_r3;Sexo
+1;1.59;numerica;Var0060;q1_p10_r4;;Idade
+1;1.60;categorica exclusiva;Var0061;q1_p10_r5;;Parentesco
+1;1.61;categorica variada;Var0062;q1_p10_r6;q1_p10_r7;Já frequentou a escola?
+1;1.62;Textual-numerica;Var0063;q1_p10_r8;;Até que ano?
+1;1.63;categorica exclusiva;Var0064;q1_p10_r9;q1_p10_r10;Atualmente estuda?
+1;1.64;Textual;Var0065;q1_p11_r1;;Nome
+1;1.65;categorica exclusiva;Var0066;q1_p11_r2;q1_p11_r3;Sexo
+1;1.66;numerica;Var0067;q1_p11_r4;;Idade
+1;1.67;categorica exclusiva;Var0068;q1_p11_r5;;Parentesco
+1;1.68;categorica variada;Var0069;q1_p11_r6;q1_p11_r7;Já frequentou a escola?
+1;1.69;Textual-numerica;Var0070;q1_p11_r8;;Até que ano?
+1;1.70;categorica exclusiva;Var0071;q1_p11_r9;q1_p11_r10;Atualmente estuda?
+1;2;categorica variada;Var0072;;;Quem é responsável pela unidade familiar? 
+1;2.1;Textual;Var0073;q1_p12_r1;;Nome
+1;2.2;categorica exclusiva;Var0074;q1_p12_r2;q1_p12_r3;Sexo
+1;2.3;Textual;Var0075;q1_p13_r1;;Nome
+1;2.4;categorica exclusiva;Var0076;q1_p13_r2;q1_p13_r3;Sexo
+1;2.5;Textual;Var0077;q1_p14_r1;;Nome
+1;2.6;categorica exclusiva;Var0078;q1_p14_r2;q1_p14_r3;Sexo
+1;2.7;Textual;Var0079;q1_p15_r1;;Nome
+1;2.8;categorica exclusiva;Var0080;q1_p15_r2;q1_p15_r3;Sexo
+1;3;categorica exclusiva;Var0081;q2_p1;;Algum dos seus filhos / irmãos não vive mais na comunidade?
+1;3.1;categorica exclusiva;Var0082;q2_p3;;Se sim, por que? 
+1;4;categorica exclusiva;Var0083;q3_p1;;Você é proprietário do terreno onde mora? 
+1;4.1;categorica exclusiva;Var0084;q3_p2;;Se sim, qual foi a forma de aquisição?
+1;4.2;categorica exclusiva;Var0085;q3_p3;;Se não, qual é o seu vínculo com o proprietário do terreno?
+1;5;categorica exclusiva;Var0086;q4_p1;;Qual é a forma de abastecimento de energia elétrica na sua casa? 
+1;6;categorica exclusiva;Var0087;q5_p1;;Como é feito o abastecimento de água da sua casa?
+1;7;categorica exclusiva;Var0088;q6_p1;;Como é tratada a água para beber na sua casa?
+1;8;categorica exclusiva;Var0089;q7_p1;;O que é feito com o lixo da casa?
+1;9;Nao ha;Var0090;;;Você tem acesso à informação por quais meios?
+1;9.1;categorica variada;Var0091;q8_p1_r1;;a.      (   ) Televisão
+1;9.2;categorica variada;Var0092;q8_p1_r2;;b.      (   ) Rádio
+1;9.3;categorica variada;Var0093;q8_p1_r3;;c.       (   ) Rádio Comunitária
+1;9.4;categorica variada;Var0094;q8_p1_r4;;d.      (   ) Rádio amador
+1;9.5;categorica variada;Var0095;q8_p1_r5;;e.      (   ) Internet
+1;9.6;categorica variada;Var0096;q8_p1_r6;;f.        (   ) Telefone celular
+1;9.7;categorica variada;Var0097;q8_p1_r7;;g.      (   ) Telefone Fixo
+1;9.8;categorica variada;Var0098;q8_p1_r8;;h.      (   ) Telefone público (orelhão)
+1;9.9;categorica variada;Var0099;q8_p1_r9;;i.        (   ) Telefone rural
+1;9.10;categorica variada;Var0100;q8_p1_r10;;j.        (   ) Sindicato
+1;9.11;categorica variada;Var0101;q8_p1_r11;;k.       (   ) Associação
+1;9.12;categorica variada;Var0102;q8_p1_r12;;l.        (   ) Sistema de Som (carro, moto, bicicleta)
+1;9.13;categorica variada;Var0103;q8_p1_r13;;m.    (   ) Sistema público de Som
+1;9.14;categorica variada;Var0104;q8_p1_r14;;n.      (   ) Material impresso (jornal, revista, jornal comunitário)
+1;10;Nao ha;Var0105;;;Quais programas sociais (benefícios do governo) atendem a sua família?
+1;10.1;categorica variada;Var0106;q9_p1_r1;;a.      (   ) Bolsa Família
+1;10.2;categorica variada;Var0107;q9_p2_r1;;b.      (   ) Luz para Todos
+1;10.3;categorica variada;Var0108;q9_p3_r1;;c.       (   ) Bolsa Verde
+1;10.4;categorica variada;Var0109;q9_p4_r1;;d.      (   ) Seguro defeso
+1;10.5;categorica variada;Var0110;q9_p5_r1;;e.      (   ) Seguro desemprego
+1;10.6;categorica variada;Var0111;q9_p6_r1;;f.        (   ) Aposentadoria
+1;10.7;categorica variada;Var0112;q9_p7_r1;;g.      (   ) Auxílio-doença
+1;10.8;categorica variada;Var0113;q9_p8_r1;;h.      (   ) Seguro maternidade
+1;10.9;categorica variada;Var0114;q9_p9_r1;;i.        (   ) Minha casa, minha vida
+1;10.10;Textual;Var0115;q9_p10_r1;q9_p11_r2;j.        (   ) Outros. Quais? __________________________________
+1;10.11;numerica;Var0116;q9_p1_r2;;a.      VALOR DA PARCELA Bolsa Família
+1;10.12;numerica;Var0117;q9_p2_r2;;b.      VALOR DA PARCELA Luz para Todos
+1;10.13;numerica;Var0118;q9_p3_r2;;c.       VALOR DA PARCELA Bolsa Verde
+1;10.14;numerica;Var0119;q9_p4_r2;;d.      VALOR DA PARCELA Seguro defeso
+1;10.15;numerica;Var0120;q9_p5_r2;;e.      VALOR DA PARCELA Seguro desemprego
+1;10.16;numerica;Var0121;q9_p6_r2;;f.        VALOR DA PARCELA Aposentadoria
+1;10.17;numerica;Var0122;q9_p7_r2;;g.      VALOR DA PARCELA Auxílio-doença
+1;10.18;numerica;Var0123;q9_p8_r2;;h.      VALOR DA PARCELA Seguro maternidade
+1;10.19;numerica;Var0124;q9_p9_r2;;i.        VALOR DA PARCELA Minha casa, minha vida
+1;10.20;numerica;Var0125;q9_p10_r2;;j.        VALOR DA PARCELA Outros. Quais? __________________________________
+1;11;categorica exclusiva;Var0126;q10_p1;; Você faz parte de algum grupo ou organização (associação, sindicato, cooperativa colônia)?
+1;11.1;Nao ha;Var0127;;;Se sim, Qual (is) organização (ões)? 
+1;11.1.1;categorica variada;Var0128;q10_p2_r1;;a.      (   ) Associação comunitária
+1;11.1.2;categorica variada;Var0129;q10_p2_r2;;b.      (   ) Associação de pescadores
+1;11.1.3;categorica variada;Var0130;q10_p2_r3;;c.       (   ) Associação de mulheres
+1;11.1.4;categorica variada;Var0131;q10_p2_r4;;d.      (   ) Colônia de pescadores
+1;11.1.5;categorica variada;Var0132;q10_p2_r5;;e.      (   ) Sindicato de pescadores
+1;11.1.6;categorica variada;Var0133;q10_p2_r6;;f.        (   ) Sindicato dos Trabalhadores Rurais
+1;11.1.7;categorica variada;Var0134;q10_p2_r7;;g.      (   ) Cooperativas de pesca
+1;11.1.8;categorica variada;Var0135;q10_p2_r8;q10_p2_r9;h.      (   ) Outras. Quais? ______________________________
+1;11.2;categorica exclusiva;Var0136;q10_p3;;Outra pessoa da sua família também faz parte de algum grupo ou organização (associação, sindicato, cooperativa, colônia)?
+1;11.3;Nao ha;Var0137;;;Se sim, quem?
+1;11.3.1;categorica exclusiva;Var0138;q10_p4_r1;;a.      (   ) Mãe
+1;11.3.2;categorica exclusiva;Var0139;q10_p4_r2;;b.      (   ) Pai
+1;11.3.3;numerica;Var0140;q10_p4_r3;q10_p4_r4;c.       (   ) Irmão / irmã. Quantos? ______
+1;11.3.4;categorica exclusiva;Var0141;q10_p4_r5;;d.      (   ) Marido / esposa
+1;11.3.5;numerica;Var0142;q10_p4_r6;q10_p4_r7;e.      (   ) Filha / filho. Quantos? _______
+1;12;categorica exclusiva;Var0143;q11_p1;;Você participa da gestão da Resex? 
+1;12.1;Nao ha;Var0144;;;Se sim, como? 
+1;12.1.1;categorica variada;Var0145;q11_p2_r1;;a.      (   ) Participa do Conselho Deliberativo
+1;12.1.2;categorica variada;Var0146;q11_p2_r2;;b.      (   ) Participa da Associação de Moradores
+1;12.1.3;categorica variada;Var0147;q11_p2_r3;;c.       (   ) Participa de reuniões comunitárias
+1;12.1.4;categorica variada;Var0148;q11_p2_r4;;d.      (   ) Recebe informações dos representantes da comunidade no Conselho
+1;12.1.5;categorica variada;Var0149;q11_p2_r5;;e.      (   ) Outros
+1;13;Nao ha;Var0150;;;Você já participou de algum curso de formação ou capacitação na sua comunidade? 
+1;13.1;categorica exclusiva;Var0151;q12_p1;;(   ) Sim    (   ) Não   (   ) Não lembra
+1;13.1.1;Textual;Var0152;q12_p2_r1;;Se sim, qual foi o tema do curso?
+1;14;Nao ha;Var0153;;;Você já fez algum curso ou capacitação fora da comunidade?
+1;14.1;categorica exclusiva;Var0154;q13_p1;;(   ) Sim    (   ) Não   (   ) Não lembra
+1;14.1.1;Nao ha;Var0155;;;Se sim, qual foi o curso?
+1;14.1.1.1;categorica variada;Var0156;q13_p2_r1;;a.      (   ) Organização, associativismo e cooperativismo
+1;14.1.1.2;categorica variada;Var0157;q13_p2_r2;;b.      (   ) Comercialização e acesso ao mercado
+1;14.1.1.3;categorica variada;Var0158;q13_p2_r3;;c.       (   ) Gerenciamento de projetos
+1;14.1.1.4;categorica variada;Var0159;q13_p2_r4;;d.      (   ) Educação ambiental
+1;14.1.1.5;categorica variada;Var0160;q13_p2_r5;;e.      (   ) Segurança no trabalho da pesca
+1;14.1.1.6;categorica variada;Var0161;q13_p2_r6;;f.        (   ) Técnicas de pesca
+1;14.1.1.7;categorica variada;Var0162;q13_p2_r7;;g.      (   ) Manejo do pescado
+1;14.1.1.8;categorica variada;Var0163;q13_p2_r8;;h.      (   ) Manutenção de embarcação
+1;14.1.1.9;categorica variada;Var0164;q13_p2_r9;;i.        (   ) Confecção de apetrechos de pesca
+1;14.1.1.10;categorica variada;Var0165;q13_p2_r10;;j.        (   ) Manejo de produtos extrativistas
+1;14.1.1.11;categorica variada;Var0166;q13_p2_r11;;k.       (   ) Produção agrícola
+1;14.1.1.12;categorica variada;Var0167;q13_p2_r12;q13_p2_r13;l. (   ) Outros. Quais? _______
+1;15;Nao ha;Var0168;;;Quais cursos você acha que poderiam ser realizados na comunidade?
+1;15.1;categorica variada;Var0169;q14_p1_r1;;a.      (   ) Organização, associativismo e cooperativismo
+1;15.2;categorica variada;Var0170;q14_p1_r2;;b.      (   ) Comercialização e acesso ao mercado
+1;15.3;categorica variada;Var0171;q14_p1_r3;;c.       (   ) Gerenciamento de projetos
+1;15.4;categorica variada;Var0172;q14_p1_r4;;d.      (   ) Educação ambiental
+1;15.5;categorica variada;Var0173;q14_p1_r5;;e.      (   ) Segurança no trabalho da pesca
+1;15.6;categorica variada;Var0174;q14_p1_r6;;f.        (   ) Técnicas de pesca
+1;15.7;categorica variada;Var0175;q14_p1_r7;;g.      (   ) Manejo do pescado
+1;15.8;categorica variada;Var0176;q14_p1_r8;;h.      (   ) Manutenção de embarcação
+1;15.9;categorica variada;Var0177;q14_p1_r9;;i.        (   ) Confecção de apetrechos de pesca
+1;15.10;categorica variada;Var0178;q14_p1_r10;;j.        (   ) Manejo de produtos extrativistas
+1;15.11;categorica variada;Var0179;q14_p1_r11;;k.       (   ) Produção agrícola
+1;15.12;categorica variada;Var0180;q14_p1_r12;q14_p1_r13;l. (   ) Outros. Quais? __________________
+1;16;Nao ha;Var0181;;;Quais são os principais problemas que atingem a comunidade hoje? 
+1;16.1;categorica variada;Var0182;q15_p1_r1;;a.      (   ) Falta de energia elétrica
+1;16.2;categorica variada;Var0183;q15_p1_r2;;b.      (   ) Energia elétrica de má qualidade
+1;16.3;categorica variada;Var0184;q15_p1_r3;;c.       (   ) Falta de distribuição de água
+1;16.4;categorica variada;Var0185;q15_p1_r4;;d.      (   ) Água de má qualidade
+1;16.5;categorica variada;Var0186;q15_p1_r5;;e.      (   ) Falta de posto de saúde
+1;16.6;categorica variada;Var0187;q15_p1_r6;;f.        (   ) Má qualidade no atendimento de saúde
+1;16.7;categorica variada;Var0188;q15_p1_r7;;g.      (   ) Lixo
+1;16.8;categorica variada;Var0189;q15_p1_r8;;h.      (   ) Violência
+1;16.9;categorica variada;Var0190;q15_p1_r9;;i.        (   ) Conflitos entre moradores
+1;16.10;categorica variada;Var0191;q15_p1_r10;;j.        (   ) Falta de oportunidades de emprego
+1;16.11;categorica variada;Var0192;q15_p1_r11;;k.       (   ) Falta de escola
+1;16.12;categorica variada;Var0193;q15_p1_r12;;l.        (   ) Falta de transporte escolar
+1;16.13;categorica variada;Var0194;q15_p1_r13;;m.    (   ) Falta de estradas de acesso
+1;16.14;categorica variada;Var0195;q15_p1_r14;;n.      (   ) Falta de trapiche
+1;16.15;categorica variada;Var0196;q15_p1_r15;q15_p1_r16;o. (   ) Outros. Quais? ______
+2;1;Nao ha;Var0197;;;Qual é a sua principal ocupação no momento? 
+2;1.1;categorica variada;Var0198;q16_p1_r1;;a.      (   ) Pescador(a)
+2;1.2;categorica variada;Var0199;q16_p1_r2;;b.      (   ) Pescador(a) de camarão / caranguejo [Se pescador de camarão/caranguejo, responder todo o questionário. Se não, responder apenas os blocos 1 a 4]
+2;1.3;categorica variada;Var0200;q16_p1_r3;;c.       (   ) Agricultor(a) familiar / Trabalhador(a) rural 
+2;1.4;categorica variada;Var0201;q16_p1_r4;;d.      (   ) Extrativista - Açaí
+2;1.5;categorica variada;Var0202;q16_p1_r5;;e.      (   ) Extrativista (castanha, castanha de andiroba, buriti, pracaxi, bacaba, taperebá, etc.)
+2;1.6;categorica variada;Var0203;q16_p1_r6;;f.        (   ) Criador(a) de gado
+2;1.7;categorica variada;Var0204;q16_p1_r7;;g.      (   ) Criador de animais (pato, galinha, porco, boi)
+2;1.8;categorica variada;Var0205;q16_p1_r8;;h.      (   ) Artesão / Artesã
+2;1.9;categorica variada;Var0206;q16_p1_r9;;i.        (   ) Dona de casa 
+2;1.10;categorica variada;Var0207;q16_p1_r10;;j.        (   ) Estudante 
+2;1.11;categorica variada;Var0208;q16_p1_r11;;k.       (   ) Professor(a)
+2;1.12;categorica variada;Var0209;q16_p1_r12;;l.        (   ) Aposentado(a) 
+2;1.13;categorica variada;Var0210;q16_p1_r13;;m.    (   ) Comerciante 
+2;1.14;categorica variada;Var0211;q16_p1_r14;;n.      (   ) Funcionário(a) público(a) 
+2;1.15;categorica variada;Var0212;q16_p1_r15;;o.      (   ) Funcionário(a) de empresa privada 
+2;1.16;categorica variada;Var0213;q16_p1_r16;;p.      (   ) Outra 
+2;2;categorica exclusiva;Var0214;q17_p1;;Além desta ocupação principal, você tem outra fonte de renda?
+2;2.1;Nao ha;Var0215;;;Se sim, qual? 
+2;2.1.1;categorica exclusiva;Var0216;q17_p2_r1;;a.      (   ) Pesca
+2;2.1.2;categorica exclusiva;Var0217;q17_p2_r2;;b.      (   ) Pesca de camarão / caranguejo Se pescador de camarão/caranguejo, responder todo o questionário. Se não, responder apenas os blocos 1 a 4]
+2;2.1.3;categorica exclusiva;Var0218;q17_p2_r3;;c.       (   ) Agricultura familiar / Trabalho rural 
+2;2.1.4;categorica exclusiva;Var0219;q17_p2_r4;;d.      (   ) Extrativismo – Açaí
+2;2.1.5;categorica exclusiva;Var0220;q17_p2_r5;;e.      (   ) Extrativismo (castanha, castanha de andiroba, buriti, pracaxi, bacaba, taperebá, etc.)
+2;2.1.6;categorica exclusiva;Var0221;q17_p2_r6;;f.        (   ) Criação de gado
+2;2.1.7;categorica exclusiva;Var0222;q17_p2_r7;;g.      (   ) Criação de animais (pato, galinha, porco, boi) 
+2;2.1.8;categorica exclusiva;Var0223;q17_p2_r8;;h.      (   ) Artesanato  
+2;2.1.9;categorica exclusiva;Var0224;q17_p2_r9;;i.        (   ) Atividades de ensino 
+2;2.1.10;categorica exclusiva;Var0225;q17_p2_r10;;j.        (   ) Aposentadoria
+2;2.1.11;categorica exclusiva;Var0226;q17_p2_r11;;k.       (   ) Comércio 
+2;2.1.12;categorica exclusiva;Var0227;q17_p2_r12;;l.        (   ) Emprego público 
+2;2.1.13;categorica exclusiva;Var0228;q17_p2_r13;;m.    (   ) Emprego privado 
+2;2.1.14;categorica exclusiva;Var0229;q17_p2_r14;;n.      (   ) Outra 
+2;3;Nao ha;Var0230;q18_p1;;A sua família tem outra fonte de renda? 
+2;3.1;categorica exclusiva;Var0231;;;Se sim, qual? 
+2;3.1.1;categorica variada;Var0232;q18_p2_r1;;a.      (   ) Pesca
+2;3.1.2;categorica variada;Var0233;q18_p2_r2;;b.      (   ) Pesca de camarão / caranguejo
+2;3.1.3;categorica variada;Var0234;q18_p2_r3;;c.       (   ) Agricultura familiar / Trabalho rural 
+2;3.1.4;categorica variada;Var0235;q18_p2_r4;;d.      (   ) Extrativismo – Açaí
+2;3.1.5;categorica variada;Var0236;q18_p2_r5;;e.      (   ) Extrativismo (castanha, castanha de andiroba, buriti, pracaxi, bacaba, taperebá, etc.)
+2;3.1.6;categorica variada;Var0237;q18_p2_r6;;f.        (   ) Criação de gado
+2;3.1.7;categorica variada;Var0238;q18_p2_r7;;g.      (   ) Criação de animais (pato, galinha, porco, boi) 
+2;3.1.8;categorica variada;Var0239;q18_p2_r8;;h.      (   ) Artesanato  
+2;3.1.9;categorica variada;Var0240;q18_p2_r9;;i.        (   ) Atividades de ensino 
+2;3.1.10;categorica variada;Var0241;q18_p2_r10;;j.        (   ) Aposentadoria
+2;3.1.11;categorica variada;Var0242;q18_p2_r11;;k.       (   ) Comércio 
+2;3.1.12;categorica variada;Var0243;q18_p2_r12;;l.        (   ) Emprego público 
+2;3.1.13;categorica variada;Var0244;q18_p2_r13;;m.    (   ) Emprego privado 
+2;3.1.14;categorica variada;Var0245;q18_p2_r14;q18_p2_r15;n.      (   ) Outra 
+2;4;Nao ha;Var0246;;;Quais pessoas participam do sustento da casa?
+2;4.1;categorica variada;Var0247;q19_p1_r1;;Parentesco
+2;4.2;categorica variada;Var0248;q19_p1_r2;q19_p1_r3;Sexo
+2;4.3;categorica variada;Var0249;q19_p1_r4;;Idade
+2;4.4;categorica variada;Var0250;q19_p2_r1;;Parentesco
+2;4.5;categorica variada;Var0251;q19_p2_r2;q19_p2_r3;Sexo
+2;4.6;categorica variada;Var0252;q19_p2_r4;;Idade
+2;4.7;categorica variada;Var0253;q19_p3_r1;;Parentesco
+2;4.8;categorica variada;Var0254;q19_p3_r2;q19_p3_r3;Sexo
+2;4.9;categorica variada;Var0255;q19_p3_r4;;Idade
+2;4.10;categorica variada;Var0256;q19_p4_r1;;Parentesco
+2;4.11;categorica variada;Var0257;q19_p4_r2;q19_p4_r3;Sexo
+2;4.12;categorica variada;Var0258;q19_p4_r4;;Idade
+2;5;categorica exclusiva;Var0259;q20_p1;;De quanto é a renda da sua família hoje (sem contar os benefícios do governo)?
+2;5.1;categorica exclusiva;Var0260;q20_p1_r1;;a.      (  ) Menos de 1/2 salário-mínimo ( Menos de R$400,00) 
+2;5.2;categorica exclusiva;Var0261;q20_p1_r2;;b.      (  ) De 1/2 a 1 salário-mínimo (de R$ 400,00 a 800,00) 
+2;5.3;categorica exclusiva;Var0262;q20_p1_r3;;c.       (  ) De 1 a 3 salários-mínimos (de R$ 800,00 a  2.400,00)
+2;5.4;categorica exclusiva;Var0263;q20_p1_r4;;d.      (  ) De 3 a 5 salários-mínimos (de R$ 2.400,00 a 4.000,00)
+2;5.5;categorica exclusiva;Var0264;q20_p1_r5;;e.      (  ) Mais de 5 salários-mínimos (Mais de R$ 4.000,00) 
+2;6;Nao ha;Var0265;;;Você já acessou algum programa de crédito ou incentivo à produção oferecido pelo governo?
+2;6.1;categorica variada;Var0266;;;Se sim, qual? 
+2;6.1.1;categorica variada;Var0267;;;a.      (   ) Pronaf
+2;6.1.2;categorica variada;Var0268;;;b.      (   ) Pronaf Mulher
+2;6.1.3;categorica variada;Var0269;;;c.       (   ) Crédito Amigo
+2;6.1.4;categorica variada;Var0270;;;d.      (   ) Programa Fomento às Atividades Produtivas Rurais
+2;6.1.5;categorica variada;Var0271;;;e.      (   ) PAA
+2;6.1.6;categorica variada;Var0272;;;f.        (   ) PNAE
+2;6.1.7;categorica variada;Var0273;;;g.      (   ) Política de Garantia de Preços Mínimos para Produtos da Sociobiodiversidade – PGPMBio
+2;6.1.8;categorica variada;Var0274;;;h.      (   ) Programa de Organização Produtiva de Mulheres Rurais – POPMR
+2;6.1.9;categorica variada;Var0275;;;i.        (   ) Créditos do INCRA / Reforma Agrária
+2;6.1.10;Textual;Var0276;;;j.        (   ) Outros. Quais? _______________________
+2;6.1.11;categorica variada;Var0277;;;a.      VALOR (r$) Pronaf
+2;6.1.12;categorica variada;Var0278;;;b.      VALOR (r$) Pronaf Mulher
+2;6.1.13;categorica variada;Var0279;;;c.       VALOR (r$) Crédito Amigo
+2;6.1.14;categorica variada;Var0280;;;d.      VALOR (r$) Programa Fomento às Atividades Produtivas Rurais
+2;6.1.15;categorica variada;Var0281;;;e.      VALOR (r$) PAA
+2;6.1.16;categorica variada;Var0282;;;f.        VALOR (r$) PNAE
+2;6.1.17;categorica variada;Var0283;;;g.      VALOR (r$) Política de Garantia de Preços Mínimos para Produtos da Sociobiodiversidade – PGPMBio
+2;6.1.18;categorica variada;Var0284;;;h.      VALOR (r$) Programa de Organização Produtiva de Mulheres Rurais – POPMR
+2;6.1.19;categorica variada;Var0285;;;i.        VALOR (r$) Créditos do INCRA / Reforma Agrária
+2;6.1.20;Textual;Var0286;;;j.        VALOR (r$) Outros. Quais? _______________________
+2;7;Nao ha;Var0287;;;Se você já acessou algum tipo de crédito / financiamento, foi para qual finalidade?
+2;7.1;categorica variada;Var0288;;;a.      (   ) Compra de material de pesca
+2;7.2;categorica variada;Var0289;;;b.      (   ) Compra de embarcação
+2;7.3;categorica variada;Var0290;;;c.       (   ) Beneficiamento de pescado
+2;7.4;categorica variada;Var0291;;;d.      (   ) Produção agrícola
+2;7.5;categorica variada;Var0292;;;e.      (   ) Criação de animais
+2;7.6;categorica variada;Var0293;;;f.        (   ) Pequenos empreendimentos
+2;7.7;categorica variada;Var0294;;;g.      (   ) Artesanato
+2;7.8;categorica variada;Var0295;;;h.      (   ) Beneficiamento de produtos extrativistas
+2;7.9;categorica variada;Var0296;;;i.        (   ) Outros. 
+2;8;Nao ha;Var0297;;;Se você já acessou algum tipo de crédito / financiamento, foi através de qual instituição? 
+2;8.1;categorica variada;Var0298;;;a.      (   ) Banco da Amazônia
+2;8.2;categorica variada;Var0299;;;b.      (   ) Banco do Nordeste
+2;8.3;categorica variada;Var0300;;;c.       (   ) Caixa Econômica
+2;8.4;categorica variada;Var0301;;;d.      (   ) Banco do Pará
+2;8.5;categorica variada;Var0302;;;e.      (   ) Banco do Brasil
+2;8.6;categorica variada;Var0303;;;f.        (   ) Outro. 
+3;1;categorica exclusiva;Var0304;;;Você é nascido na comunidade? (   ) Sim   (   ) Não
+3;1.1;Textual;Var0305;;;Se não, você vive aqui há quantos anos? _____
+3;1.2;Textual;Var0306;;;De onde você veio? UF: _______ 
+3;1.3;Textual;Var0307;;;Cidade: _____________________ 
+3;2;categorica exclusiva;Var0308;;;Você tem alguma religião? (   ) Sim   (   ) Não
+3;2.1;Nao ha;Var0309;;;Se sim, Qual?
+3;2.2;categorica variada;Var0310;;;a.      (   ) Católica
+3;2.3;categorica variada;Var0311;;;b.      (   ) Protestante
+3;2.4;categorica variada;Var0312;;;c.       (   ) Evangélica
+3;2.5;categorica variada;Var0313;;;d.      (   ) Espírita
+3;2.6;categorica variada;Var0314;;;e.      (   ) Umbanda
+3;2.7;categorica variada;Var0315;;;f.        (   ) Candomblé
+3;2.8;categorica variada;Var0316;;;g.      (   ) Tambor de Mina
+3;2.9;Textual;Var0317;;;h.      (   ) Outra: ___________________________
+3;3;Nao ha;Var0318;;;Quais outras religiões existem aqui na comunidade?
+3;3.1;categorica variada;Var0319;;;a.      (   ) Católica
+3;3.2;categorica variada;Var0320;;;b.      (   ) Protestante
+3;3.3;categorica variada;Var0321;;;c.       (   ) Evangélica
+3;3.4;categorica variada;Var0322;;;d.      (   ) Espírita
+3;3.5;categorica variada;Var0323;;;e.      (   ) Umbanda
+3;3.6;categorica variada;Var0324;;;f.        (   ) Candomblé
+3;3.7;categorica variada;Var0325;;;g.      (   ) Tambor de Mina
+3;3.8;Textual;Var0326;;;h.      (   ) Outra: ___________________________
+3;4;Nao ha;Var0327;;;Quais festas importantes acontecem hoje em dia na comunidade? 
+3;4.1;categorica variada;Var0328;;;a.      (  ) Festa de São Lucas
+3;4.2;categorica variada;Var0329;;;b.      (  ) Festa de São Gonçalo
+3;4.3;categorica variada;Var0330;;;c.       (  ) Festa de Santo Antônio
+3;4.4;categorica variada;Var0331;;;d.      (  ) Festa de São Sebastião
+3;4.5;categorica variada;Var0332;;;e.      (  ) Festa do Divino Espírito Santo
+3;4.6;categorica variada;Var0333;;;f.        (  ) Dia do pescador / São Pedro
+3;4.7;categorica variada;Var0334;;;g.      (  ) Festa da Gó
+3;4.8;categorica variada;Var0335;;;h.      (  ) Festa do Círio de São João da Ponta
+3;4.9;categorica variada;Var0336;;;i.        (  ) Festa de São João
+3;4.10;categorica variada;Var0337;;;j.        (  ) Festa junina 
+3;4.11;categorica variada;Var0338;;;k.       (  ) Festa de Santana
+3;4.12;categorica variada;Var0339;;;l.        (  ) Festa de São Pedro
+3;4.13;categorica variada;Var0340;;;m.    (  ) Festival do Caranguejo
+3;4.14;categorica variada;Var0341;;;n.      (  ) Festival da Dourada
+3;4.15;categorica variada;Var0342;;;o.      (  ) Festival do camarão
+3;4.16;categorica variada;Var0343;;;p.      (  ) Festival do Açaí
+3;4.17;categorica variada;Var0344;;;q.      (  ) Festival do Carimbó
+3;4.18;categorica variada;Var0345;;;r.       (  ) Festa da Marujada
+3;4.19;categorica variada;Var0346;;;s.       (  ) Festa de São Benedito
+3;4.20;categorica variada;Var0347;;;t.        (  ) Festa de Santa Maria
+3;4.21;categorica variada;Var0348;;;u.      (  ) Círio de Nazaré
+3;4.22;categorica variada;Var0349;;;v.       (  ) Festa de Nossa Senhora da Conceição
+3;4.23;Nao ha;Var0350;;;w. (  ) Outras. Quais?________
+3;5;categorica exclusiva;Var0351;;;Tem alguma festa ou atividade que se fazia na comunidade e não se faz mais? (   ) Sim (   ) Não
+3;5.1;textual;Var0352;;;Se Sim, qual? __
+3;6;Nao ha;Var0353;;;Como as pessoas da sua comunidade cuidam da saúde? 
+3;6.1;categorica variada;Var0354;;;a.      (  ) Posto de saúde
+3;6.2;categorica variada;Var0355;;;b.      (  ) hospital
+3;6.3;categorica variada;Var0356;;;c.       (  ) unidades fluviais de saúde
+3;6.4;categorica variada;Var0357;;;d.      (  ) agentes de saúde
+3;6.5;categorica variada;Var0358;;;e.      (  ) remédios caseiros
+3;6.6;categorica variada;Var0359;;;f.        (  ) rezas e benzeduras
+3;6.7;Textual;Var0360;;;(  ) outros. Qual?____________
+3;7;Nao ha;Var0361;;;Alguém da sua família usa os remédios naturais ou os tratamentos caseiros listados abaixo?
+3;7.1;categorica variada;Var0362;;;a.         (   ) Plantas medicinais
+3;7.2;categorica variada;Var0363;;;b.         (   ) Chás e infusões
+3;7.3;categorica variada;Var0364;;;c.         (   ) Banhos de ervas
+3;7.4;categorica variada;Var0365;;;d.         (   ) Preparados e garrafadas
+3;7.5;categorica variada;Var0366;;;e.         (   ) Tinturas 
+3;7.6;categorica variada;Var0367;;;f.          (   ) Xaropes, raízes e outros alimentos
+3;7.7;categorica variada;Var0368;;;g.         (   ) Rezas e benzeduras
+3;7.8;textual;Var0369;;;a.      (   ) Outros . Qual?_____________
+3;8;Nao ha;Var0370;;;Quais são as atividades importantes que seus pais, avós, bisavós praticavam, que você acha que devem ser transmitidas às futuras gerações?
+3;8.1;categorica variada;Var0371;;;a.      (  ) Extrativismo/coleta 
+3;8.2;categorica variada;Var0372;;;b.      (  ) Caça 
+3;8.3;categorica variada;Var0373;;;c.       (  ) Pesca 
+3;8.4;categorica variada;Var0374;;;d.      (  ) Fabricação de apetrechos  de pesca
+3;8.5;categorica variada;Var0375;;;e.      (  ) Agricultura 
+3;8.6;categorica variada;Var0376;;;f.        (  ) Arte, música, cantos (Quadrilha, Bumba Boi, Marabaixo, Carimbó, Caixa do Divino, etc.)
+3;8.7;categorica variada;Var0377;;;g.      (  ) Puxador/a rezador/a, benzedor/a 
+3;8.8;categorica variada;Var0378;;;h.      (  ) Participar de missas, cultos 
+3;8.9;categorica variada;Var0379;;;i.        (  ) Participar de festas religiosas 
+3;8.10;categorica variada;Var0380;;;j.      (  ) Construir canoa, casas e (outras) 
+3;8.11;categorica variada;Var0381;;;k.      (  ) Utilizar remédios caseiros, erveiros/as
+3;8.12;textual;Var0382;;;l. (  ) Outro. Qual? _______________________________________ 
+3;9;categorica exclusiva;Var0383;;;Você acha bom viver aqui?  (   ) Sim   (   ) Não
+4;1;categorica exclusiva;Var0384;;;Hoje você percebe alguma diferença em relação à quantidade de peixe e camarão que tinha aqui antigamente? (   ) Sim (   ) Não  
+4;2;categorica exclusiva;Var0385;;;Na sua opinião, os locais onde os moradores da comunidade pescam encontram-se preservados? (   ) Sim   (   )   Não 
+4;3;categorica exclusiva;Var0386;;;Existem pessoas da comunidade que prejudicam o meio ambiente aqui na região?(   ) Sim (   ) Não
+4;3.1;Nao ha;Var0387;;;Se sim, de que forma? 
+4;3.1.1;categorica variada;Var0388;;;a.      (   ) Desmatando a floresta / mangue
+4;3.1.2;categorica variada;Var0389;;;b.      (   ) Usando zangaria para a pesca do camarão 
+4;3.1.3;categorica variada;Var0390;;;c.       (   ) Usando tapagem nos igarapés/rios
+4;3.1.4;categorica variada;Var0391;;;d.      (   ) Jogando lixo no rio
+4;3.1.5;categorica variada;Var0392;;;e.      (   ) Criando gado / búfalo
+4;3.1.6;categorica variada;Var0393;;;f.      (   ) Pescando camarão pequeno 
+4;3.1.7;Textual;Var0394;;;g. (   ) Outros. Qual? ________________________________
+4;4;categorica exclusiva;Var0395;;;Existem pessoas de fora da comunidade que prejudicam o meio ambiente aqui na região? (   ) Sim (   ) Não
+4;4.1;categorica variada;Var0396;;;Se sim, de que forma? 
+4;4.1.1;categorica variada;Var0397;;;a.      (   ) Desmatando a floresta / mangue
+4;4.1.2;categorica variada;Var0398;;;b.      (   ) Usando zangaria para a pesca do camarão 
+4;4.1.3;categorica variada;Var0399;;;c.       (   ) Usando tapagem nos igarapés/rios
+4;4.1.4;categorica variada;Var0400;;;d.      (   ) Jogando lixo no rio
+4;4.1.5;categorica variada;Var0401;;;e.      (   ) Pescando camarão pequeno
+4;4.1.6;Textual;Var0402;;;(   ) Outros. Qual? ________________________________
+4;5;Nao ha;Var0403;;;Quais são os principais problemas ambientais que você percebe aqui na região atualmente? 
+4;5.1;categorica variada;Var0404;;;a.      (   ) Desmatamento das nascentes
+4;5.2;categorica variada;Var0405;;;b.      (   ) Desmatamento dos rios e igarapés
+4;5.3;categorica variada;Var0406;;;c.       (   ) Desmatamento da floresta
+4;5.4;categorica variada;Var0407;;;d.      (   ) Erosão / queda das beiradas
+4;5.5;categorica variada;Var0408;;;e.      (   ) Poluição das águas dos rios ou do mar
+4;5.6;categorica variada;Var0409;;;f.        (   ) Diminuição de produtos de extrativismo 
+4;5.7;categorica variada;Var0410;;;g.      (   ) Diminuição dos pescados
+4;5.8;textual;Var0411;;;h.      (   ) Outros problemas ambientais: ____________________________
+4;6;categorica exclusiva;Var0412;;;Existem conflitos por causa de uso dos recursos naturais?  (   ) Sim (   ) Não  
+4;6.1;textual;Var0413;;;Se sim, quais? _______________________________________________
+4;7;categorica exclusiva;Var0414;;;[Apenas para moradores de RESEX] A criação da RESEX trouxe benefícios para a sua comunidade? (   ) Sim (   ) Não 
+4;7.1;textual;Var0415;;;Se sim, quais?_______________________
+4;8;categorica exclusiva;Var0416;;;[Apenas para moradores de RESEX] Na sua visão, qual é o papel da RESEX para a sua comunidade? 
+4;8.1;categorica variada;Var0417;;;a.      (   ) Melhorar a estrutura da comunidade
+4;8.2;categorica variada;Var0418;;;b.      (   ) Melhorar os serviços básicos na comunidade (saúde, educação, saneamento, abastecimento de água e energia, etc.)
+4;8.3;categorica variada;Var0419;;;c.       (   ) Facilitar o acesso a programas sociais do governo
+4;8.4;categorica variada;Var0420;;;d.      (   ) Melhorar as condições de vida (de modo geral)
+4;8.5;categorica variada;Var0421;;;e.      (   ) Mediar conflitos entre comunidades
+4;8.6;categorica variada;Var0422;;;f.        (   ) Promover ações de fiscalização ambiental
+4;8.7;categorica variada;Var0423;;;g.      (   ) Promover ações de educação ambiental
+4;8.8;categorica variada;Var0424;;;h.      (   ) Promover a sustentabilidade das atividades extrativistas
+4;8.9;categorica variada;Var0425;;;i.        (   ) Não sei
+4;8.10;textual;Var0426;;;j.        (   ) Outro. Qual? ___________________________________________
+4;9;categorica exclusiva;Var0427;;;Você acredita que as futuras gerações da comunidade poderão sobreviver dos recursos naturais?  (   ) Sim (   ) Não  
+4;10;categorica exclusiva;Var0428;;;Existe algum projeto ou programa de educação ambiental acontecendo na comunidade? (   ) Sim   (   ) Não   (   ) Não sei   
+4;10.1;textual;Var0429;;;Se sim, qual?____
+4;11;categorica exclusiva;Var0430;;;Você acha importante que aconteçam formações ou capacitações para conscientizar as pessoas da comunidade sobre o meio ambiente?(   ) Sim   (   ) Não   (   ) Não sei 
+5;1;;Var0431;;;A partir de que idade você começou a trabalhar com a pesca do camarão?
+5;2;;Var0432;;;Você acha que o valor que você recebe pela venda do camarão é justo?
+5;3;;Var0433;;;O dinheiro da pesca representa quanto na renda familiar? 
+5;4;;Var0434;;;Dá para se sustentar o ano todo somente com a atividade de pesca do camarão?
+5;5;;Var0435;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+5;5;;Var0436;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+5;5;;Var0437;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+5;5;;Var0438;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+5;5;;Var0439;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+5;5;;Var0440;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+5;5;;Var0441;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+5;5;;Var0442;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+5;5;;Var0443;;;Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário?
+6;1;;Var0444;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0445;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0446;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0447;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0448;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0449;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0450;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0451;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0452;;;Normalmente, como é feita a pesca do camarão?
+6;1;;Var0453;;;Normalmente, como é feita a pesca do camarão?
+6;2;;Var0454;;;Como o senhor realiza este tipo de pescaria?
+6;2;;Var0455;;;Como o senhor realiza este tipo de pescaria?
+6;2;;Var0456;;;Como o senhor realiza este tipo de pescaria?
+6;2;;Var0457;;;Como o senhor realiza este tipo de pescaria?
+6;2;;Var0458;;;Como o senhor realiza este tipo de pescaria?
+6;2.1;;Var0459;;;Quantas tempo gasta para chegar ao local de pesca (pesqueiro) mais perto?
+6;2.1;;Var0460;;;Quanto tempo se gasta para chegar ao local de pesca (pesqueiro) mais distante?
+6;2.2;;Var0461;;;Quantas tempo gasta para chegar ao local de pesca (pesqueiro) mais perto?
+6;2.2;;Var0462;;;Quantas tempo gasta para chegar ao local de pesca (pesqueiro) mais perto?
+6;3;;Var0463;;;Que tipo de arte utiliza. Quantas horas são trabalhadas por você ou pelo grupo por dia, em média? Qual é a produção por maré no inverno e verão
+6;4.1;;Var0464;;;Em qual estação do ano é realizada a pesca
+6;4.1;;Var0465;;;Em qual estação do ano é realizada a pesca
+6;4.2;;Var0466;;;Em qual Maré realiza a pesca
+6;4.2;;Var0467;;;Em qual maré realiza a pesca
+6;4.3;;Var0468;;;Maré Morta no Inverno
+6;4.3;;Var0469;;;Maré Morta no Inverno
+6;4.3;;Var0470;;;Maré Morta no Inverno
+6;4.3;;Var0471;;;Maré Morta no Inverno
+6;4.3;;Var0472;;;Maré Morta no Inverno
+6;4.3;;Var0473;;;Maré Morta no Inverno
+6;4.3;;Var0474;;;Maré Morta no Inverno
+6;4.3;;Var0475;;;Maré Morta no Inverno
+6;4.3;;Var0476;;;Maré Morta no Inverno
+6;4.3;;Var0477;;;Maré Morta no Inverno
+6;4.3;;Var0478;;;Maré Morta no Inverno
+6;4.3;;Var0479;;;Maré Morta no Inverno
+6;4.3;;Var0480;;;Maré Morta no Inverno
+6;4.3;;Var0481;;;Maré Morta no Inverno
+6;4.3;;Var0482;;;Maré Morta no Inverno
+6;4.3;;Var0483;;;Maré Morta no Inverno
+6;4.3;;Var0484;;;Maré Morta no Inverno
+6;4.3;;Var0485;;;Maré Morta no Inverno
+6;4.3;;Var0486;;;Maré Morta no Inverno
+6;4.3;;Var0487;;;Maré Morta no Inverno
+6;4.3;;Var0488;;;Maré Morta no Inverno
+6;4.3;;Var0489;;;Maré Morta no Inverno
+6;4.3;;Var0490;;;Maré Morta no Inverno
+6;4.3;;Var0491;;;Maré Morta no Inverno
+6;4.3;;Var0492;;;Maré Morta no Inverno
+6;4.3;;Var0493;;;Maré Morta no Inverno
+6;4.3;;Var0494;;;Maré Morta no Inverno
+6;4.3;;Var0495;;;Maré Morta no Inverno
+6;4.3;;Var0496;;;Maré Morta no Inverno
+6;4.3;;Var0497;;;Maré Morta no Inverno
+6;4.3;;Var0498;;;Maré Morta no Inverno
+6;4.3;;Var0499;;;Maré Morta no Inverno
+6;4.3;;Var0500;;;Maré Morta no Inverno
+6;4.3;;Var0501;;;Maré de Lanço no Inverno
+6;4.3;;Var0502;;;Maré de Lanço no Inverno
+6;4.3;;Var0503;;;Maré de Lanço no Inverno
+6;4.3;;Var0504;;;Maré de Lanço no Inverno
+6;4.3;;Var0505;;;Maré de Lanço no Inverno
+6;4.3;;Var0506;;;Maré de Lanço no Inverno
+6;4.3;;Var0507;;;Maré de Lanço no Inverno
+6;4.3;;Var0508;;;Maré de Lanço no Inverno
+6;4.3;;Var0509;;;Maré de Lanço no Inverno
+6;4.3;;Var0510;;;Maré de Lanço no Inverno
+6;4.3;;Var0511;;;Maré de Lanço no Inverno
+6;4.3;;Var0512;;;Maré de Lanço no Inverno
+6;4.3;;Var0513;;;Maré de Lanço no Inverno
+6;4.3;;Var0514;;;Maré de Lanço no Inverno
+6;4.3;;Var0515;;;Maré de Lanço no Inverno
+6;4.3;;Var0516;;;Maré de Lanço no Inverno
+6;4.3;;Var0517;;;Maré de Lanço no Inverno
+6;4.3;;Var0518;;;Maré de Lanço no Inverno
+6;4.3;;Var0519;;;Maré de Lanço no Inverno
+6;4.3;;Var0520;;;Maré de Lanço no Inverno
+6;4.3;;Var0521;;;Maré de Lanço no Inverno
+6;4.3;;Var0522;;;Maré de Lanço no Inverno
+6;4.3;;Var0523;;;Maré de Lanço no Inverno
+6;4.3;;Var0524;;;Maré de Lanço no Inverno
+6;4.3;;Var0525;;;Maré de Lanço no Inverno
+6;4.3;;Var0526;;;Maré de Lanço no Inverno
+6;4.3;;Var0527;;;Maré de Lanço no Inverno
+6;4.3;;Var0528;;;Maré de Lanço no Inverno
+6;4.3;;Var0529;;;Maré de Lanço no Inverno
+6;4.3;;Var0530;;;Maré de Lanço no Inverno
+6;4.3;;Var0531;;;Maré de Lanço no Inverno
+6;4.3;;Var0532;;;Maré de Lanço no Inverno
+6;4.3;;Var0533;;;Maré de Lanço no Inverno
+6;4.3;;Var0534;;;Maré Morta no Verão
+6;4.3;;Var0535;;;Maré Morta no Verão
+6;4.3;;Var0536;;;Maré Morta no Verão
+6;4.3;;Var0537;;;Maré Morta no Verão
+6;4.3;;Var0538;;;Maré Morta no Verão
+6;4.3;;Var0539;;;Maré Morta no Verão
+6;4.3;;Var0540;;;Maré Morta no Verão
+6;4.3;;Var0541;;;Maré Morta no Verão
+6;4.3;;Var0542;;;Maré Morta no Verão
+6;4.3;;Var0543;;;Maré Morta no Verão
+6;4.3;;Var0544;;;Maré Morta no Verão
+6;4.3;;Var0545;;;Maré Morta no Verão
+6;4.3;;Var0546;;;Maré Morta no Verão
+6;4.3;;Var0547;;;Maré Morta no Verão
+6;4.3;;Var0548;;;Maré Morta no Verão
+6;4.3;;Var0549;;;Maré Morta no Verão
+6;4.3;;Var0550;;;Maré Morta no Verão
+6;4.3;;Var0551;;;Maré Morta no Verão
+6;4.3;;Var0552;;;Maré Morta no Verão
+6;4.3;;Var0553;;;Maré Morta no Verão
+6;4.3;;Var0554;;;Maré Morta no Verão
+6;4.3;;Var0555;;;Maré Morta no Verão
+6;4.3;;Var0556;;;Maré Morta no Verão
+6;4.3;;Var0557;;;Maré Morta no Verão
+6;4.3;;Var0558;;;Maré Morta no Verão
+6;4.3;;Var0559;;;Maré Morta no Verão
+6;4.3;;Var0560;;;Maré Morta no Verão
+6;4.3;;Var0561;;;Maré Morta no Verão
+6;4.3;;Var0562;;;Maré Morta no Verão
+6;4.3;;Var0563;;;Maré Morta no Verão
+6;4.3;;Var0564;;;Maré Morta no Verão
+6;4.3;;Var0565;;;Maré Morta no Verão
+6;4.3;;Var0566;;;Maré Morta no Verão
+6;4.3;;Var0567;;;Maré Lanço no Verão
+6;4.3;;Var0568;;;Maré Lanço no Verão
+6;4.3;;Var0569;;;Maré Lanço no Verão
+6;4.3;;Var0570;;;Maré Lanço no Verão
+6;4.3;;Var0571;;;Maré Lanço no Verão
+6;4.3;;Var0572;;;Maré Lanço no Verão
+6;4.3;;Var0573;;;Maré Lanço no Verão
+6;4.3;;Var0574;;;Maré Lanço no Verão
+6;4.3;;Var0575;;;Maré Lanço no Verão
+6;4.3;;Var0576;;;Maré Lanço no Verão
+6;4.3;;Var0577;;;Maré Lanço no Verão
+6;4.3;;Var0578;;;Maré Lanço no Verão
+6;4.3;;Var0579;;;Maré Lanço no Verão
+6;4.3;;Var0580;;;Maré Lanço no Verão
+6;4.3;;Var0581;;;Maré Lanço no Verão
+6;4.3;;Var0582;;;Maré Lanço no Verão
+6;4.3;;Var0583;;;Maré Lanço no Verão
+6;4.3;;Var0584;;;Maré Lanço no Verão
+6;4.3;;Var0585;;;Maré Lanço no Verão
+6;4.3;;Var0586;;;Maré Lanço no Verão
+6;4.3;;Var0587;;;Maré Lanço no Verão
+6;4.3;;Var0588;;;Maré Lanço no Verão
+6;4.3;;Var0589;;;Maré Lanço no Verão
+6;4.3;;Var0590;;;Maré Lanço no Verão
+6;4.3;;Var0591;;;Maré Lanço no Verão
+6;4.3;;Var0592;;;Maré Lanço no Verão
+6;4.3;;Var0593;;;Maré Lanço no Verão
+6;4.3;;Var0594;;;Maré Lanço no Verão
+6;4.3;;Var0595;;;Maré Lanço no Verão
+6;4.3;;Var0596;;;Maré Lanço no Verão
+6;4.3;;Var0597;;;Maré Lanço no Verão
+6;4.3;;Var0598;;;Maré Lanço no Verão
+6;4.3;;Var0599;;;Maré Lanço no Verão
+6;4.4;;Var0600;;;Quais são os pontos de pesca (pesqueiros) que o senhor mais pesca o camarão piticaia?______________________________________________________________________________
+;5.1;;Var0601;;;Em qual estação do ano é realizada a pesca
+6;5.1;;Var0602;;;Em qual estação do ano é realizada a pesca
+6;5.2;;Var0603;;;Em qual maré realiza a pesca
+6;5.2;;Var0604;;;Em qual maré realiza a pesca
+6;5.3;;Var0605;;;Maré Morta no Inverno
+6;5.3;;Var0606;;;Maré Morta no Inverno
+6;5.3;;Var0607;;;Maré Morta no Inverno
+6;5.3;;Var0608;;;Maré Morta no Inverno
+6;5.3;;Var0609;;;Maré Morta no Inverno
+6;5.3;;Var0610;;;Maré Morta no Inverno
+6;5.3;;Var0611;;;Maré Morta no Inverno
+6;5.3;;Var0612;;;Maré Morta no Inverno
+6;5.3;;Var0613;;;Maré Morta no Inverno
+6;5.3;;Var0614;;;Maré Morta no Inverno
+6;5.3;;Var0615;;;Maré Morta no Inverno
+6;5.3;;Var0616;;;Maré Morta no Inverno
+6;5.3;;Var0617;;;Maré Morta no Inverno
+6;5.3;;Var0618;;;Maré Morta no Inverno
+6;5.3;;Var0619;;;Maré Morta no Inverno
+6;5.3;;Var0620;;;Maré Morta no Inverno
+6;5.3;;Var0621;;;Maré Morta no Inverno
+6;5.3;;Var0622;;;Maré Morta no Inverno
+6;5.3;;Var0623;;;Maré Morta no Inverno
+6;5.3;;Var0624;;;Maré Morta no Inverno
+6;5.3;;Var0625;;;Maré Morta no Inverno
+6;5.3;;Var0626;;;Maré Morta no Inverno
+6;5.3;;Var0627;;;Maré Morta no Inverno
+6;5.3;;Var0628;;;Maré Morta no Inverno
+6;5.3;;Var0629;;;Maré Morta no Inverno
+6;5.3;;Var0630;;;Maré Morta no Inverno
+6;5.3;;Var0631;;;Maré Morta no Inverno
+6;5.3;;Var0632;;;Maré Morta no Inverno
+6;5.3;;Var0633;;;Maré Morta no Inverno
+6;5.3;;Var0634;;;Maré Morta no Inverno
+6;5.3;;Var0635;;;Maré Morta no Inverno
+6;5.3;;Var0636;;;Maré Morta no Inverno
+6;5.3;;Var0637;;;Maré Morta no Inverno
+6;5.3;;Var0638;;;Maré de Lanço no Inverno
+6;5.3;;Var0639;;;Maré de Lanço no Inverno
+6;5.3;;Var0640;;;Maré de Lanço no Inverno
+6;5.3;;Var0641;;;Maré de Lanço no Inverno
+6;5.3;;Var0642;;;Maré de Lanço no Inverno
+6;5.3;;Var0643;;;Maré de Lanço no Inverno
+6;5.3;;Var0644;;;Maré de Lanço no Inverno
+6;5.3;;Var0645;;;Maré de Lanço no Inverno
+6;5.3;;Var0646;;;Maré de Lanço no Inverno
+6;5.3;;Var0647;;;Maré de Lanço no Inverno
+6;5.3;;Var0648;;;Maré de Lanço no Inverno
+6;5.3;;Var0649;;;Maré de Lanço no Inverno
+6;5.3;;Var0650;;;Maré de Lanço no Inverno
+6;5.3;;Var0651;;;Maré de Lanço no Inverno
+6;5.3;;Var0652;;;Maré de Lanço no Inverno
+6;5.3;;Var0653;;;Maré de Lanço no Inverno
+6;5.3;;Var0654;;;Maré de Lanço no Inverno
+6;5.3;;Var0655;;;Maré de Lanço no Inverno
+6;5.3;;Var0656;;;Maré de Lanço no Inverno
+6;5.3;;Var0657;;;Maré de Lanço no Inverno
+6;5.3;;Var0658;;;Maré de Lanço no Inverno
+6;5.3;;Var0659;;;Maré de Lanço no Inverno
+6;5.3;;Var0660;;;Maré de Lanço no Inverno
+6;5.3;;Var0661;;;Maré de Lanço no Inverno
+6;5.3;;Var0662;;;Maré de Lanço no Inverno
+6;5.3;;Var0663;;;Maré de Lanço no Inverno
+6;5.3;;Var0664;;;Maré de Lanço no Inverno
+6;5.3;;Var0665;;;Maré de Lanço no Inverno
+6;5.3;;Var0666;;;Maré de Lanço no Inverno
+6;5.3;;Var0667;;;Maré de Lanço no Inverno
+6;5.3;;Var0668;;;Maré de Lanço no Inverno
+6;5.3;;Var0669;;;Maré de Lanço no Inverno
+6;5.3;;Var0670;;;Maré de Lanço no Inverno
+6;5.3;;Var0671;;;Maré Morta no Verão
+6;5.3;;Var0672;;;Maré Morta no Verão
+6;5.3;;Var0673;;;Maré Morta no Verão
+6;5.3;;Var0674;;;Maré Morta no Verão
+6;5.3;;Var0675;;;Maré Morta no Verão
+6;5.3;;Var0676;;;Maré Morta no Verão
+6;5.3;;Var0677;;;Maré Morta no Verão
+6;5.3;;Var0678;;;Maré Morta no Verão
+6;5.3;;Var0679;;;Maré Morta no Verão
+6;5.3;;Var0680;;;Maré Morta no Verão
+6;5.3;;Var0681;;;Maré Morta no Verão
+6;5.3;;Var0682;;;Maré Morta no Verão
+6;5.3;;Var0683;;;Maré Morta no Verão
+6;5.3;;Var0684;;;Maré Morta no Verão
+6;5.3;;Var0685;;;Maré Morta no Verão
+6;5.3;;Var0686;;;Maré Morta no Verão
+6;5.3;;Var0687;;;Maré Morta no Verão
+6;5.3;;Var0688;;;Maré Morta no Verão
+6;5.3;;Var0689;;;Maré Morta no Verão
+6;5.3;;Var0690;;;Maré Morta no Verão
+6;5.3;;Var0691;;;Maré Morta no Verão
+6;5.3;;Var0692;;;Maré Morta no Verão
+6;5.3;;Var0693;;;Maré Morta no Verão
+6;5.3;;Var0694;;;Maré Morta no Verão
+6;5.3;;Var0695;;;Maré Morta no Verão
+6;5.3;;Var0696;;;Maré Morta no Verão
+6;5.3;;Var0697;;;Maré Morta no Verão
+6;5.3;;Var0698;;;Maré Morta no Verão
+6;5.3;;Var0699;;;Maré Morta no Verão
+6;5.3;;Var0700;;;Maré Morta no Verão
+6;5.3;;Var0701;;;Maré Morta no Verão
+6;5.3;;Var0702;;;Maré Morta no Verão
+6;5.3;;Var0703;;;Maré Morta no Verão
+6;5.3;;Var0704;;;Maré Lanço no Verão
+6;5.3;;Var0705;;;Maré Lanço no Verão
+6;5.3;;Var0706;;;Maré Lanço no Verão
+6;5.3;;Var0707;;;Maré Lanço no Verão
+6;5.3;;Var0708;;;Maré Lanço no Verão
+6;5.3;;Var0709;;;Maré Lanço no Verão
+6;5.3;;Var0710;;;Maré Lanço no Verão
+6;5.3;;Var0711;;;Maré Lanço no Verão
+6;5.3;;Var0712;;;Maré Lanço no Verão
+6;5.3;;Var0713;;;Maré Lanço no Verão
+6;5.3;;Var0714;;;Maré Lanço no Verão
+6;5.3;;Var0715;;;Maré Lanço no Verão
+6;5.3;;Var0716;;;Maré Lanço no Verão
+6;5.3;;Var0717;;;Maré Lanço no Verão
+6;5.3;;Var0718;;;Maré Lanço no Verão
+6;5.3;;Var0719;;;Maré Lanço no Verão
+6;5.3;;Var0720;;;Maré Lanço no Verão
+6;5.3;;Var0721;;;Maré Lanço no Verão
+6;5.3;;Var0722;;;Maré Lanço no Verão
+6;5.3;;Var0723;;;Maré Lanço no Verão
+6;5.3;;Var0724;;;Maré Lanço no Verão
+6;5.3;;Var0725;;;Maré Lanço no Verão
+6;5.3;;Var0726;;;Maré Lanço no Verão
+6;5.3;;Var0727;;;Maré Lanço no Verão
+6;5.3;;Var0728;;;Maré Lanço no Verão
+6;5.3;;Var0729;;;Maré Lanço no Verão
+6;5.3;;Var0730;;;Maré Lanço no Verão
+6;5.3;;Var0731;;;Maré Lanço no Verão
+6;5.3;;Var0732;;;Maré Lanço no Verão
+6;5.3;;Var0733;;;Maré Lanço no Verão
+6;5.3;;Var0734;;;Maré Lanço no Verão
+6;5.3;;Var0735;;;Maré Lanço no Verão
+6;5.3;;Var0736;;;Maré Lanço no Verão
+6;5.4;;Var0737;;;Quais são os pontos de pesca (pesqueiros) que o senhor mais pesca o camarão piticaia?______________________________________________________________________________
+6;6;;Var0738;;;Há captura de outras espécies junto ao camarão?
+6;6.1;;Var0739;;;Quais são as principais?
+6;6.2;;Var0740;;;No geral, quanto é capturado dessas por dia (kg)?
+6;6.3;;Var0741;;;O que é feito?
+6;6.3;;Var0742;;;vendido. Por qual preço?
+6;6.3;;Var0743;;;Outros?
+7;7.1.1;;Var0744;;;Como é vendido o camarão piticaia?
+7;7.1.1;;Var0745;;;Como é vendido o camarão piticaia?
+7;7.1.1;;Var0746;;;Como é vendido o camarão piticaia?
+7;7.1.1;;Var0747;;;Como é vendido o camarão piticaia?
+7;7.1.1;;Var0748;;;Como é vendido o camarão piticaia?
+7;7.1.1;;Var0749;;;Como é vendido o camarão piticaia?
+7;7.1.2;;Var0750;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0751;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0752;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0753;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0754;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0755;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0756;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0757;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0758;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0759;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0760;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0761;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0762;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0763;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0764;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0765;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0766;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0767;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0768;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0769;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0770;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0771;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0772;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0773;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0774;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0775;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0776;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0777;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0778;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0779;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0780;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0781;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0782;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0783;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0784;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0785;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0786;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0787;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0788;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0789;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0790;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0791;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0792;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0793;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0794;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0795;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0796;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0797;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0798;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.2;;Var0799;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.1.3;;Var0800;;;Qual é a proporção da “quebra”
+7;7.1.3;;Var0801;;;Qual é a proporção da “quebra”
+7;7.1.4;;Var0802;;;O senhor armazena o camarão piticaia? 
+7;7.1.5;;Var0803;;;Como o senhor armazena o camarão piticaia?
+7;7.1.5;;Var0804;;;Como o senhor armazena o camarão piticaia?
+7;7.1.5;;Var0805;;;Como o senhor armazena o camarão piticaia?
+7;7.1.5;;Var0806;;;Como o senhor armazena o camarão piticaia?
+7;7.1.5;;Var0807;;;Como o senhor armazena o camarão piticaia?
+7;7.1.5;;Var0808;;;Como o senhor armazena o camarão piticaia?
+7;7.1.5;;Var0809;;;Como o senhor armazena o camarão piticaia?
+7;7.1.6;;Var0810;;;Por quanto tempo, em média o camarão piticaia  fica armazenado? 
+7;7.1.6;;Var0811;;;Por quanto tempo, em média o camarão piticaia  fica armazenado? 
+7;7.1.6;;Var0812;;;Por quanto tempo, em média o camarão piticaia  fica armazenado? 
+7;7.1.7;;Var0813;;;Como ocorre a venda? 
+7;7.1.7;;Var0814;;;Como ocorre a venda? 
+7;7.1.7;;Var0815;;;Como ocorre a venda? 
+7;7.1.7;;Var0816;;;Como ocorre a venda? 
+7;7.1.8;;Var0817;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0818;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0819;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0820;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0821;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0822;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0823;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0824;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0825;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0826;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0827;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0828;;;Para quem se vende o camarão piticaia? Na comunidade
+7;7.1.8;;Var0829;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0830;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0831;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0832;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0833;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0834;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0835;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0836;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0837;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0838;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0839;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.8;;Var0840;;;Para quem se vende o camarão piticaia? Fora
+7;7.1.9;;Var0841;;;Desses compradores/consumidores quais são os três principais?
+7;7.1.9;;Var0842;;;Desses compradores/consumidores quais são os três principais?
+7;7.1.9;;Var0843;;;Desses compradores/consumidores quais são os três principais?
+7;7.1.10;;Var0844;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0845;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0846;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0847;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0848;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0849;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0850;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0851;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0852;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0853;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0854;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0855;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0856;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0857;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0858;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0859;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0860;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0861;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0862;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0863;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0864;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0865;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0866;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0867;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0868;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0869;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0870;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0871;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0872;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0873;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0874;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0875;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0876;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0877;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0878;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0879;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0880;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0881;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0882;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0883;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0884;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0885;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0886;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0887;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0888;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0889;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0890;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0891;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0892;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0893;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0894;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0895;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0896;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0897;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0898;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0899;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0900;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0901;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0902;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0903;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0904;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0905;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0906;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0907;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0908;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0909;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0910;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0911;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0912;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0913;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0914;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0915;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0916;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0917;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0918;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0919;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0920;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0921;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0922;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0923;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0924;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0925;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0926;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0927;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0928;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0929;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0930;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0931;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0932;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0933;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0934;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0935;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0936;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0937;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0938;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0939;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0940;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0941;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0942;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0943;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0944;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0945;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0946;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0947;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0948;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0949;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0950;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0951;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0952;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0953;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0954;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0955;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0956;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0957;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0958;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0959;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0960;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0961;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0962;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0963;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0964;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0965;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0966;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0967;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0968;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0969;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0970;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0971;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0972;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0973;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0974;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0975;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0976;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0977;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0978;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0979;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0980;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0981;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0982;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0983;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0984;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0985;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0986;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0987;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0988;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0989;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0990;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0991;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0992;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0993;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0994;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0995;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0996;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0997;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0998;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.1.10;;Var0999;;;Qual é o preço de venda do camarão piticaia pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.1;;Var1000;;;Como é vendido o camarão branco?
+7;7.2.1;;Var1001;;;Como é vendido o camarão branco?
+7;7.2.1;;Var1002;;;Como é vendido o camarão branco?
+7;7.2.1;;Var1003;;;Como é vendido o camarão branco?
+7;7.2.1;;Var1004;;;Como é vendido o camarão branco?
+7;7.2.1;;Var1005;;;Como é vendido o camarão branco?
+7;7.2.2;;Var1006;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1007;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1008;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1009;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1010;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1011;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1012;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1013;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1014;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1015;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1016;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1017;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1018;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1019;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1020;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1021;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1022;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1023;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1024;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1025;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1026;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1027;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1028;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1029;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1030;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1031;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1032;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1033;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1034;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1035;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1036;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1037;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1038;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1039;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1040;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1041;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1042;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1043;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1044;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1045;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1046;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1047;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1048;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1049;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1050;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1051;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1052;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1053;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1054;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.2;;Var1055;;;Dos produtos selecionados e/ou processados, qual é quantidade vendida?
+7;7.2.3;;Var1056;;;Qual é a proporção da “quebra”
+7;7.2.3;;Var1057;;;Qual é a proporção da “quebra”
+7;7.2.4;;Var1058;;;O senhor armazena o camarão branco? 
+7;7.2.5;;Var1059;;;Como o senhor armazena o camarão branco?
+7;7.2.5;;Var1060;;;Como o senhor armazena o camarão branco?
+7;7.2.5;;Var1061;;;Como o senhor armazena o camarão branco?
+7;7.2.5;;Var1062;;;Como o senhor armazena o camarão branco?
+7;7.2.5;;Var1063;;;Como o senhor armazena o camarão branco?
+7;7.2.5;;Var1064;;;Como o senhor armazena o camarão branco?
+7;7.2.5;;Var1065;;;Como o senhor armazena o camarão branco?
+7;7.2.6;;Var1066;;;Por quanto tempo, em média o camarão branco  fica armazenado? 
+7;7.2.6;;Var1067;;;Por quanto tempo, em média o camarão branco  fica armazenado? 
+7;7.2.6;;Var1068;;;Por quanto tempo, em média o camarão branco  fica armazenado? 
+7;7.2.7;;Var1069;;;Como ocorre a venda? 
+7;7.2.7;;Var1070;;;Como ocorre a venda? 
+7;7.2.7;;Var1071;;;Como ocorre a venda? 
+7;7.2.7;;Var1072;;;Como ocorre a venda? 
+7;7.2.8;;Var1073;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1074;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1075;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1076;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1077;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1078;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1079;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1080;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1081;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1082;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1083;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1084;;;Para quem se vende o camarão branco? Na comunidade
+7;7.2.8;;Var1085;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1086;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1087;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1088;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1089;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1090;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1091;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1092;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1093;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1094;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1095;;;Para quem se vende o camarão branco? Fora
+7;7.2.8;;Var1096;;;Para quem se vende o camarão branco? Fora
+7;7.2.9;;Var1097;;;Desses compradores/consumidores quais são os três principais?
+7;7.2.9;;Var1098;;;Desses compradores/consumidores quais são os três principais?
+7;7.2.9;;Var1099;;;Desses compradores/consumidores quais são os três principais?
+7;7.2.10;;Var1100;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1101;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1102;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1103;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1104;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1105;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1106;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1107;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1108;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1109;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1110;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1111;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1112;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1113;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1114;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1115;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1116;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1117;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1118;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1119;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1120;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1121;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1122;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1123;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1124;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1125;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1126;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1127;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1128;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1129;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1130;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1131;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1132;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1133;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1134;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1135;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1136;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1137;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1138;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1139;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1140;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1141;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1142;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1143;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1144;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1145;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1146;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1147;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1148;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1149;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1150;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1151;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1152;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1153;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1154;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1155;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1156;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1157;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1158;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1159;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1160;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1161;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1162;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1163;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1164;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1165;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1166;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1167;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1168;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1169;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1170;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1171;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1172;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1173;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1174;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1175;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1176;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1177;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1178;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1179;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1180;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1181;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1182;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1183;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1184;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1185;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1186;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1187;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1188;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1189;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1190;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1191;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1192;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1193;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1194;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1195;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1196;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1197;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1198;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1199;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1200;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1201;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1202;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1203;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1204;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1205;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1206;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1207;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1208;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1209;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1210;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1211;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1212;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1213;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1214;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1215;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1216;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1217;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1218;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1219;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1220;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1221;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1222;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1223;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1224;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1225;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1226;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1227;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1228;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1229;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1230;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1231;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1232;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1233;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1234;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1235;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1236;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1237;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1238;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1239;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1240;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1241;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1242;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1243;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1244;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1245;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1246;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1247;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1248;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1249;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1250;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1251;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1252;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1253;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1254;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+7;7.2.10;;Var1255;;;Qual é o preço de venda do camarão branco pelos principais compradores ao longo do ano? (R$/kg) inverno e verão
+8;8.1;;Var1256;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1257;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1258;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1259;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1260;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1261;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1262;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1263;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1264;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1265;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1266;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1267;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1268;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1269;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1270;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1271;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1272;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1273;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1274;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1275;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1276;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1277;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1278;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1279;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1280;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1281;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.1;;Var1282;;;Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;8.2;;Var1283;;;Este tipo de pesca o senhor realiza
+8;8.2.1;;Var1284;;;Qual tipo de embarcação utiliza
+8;8.2.1;;Var1285;;;Qual tipo de embarcação utiliza
+8;8.2.1;;Var1286;;;Qual tipo de embarcação utiliza
+8;8.2.1;;Var1287;;;Qual tipo de embarcação utiliza
+8;8.2.1;;Var1288;;;Qual tipo de embarcação utiliza
+8;8.2.1;;Var1289;;;Qual tipo de embarcação utiliza
+8;8.2.1;;Var1290;;;Qual tipo de embarcação utiliza
+8;8.2.1;;Var1291;;;Qual tipo de embarcação utiliza
+8;8.2.1;;Var1292;;;Qual tipo de embarcação utiliza
+8;8.2.2;;Var1293;;;Quantas pessoas (tripulantes) cabem na embarcação
+8;8.2.3;;Var1294;;;O senhor possui embarcação própria
+8;8.2.4;;Var1295;;;Se o senhor não possui embarcação própria, esta embarcação é
+8;8.2.4;;Var1296;;;Se o senhor não possui embarcação própria, esta embarcação é
+8;8.2.4;;Var1297;;;Se o senhor não possui embarcação própria, esta embarcação é
+8;8.2.4;;Var1298;;;Se o senhor não possui embarcação própria, esta embarcação é
+8;8.2.4;;Var1299;;;Se o senhor não possui embarcação própria, esta embarcação é
+8;8.2.4;;Var1300;;;Se o senhor não possui embarcação própria, esta embarcação é
+8;8.2.4;;Var1301;;;Se o senhor não possui embarcação própria, esta embarcação é
+8;8.2.6;;Var1302;;;Se aluga, quanto o senhor paga
+8;8.2.6;;Var1303;;;Se aluga, quanto o senhor paga
+8;8.2.6;;Var1304;;;Se aluga, quanto o senhor paga
+8;8.2.7;;Var1305;;;Que combustível o senhor utiliza
+8;8.2.8;;Var1306;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1307;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1308;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1309;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1310;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1311;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1312;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1313;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1314;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1315;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.8;;Var1316;;;Como é realizado o transporte do camarão na embarcação? 
+8;8.2.9;;Var1317;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1318;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1319;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1320;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1321;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1322;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1323;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1324;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1325;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1326;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1327;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1328;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1329;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1330;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1331;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1332;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1333;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1334;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1335;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1336;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1337;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1338;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1339;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1340;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1341;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1342;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1343;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1344;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1345;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1346;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1347;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1348;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1349;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1350;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1351;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1352;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1353;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1354;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1355;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1356;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1357;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1358;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1359;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1360;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1361;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1362;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1363;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1364;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1365;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1366;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1367;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1368;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1369;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1370;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1371;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1372;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1373;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1374;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1375;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1376;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1377;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1378;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1379;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1380;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1381;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1382;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1383;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1384;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1385;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1386;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1387;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1388;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1389;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1390;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1391;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1392;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1393;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1394;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1395;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1396;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1397;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1398;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1399;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1400;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1401;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1402;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1403;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1404;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1405;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1406;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1407;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1408;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1409;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1410;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1411;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1412;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1413;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1414;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1415;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1416;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1417;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1418;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1419;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1420;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1421;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1422;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1423;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1424;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1425;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1426;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1427;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1428;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1429;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1430;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1431;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1432;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1433;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1434;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1435;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1436;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1437;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1438;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1439;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1440;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1441;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1442;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1443;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1444;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1445;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1446;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1447;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1448;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1449;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1450;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1451;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1452;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1453;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1454;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1455;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1456;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1457;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1458;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1459;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1460;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1461;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1462;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1463;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1464;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1465;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1466;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1467;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1468;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1469;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1470;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1471;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1472;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1473;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1474;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1475;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1476;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1477;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1478;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1479;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1480;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1481;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1482;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1483;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1484;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1485;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1486;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1487;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1488;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1489;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1490;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1491;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1492;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1493;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1494;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1495;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1496;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1497;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1498;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1499;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1500;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1501;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1502;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1503;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1504;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1505;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1506;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1507;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1508;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1509;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1510;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1511;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1512;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1513;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1514;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1515;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1516;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1517;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1518;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1519;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1520;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1521;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1522;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1523;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1524;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1525;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1526;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1527;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1528;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1529;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1530;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1531;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1532;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1533;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1534;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1535;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1536;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1537;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1538;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1539;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1540;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1541;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1542;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1543;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1544;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1545;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1546;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1547;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1548;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1549;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.2.9;;Var1550;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serão substituídos? 
+8;8.3;;Var1551;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1552;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1553;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1554;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1555;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1556;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1557;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1558;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1559;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1560;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1561;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1562;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1563;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1564;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1565;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1566;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1567;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1568;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1569;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1570;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1571;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1572;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1573;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1574;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1575;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1576;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1577;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1578;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1579;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1580;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1581;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1582;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1583;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1584;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1585;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1586;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1587;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1588;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1589;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1590;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1591;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1592;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1593;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1594;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1595;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1596;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1597;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1598;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1599;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1600;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1601;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1602;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1603;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1604;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1605;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1606;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1607;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1608;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1609;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1610;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1611;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1612;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1613;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1614;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1615;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1616;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1617;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1618;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1619;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1620;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1621;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.3;;Var1622;;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015
+8;8.4;;Var1623;;;Quanto deste total é pago pelo patrão de pesca? 
+8;8.5;;Var1624;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1625;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1626;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1627;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1628;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1629;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1630;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1631;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1632;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1633;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1634;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1635;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1636;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1637;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1638;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.5;;Var1639;;;Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?
+8;8.6;;Var1640;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+8;8.6;;Var1641;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+8;8.6;;Var1642;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+8;8.6;;Var1643;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+8;8.6;;Var1644;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+8;8.6;;Var1645;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+8;8.6;;Var1646;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+8;8.6;;Var1647;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+8;8.6;;Var1648;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo é gasto nessas atividades? 
+9;1;;Var1649;;;De maneira geral, quais são os principais problemas enfrentados? Quais seriam as soluções?
+9;1;;Var1650;;;De maneira geral, quais são os principais problemas enfrentados? Quais seriam as soluções?

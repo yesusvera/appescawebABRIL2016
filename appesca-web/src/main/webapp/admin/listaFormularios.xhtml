@@ -8,10 +8,15 @@
     <ui:define name="content">
         <h1>#{formularioController.titulo}</h1>
        <h:form>
-     	  	<p:commandLink action="#{formularioController.exportar()}">
+     	  	<!-- <p:commandLink action="#{formularioController.exportar()}">
 				<i class="fa fa-file"> EXPORTAR</i>
-			</p:commandLink>
-			<br/><br/>
+			</p:commandLink> -->
+			
+			
+			<a href="/appesca-web/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}" target="_blank">
+				<i class="fa fa-file-excel-o">Exportar Dados</i>
+			</a><br/><br/>
+			
 			<i><b>#{formularioController.listaFormularios==null?'0':formularioController.listaFormularios.size()} </b></i> formulários encontrados.
 			<p:dataTable var="formulario" value="#{formularioController.listaFormularios}" emptyMessage="Nenhum formulário encontrado." style="font-size:small">
 				<p:column headerText="Pesquisador" filterBy="#{formularioController.getUsuario(formulario).nome}" sortBy="#{formularioController.getUsuario(formulario).nome}" style="text-align: center;" >
@@ -51,16 +56,19 @@
 					</p:commandLink>
 				</p:column>
 				
-				<p:column headerText="Degravação" width="95" sortBy="#{formularioController.labelTemDegravacao(formulario)}">
-					<center>
-						<h:outputText value="#{formularioController.labelTemDegravacao(formulario)}"/> 	
-						<br/><br/>
-						<video width="95" height="30" controls="controls" style="margin-left:-5px;visibility: #{formularioController.temDegravacao(formulario)?'visible':'hidden'}">
+				<p:column headerText="Degravação" width="95" sortBy="#{formularioController.labelTemDegravacao(formulario)}" style="align:center">
+					<h:outputText value="Não" rendered="#{!formularioController.temDegravacao(formulario)}"/>
+					<a href="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}" style="visibility:#{formularioController.temDegravacao(formulario)?'visibile':'hidden'}" target="_blank">
+						 <i class="fa fa-play" aria-hidden="true"></i> Ouvir
+					</a>
+					<!-- <p:outputPanel rendered="#{formularioController.temDegravacao(formulario)}" style="border:0px;margin-left:0px;margin-right:0px;">
+						<br/>
+						<video width="95" height="30" controls="controls" style="margin-left:-5px;">
 							<source
 								src="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}"
-								type="video/mp4" />
-						</video>	
-					</center>
+								type="video/mp4"/>
+						</video
+					</p:outputPanel> --> 
 				</p:column>
 				
 			</p:dataTable>

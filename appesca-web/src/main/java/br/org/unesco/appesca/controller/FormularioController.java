@@ -186,6 +186,19 @@ public class FormularioController implements Serializable {
 
 		return "";
 	}
+	
+
+	public String reverter() {
+		try {
+			formulario.setSituacao(1);
+			formularioService.save(formulario);
+			addMessage("Formulário revertido com sucesso.");
+		} catch (Exception e) {
+			addMessage("Aconteceu um problema.");
+		}
+
+		return "";
+	}
 
 	public String devolver() {
 		try {
@@ -361,21 +374,7 @@ public class FormularioController implements Serializable {
 	}
 
 	public Resposta getResposta(String chave) {
-		try {
-			String indices[] = chave.split("_");
-			String q = indices[0].substring(1);
-			String p = indices[1].substring(1);
-			String r = indices[2].substring(1);
-
-			Resposta resp = formularioService.getResposta(new Integer(q), new Integer(p), new Integer(r), formulario);
-
-			if (resp != null)
-				return resp;
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return new Resposta();
+		return formularioService.getResposta(chave, formulario);
 	}
 
 	public List<Resposta> getListaRespostas(String chave) {
@@ -593,5 +592,13 @@ public class FormularioController implements Serializable {
 
 	public void setSolucoesDegravacao(Resposta solucoesDegravacao) {
 		this.solucoesDegravacao = solucoesDegravacao;
+	}
+
+	public int getTipoFormulario() {
+		return tipoFormulario;
+	}
+
+	public void setTipoFormulario(int tipoFormulario) {
+		this.tipoFormulario = tipoFormulario;
 	}
 }
