@@ -16,7 +16,7 @@
 
 			<p:panel header="BLOCO 6 - DADOS SOBRE PRODUÇÃO" toggleable="true"
 				closable="false" toggleSpeed="500" closeSpeed="500"
-				widgetVar="panel6" style="margin-bottom:20px" collapsed="true">
+				widgetVar="panel6" style="margin-bottom:20px" collapsed="false">
 
 				<p:fieldset legend="Bloco 6 - Questão 1" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
@@ -37,43 +37,43 @@
 						<p:outputPanel>
 							<h:outputText value="Em família. Quantas pessoas? " />
 							<p:inputText
-								value="#{formularioController.getResposta('q47_p1_r2').texto}"
-								size="3" disabled="true" />
-						</p:outputPanel>
-						<h:outputText value="1.3" />
-						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q47_p1_r3').opcaoBoleana}"
-							disabled="true" />
-						<p:outputPanel>
-							<h:outputText
-								value="Em grupo de companheiros(as). Quantas pessoas? " />
-							<p:inputText
 								value="#{formularioController.getResposta('q47_p1_r3').texto}"
 								size="3" disabled="true" />
 						</p:outputPanel>
-						<h:outputText value="1.4" />
+						<h:outputText value="1.3" />
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q47_p1_r4').opcaoBoleana}"
 							disabled="true" />
 						<p:outputPanel>
 							<h:outputText
+								value="Em grupo de companheiros(as). Quantas pessoas? " />
+							<p:inputText
+								value="#{formularioController.getResposta('q47_p1_r5').texto}"
+								size="3" disabled="true" />
+						</p:outputPanel>
+						<h:outputText value="1.4" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q47_p1_r6').opcaoBoleana}"
+							disabled="true" />
+						<p:outputPanel>
+							<h:outputText
 								value="Em grupo de companheiros(as) e família. Quantas pessoas? " />
 							<p:inputText
-								value="#{formularioController.getResposta('q47_p1_r4').texto}"
+								value="#{formularioController.getResposta('q47_p1_r7').texto}"
 								size="3" disabled="true" />
 						</p:outputPanel>
 						<h:outputText value="1.5" />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q47_p1_r5').opcaoBoleana}"
+							value="#{formularioController.getResposta('q47_p1_r8').opcaoBoleana}"
 							disabled="true" />
 						<p:outputPanel>
 							<h:outputText value="Outros: " />
 							<p:inputText
-								value="#{formularioController.getResposta('q47_p1_r5').coluna[0]}"
+								value="#{formularioController.getResposta('q47_p1_r9').texto}"
 								size="50" disabled="true" />
 							<h:outputText value=" Quantas pessoas? " />
 							<p:inputText
-								value="#{formularioController.getResposta('q47_p1_r5').coluna[1]}"
+								value="#{formularioController.getResposta('q47_p1_r10').texto}"
 								size="3" disabled="true" />
 						</p:outputPanel>
 					</h:panelGrid>
@@ -105,21 +105,21 @@
 						<h:outputText
 							value=" Vai e volta no mesmo dia (“bate e volta”) – Nesta categoria, quantos dias por semana realiza a pesca? " />
 						<p:inputText
-							value="#{formularioController.getResposta('q47_p1_r1').texto}"
+							value="#{formularioController.getResposta('q49_p1_r2').texto}"
 							size="4" disabled="true" />
 					</h:panelGrid>
 					<h:panelGrid columns="5" style="margin-bottom:10px" cellpadding="5">
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q49_p1_r1').opcaoBoleana}"
+							value="#{formularioController.getResposta('q49_p1_r3').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText
 							value=" Pesca de decida ou de baixada (pesca que dura mais de um dia fora de casa). Quantas vezes realiza e pesca por Semana?  " />
 						<p:inputText
-							value="#{formularioController.getResposta('q49_p1_r1').coluna[0]}"
+							value="#{formularioController.getResposta('q49_p1_r4').texto}"
 							size="4" disabled="true" />
 						<h:outputText value="Quantas vezes realiza a pesca por mês? " />
 						<p:inputText
-							value="#{formularioController.getResposta('q49_p1_r1').coluna[1]}"
+							value="#{formularioController.getResposta('q49_p1_r5').texto}"
 							size="4" disabled="true" />
 					</h:panelGrid>
 
@@ -132,24 +132,24 @@
 						<h:outputText styleClass="lblPerg"
 							value="Quanto tempo se gasta para chegar ao local de pesca (pesqueiro) mais distante? " />
 						<p:inputText
-							value="#{formularioController.getResposta('q50_p1_r1').coluna[0]}"
+							value="#{formularioController.getResposta('q50_p1_r1').texto}"
 							size="4" disabled="true" />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q50_p1_r1').coluna[1] == '1' ? true : false}"
+							value="#{formularioController.getResposta('q50_p1_r2').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Horas" />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q50_p1_r1').coluna[1] == '2' ? true : false}"
+							value="#{formularioController.getResposta('q50_p1_r3').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Minutos " />
 					</h:panelGrid>
 					<h:panelGrid columns="4" style="margin-bottom:10px" cellpadding="5">
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q50_p1_r2').opcaoBoleana}"
+							value="#{formularioController.getResposta('q50_p1_r4').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Não sabe" />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q50_p1_r3').opcaoBoleana}"
+							value="#{formularioController.getResposta('q50_p1_r5').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Não respondeu" />
 					</h:panelGrid>
@@ -160,24 +160,24 @@
 						<h:outputText styleClass="lblPerg"
 							value="Quanto tempo se gasta para chegar ao local de pesca (pesqueiro) mais perto? " />
 						<p:inputText
-							value="#{formularioController.getResposta('q50_p2_r1').coluna[0]}"
+							value="#{formularioController.getResposta('q50_p2_r1').texto}"
 							size="4" disabled="true" />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q50_p2_r1').coluna[1] == '1' ? true : false}"
+							value="#{formularioController.getResposta('q50_p2_r2').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Horas" />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q50_p2_r1').coluna[1] == '2' ? true : false}"
+							value="#{formularioController.getResposta('q50_p2_r3').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Minutos " />
 					</h:panelGrid>
 					<h:panelGrid columns="4" style="margin-bottom:10px" cellpadding="5">
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q50_p2_r2').opcaoBoleana}"
+							value="#{formularioController.getResposta('q50_p2_r4').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Não sabe" />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q50_p2_r3').opcaoBoleana}"
+							value="#{formularioController.getResposta('q50_p2_r5').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Não respondeu" />
 					</h:panelGrid>
@@ -190,13 +190,11 @@
 						<h:outputText styleClass="lblPerg"
 							value="Em qual estação do ano realiza a pesca? (filtro da questão de produção 7. )" />
 					</h:panelGrid>
-					<h:panelGrid columns="3" style="margin-bottom:10px" cellpadding="5">
-						<h:outputText value="5.1" />
+					<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q51_p1_r1').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value="verão" />
-						<h:outputText value="5.2" />
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q51_p1_r2').opcaoBoleana}"
 							disabled="true" />
@@ -211,13 +209,11 @@
 						<h:outputText styleClass="lblPerg"
 							value="Em qual maré realiza a pesca?  (filtro de produção 7)" />
 					</h:panelGrid>
-					<h:panelGrid columns="3" style="margin-bottom:10px" cellpadding="5">
-						<h:outputText value="4.2.1" />
+					<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q52_p1_r1').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value="Maré Morta, Mortinha ou de Quarta." />
-						<h:outputText value="4.2.2" />
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q52_p1_r2').opcaoBoleana}"
 							disabled="true" />
@@ -251,366 +247,381 @@
 						<p:row>
 							<p:column rowspan="9" style="font-weight: bold;">Baixa/morta</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Braço" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p1_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Braço" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r1').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p1_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r1').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p1_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r1').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p1_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r1').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p1_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Braço com auxílio de gancho" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p2_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Braço com auxílio de gancho" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r2').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p2_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r2').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p2_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r2').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p2_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r2').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p2_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Gancho" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p3_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Gancho" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r3').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p3_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r3').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p3_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r3').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p3_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r3').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p3_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Laço" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p4_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Laço" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r4').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p4_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r4').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p4_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r4').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p4_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r4').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p4_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="tapagem" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p5_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Tapagem" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r5').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p5_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r5').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p5_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r5').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p5_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r5').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p5_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Redinha" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p6_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Redinha" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r6').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p6_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r6').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p6_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r6').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p6_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r6').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p6_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Ratoeira" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p7_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Ratoeira" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r7').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p7_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r7').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p7_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r7').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p7_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r7').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p7_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Outros" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p8_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Outros" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r8').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p8_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r8').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p8_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r8').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p8_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p1_r8').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p8_r5').texto}" />
 							</p:column>
 						</p:row>
-
+						
 						<p:row>
 							<p:column colspan="6" styleClass="ui-widget-header">
 								<p:spacer height="0" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column rowspan="9" style="font-weight: bold;">Grande/alta</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Braço" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p9_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Braço" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r1').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p9_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r1').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p9_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r1').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p9_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r1').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p9_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Braço com auxílio de gancho" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p10_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Braço com auxílio de gancho" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r2').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p10_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r2').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p10_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r2').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p10_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r2').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p10_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Gancho" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p11_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Gancho" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r3').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p11_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r3').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p11_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r3').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p11_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r3').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p11_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Laço" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p12_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Laço" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r4').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p12_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r4').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p12_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r4').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p12_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r4').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p12_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="tapagem" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p13_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Tapagem" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r5').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p13_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r5').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p13_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r5').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p13_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r5').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p13_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Redinha" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p14_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Redinha" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r6').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p14_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r6').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p14_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r6').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p14_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r6').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p14_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Ratoeira" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p15_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Ratoeira" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r7').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p15_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r7').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p15_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r7').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p15_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r7').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p15_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Outros" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p16_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Outros" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r8').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p16_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r8').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p16_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r8').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p16_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p2_r8').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p16_r5').texto}" />
 							</p:column>
 						</p:row>
 					</p:panelGrid>
@@ -618,7 +629,7 @@
 					<p:panelGrid style="margin-top:20px">
 						<f:facet name="header">
 							<p:row>
-								<p:column colspan="6">Inverno</p:column>
+								<p:column colspan="6">Verão</p:column>
 							</p:row>
 							<p:row>
 								<p:column rowspan="2">Maré</p:column>
@@ -638,363 +649,378 @@
 
 						<p:row>
 							<p:column>
-								<h:outputText value="Braço" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p17_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Braço" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r1').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p17_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r1').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p17_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r1').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p17_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r1').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p17_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Braço com auxílio de gancho" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p18_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Braço com auxílio de gancho" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r2').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p18_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r2').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p18_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r2').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p18_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r2').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p18_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Gancho" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p19_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Gancho" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r3').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p19_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r3').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p19_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r3').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p19_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r3').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p19_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Laço" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p20_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Laço" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r4').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p20_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r4').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p20_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r4').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p20_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r4').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p20_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="tapagem" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p21_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Tapagem" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r5').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p21_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r5').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p21_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r5').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p21_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r5').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p21_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Redinha" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p22_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Redinha" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r6').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p22_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r6').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p22_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r6').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p22_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r6').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p22_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Ratoeira" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p23_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Ratoeira" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r7').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p23_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r7').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p23_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r7').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p23_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r7').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p23_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Outros" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p24_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Outros" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r8').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p24_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r8').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p24_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r8').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p24_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p3_r8').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p24_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column colspan="6" styleClass="ui-widget-header">
 								<p:spacer height="0" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column rowspan="9" style="font-weight: bold;">Grande/alta</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Braço" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p25_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Braço" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r1').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p25_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r1').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p25_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r1').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p25_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r1').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p25_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Braço com auxílio de gancho" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p26_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Braço com auxílio de gancho" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r2').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p26_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r2').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p26_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r2').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p26_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r2').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p26_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Gancho" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p27_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Gancho" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r3').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p27_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r3').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p27_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r3').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p27_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r3').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p27_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Laço" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p28_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Laço" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r4').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p28_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r4').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p28_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r4').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p28_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r4').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p28_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="tapagem" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p29_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Tapagem" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r5').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p29_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r5').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p29_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r5').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p29_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r5').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p29_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Redinha" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p30_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Redinha" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r6').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p30_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r6').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p30_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r6').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p30_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r6').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p30_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Ratoeira" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p31_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Ratoeira" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r7').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p31_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r7').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p31_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r7').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p31_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r7').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p31_r5').texto}" />
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
-								<h:outputText value="Outros" />
+								<p:selectBooleanCheckbox
+									value="#{formularioController.getResposta('q53_p32_r1').opcaoBoleana}"
+									disabled="true" itemLabel="Outros" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r8').coluna[0]}" />
+									value="#{formularioController.getResposta('q53_p32_r2').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r8').coluna[1]}" />
+									value="#{formularioController.getResposta('q53_p32_r3').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r8').coluna[2]}" />
+									value="#{formularioController.getResposta('q53_p32_r4').texto}" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<h:outputText
-									value="#{formularioController.getResposta('q53_p4_r8').coluna[3]}" />
+									value="#{formularioController.getResposta('q53_p32_r5').texto}" />
 							</p:column>
 						</p:row>
 					</p:panelGrid>
@@ -1011,7 +1037,7 @@
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q54_p1_r1').opcaoBoleana}"
 							disabled="true" />
-						<h:outputText value="Não (pule para a B8)" />
+						<h:outputText value="Não" />
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q54_p1_r2').opcaoBoleana}"
 							disabled="true" />
@@ -1036,7 +1062,7 @@
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q54_p4_r1').opcaoBoleana}"
 							disabled="true" />
-						<h:outputText value="Não (pule para a B8)" />
+						<h:outputText value="Não" />
 					</h:panelGrid>
 					<h:panelGrid columns="3" cellpadding="5">
 						<p:selectBooleanCheckbox
@@ -1050,16 +1076,16 @@
 				</p:fieldset>
 			</p:panel>
 
-			<p:panel
-				header="BLOCO 7 - DADOS SOBRE COMERCIALIZAÇÃO E BENEFICIAMENTO"
+			<p:panel header="BLOCO 7 - DADOS SOBRE COMERCIALIZAÇÃO E BENEFICIAMENTO"
 				toggleable="true" closable="false" toggleSpeed="500"
 				closeSpeed="500" widgetVar="panel7" style="margin-bottom:20px"
-				collapsed="false">
+				collapsed="true">
+			
 
 				<p:fieldset legend="Bloco 7 - Questão 1" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid id="q55" columns="1" style="margin-bottom:10px"
+					<h:panelGrid  columns="1" style="margin-bottom:10px"
 						cellpadding="5">
 						<h:outputText styleClass="lblPerg"
 							value="Como é vendido o caranguejo? (filtro) - pode ser marcada mais de uma opção" />
@@ -1438,8 +1464,7 @@
 				<p:fieldset legend="Bloco 7 - Questão 7" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid columns="1" style="margin-bottom:2px"
-						cellpadding="5">
+					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
 						<h:outputText styleClass="lblPerg"
 							value="Como ocorre a venda? (pode marcar mais de uma)" />
 					</h:panelGrid>
@@ -1469,8 +1494,7 @@
 				<p:fieldset legend="Bloco 7 - Questão 8" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid columns="1" style="margin-bottom:2px"
-						cellpadding="5">
+					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
 						<h:outputText styleClass="lblPerg"
 							value="Para quem se vende o caranguejo? (pode marcar mais de uma)" />
 					</h:panelGrid>
@@ -1588,8 +1612,7 @@
 				<p:fieldset legend="Bloco 7 - Questão 9" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid columns="1" style="margin-bottom:2px"
-						cellpadding="5">
+					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
 						<h:outputText styleClass="lblPerg"
 							value="Desses compradores/consumidores quais são os três principais?  (informar se é interno ou externo da comunidade. Na lista dos compradores marcados na questão anterior, deve vir descrito se é da comunidade ou fora)" />
 					</h:panelGrid>
@@ -1617,8 +1640,7 @@
 				<p:fieldset legend="Bloco 7 - Questão 10" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid  columns="1" style="margin-bottom:2px"
-						cellpadding="5">
+					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
 						<h:outputText styleClass="lblPerg"
 							value="Qual é o preço de venda do caranguejo (vivo e beneficiado) por tipo de comprador ao longo do ano na Alta e Baixa temporada." />
 					</h:panelGrid>
@@ -1858,8 +1880,7 @@
 				<p:fieldset legend="Bloco 7 - Questão 11" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid columns="1" style="margin-bottom:2px"
-						cellpadding="5">
+					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
 						<h:outputText styleClass="lblPerg"
 							value="Qual é forma de pagamento dos principais compradores/consumidores? (marcar a forma principal)" />
 					</h:panelGrid>
@@ -1935,8 +1956,7 @@
 				<p:fieldset legend="Bloco 7 - Questão 12" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid columns="1" style="margin-bottom:2px"
-						cellpadding="5">
+					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
 						<h:outputText styleClass="lblPerg" value="O senhor recebe quando:" />
 					</h:panelGrid>
 					<h:panelGrid columns="2">
@@ -1999,8 +2019,7 @@
 				<p:fieldset legend="Bloco 8 - Questão 1" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid columns="5" style="margin-bottom:2px"
-						cellpadding="5">
+					<h:panelGrid columns="5" style="margin-bottom:2px" cellpadding="5">
 						<h:outputText styleClass="lblPerg"
 							value="Quais são os bens utilizados na pesca e, se realizado, no beneficiamento?  " />
 					</h:panelGrid>
@@ -2117,7 +2136,8 @@
 						<h:outputText value=" (pule para 3)" />
 					</h:panelGrid>
 					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
-						<h:outputText styleClass="lblPerg" value="Qual tipo de embarcação utiliza?  " />
+						<h:outputText styleClass="lblPerg"
+							value="Qual tipo de embarcação utiliza?  " />
 					</h:panelGrid>
 					<h:panelGrid columns="10">
 						<p:selectBooleanCheckbox
@@ -2168,7 +2188,8 @@
 					</h:panelGrid>
 
 					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
-						<h:outputText styleClass="lblPerg" value="O senhor possui embarcação própria? " />
+						<h:outputText styleClass="lblPerg"
+							value="O senhor possui embarcação própria? " />
 					</h:panelGrid>
 					<h:panelGrid columns="2">
 						<p:selectBooleanCheckbox
@@ -2224,7 +2245,8 @@
 					<br />
 
 					<h:panelGrid columns="8" style="margin-bottom:2px" cellpadding="5">
-						<h:outputText  styleClass="lblPerg" value="Se aluga, quanto o senhor paga: R$" />
+						<h:outputText styleClass="lblPerg"
+							value="Se aluga, quanto o senhor paga: R$" />
 						<p:inputText
 							value="#{formularioController.getResposta('q69_p6_r1').texto}"
 							size="10" disabled="true" />
@@ -2245,7 +2267,8 @@
 					<br />
 
 					<h:panelGrid columns="8" style="margin-bottom:2px" cellpadding="5">
-						<h:outputText styleClass="lblPerg" value="Que combustível o senhor utiliza: " />
+						<h:outputText styleClass="lblPerg"
+							value="Que combustível o senhor utiliza: " />
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q69_p7_r1').opcaoBoleana}"
 							disabled="true" />
@@ -4932,8 +4955,7 @@
 				<p:fieldset legend="Bloco 8 - Questão 6" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
-					<h:panelGrid columns="1" style="margin-bottom:10px"
-						cellpadding="5">
+					<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
 						<h:outputText styleClass="lblPerg"
 							value="Quais atividades são as realizadas antes ou depois da pescaria?  Quanto tempo essas atividades gastam? Quais são os recursos utilizados?  " />
 					</h:panelGrid>
