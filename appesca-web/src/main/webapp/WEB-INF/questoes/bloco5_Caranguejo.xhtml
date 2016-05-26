@@ -1,0 +1,162 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+	
+			<p:panel header="BLOCO 5 - QUESTÕES PARA PESCADORES"
+				toggleable="true" closable="false" toggleSpeed="500"
+				closeSpeed="500" widgetVar="panel5" style="margin-bottom:20px"
+				collapsed="true">
+
+				<p:fieldset legend="Bloco 5 - Questão 1" toggleable="true"
+					style="margin-top:20px" toggleSpeed="500">
+
+					<h:panelGrid columns="2" cellpadding="10">
+						<h:outputText styleClass="lblPerg"
+							value="A partir de que idade você começou a trabalhar com a pesca e/ou catação de caranguejo?" />
+						<p:inputText
+							value="#{formularioController.getResposta('q42_p1_r1').texto}"
+							size="3" style="text-align: center;" disabled="true" />
+					</h:panelGrid>
+
+				</p:fieldset>
+
+				<p:fieldset legend="Bloco 5 - Questão 2" toggleable="true"
+					style="margin-top:20px" toggleSpeed="500">
+					<h:panelGrid columns="5" style="margin-bottom:10px" cellpadding="5">
+						<h:outputText styleClass="lblPerg"
+							value="Você acha que o valor que você recebe pela venda do caranguejo é justo?" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q43_p1_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Sim" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q43_p1_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Não" />
+					</h:panelGrid>
+				</p:fieldset>
+
+				<p:fieldset legend="Bloco 5 - Questão 3" toggleable="true"
+					style="margin-top:20px" toggleSpeed="500">
+					<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+						<h:outputText styleClass="lblPerg"
+							value="O dinheiro da pesca representa quanto na renda familiar? " />
+					</h:panelGrid>
+					<h:panelGrid columns="3" style="margin-bottom:10px" cellpadding="5">
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q44_p1_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="nada" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q44_p1_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="menos da metade" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q44_p1_r3').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="metade" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q44_p1_r4').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="mais da metade" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q44_p1_r5').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="tudo" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q44_p1_r6').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Não respondeu" />
+					</h:panelGrid>
+
+				</p:fieldset>
+
+				<p:fieldset legend="Bloco 5 - Questão 4" toggleable="true"
+					style="margin-top:20px" toggleSpeed="500">
+					<h:panelGrid columns="5" style="margin-bottom:10px" cellpadding="5">
+						<h:outputText styleClass="lblPerg"
+							value="Dá para se sustentar o ano todo somente com a atividade de pesca do caranguejo?" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q45_p1_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Sim" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q45_p1_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Não" />
+					</h:panelGrid>
+				</p:fieldset>
+
+				<p:fieldset legend="Bloco 5 - Questão 5" toggleable="true"
+					style="margin-top:20px" toggleSpeed="500">
+					<h:panelGrid columns="5" style="margin-bottom:10px" cellpadding="5">
+						<h:outputText styleClass="lblPerg"
+							value="Você é beneficiário de algum projeto ou programa de desenvolvimento comunitário? " />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p1_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Sim" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p1_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Não" />
+					</h:panelGrid>
+
+					<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
+						<h:outputText styleClass="lblPerg" value="Se sim, qual? " />
+					</h:panelGrid>
+					<h:panelGrid columns="3" style="margin-bottom:10px" cellpadding="5">
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p2_r1').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Entre marés" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p2_r2').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Maré solidária" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p2_r3').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Conservação Internacional" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p2_r4').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Unesco" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p2_r5').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Manguezais do Brasil" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p2_r6').opcaoBoleana}"
+							disabled="true" />
+						<h:outputText value="Feiras do governo do Estado" />
+						<h:outputText value="" />
+						<p:selectBooleanCheckbox
+							value="#{formularioController.getResposta('q46_p2_r7').opcaoBoleana}"
+							disabled="true" />
+						<p:outputPanel>
+							<h:outputText value="Outro. Qual? " />
+							<p:inputText
+								value="#{formularioController.getResposta('q46_p2_r8').texto}"
+								size="50" disabled="true" />
+						</p:outputPanel>
+					</h:panelGrid>
+
+				</p:fieldset>
+			</p:panel>
+	
+</ui:composition>
