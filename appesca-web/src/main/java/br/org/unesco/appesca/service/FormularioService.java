@@ -143,7 +143,10 @@ public class FormularioService {
 					return resp;
 				}
 			}
-		} catch (Exception e) {
+		}catch (NumberFormatException nfe){
+			nfe.printStackTrace();
+			System.out.println("CHAVE COM PROBLEMA: " + chave);
+		}catch (Exception e) {
 			e.printStackTrace();
 		}
 		return new Resposta();

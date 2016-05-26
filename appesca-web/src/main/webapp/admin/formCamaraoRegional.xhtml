@@ -3014,7 +3014,7 @@ na questão 1.1 e 1.2/bloco 7)
 			<p:panel header="BLOCO 8 - DADOS SOBRE BENS E GASTOS"
 				toggleable="true" closable="false" toggleSpeed="500"
 				closeSpeed="500" widgetVar="panel8" style="margin-bottom:20px"
-				collapsed="true">
+				collapsed="false">
 
 				<p:fieldset legend="Bloco 8 - Questão 1" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
@@ -3174,7 +3174,7 @@ na questão 1.1 e 1.2/bloco 7)
 						<h:outputText styleClass="lblPerg"
 							value="Quantos são os tripulantes (piloteiro, proeiro, etc)? (perguntar para cada embarcação que possuir)" />
 					</h:panelGrid>
-					<h:panelGrid columns="9">
+					<h:panelGrid columns="3">
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q67_p3_r1').opcaoBoleana}"
 							disabled="true" />
@@ -3196,8 +3196,6 @@ na questão 1.1 e 1.2/bloco 7)
 						<p:inputText
 							value="#{formularioController.getResposta('q67_p3_r6').texto}"
 							size="3" disabled="true" />
-					</h:panelGrid>
-					<h:panelGrid columns="9">
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q67_p3_r7').opcaoBoleana}"
 							disabled="true" />
@@ -3223,11 +3221,9 @@ na questão 1.1 e 1.2/bloco 7)
 
 					<br />
 
-					<h:panelGrid columns="1" style="margin-bottom:2px" cellpadding="5">
-						<h:outputText styleClass="lblPerg"
+					<h:outputText styleClass="lblPerg"
 							value="Se não possui embarcação própria, de quem é a embarcação que utiliza?" />
-					</h:panelGrid>
-					<h:panelGrid columns="4">
+					<h:panelGrid columns="2" style="margin-bottom:2px" cellpadding="5">
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q67_p4_r1').opcaoBoleana}"
 							disabled="true" />
@@ -3237,8 +3233,6 @@ na questão 1.1 e 1.2/bloco 7)
 							value="#{formularioController.getResposta('q67_p4_r2').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value=" Alugada de familiares ou amigos" />
-					</h:panelGrid>
-					<h:panelGrid columns="5">
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q67_p4_r3').opcaoBoleana}"
 							disabled="true" />
@@ -3246,20 +3240,20 @@ na questão 1.1 e 1.2/bloco 7)
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q67_p4_r4').opcaoBoleana}"
 							disabled="true" />
-						<h:outputText value=" Outros:" />
-						<p:inputText
-							value="#{formularioController.getResposta('q67_p4_r5').texto}"
-							size="30" disabled="true" />
+						<h:panelGroup>
+							<h:outputText value=" Outro:" />
+							<p:inputText
+								value="#{formularioController.getResposta('q67_p4_r5').texto}"
+								size="30" disabled="true" />
+						</h:panelGroup>
 					</h:panelGrid>
-
 					<br />
-
-					<h:panelGrid columns="8" style="margin-bottom:2px">
 						<h:outputText styleClass="lblPerg"
-							value="Quanto é pago pelo aluguel da embarcação? R$" />
+								value="Quanto é pago pelo aluguel da embarcação? R$" />
 						<p:inputText
-							value="#{formularioController.getResposta('q67_p5_r1').texto}"
-							size="10" disabled="true" />
+								value="#{formularioController.getResposta('q67_p5_r1').texto}"
+								size="10" disabled="true" />
+					<h:panelGrid columns="2" style="margin-bottom:2px">
 						<p:selectBooleanCheckbox
 							value="#{formularioController.getResposta('q67_p5_r2').opcaoBoleana}"
 							disabled="true" />
@@ -4782,7 +4776,7 @@ na questão 1.1 e 1.2/bloco 7)
 								<h:panelGrid columns="3">
 									<h:outputText value="&#160;&#160;&#160;&#160;&#160;" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p16_9').opcaoBoleana}"
+										value="#{formularioController.getResposta('q67_p16_r9').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Doação" />
 								</h:panelGrid>
@@ -4796,18 +4790,15 @@ na questão 1.1 e 1.2/bloco 7)
 								</h:panelGrid>
 							</p:column>
 						</p:row>
-						
-
 					</p:panelGrid>
-
 				</p:fieldset>
 
 
 				<p:fieldset legend="Bloco 8 - Questão 3" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 					<h:panelGrid columns="1" style="margin-bottom:2px">
-						<h:outputText
-							value="3.  Quais são os gastos por dia ou por viagem? Qual a quantidade e preço unitário em 2015?" />
+						<h:outputText  styleClass="lblPerg"
+							value="Quais são os gastos por dia ou por viagem? Qual a quantidade e preço unitário em 2015?" />
 					</h:panelGrid>
 					<p:panelGrid style="margin-top:20px">
 						<f:facet name="header">
@@ -4831,45 +4822,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r1').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p1_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r1').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p1_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r1').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p1_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r1').texto}"
+									value="#{formularioController.getResposta('q68_p1_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r1').texto}"
+									value="#{formularioController.getResposta('q68_p1_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r1').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p1_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r1').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p1_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r1').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p1_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -4886,45 +4877,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r2').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p2_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r2').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p2_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r2').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p2_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r2').texto}"
+									value="#{formularioController.getResposta('q68_p2_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r2').texto}"
+									value="#{formularioController.getResposta('q68_p2_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r2').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p2_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r2').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p2_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r2').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p2_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -4941,45 +4932,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r3').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p3_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r3').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p3_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r3').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p3_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r3').texto}"
+									value="#{formularioController.getResposta('q68_p3_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r3').texto}"
+									value="#{formularioController.getResposta('q68_p3_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r3').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p3_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r3').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p3_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r3').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p3_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -4996,45 +4987,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r4').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p4_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r4').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p4_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r4').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p4_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r4').texto}"
+									value="#{formularioController.getResposta('q68_p4_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r4').texto}"
+									value="#{formularioController.getResposta('q68_p4_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r4').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p4_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r4').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p4_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r4').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p4_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5051,45 +5042,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r5').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p5_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r5').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p5_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r5').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p5_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r5').texto}"
+									value="#{formularioController.getResposta('q68_p5_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r5').texto}"
+									value="#{formularioController.getResposta('q68_p5_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r5').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p5_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r5').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p5_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r5').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p5_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5106,45 +5097,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r6').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p6_r6').texto == '1' ? true : false}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r6').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p6_r6').texto == '2' ? true : false}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r6').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p6_r6').texto == '3' ? true : false}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r6').texto}"
+									value="#{formularioController.getResposta('q68_p6_r6').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r6').texto}"
+									value="#{formularioController.getResposta('q68_p6_r6').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r6').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p6_r6').texto == '1' ? true : false}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r6').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p6_r6').texto == '2' ? true : false}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r6').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p6_r6').texto == '3' ? true : false}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5162,45 +5153,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r7').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p7_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r7').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p7_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r7').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p7_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r7').texto}"
+									value="#{formularioController.getResposta('q68_p7_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r7').texto}"
+									value="#{formularioController.getResposta('q68_p7_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r7').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p7_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r7').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p7_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r7').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p7_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5218,45 +5209,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r8').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p8_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r8').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p8_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r8').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p8_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r8').texto}"
+									value="#{formularioController.getResposta('q68_p8_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r8').texto}"
+									value="#{formularioController.getResposta('q68_p8_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r8').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p8_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r8').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p8_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r8').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p8_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5273,45 +5264,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r9').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p9_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r9').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p9_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r9').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p9_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r9').texto}"
+									value="#{formularioController.getResposta('q68_p9_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r9').texto}"
+									value="#{formularioController.getResposta('q68_p9_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r9').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p9_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r9').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p9_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r9').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p9_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5328,45 +5319,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r10').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p10_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r10').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p10_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r10').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p10_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r10').texto}"
+									value="#{formularioController.getResposta('q68_p10_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r10').texto}"
+									value="#{formularioController.getResposta('q68_p10_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r10').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p10_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r10').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p10_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r10').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p10_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5384,45 +5375,45 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r11').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p11_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r11').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p11_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r11').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p11_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r11').texto}"
+									value="#{formularioController.getResposta('q68_p11_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r11').texto}"
+									value="#{formularioController.getResposta('q68_p11_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r11').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p11_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r11').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p11_r7').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r11').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p11_r8').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5432,76 +5423,70 @@ na questão 1.1 e 1.2/bloco 7)
 						<p:row>
 							<p:column>
 								<h:outputText value="Outros?" />
-								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r12').texto}"
-									size="10" disabled="true" />
+								
 							</p:column>
 							<p:column style="text-align: center;">
-								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r12').texto}"
-									size="8" disabled="true" />
+								
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r12').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q68_p12_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por viagem" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r12').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q68_p12_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por dia" />
 								</h:panelGrid>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q67_p1_r12').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q68_p12_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Por semana" />
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r12').texto}"
+									value="#{formularioController.getResposta('q68_p12_r4').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r12').texto}"
+									value="#{formularioController.getResposta('q68_p12_r5').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
-								<p:inputText
-									value="#{formularioController.getResposta('q67_p1_r12').texto}"
-									size="20" disabled="true" />
+								
 							</p:column>
 						</p:row>
 					</p:panelGrid>
 
 					<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
-						<h:outputText
-							value="3.1 Quanto deste total é pago pelo patrão de pesca?" />
+						<h:outputText  styleClass="lblPerg"
+							value="Quanto deste total é pago pelo patrão de pesca?" />
 					</h:panelGrid>
 					<h:panelGrid columns="2" style="margin-bottom:10px" cellpadding="5">
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q67_p2_r1').opcaoBoleana}"
+							value="#{formularioController.getResposta('q68_p13_r1').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value="Nada " />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q67_p2_r2').opcaoBoleana}"
+							value="#{formularioController.getResposta('q68_p13_r2').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value="1/4 (menos da metade) " />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q67_p2_r3').opcaoBoleana}"
+							value="#{formularioController.getResposta('q68_p13_r3').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value="Metade " />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q67_p2_r4').opcaoBoleana}"
+							value="#{formularioController.getResposta('q68_p13_r4').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value="3/4 (mais da metade) " />
 						<p:selectBooleanCheckbox
-							value="#{formularioController.getResposta('q67_p2_r5').opcaoBoleana}"
+							value="#{formularioController.getResposta('q68_p13_r5').opcaoBoleana}"
 							disabled="true" />
 						<h:outputText value="Todo o custo " />
 					</h:panelGrid>
@@ -5512,8 +5497,8 @@ na questão 1.1 e 1.2/bloco 7)
 				<p:fieldset legend="Bloco 8 - Questão 4" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 					<h:panelGrid columns="1" style="margin-bottom:2px">
-						<h:outputText
-							value="4.  Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?" />
+						<h:outputText  styleClass="lblPerg"
+							value="Normalmente, quais são os gastos que ocorrem frequentemente? Qual é o valor gasto ou correspondente para 2015?" />
 					</h:panelGrid>
 					<p:panelGrid style="margin-top:20px">
 						<f:facet name="header">
@@ -5533,61 +5518,57 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r1').texto}"
+										value="#{formularioController.getResposta('q69_p1_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r1').texto}"
+									value="#{formularioController.getResposta('q69_p1_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r1').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p1_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5602,61 +5583,57 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r2').texto}"
+										value="#{formularioController.getResposta('q69_p2_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r2').texto}"
+									value="#{formularioController.getResposta('q69_p2_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r2').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p2_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5671,61 +5648,57 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r3').texto}"
+										value="#{formularioController.getResposta('q69_p3_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r3').texto}"
+									value="#{formularioController.getResposta('q69_p3_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r3').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p3_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5740,61 +5713,57 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r4').texto}"
+										value="#{formularioController.getResposta('q69_p4_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r4').texto}"
+									value="#{formularioController.getResposta('q69_p4_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r4').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p4_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5808,61 +5777,57 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r5').texto}"
+										value="#{formularioController.getResposta('q69_p5_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r5').texto}"
+									value="#{formularioController.getResposta('q69_p5_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r5').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p5_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5876,61 +5841,57 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r6').texto}"
+										value="#{formularioController.getResposta('q69_p6_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r6').texto}"
+									value="#{formularioController.getResposta('q69_p6_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r6').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p6_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -5945,67 +5906,62 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r7').texto}"
+										value="#{formularioController.getResposta('q69_p7_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r7').texto}"
+									value="#{formularioController.getResposta('q69_p7_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r7').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p7_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
 								<h:outputText value="Material para manutenção de viveiro " />
@@ -6013,61 +5969,57 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r8').texto}"
+										value="#{formularioController.getResposta('q69_p8_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r8').texto}"
+									value="#{formularioController.getResposta('q69_p8_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r8').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p8_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
@@ -6082,67 +6034,62 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r9').texto}"
+										value="#{formularioController.getResposta('q69_p9_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r9').texto}"
+									value="#{formularioController.getResposta('q69_p9_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r10').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não utiliza" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r11').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não sabe" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r9').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p9_r12').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Não respondeu" />
 								</h:panelGrid>
 							</p:column>
 						</p:row>
-
 						<p:row>
 							<p:column>
 								<h:outputText value="Outros: " />
@@ -6150,92 +6097,84 @@ na questão 1.1 e 1.2/bloco 7)
 							<p:column style="text-align: center;">
 								<h:panelGrid columns="2">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r10').texto == '1' ? true : false}"
+										value="#{formularioController.getResposta('q69_p10_r1').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="Todo mês" />
-								</h:panelGrid>
-								<h:panelGrid columns="6">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r10').texto == '2' ? true : false}"
+										value="#{formularioController.getResposta('q69_p10_r2').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="3x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r10').texto == '3' ? true : false}"
+										value="#{formularioController.getResposta('q69_p10_r3').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="2x no ano" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r10').texto == '4' ? true : false}"
+										value="#{formularioController.getResposta('q69_p10_r4').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x no ano" />
-								</h:panelGrid>
-								<h:panelGrid columns="4">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r10').texto == '5' ? true : false}"
+										value="#{formularioController.getResposta('q69_p10_r5').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 2 anos" />
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r10').texto == '6' ? true : false}"
+										value="#{formularioController.getResposta('q69_p10_r6').opcaoBoleana}"
 										disabled="true" />
 									<h:outputText value="1x em 3 anos" />
-								</h:panelGrid>
-								<h:panelGrid columns="3">
 									<p:selectBooleanCheckbox
-										value="#{formularioController.getResposta('q68_p1_r10').texto == '7' ? true : false}"
+										value="#{formularioController.getResposta('q69_p10_r7').opcaoBoleana}"
 										disabled="true" />
+									<h:panelGroup>
 									<h:outputText value="Outro:" />
 									<p:inputText
-										value="#{formularioController.getResposta('q68_p1_r10').texto}"
+										value="#{formularioController.getResposta('q69_p10_r8').texto}"
 										size="15" disabled="true" />
+									</h:panelGroup>
 								</h:panelGrid>
 							</p:column>
 							<p:column style="text-align: center;">
 								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r10').texto}"
+									value="#{formularioController.getResposta('q69_p10_r9').texto}"
 									size="10" disabled="true" />
 							</p:column>
 							<p:column>
-								<p:inputText
-									value="#{formularioController.getResposta('q68_p1_r10').texto}"
-									size="20" disabled="true" />
 							</p:column>
 						</p:row>
 					</p:panelGrid>
-
 				</p:fieldset>
 
 				<p:fieldset legend="Bloco 8 - Questão 5" toggleable="true"
 					style="margin-top:20px" toggleSpeed="500">
 
 					<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
-						<h:outputText
-							value="5. Quanto tempo em média se gasta com a preparação de materiais (poqueca, alimento, coleta de lenha, folhas, fibras, etc)? " />
+						<h:outputText styleClass="lblPerg"
+							value="Quanto tempo em média se gasta com a preparação de materiais (poqueca, alimento, coleta de lenha, folhas, fibras, etc)? " />
 					</h:panelGrid>
 					<h:panelGrid columns="5" style="margin-bottom:10px" cellpadding="5">
 						<h:outputText value="Verão: " />
 						<p:inputText
-							value="#{formularioController.getResposta('q69_p1_r1').texto}"
+							value="#{formularioController.getResposta('q70_p1_r1').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/dia ou " />
 						<p:inputText
-							value="#{formularioController.getResposta('q69_p1_r1').texto}"
+							value="#{formularioController.getResposta('q70_p1_r2').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/semana" />
 						<h:outputText value="Inverno: " />
 						<p:inputText
-							value="#{formularioController.getResposta('q69_p1_r2').texto}"
+							value="#{formularioController.getResposta('q70_p2_r1').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/dia ou " />
 						<p:inputText
-							value="#{formularioController.getResposta('q69_p1_r2').texto}"
+							value="#{formularioController.getResposta('q70_p2_r2').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/semana" />
 						<p:outputPanel>
 							<p:selectBooleanCheckbox
-								value="#{formularioController.getResposta('q69_p1_r3').opcaoBoleana}"
+								value="#{formularioController.getResposta('q70_p3_r1').opcaoBoleana}"
 								disabled="true" />
 							<h:outputText value=" Não sabe" />
 							<p:selectBooleanCheckbox
-								value="#{formularioController.getResposta('q69_p1_r4').opcaoBoleana}"
+								value="#{formularioController.getResposta('q70_p3_r2').opcaoBoleana}"
 								disabled="true" />
 							<h:outputText value=" Não respondeu" />
 						</p:outputPanel>
@@ -6248,35 +6187,35 @@ na questão 1.1 e 1.2/bloco 7)
 					style="margin-top:20px" toggleSpeed="500">
 
 					<h:panelGrid columns="1" style="margin-bottom:10px" cellpadding="5">
-						<h:outputText
-							value="6. Se a própria família realiza a manutenção dos equipamentos (matapi/viveiro, rede, tarrafa, motor, barco), quanto tempo normalmente se gasta? " />
+						<h:outputText  styleClass="lblPerg"
+							value="Se a própria família realiza a manutenção dos equipamentos (matapi/viveiro, rede, tarrafa, motor, barco), quanto tempo normalmente se gasta? " />
 					</h:panelGrid>
 					<h:panelGrid columns="5" style="margin-bottom:10px" cellpadding="5">
 						<h:outputText value="Verão: " />
 						<p:inputText
-							value="#{formularioController.getResposta('q70_p1_r1').texto}"
+							value="#{formularioController.getResposta('q71_p1_r1').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/dia ou " />
 						<p:inputText
-							value="#{formularioController.getResposta('q70_p1_r1').texto}"
+							value="#{formularioController.getResposta('q71_p1_r2').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/semana" />
 						<h:outputText value="Inverno: " />
 						<p:inputText
-							value="#{formularioController.getResposta('q70_p1_r2').texto}"
+							value="#{formularioController.getResposta('q71_p2_r1').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/dia ou " />
 						<p:inputText
-							value="#{formularioController.getResposta('q70_p1_r2').texto}"
+							value="#{formularioController.getResposta('q71_p2_r2').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/semana" />
 						<p:outputPanel>
 							<p:selectBooleanCheckbox
-								value="#{formularioController.getResposta('q70_p1_r3').opcaoBoleana}"
+								value="#{formularioController.getResposta('q71_p3_r1').opcaoBoleana}"
 								disabled="true" />
 							<h:outputText value=" Não sabe" />
 							<p:selectBooleanCheckbox
-								value="#{formularioController.getResposta('q70_p1_r4').opcaoBoleana}"
+								value="#{formularioController.getResposta('q71_p3_r2').opcaoBoleana}"
 								disabled="true" />
 							<h:outputText value=" Não respondeu" />
 						</p:outputPanel>
@@ -6288,14 +6227,14 @@ na questão 1.1 e 1.2/bloco 7)
 					style="margin-top:20px" toggleSpeed="500">
 
 					<h:panelGrid columns="5" style="margin-bottom:10px" cellpadding="5">
-						<h:outputText
-							value="7. Quanto tempo é gasto para selecionar, descascar e/ou salgar o camarão? " />
+						<h:outputText styleClass="lblPerg"
+							value="Quanto tempo é gasto para selecionar, descascar e/ou salgar o camarão? " />
 						<p:inputText
-							value="#{formularioController.getResposta('q71_p1_r1').texto}"
+							value="#{formularioController.getResposta('q72_p1_r1').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/dia (ou) " />
 						<p:inputText
-							value="#{formularioController.getResposta('q71_p1_r1').texto}"
+							value="#{formularioController.getResposta('q72_p1_r2').texto}"
 							size="4" disabled="true" />
 						<h:outputText value=" horas/semana" />
 					</h:panelGrid>
