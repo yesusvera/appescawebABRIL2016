@@ -19,9 +19,9 @@
 			
 			<i><b>#{formularioController.listaFormularios==null?'0':formularioController.listaFormularios.size()} </b></i> formulários encontrados.
 			<p:dataTable var="formulario" value="#{formularioController.listaFormularios}" emptyMessage="Nenhum formulário encontrado." style="font-size:small">
-				<p:column headerText="Pesquisador" filterBy="#{formularioController.getUsuario(formulario).nome}" sortBy="#{formularioController.getUsuario(formulario).nome}" style="text-align: center;" >
+				<!-- <p:column headerText="Pesquisador" filterBy="#{formularioController.getUsuario(formulario).nome}" sortBy="#{formularioController.getUsuario(formulario).nome}" style="text-align: center;" >
 					<h:outputText value="#{formularioController.getUsuario(formulario).nome}"/>
-				</p:column>
+				</p:column> -->
 				<p:column headerText="Registro" filterBy="#{formulario.idSincronizacao}" sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
 					<h:outputText value="#{formulario.idSincronizacao}" />
 				</p:column>
@@ -51,7 +51,7 @@
 				</p:column>
 				<p:column headerText="Ações" 
 						  style="text-align: center;">
-					<p:commandLink action="#{formularioController.visualizar(formulario)}">
+					<p:commandLink action="#{formularioController.visualizar(formulario)}" target="_blank">
 						<i class="fa fa-info-circle"></i>
 					</p:commandLink>
 				</p:column>
