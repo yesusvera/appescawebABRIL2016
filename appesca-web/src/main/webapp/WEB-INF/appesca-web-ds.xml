@@ -31,8 +31,8 @@
         <driver>mysql</driver>
         <security>
             <user-name>root</user-name>
-			<!-- <password>root</password> -->
-            <password>appesca2016</password>
+			<password>root</password>
+            <!-- <password>appesca2016</password> -->
         </security>
     </datasource>
 </datasources>

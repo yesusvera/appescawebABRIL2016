@@ -204,7 +204,12 @@ public class FormularioResourceREST extends BaseREST {
 		}
 
 		for (Formulario form : listaFormulario) {
-
+			
+			if(form.getSituacao() < 2){
+				continue;
+			}
+			
+			System.out.println("-_-_-> Processando formulário " + form.getIdSincronizacao());
 			Usuario usr = null;
 
 			for (Usuario usrTmp : listaUsuarios) {
@@ -212,7 +217,6 @@ public class FormularioResourceREST extends BaseREST {
 					usr = usrTmp;
 				}
 			}
-
 			conteudoCSV += form.getIdSincronizacao() + ";";
 			conteudoCSV += formularioService.getRespostaTexto(0, 1, 1, form) + ";";
 			conteudoCSV += "?" + ";";
