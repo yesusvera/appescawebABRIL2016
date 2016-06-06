@@ -207,9 +207,9 @@ public class FormularioResourceREST extends BaseREST {
 		
 		for (Formulario form : listaFormulario) {
 			if(++x == 50){
-				break;
+//				break;
 			}
-			
+//			
 			if(form.getSituacao() < 2 ){
 				continue;
 			}
@@ -236,35 +236,38 @@ public class FormularioResourceREST extends BaseREST {
 				if (row.getCod1AppescaAndroid() != null && !row.getCod1AppescaAndroid().trim().isEmpty()) {
 					if (TemplateCVS.rowIsDataAplicacao(row)) {
 						conteudoCSV += form.getData();
-					}
-					if (TemplateCVS.rowIsNomePesquisador(row)) {
+					}else if (TemplateCVS.rowIsNomePesquisador(row)) {
 						if (usr != null) {
-							conteudoCSV += usr.getNome();
+							conteudoCSV +=  "\"" + usr.getNome() +  "\"";
 						}
-					}
+					}else{
 
-					if (TemplateCVS.rowIsText(row) || TemplateCVS.rowIsNumber(row) || TemplateCVS.rowIsMultiple(row)) {
+//					if (TemplateCVS.rowIsText(row) || TemplateCVS.rowIsNumber(row) || TemplateCVS.rowIsMultiple(row)) {
 						if (TemplateCVS.temDoisCodigos(row)) {
 							conteudoCSV = priorizaRespostaComDoisCodigos(conteudoCSV, form, row);
 						} else {
-							String respStr = formularioService.getResposta(row.getCod1AppescaAndroid(), form)
-									.getTexto();
+							String respStr = "\"" +  formularioService.getResposta(row.getCod1AppescaAndroid(), form)
+									.getTexto() + "\"";
 							if (respStr != null) {
 								respStr = respStr.replaceAll("\n", "");
 							}
 							conteudoCSV += respStr;
 						}
-					}else if (TemplateCVS.rowIsUnique(row)) {
-						if (TemplateCVS.temDoisCodigos(row)) {
-							conteudoCSV = priorizaRespostaComDoisCodigos(conteudoCSV, form, row);
-						} else {
-							String respStr = formularioService.getStringRespostaUnica(row.getCod1AppescaAndroid(),
-									form);
-							if (respStr != null) {
-								respStr = respStr.replaceAll("\n", "");
-							}
-							conteudoCSV += respStr;
-						}
+//					}
+					
+//					else if (TemplateCVS.rowIsUnique(row)) {
+//						if (TemplateCVS.temDoisCodigos(row)) {
+//							conteudoCSV = priorizaRespostaComDoisCodigos(conteudoCSV, form, row);
+//						} else {
+//							String respStr = formularioService.getStringRespostaUnica(row.getCod1AppescaAndroid(),
+//									form);
+//							if (respStr != null) {
+//								respStr = respStr.replaceAll("\n", "");
+//							}
+//							conteudoCSV += respStr;
+//						}
+//					}
+						
 					}
 				}
 				conteudoCSV += ";";
@@ -279,9 +282,9 @@ public class FormularioResourceREST extends BaseREST {
 		String respCod2 = formularioService.getResposta(row.getCod2AppescaAndroid(), form).getTexto();
 
 		if (respCod2 != null && !respCod2.trim().isEmpty()) {
-			conteudoCSV += respCod2;
+			conteudoCSV += "\"" +  respCod2 + "\"";
 		} else {
-			conteudoCSV += formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto();
+			conteudoCSV +=  "\"" + formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto()   + "\"";
 		}
 		return conteudoCSV;
 	}

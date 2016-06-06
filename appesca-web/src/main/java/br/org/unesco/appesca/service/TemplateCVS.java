@@ -38,7 +38,9 @@ public class TemplateCVS {
 		RowExportCVS rowExportCVS = parseRow(strRow);
 
 		if (rowExportCVS != null) {
-			listRowCVS.add(rowExportCVS);
+			if(rowExportCVS.getCodigoExportacao()!=null){
+				listRowCVS.add(rowExportCVS);
+			}
 		}
 	}
 

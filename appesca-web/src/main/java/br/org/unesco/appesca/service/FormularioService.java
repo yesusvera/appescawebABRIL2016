@@ -142,23 +142,7 @@ public class FormularioService {
 				if (resp != null) {
 					return resp;
 				}
-			}
-		}catch (NumberFormatException nfe){
-			nfe.printStackTrace();
-			System.out.println("CHAVE COM PROBLEMA: " + chave);
-		}catch (Exception e) {
-			e.printStackTrace();
-		}
-		return new Resposta();
-	}
-
-	public String getStringRespostaUnica(String chave, Formulario formulario) {
-		if (chave == null || formulario == null)
-			return "";
-
-		try {
-			String indices[] = chave.split("_");
-			if (indices.length == 2) {
+			}else if (indices.length == 2) {
 				String q = indices[0].substring(1);
 				String p = indices[1].substring(1);
 
@@ -169,19 +153,51 @@ public class FormularioService {
 					if(listaRespostas!=null){
 						for(Resposta resp: listaRespostas){
 							if(resp.getTexto()!=null){
-								return resp.getTexto();
+								return resp;
 							}
 						}
 					}
 				}
-			}else if(indices.length == 3){
-				getResposta(chave, formulario).getTexto();
 			}
-		} catch (Exception e) {
+		}catch (NumberFormatException nfe){
+			nfe.printStackTrace();
+			System.out.println("CHAVE COM PROBLEMA: " + chave);
+		}catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "";
+		return new Resposta();
 	}
+
+//	public String getStringRespostaUnica(String chave, Formulario formulario) {
+//		if (chave == null || formulario == null)
+//			return "";
+//
+//		try {
+//			String indices[] = chave.split("_");
+//			if (indices.length == 2) {
+//				String q = indices[0].substring(1);
+//				String p = indices[1].substring(1);
+//
+//				Pergunta pergunta = getPergunta(new Integer(q), new Integer(p), formulario);
+//				if (pergunta != null) {
+//					List<Resposta> listaRespostas = pergunta.getListaRespostas();
+//					
+//					if(listaRespostas!=null){
+//						for(Resposta resp: listaRespostas){
+//							if(resp.getTexto()!=null){
+//								return resp.getTexto();
+//							}
+//						}
+//					}
+//				}
+//			}else if(indices.length == 3){
+//				getResposta(chave, formulario).getTexto();
+//			}
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//		return "";
+//	}
 
 	public Resposta getResposta(int ordemQuestao, int ordemPergunta, int ordemResposta, Formulario formulario) {
 		Questao questao = getQuestaoPorOrdem(ordemQuestao, formulario);

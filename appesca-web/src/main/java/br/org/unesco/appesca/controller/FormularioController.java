@@ -58,6 +58,8 @@ public class FormularioController implements Serializable {
 	@Named
 	private List<Formulario> listaFormularios;
 
+	private List<Usuario> listaUsuarios = new ArrayList<>();
+
 	private Formulario formulario;
 
 	private String titulo;
@@ -95,6 +97,13 @@ public class FormularioController implements Serializable {
 			setTitulo("Formulário Camarão Piticaia e Branco");
 			break;
 		}
+
+		try {
+			listaUsuarios = usuarioService.listAll();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
 		return "listaFormularios?faces-redirect=true";
 	}
 
@@ -186,7 +195,6 @@ public class FormularioController implements Serializable {
 
 		return "";
 	}
-	
 
 	public String reverter() {
 		try {
@@ -252,8 +260,14 @@ public class FormularioController implements Serializable {
 	}
 
 	public Usuario getUsuario(Formulario formulario) {
-		Usuario usuario = usuarioService.findById(formulario.getIdUsuario());
-		return usuario;
+		if (listaUsuarios != null) {
+			for (Usuario usrTmp : listaUsuarios) {
+				if (formulario.getIdUsuario() == usrTmp.getId().intValue()) {
+					return usrTmp;
+				}
+			}
+		}
+		return new Usuario();
 	}
 
 	public String getUF(Formulario formulario) {
@@ -456,9 +470,9 @@ public class FormularioController implements Serializable {
 		}
 
 	}
-	
+
 	public void salvarObservacao() {
-		try{
+		try {
 			formularioService.save(formulario);
 			addMessage("Observação salva com sucesso!");
 
