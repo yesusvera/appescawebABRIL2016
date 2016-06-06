@@ -203,13 +203,18 @@ public class FormularioResourceREST extends BaseREST {
 			e.printStackTrace();
 		}
 
+		int x = 1;
+		
 		for (Formulario form : listaFormulario) {
+			if(++x == 50){
+				break;
+			}
 			
-			if(form.getSituacao() < 2){
+			if(form.getSituacao() < 2 ){
 				continue;
 			}
 			
-			System.out.println("-_-_-> Processando formulário " + form.getIdSincronizacao());
+			System.out.println("-_-_-> Processando formulário ("+x+") " + form.getIdSincronizacao());
 			Usuario usr = null;
 
 			for (Usuario usrTmp : listaUsuarios) {
@@ -249,9 +254,7 @@ public class FormularioResourceREST extends BaseREST {
 							}
 							conteudoCSV += respStr;
 						}
-					}
-
-					if (TemplateCVS.rowIsUnique(row)) {
+					}else if (TemplateCVS.rowIsUnique(row)) {
 						if (TemplateCVS.temDoisCodigos(row)) {
 							conteudoCSV = priorizaRespostaComDoisCodigos(conteudoCSV, form, row);
 						} else {

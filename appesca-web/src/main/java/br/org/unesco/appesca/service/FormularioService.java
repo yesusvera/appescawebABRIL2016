@@ -174,6 +174,8 @@ public class FormularioService {
 						}
 					}
 				}
+			}else if(indices.length == 3){
+				getResposta(chave, formulario).getTexto();
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
