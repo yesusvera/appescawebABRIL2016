@@ -2,8 +2,6 @@ package br.org.unesco.appesca.rest.model;
 
 import java.io.Serializable;
 
-import br.org.unesco.appesca.model.Usuario;
-
 /**
  * @author yesus
  */

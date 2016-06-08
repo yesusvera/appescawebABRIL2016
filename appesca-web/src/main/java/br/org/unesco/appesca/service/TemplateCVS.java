@@ -71,6 +71,24 @@ public class TemplateCVS {
 		return row;
 	}
 
+	public String montaCabecalho(String conteudoCSV) {
+		conteudoCSV += "Codigo;Pesquisador;Recurso;Estado;Municipio;Comunidade;UC;lat;long;";
+		for (RowExportCVS row : getListRowCVS()) {
+			conteudoCSV += row.getCodigoExportacao() + ";";
+		}
+		conteudoCSV += "\n";
+		return conteudoCSV;
+	}
+	
+	public String priorizaRespostaComDoisCodigos(String linhaMontada, String respCod2, String respCod1) {
+		if (respCod2 != null && !respCod2.trim().isEmpty()) {
+			linhaMontada += "\"" +  respCod2 + "\"";
+		} else {
+			linhaMontada +=  "\"" + respCod1   + "\"";
+		}
+		return linhaMontada;
+	}
+	
 	public List<RowExportCVS> getListRowCVS() {
 		return listRowCVS;
 	}

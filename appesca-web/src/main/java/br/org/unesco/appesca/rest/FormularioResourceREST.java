@@ -22,6 +22,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
 import br.org.unesco.appesca.data.UsuarioRepository;
+import br.org.unesco.appesca.model.ExportacaoCSV;
 import br.org.unesco.appesca.model.Formulario;
 import br.org.unesco.appesca.model.Pergunta;
 import br.org.unesco.appesca.model.Questao;
@@ -31,6 +32,7 @@ import br.org.unesco.appesca.model.exp.RowExportCVS;
 import br.org.unesco.appesca.rest.model.FormularioREST;
 import br.org.unesco.appesca.rest.model.RespEnvioFormulario;
 import br.org.unesco.appesca.rest.model.RespFormularioREST;
+import br.org.unesco.appesca.service.ExportacaoCSVService;
 import br.org.unesco.appesca.service.FormularioService;
 import br.org.unesco.appesca.service.TemplateCVS;
 import br.org.unesco.appesca.service.UsuarioService;
@@ -41,8 +43,6 @@ import br.org.unesco.appesca.service.UsuarioService;
 @Path("/formulario")
 @RequestScoped
 public class FormularioResourceREST extends BaseREST {
-	// @Inject
-	// private FormularioRepository formularioRepository;
 
 	@Inject
 	private FormularioService formularioService;
@@ -52,6 +52,9 @@ public class FormularioResourceREST extends BaseREST {
 
 	@Inject
 	private UsuarioRepository usuarioRespository;
+
+	@Inject
+	private ExportacaoCSVService exportacaoCSVService;
 
 	@Context
 	private ServletContext context;
@@ -176,14 +179,13 @@ public class FormularioResourceREST extends BaseREST {
 			nomeTemplate = "camaraoRegionalVS1.csv";
 			break;
 		case 2:// caranguejo
-			// return Response.noContent().build();
+				// return Response.noContent().build();
 			nomeTemplate = "caranguejoVS1.csv";
 			break;
 		case 3:// piticaia
 			nomeTemplate = "camaraoPiticaiaEBrancoVS1.csv";
 			break;
 		}
-
 		TemplateCVS templateCVS = new TemplateCVS();
 		templateCVS
 				.execute(new File(context.getRealPath("/WEB-INF/exportacaoTemplates/camaraoPiticaiaEBrancoVS1.csv")));
@@ -191,10 +193,9 @@ public class FormularioResourceREST extends BaseREST {
 		String conteudoCSV = "";
 
 		// CABEÇALHO
-		conteudoCSV = montaCabecalho(templateCVS, conteudoCSV);
+		conteudoCSV = templateCVS.montaCabecalho(conteudoCSV);
 
 		List<Formulario> listaFormulario = formularioService.listByTipoFormulario((int) tipoFormulario);
-
 		List<Usuario> listaUsuarios = new ArrayList<>();
 
 		try {
@@ -204,97 +205,76 @@ public class FormularioResourceREST extends BaseREST {
 		}
 
 		int x = 1;
-		
+
 		for (Formulario form : listaFormulario) {
-			if(++x == 50){
-//				break;
-			}
-//			
-			if(form.getSituacao() < 2 ){
+			if (form.getSituacao() < 2) {
 				continue;
 			}
-			
-			System.out.println("-_-_-> Processando formulário ("+x+") " + form.getIdSincronizacao());
-			Usuario usr = null;
+			System.out.println("-_-_-> Processando formulário (" + x++ + ") " + form.getIdSincronizacao());
 
-			for (Usuario usrTmp : listaUsuarios) {
-				if (form.getIdUsuario() == usrTmp.getId().intValue()) {
-					usr = usrTmp;
-				}
-			}
-			conteudoCSV += form.getIdSincronizacao() + ";";
-			conteudoCSV += formularioService.getRespostaTexto(0, 1, 1, form) + ";";
-			conteudoCSV += "?" + ";";
-			conteudoCSV += formularioService.getUF(form) + ";";
-			conteudoCSV += formularioService.getRespostaTexto(0, 4, 1, form) + ";";
-			conteudoCSV += formularioService.getRespostaTexto(0, 5, 1, form) + ";";
-			conteudoCSV += "?" + ";";
-			conteudoCSV += (form.getLatitude() == null ? "" : form.getLatitude()) + ";";
-			conteudoCSV += (form.getLongitude() == null ? "" : form.getLongitude()) + ";";
+			ExportacaoCSV expCSV = exportacaoCSVService.findByIdFormulario(form.getId());
 
-			for (RowExportCVS row : templateCVS.getListRowCVS()) {
-				if (row.getCod1AppescaAndroid() != null && !row.getCod1AppescaAndroid().trim().isEmpty()) {
-					if (TemplateCVS.rowIsDataAplicacao(row)) {
-						conteudoCSV += form.getData();
-					}else if (TemplateCVS.rowIsNomePesquisador(row)) {
-						if (usr != null) {
-							conteudoCSV +=  "\"" + usr.getNome() +  "\"";
-						}
-					}else{
+			if (expCSV != null && expCSV.getLinhaCSV() != null && !expCSV.getLinhaCSV().isEmpty()) {
+				conteudoCSV += expCSV.getLinhaCSV();
+			} else {
+				String linhaCSV = "";
+				Usuario usr = null;
 
-//					if (TemplateCVS.rowIsText(row) || TemplateCVS.rowIsNumber(row) || TemplateCVS.rowIsMultiple(row)) {
-						if (TemplateCVS.temDoisCodigos(row)) {
-							conteudoCSV = priorizaRespostaComDoisCodigos(conteudoCSV, form, row);
-						} else {
-							String respStr = "\"" +  formularioService.getResposta(row.getCod1AppescaAndroid(), form)
-									.getTexto() + "\"";
-							if (respStr != null) {
-								respStr = respStr.replaceAll("\n", "");
-							}
-							conteudoCSV += respStr;
-						}
-//					}
-					
-//					else if (TemplateCVS.rowIsUnique(row)) {
-//						if (TemplateCVS.temDoisCodigos(row)) {
-//							conteudoCSV = priorizaRespostaComDoisCodigos(conteudoCSV, form, row);
-//						} else {
-//							String respStr = formularioService.getStringRespostaUnica(row.getCod1AppescaAndroid(),
-//									form);
-//							if (respStr != null) {
-//								respStr = respStr.replaceAll("\n", "");
-//							}
-//							conteudoCSV += respStr;
-//						}
-//					}
-						
+				for (Usuario usrTmp : listaUsuarios) {
+					if (form.getIdUsuario() == usrTmp.getId().intValue()) {
+						usr = usrTmp;
 					}
 				}
-				conteudoCSV += ";";
+				linhaCSV += form.getIdSincronizacao() + ";";
+				linhaCSV += formularioService.getRespostaTexto(0, 1, 1, form) + ";";
+				linhaCSV += "?" + ";";
+				linhaCSV += formularioService.getUF(form) + ";";
+				linhaCSV += formularioService.getRespostaTexto(0, 4, 1, form) + ";";
+				linhaCSV += formularioService.getRespostaTexto(0, 5, 1, form) + ";";
+				linhaCSV += "?" + ";";
+				linhaCSV += (form.getLatitude() == null ? "" : form.getLatitude()) + ";";
+				linhaCSV += (form.getLongitude() == null ? "" : form.getLongitude()) + ";";
+
+				for (RowExportCVS row : templateCVS.getListRowCVS()) {
+					if (row.getCod1AppescaAndroid() != null && !row.getCod1AppescaAndroid().trim().isEmpty()) {
+						if (TemplateCVS.rowIsDataAplicacao(row)) {
+							linhaCSV += form.getData();
+						} else if (TemplateCVS.rowIsNomePesquisador(row)) {
+							if (usr != null) {
+								linhaCSV += "\"" + usr.getNome() + "\"";
+							}
+						} else {
+							if (TemplateCVS.temDoisCodigos(row)) {
+								linhaCSV = templateCVS.priorizaRespostaComDoisCodigos(linhaCSV,
+										formularioService.getResposta(row.getCod2AppescaAndroid(), form).getTexto(),
+										formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto());
+							} else {
+								String respStr = "\""
+										+ formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto()
+										+ "\"";
+								if (respStr != null) {
+									respStr = respStr.replaceAll("\n", "");
+								}
+								linhaCSV += respStr;
+							}
+						}
+					}
+					linhaCSV += ";";
+				}
+				conteudoCSV += linhaCSV;
+				
+				expCSV = new ExportacaoCSV();
+				expCSV.setIdFormulario(form.getId());
+				expCSV.setIdSincronizacao(form.getIdSincronizacao());
+				expCSV.setIdTipoFormulario(form.getIdTipoFormulario());
+				expCSV.setLinhaCSV(linhaCSV);
+				
+				exportacaoCSVService.save(expCSV);
 			}
+			
 			conteudoCSV += "\n";
 		}
 
 		return Response.ok(conteudoCSV).header("Content-Disposition", "attachment; filename=" + nomeTemplate).build();
-	}
-
-	private String priorizaRespostaComDoisCodigos(String conteudoCSV, Formulario form, RowExportCVS row) {
-		String respCod2 = formularioService.getResposta(row.getCod2AppescaAndroid(), form).getTexto();
-
-		if (respCod2 != null && !respCod2.trim().isEmpty()) {
-			conteudoCSV += "\"" +  respCod2 + "\"";
-		} else {
-			conteudoCSV +=  "\"" + formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto()   + "\"";
-		}
-		return conteudoCSV;
-	}
-
-	private String montaCabecalho(TemplateCVS templateCVS, String conteudoCSV) {
-		conteudoCSV += "Codigo;Pesquisador;Recurso;Estado;Municipio;Comunidade;UC;lat;long;";
-		for (RowExportCVS row : templateCVS.getListRowCVS()) {
-			conteudoCSV += row.getCodigoExportacao() + ";";
-		}
-		conteudoCSV += "\n";
-		return conteudoCSV;
 	}
 }
