@@ -17,7 +17,7 @@
 0;10.7;Textual;Var0017;q0_p6_r7;q0_p6_r7;_ Outro. Qual? _________________________________;Relacionado na coluna C
 0;11;Numerica;Var0018;q0_p7_r1;;A7 Idade: ;Relacionado na coluna C
 0;12;categorica exclusiva;Var0019;q0_p8;;Sexo: (  ) masculino (  ) feminino;Relacionado na coluna C
-0;13;Textual-numerica;Var0020;q0_p19_r1;;A8 Telefone ou contato:______;Relacionado na coluna C
+0;13;Textual-numerica;Var0020;q0_p9_r1;;A8 Telefone ou contato:______;Relacionado na coluna C
 0;14;Nao ha;Var0021;;;A9 Acesso _ comunidade:;Relacionado na coluna C
 0;14.1;categorica variada;Var0022;q0_p10_r1;; terrestre (  )   ;Relacionado na coluna C
 0;14.2;categorica variada;Var0023;q0_p10_r2;;fluvial (  )    ;Relacionado na coluna C
@@ -80,13 +80,13 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 1;1.47;categorica variada;Var0076;q1_p8_r6;q1_p8_r7;Ja frequentou a escola?;Relacionado na coluna C
 1;1.48;Textual-numerica;Var0077;q1_p8_r8;;At_ que ano?;Relacionado na coluna C
 1;1.49;categorica exclusiva;Var0078;q1_p8_r9;q1_p8_r10;Atualmente estuda?;Relacionado na coluna C
-1;1.50;Textual;Var0079;q1_p19_r1;;Nome;Relacionado na coluna C
-1;1.51;categorica exclusiva;Var0080;q1_p19_r2;q1_p19_r3;Sexo;Relacionado na coluna C
-1;1.52;Numerica;Var0081;q1_p19_r4;;Idade;Relacionado na coluna C
-1;1.53;categorica exclusiva;Var0082;q1_p19_r5;;Parentesco;Relacionado na coluna C
-1;1.54;categorica variada;Var0083;q1_p19_r6;q1_p19_r7;Ja frequentou a escola?;Relacionado na coluna C
-1;1.55;Textual-numerica;Var0084;q1_p19_r8;;At_ que ano?;Relacionado na coluna C
-1;1.56;categorica exclusiva;Var0085;q1_p19_r9;q1_p19_r10;Atualmente estuda?;Relacionado na coluna C
+1;1.50;Textual;Var0079;q1_p9_r1;;Nome;Relacionado na coluna C
+1;1.51;categorica exclusiva;Var0080;q1_p9_r2;q1_p9_r3;Sexo;Relacionado na coluna C
+1;1.52;Numerica;Var0081;q1_p9_r4;;Idade;Relacionado na coluna C
+1;1.53;categorica exclusiva;Var0082;q1_p9_r5;;Parentesco;Relacionado na coluna C
+1;1.54;categorica variada;Var0083;q1_p9_r6;q1_p9_r7;Ja frequentou a escola?;Relacionado na coluna C
+1;1.55;Textual-numerica;Var0084;q1_p9_r8;;At_ que ano?;Relacionado na coluna C
+1;1.56;categorica exclusiva;Var0085;q1_p9_r9;q1_p9_r10;Atualmente estuda?;Relacionado na coluna C
 1;1.57;Textual;Var0086;q1_p10_r1;;Nome;Relacionado na coluna C
 1;1.58;categorica exclusiva;Var0087;q1_p10_r2;q1_p10_r3;Sexo;Relacionado na coluna C
 1;1.59;Numerica;Var0088;q1_p10_r4;;Idade;Relacionado na coluna C
@@ -144,7 +144,7 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 1;10.6;categorica variada;Var0140;q9_p6_r1;;f.        (   ) Aposentadoria;Relacionado na coluna C
 1;10.7;categorica variada;Var0141;q9_p7_r1;;g.      (   ) Auxelio-doenﾍa;Relacionado na coluna C
 1;10.8;categorica variada;Var0142;q9_p8_r1;;h.      (   ) Seguro maternidade;Relacionado na coluna C
-1;10.9;categorica variada;Var0143;q9_p19_r1;;i.        (   ) Minha casa, minha vida;Relacionado na coluna C
+1;10.9;categorica variada;Var0143;q9_p9_r1;;i.        (   ) Minha casa, minha vida;Relacionado na coluna C
 1;10.10;Textual;Var0144;q9_p10_r1;q9_p11_r2;j.        (   ) Outros. Quais? __________________________________;Relacionado na coluna C
 1;10.11;Numerica;Var0145;q9_p1_r2;;a.      VALOR DA PARCELA Bolsa Famelia;Relacionado na coluna C
 1;10.12;Numerica;Var0146;q9_p2_r2;;b.      VALOR DA PARCELA Luz para Todos;Relacionado na coluna C
@@ -154,7 +154,7 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 1;10.16;Numerica;Var0150;q9_p6_r2;;f.        VALOR DA PARCELA Aposentadoria;Relacionado na coluna C
 1;10.17;Numerica;Var0151;q9_p7_r2;;g.      VALOR DA PARCELA Auxelio-doenﾍa;Relacionado na coluna C
 1;10.18;Numerica;Var0152;q9_p8_r2;;h.      VALOR DA PARCELA Seguro maternidade;Relacionado na coluna C
-1;10.19;Numerica;Var0153;q9_p19_r2;;i.        VALOR DA PARCELA Minha casa, minha vida;Relacionado na coluna C
+1;10.19;Numerica;Var0153;q9_p9_r2;;i.        VALOR DA PARCELA Minha casa, minha vida;Relacionado na coluna C
 1;10.20;Numerica;Var0154;q9_p10_r2;;j.        VALOR DA PARCELA Outros. Quais? __________________________________;Relacionado na coluna C
 1;11;categorica exclusiva;Var0155;q10_p1;; Voc� faz parte de algum grupo ou organiza��o (associa��o, sindicato, cooperativa col�nia)?;Relacionado na coluna C
 1;11.1;Nao ha;Var0156;;;Se sim, Qual (is) organiza��o (_es)? ;Relacionado na coluna C
@@ -310,7 +310,7 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 2;6.1.7;categorica variada;Var0306;q21_p7_r1;;g.           (   ) Politica de Garantia de Preﾍos Minimos para Produtos da Sociobiodiversidade _ PGPMBio;Relacionado na coluna C
 2;6.1.8;categorica variada;Var0307;q21_p8_r1;;h.           (   ) Programa de Organizaﾍao Produtiva de Mulheres Rurais _ POPMR;Relacionado na coluna C
 2;6.1.9;categorica variada;Var0308;;;i.               (   ) Cr_ditos do INCRA / Reforma Agrﾚria;Relacionado na coluna C
-2;6.1.10;Textual;Var0309;q21_p19_r1;;j.               (   ) Outros. Quais? _______________________;Relacionado na coluna C
+2;6.1.10;Textual;Var0309;q21_p9_r1;;j.               (   ) Outros. Quais? _______________________;Relacionado na coluna C
 2;6.2.11;Textual-numerica;Var0310;q21_p2_r2;;a.           VALOR (r$) Pronaf;Relacionado na coluna C
 2;6.1.12;Textual-numerica;Var0311;q21_p3_r2;;b.           VALOR (r$) Pronaf Mulher;Relacionado na coluna C
 2;6.1.13;Textual-numerica;Var0312;q21_p4_r2;;c.             VALOR (r$) Cr_dito Amigo;Relacionado na coluna C
@@ -320,7 +320,7 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 2;6.1.17;Textual-numerica;Var0316;q21_p7_r2;;g.           VALOR (r$) Politica de Garantia de Preﾍos Minimos para Produtos da Sociobiodiversidade _ PGPMBio;Relacionado na coluna C
 2;6.1.18;Textual-numerica;Var0317;q21_p8_r2;;h.           VALOR (r$) Programa de Organizaﾍao Produtiva de Mulheres Rurais _ POPMR;Relacionado na coluna C
 2;6.1.19;Textual-numerica;Var0318;;;i.               VALOR (r$) Cr_ditos do INCRA / Reforma Agrﾚria;Relacionado na coluna C
-2;6.1.20;Textual;Var0319;q21_p19_r2;;j.               VALOR (r$) Outros. Quais? _______________________;Relacionado na coluna C
+2;6.1.20;Textual;Var0319;q21_p9_r2;;j.               VALOR (r$) Outros. Quais? _______________________;Relacionado na coluna C
 2;7;Nao ha;Var0320;;;Se vocﾐ jﾚ acessou algum tipo de cr_dito / financiamento, foi para qual finalidade?;Relacionado na coluna C
 2;7.1;categorica variada;Var0321;q21_p10_r1;;a.           (   ) Compra de material de pesca;Relacionado na coluna C
 2;7.2;categorica variada;Var0322;q21_p10_r2;;b.           (   ) Compra de embarcaﾍao;Relacionado na coluna C
@@ -531,10 +531,10 @@ _ Mare de Lanco ou Lancante.
 6;4.3;Numerica;Var0523;q50_p8_r3;;Mar_ Morta no Inverno;Tarrafa/numero de lancos
 6;4.3;Numerica;Var0524;q50_p8_r4;;Mar_ Morta no Inverno;Tarrafa/tempo gasto
 6;4.3;Numerica;Var0525;q50_p8_r5;;Mar_ Morta no Inverno;Tarrafa/dias trabalhados por semana
-6;4.3;Numerica;Var0526;q50_p19_r2;;Mar_ Morta no Inverno;camaroeira/Quilos
-6;4.3;Numerica;Var0527;q50_p19_r3;;Mar_ Morta no Inverno;camaroiera/numero de lancos
-6;4.3;Numerica;Var0528;q50_p19_r4;;Mar_ Morta no Inverno;camaroeira/tempo gasto
-6;4.3;Numerica;Var0529;q50_p19_r5;;Mar_ Morta no Inverno;camaroiera/dias trabalhados por semana
+6;4.3;Numerica;Var0526;q50_p9_r2;;Mar_ Morta no Inverno;camaroeira/Quilos
+6;4.3;Numerica;Var0527;q50_p9_r3;;Mar_ Morta no Inverno;camaroiera/numero de lancos
+6;4.3;Numerica;Var0528;q50_p9_r4;;Mar_ Morta no Inverno;camaroeira/tempo gasto
+6;4.3;Numerica;Var0529;q50_p9_r5;;Mar_ Morta no Inverno;camaroiera/dias trabalhados por semana
 6;4.3;Textual-numerica;Var0530;q50_p10_r1;;Mar_ Morta no Inverno;Outros qual
 6;4.3;Numerica;Var0531;q50_p10_r2;;Mar_ Morta no Inverno;outros/Quilos
 6;4.3;Numerica;Var0532;q50_p10_r3;;Mar_ Morta no Inverno;outros/numero de lancos
@@ -672,10 +672,10 @@ _ Mare de Lanco ou Lancante.
 6;5.3;Numerica;Var0660;q51_p8_r3;;Mar_ Morta no Inverno;Tarrafa/numero de lancos
 6;5.3;Numerica;Var0661;q51_p8_r4;;Mar_ Morta no Inverno;Tarrafa/tempo gasto
 6;5.3;Numerica;Var0662;q51_p8_r5;;Mar_ Morta no Inverno;Tarrafa/dias trabalhados por semana
-6;5.3;Numerica;Var0663;q51_p19_r2;;Mar_ Morta no Inverno;camaroeira/Quilos
-6;5.3;Numerica;Var0664;q51_p19_r3;;Mar_ Morta no Inverno;camaroiera/numero de lancos
-6;5.3;Numerica;Var0665;q51_p19_r4;;Mar_ Morta no Inverno;camaroeira/tempo gasto
-6;5.3;Numerica;Var0666;q51_p19_r5;;Mar_ Morta no Inverno;camaroiera/dias trabalhados por semana
+6;5.3;Numerica;Var0663;q51_p9_r2;;Mar_ Morta no Inverno;camaroeira/Quilos
+6;5.3;Numerica;Var0664;q51_p9_r3;;Mar_ Morta no Inverno;camaroiera/numero de lancos
+6;5.3;Numerica;Var0665;q51_p9_r4;;Mar_ Morta no Inverno;camaroeira/tempo gasto
+6;5.3;Numerica;Var0666;q51_p9_r5;;Mar_ Morta no Inverno;camaroiera/dias trabalhados por semana
 6;5.3;Textual-numerica;Var0667;q51_p10_r1;;Mar_ Morta no Inverno;outros
 6;5.3;Numerica;Var0668;q51_p10_r2;;Mar_ Morta no Inverno;outros/Quilos
 6;5.3;Numerica;Var0669;q51_p10_r3;;Mar_ Morta no Inverno;outros/numero de lancos
@@ -847,11 +847,11 @@ _ Mare de Lanco ou Lancante.
 7;7.1.2;Textual-numerica;Var0835;q53_p8_r3;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Fresco- dia/inverno
 7;7.1.2;Textual-numerica;Var0836;q53_p8_r4;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Fresco- Semana/inverno
 7;7.1.2;Textual-numerica;Var0837;q53_p8_r5;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Fresco- Observac�es
-7;7.1.2;Textual-numerica;Var0838;q53_p19_r1;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- dia/verao
-7;7.1.2;Textual-numerica;Var0839;q53_p19_r2;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- semana/verao
-7;7.1.2;Textual-numerica;Var0840;q53_p19_r3;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- dia/inverno
-7;7.1.2;Textual-numerica;Var0841;q53_p19_r4;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado - dia/inverno
-7;7.1.2;Textual-numerica;Var0842;q53_p19_r5;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado - observac�es
+7;7.1.2;Textual-numerica;Var0838;q53_p9_r1;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- dia/verao
+7;7.1.2;Textual-numerica;Var0839;q53_p9_r2;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- semana/verao
+7;7.1.2;Textual-numerica;Var0840;q53_p9_r3;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- dia/inverno
+7;7.1.2;Textual-numerica;Var0841;q53_p9_r4;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado - dia/inverno
+7;7.1.2;Textual-numerica;Var0842;q53_p9_r5;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado - observac�es
 7;7.1.2;Textual-numerica;Var0843;q53_p10_r1;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro congelado - Dia/verao
 7;7.1.2;Textual-numerica;Var0844;q53_p10_r2;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro congelado - semana/verao
 7;7.1.2;Textual-numerica;Var0845;q53_p10_r3;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro congelado - Dia/inverno
@@ -1197,11 +1197,11 @@ _ Mare de Lanco ou Lancante.
 7;7.2.2;Textual-numerica;Var1185;q54_p8_r3;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Fresco- dia/inverno
 7;7.2.2;Textual-numerica;Var1186;q54_p8_r4;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Fresco- Semana/inverno
 7;7.2.2;Textual-numerica;Var1187;q54_p8_r5;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Fresco- Observac�es
-7;7.2.2;Textual-numerica;Var1188;q54_p19_r1;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- dia/verao
-7;7.2.2;Textual-numerica;Var1189;q54_p19_r2;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- semana/verao
-7;7.2.2;Textual-numerica;Var1190;q54_p19_r3;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- dia/inverno
-7;7.2.2;Textual-numerica;Var1191;q54_p19_r4;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado - dia/inverno
-7;7.2.2;Textual-numerica;Var1192;q54_p19_r5;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado - observac�es
+7;7.2.2;Textual-numerica;Var1188;q54_p9_r1;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- dia/verao
+7;7.2.2;Textual-numerica;Var1189;q54_p9_r2;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- semana/verao
+7;7.2.2;Textual-numerica;Var1190;q54_p9_r3;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado- dia/inverno
+7;7.2.2;Textual-numerica;Var1191;q54_p9_r4;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado - dia/inverno
+7;7.2.2;Textual-numerica;Var1192;q54_p9_r5;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro Resfriado - observac�es
 7;7.2.2;Textual-numerica;Var1193;q54_p10_r1;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro congelado - Dia/verao
 7;7.2.2;Textual-numerica;Var1194;q54_p10_r2;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro congelado - semana/verao
 7;7.2.2;Textual-numerica;Var1195;q54_p10_r3;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?;Gra�do Inteiro congelado - Dia/inverno
@@ -1548,20 +1548,20 @@ _ Mare de Lanco ou Lancante.
 8;8.2.8;categorica variada;Var1536;q56_p8_r9;;Como _ realizado o transporte do camarao na embarcaﾍao? ;Carote Plastico 5lts
 8;8.2.8;categorica variada;Var1537;q56_p8_r10;;Como _ realizado o transporte do camarao na embarcaﾍao? ;Outros:
 8;8.2.8;Textual-numerica;Var1538;q56_p8_r11;;Como _ realizado o transporte do camarao na embarcaﾍao? ;Outros: Qual
-8;8.2.9;Textual-numerica;Var1539;q56_p19_r1;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Qual tamanho_1?
-8;8.2.9;Textual-numerica;Var1540;q56_p19_r2;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Qual tamanho_2?
-8;8.2.9;Textual-numerica;Var1541;q56_p19_r3;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Qual tamanho_3?
-8;8.2.9;Textual-numerica;Var1542;q56_p19_r4;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de compra_1
-8;8.2.9;Textual-numerica;Var1543;q56_p19_r5;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de compra_2
-8;8.2.9;Textual-numerica;Var1544;q56_p19_r6;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de compra_3
-8;8.2.9;Textual-numerica;Var1545;q56_p19_r10;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Valor unitario_1
-8;8.2.9;Textual-numerica;Var1546;q56_p19_r11;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Valor unitario_2
-8;8.2.9;Textual-numerica;Var1547;q56_p19_r12;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Valor unitario_3
-8;8.2.9;categorica exclusiva;Var1548;q56_p19_r13,q56_p19_r14,q56_p19_r15;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Fonte de recurso_1: _ Pr�pria _ Financiada _ Doacao
-8;8.2.9;categorica exclusiva;Var1549;q56_p19_r16,q56_p19_r17,q56_p19_r18;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Fonte de recurso_2: _ Pr�pria _ Financiada _ Doacao
-8;8.2.9;categorica exclusiva;Var1550;q56_p19_r19,q56_p19_r20,q56_p19_r21;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Fonte de recurso_3: _ Pr�pria _ Financiada _ Doacao
-8;8.2.9;Textual-numerica;Var1551;q56_p19_r22;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de subistituicao_1_ano
-8;8.2.9;categorica exclusiva;Var1552;q56_p19_r23,q56_p19_r24;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;"Embarcacao. Ano de subistituicao_1: _ Nao sabe
+8;8.2.9;Textual-numerica;Var1539;q56_p9_r1;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Qual tamanho_1?
+8;8.2.9;Textual-numerica;Var1540;q56_p9_r2;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Qual tamanho_2?
+8;8.2.9;Textual-numerica;Var1541;q56_p9_r3;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Qual tamanho_3?
+8;8.2.9;Textual-numerica;Var1542;q56_p9_r4;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de compra_1
+8;8.2.9;Textual-numerica;Var1543;q56_p9_r5;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de compra_2
+8;8.2.9;Textual-numerica;Var1544;q56_p9_r6;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de compra_3
+8;8.2.9;Textual-numerica;Var1545;q56_p9_r10;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Valor unitario_1
+8;8.2.9;Textual-numerica;Var1546;q56_p9_r11;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Valor unitario_2
+8;8.2.9;Textual-numerica;Var1547;q56_p9_r12;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Valor unitario_3
+8;8.2.9;categorica exclusiva;Var1548;q56_p9_r13,q56_p9_r14,q56_p9_r15;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Fonte de recurso_1: _ Pr�pria _ Financiada _ Doacao
+8;8.2.9;categorica exclusiva;Var1549;q56_p9_r16,q56_p9_r17,q56_p9_r18;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Fonte de recurso_2: _ Pr�pria _ Financiada _ Doacao
+8;8.2.9;categorica exclusiva;Var1550;q56_p9_r19,q56_p9_r20,q56_p9_r21;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Fonte de recurso_3: _ Pr�pria _ Financiada _ Doacao
+8;8.2.9;Textual-numerica;Var1551;q56_p9_r22;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de subistituicao_1_ano
+8;8.2.9;categorica exclusiva;Var1552;q56_p9_r23,q56_p9_r24;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;"Embarcacao. Ano de subistituicao_1: _ Nao sabe
 _ Nao respondeu
 "
 8;8.2.9;Textual-numerica;Var1553;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Embarcacao. Ano de subistituicao_2_ano
@@ -1801,7 +1801,7 @@ _ Nao respondeu
 8;8.2.9;categorica exclusiva;Var1729;q56_p19_r16,q56_p19_r17,q56_p19_r18;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Fonte de recurso_2: _ Pr�pria _ Financiada _ Doacao
 8;8.2.9;categorica exclusiva;Var1730;q56_p19_r19,q56_p19_r20,q56_p19_r21;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Fonte de recurso_3: _ Pr�pria _ Financiada _ Doacao
 8;8.2.9;Textual-numerica;Var1731;q56_p19_r22;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Freezer. Ano de subistituicao_1_ano
-8;8.2.9;categorica exclusiva;Var1732;q56_p19_r23,q56_p19_r24;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;"Freezer. Ano de subistituicao_1: _ Nao sabe
+8;8.2.9;categorica exclusiva;Var1732;q56_p19_r23,q56_p9_r24;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;"Freezer. Ano de subistituicao_1: _ Nao sabe
 _ Nao respondeu
 "
 8;8.2.9;Textual-numerica;Var1733;;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e serao substituidos? ;Freezer. Ano de subistituicao_2_ano

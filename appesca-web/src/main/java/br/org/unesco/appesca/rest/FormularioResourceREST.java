@@ -207,16 +207,16 @@ public class FormularioResourceREST extends BaseREST {
 		int x = 1;
 
 		for (Formulario form : listaFormulario) {
-			if (form.getSituacao() < 2) {
+			if (form.getSituacao() < 2) { //SOMENTE PARA FORMULARIOS FINALIZADOS.
 				continue;
 			}
 			System.out.println("-_-_-> Processando formulário (" + x++ + ") " + form.getIdSincronizacao());
 
 			ExportacaoCSV expCSV = exportacaoCSVService.findByIdFormulario(form.getId());
 
-			if (expCSV != null && expCSV.getLinhaCSV() != null && !expCSV.getLinhaCSV().isEmpty()) {
-				conteudoCSV += expCSV.getLinhaCSV();
-			} else {
+//			if (expCSV != null && expCSV.getLinhaCSV() != null && !expCSV.getLinhaCSV().isEmpty()) {
+//				conteudoCSV += expCSV.getLinhaCSV();
+//			} else {
 				String linhaCSV = "";
 				Usuario usr = null;
 
@@ -249,9 +249,30 @@ public class FormularioResourceREST extends BaseREST {
 										formularioService.getResposta(row.getCod2AppescaAndroid(), form).getTexto(),
 										formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto());
 							} else {
-								String respStr = "\""
-										+ formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto()
-										+ "\"";
+								String respStr = "";
+								
+								if(row.getCod1AppescaAndroid()!=null ){
+									if(row.getCod1AppescaAndroid().indexOf(",")==-1){
+										 respStr = "\""
+												+ formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto()
+												+ "\"";
+									}else{
+										String[] listaCodigos = row.getCod1AppescaAndroid().split(",");
+										
+										for(String codAppescaAndroid: listaCodigos){
+											Resposta resp = formularioService.getResposta(codAppescaAndroid, form);
+											
+											if(resp!=null && resp.getTexto()!=null && resp.getTexto().trim().length() > 0){
+												 respStr = "\""
+															+ resp.getTexto()
+															+ "\"";
+												 
+												 break;
+											}
+										}
+									}
+								}
+								
 								if (respStr != null) {
 									respStr = respStr.replaceAll("\n", "");
 								}
@@ -269,8 +290,8 @@ public class FormularioResourceREST extends BaseREST {
 				expCSV.setIdTipoFormulario(form.getIdTipoFormulario());
 				expCSV.setLinhaCSV(linhaCSV);
 				
-				exportacaoCSVService.save(expCSV);
-			}
+//				exportacaoCSVService.save(expCSV);
+//			}
 			
 			conteudoCSV += "\n";
 		}
