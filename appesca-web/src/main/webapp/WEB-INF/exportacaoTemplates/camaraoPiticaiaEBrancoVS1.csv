@@ -299,7 +299,7 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 2;5.5;categorica exclusiva;Var0295;q20_p1_r5;;e.      (  ) Mais de 5 salarios-menimos (Mais de R$ 4.000,00) ;Relacionado na coluna C
 2;;categorica exclusiva;Var0296;q20_p1_r6;;f.       (  ) Nao Sabe;
 2;;categorica exclusiva;Var0297;q20_p1_r7;;g.      (  ) Nao respondeu;
-2;6;Nao ha;Var0298;;;Vocﾐ jﾚ acessou algum programa de cr_dito ou incentivo _ produﾍao oferecido pelo governo?;Relacionado na coluna C
+2;6;Textual;Var0298;q21_p1_r1;;Vocﾐ jﾚ acessou algum programa de cr_dito ou incentivo _ produﾍao oferecido pelo governo?;Relacionado na coluna C
 2;6.1;categorica variada;Var0299;;;Se sim, qual? ;Relacionado na coluna C
 2;6.1.1;categorica variada;Var0300;q21_p2_r1;;a.           (   ) Pronaf;Relacionado na coluna C
 2;6.1.2;categorica variada;Var0301;q21_p3_r1;;b.           (   ) Pronaf Mulher;Relacionado na coluna C
@@ -310,7 +310,7 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 2;6.1.7;categorica variada;Var0306;q21_p7_r1;;g.           (   ) Politica de Garantia de Preﾍos Minimos para Produtos da Sociobiodiversidade _ PGPMBio;Relacionado na coluna C
 2;6.1.8;categorica variada;Var0307;q21_p8_r1;;h.           (   ) Programa de Organizaﾍao Produtiva de Mulheres Rurais _ POPMR;Relacionado na coluna C
 2;6.1.9;categorica variada;Var0308;;;i.               (   ) Cr_ditos do INCRA / Reforma Agrﾚria;Relacionado na coluna C
-2;6.1.10;Textual;Var0309;q21_p9_r1;;j.               (   ) Outros. Quais? _______________________;Relacionado na coluna C
+2;6.1.10;Textual;Var0309;q21_p9_r1;q21_p9_r2;j.               (   ) Outros. Quais? _______________________;Relacionado na coluna C
 2;6.2.11;Textual-numerica;Var0310;q21_p2_r2;;a.           VALOR (r$) Pronaf;Relacionado na coluna C
 2;6.1.12;Textual-numerica;Var0311;q21_p3_r2;;b.           VALOR (r$) Pronaf Mulher;Relacionado na coluna C
 2;6.1.13;Textual-numerica;Var0312;q21_p4_r2;;c.             VALOR (r$) Cr_dito Amigo;Relacionado na coluna C
@@ -320,7 +320,7 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 2;6.1.17;Textual-numerica;Var0316;q21_p7_r2;;g.           VALOR (r$) Politica de Garantia de Preﾍos Minimos para Produtos da Sociobiodiversidade _ PGPMBio;Relacionado na coluna C
 2;6.1.18;Textual-numerica;Var0317;q21_p8_r2;;h.           VALOR (r$) Programa de Organizaﾍao Produtiva de Mulheres Rurais _ POPMR;Relacionado na coluna C
 2;6.1.19;Textual-numerica;Var0318;;;i.               VALOR (r$) Cr_ditos do INCRA / Reforma Agrﾚria;Relacionado na coluna C
-2;6.1.20;Textual;Var0319;q21_p9_r2;;j.               VALOR (r$) Outros. Quais? _______________________;Relacionado na coluna C
+2;6.1.20;Textual;Var0319;q21_p9_r3;;j.               VALOR (r$) Outros. Quais? _______________________;Relacionado na coluna C
 2;7;Nao ha;Var0320;;;Se vocﾐ jﾚ acessou algum tipo de cr_dito / financiamento, foi para qual finalidade?;Relacionado na coluna C
 2;7.1;categorica variada;Var0321;q21_p10_r1;;a.           (   ) Compra de material de pesca;Relacionado na coluna C
 2;7.2;categorica variada;Var0322;q21_p10_r2;;b.           (   ) Compra de embarcaﾍao;Relacionado na coluna C
