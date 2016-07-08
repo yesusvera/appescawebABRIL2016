@@ -299,7 +299,7 @@ _ Superior completo _ N�o Sabe _ N�o respondeu
 2;5.5;categorica exclusiva;Var0295;q20_p1_r5;;e.      (  ) Mais de 5 salarios-menimos (Mais de R$ 4.000,00) ;Relacionado na coluna C
 2;;categorica exclusiva;Var0296;q20_p1_r6;;f.       (  ) Nao Sabe;
 2;;categorica exclusiva;Var0297;q20_p1_r7;;g.      (  ) Nao respondeu;
-2;6;Textual;Var0298;q21_p1_r1;;Vocﾐ jﾚ acessou algum programa de cr_dito ou incentivo _ produﾍao oferecido pelo governo?;Relacionado na coluna C
+2;6;categorica exclusiva;Var0298;q21_p1;;Vocﾐ jﾚ acessou algum programa de cr_dito ou incentivo _ produﾍao oferecido pelo governo?;Relacionado na coluna C
 2;6.1;categorica variada;Var0299;;;Se sim, qual? ;Relacionado na coluna C
 2;6.1.1;categorica variada;Var0300;q21_p2_r1;;a.           (   ) Pronaf;Relacionado na coluna C
 2;6.1.2;categorica variada;Var0301;q21_p3_r1;;b.           (   ) Pronaf Mulher;Relacionado na coluna C
@@ -1981,44 +1981,39 @@ _ Nao respondeu
 8;8.3;Textual-numerica;Var1891;q57_p16_r5,q57_p16_r6;;Quais recursos necess�rios para pesca? Qual a quantidade e pre�o unit�rio em 2015;Mao de Obra (Beneficiamento de um cofo) combust�vel por decida por semana
 8;8.3;Textual-numerica;Var1892;q57_p16_r7;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015;VALOR
 8;8.3;Textual-numerica;Var1893;q57_p17_r1;;Quais recursos necessﾚrios para pesca? Qual a quantidade e preﾍo unitﾚrio em 2015;Outros:Qual ?viagem de ida e volta por dia
-8;8.3;Textual-numerica;Var1894;q57_p17_r2;;Quais recursos necessﾚrios para pesca? Qual a quantidade e preﾍo unitﾚrio em 2015;Outros: viagem de ida e volta por dia
-8;8.3;Textual-numerica;Var1895;q57_p17_r3,q57_p17_r4;;Quais recursos necessﾚrios para pesca? Qual a quantidade e preﾍo unitﾚrio em 2015;Outros:qual? viagem de ida e volta por semana
-8;8.3;Textual-numerica;Var1896;;;Quais recursos necessﾚrios para pesca? Qual a quantidade e preﾍo unitﾚrio em 2015;Outros: viagem de ida e volta por semana
-8;8.3;Textual-numerica;Var1897;;;Quais recursos necess�rios para pesca? Qual a quantidade e pre�o unit�rio em 2015;Outros: qual? combust�vel por decida por viagem
-8;8.3;Textual-numerica;Var1898;;;Quais recursos necess�rios para pesca? Qual a quantidade e pre�o unit�rio em 2015;Outros: combust�vel por decida por viagem
-8;8.3;Textual-numerica;Var1899;q57_p17_r5;;Quais recursos necess�rios para pesca? Qual a quantidade e pre�o unit�rio em 2015;Outros: qual? combust�vel por decida por semana
-8;8.3;Textual-numerica;Var1900;q57_p17_r6;;Quais recursos necess�rios para pesca? Qual a quantidade e pre�o unit�rio em 2015;Outros:combust�vel por decida por semana
-8;8.3;Textual-numerica;Var1901;q57_p7_r7;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015;VALOR
-8;8.4;categorica exclusiva;Var1902;q58_p1;;Quanto deste total _ pago pelo patrao de pesca? ;"_ Nada 
+8;8.3;Textual-numerica;Var1894;q57_p17_r2;;Quais recursos necessﾚrios para pesca? Qual a quantidade e preﾍo unitﾚrio em 2015;Outros: Unidade
+8;8.3;Textual-numerica;Var1895;q57_p17_r3,q57_p17_r4;;Quais recursos necessﾚrios para pesca? Qual a quantidade e preﾍo unitﾚrio em 2015;Outros:Por dia Por semana
+8;8.3;Textual-numerica;Var1896;q57_p17_r5;;Quais recursos necessﾚrios para pesca? Qual a quantidade e preﾍo unitﾚrio em 2015;Outros: Unidade
+8;8.3;Textual-numerica;Var1897;q57_p17_r6,q57_p17_r7;;Quais recursos necess�rios para pesca? Qual a quantidade e pre�o unit�rio em 2015;Outros: Por viagem por semana
+8;8.3;Textual-numerica;Var1898;q57_p7_r7;;Quais recursos necessários para pesca? Qual a quantidade e preço unitário em 2015;VALOR
+8;8.4;categorica exclusiva;Var1899;q58_p1;;Quanto deste total _ pago pelo patrao de pesca? ;"_ Nada 
 _ 1/4 (menos da metade) 
 _ Metade 
 _ 3/4 (mais da metade)   
 _ Todo o custo
 "
-8;8.5;categorica exclusiva;Var1903;q59_p1_r1,q59_p1_r2,q59_p1_r3,q59_p1_r4,q59_p1_r5,q59_p1_r6,q59_p1_r7,q59_p1_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Calafetacao Frequencia do gasto
-8;8.5;Textual-numerica;Var1904;q59_p1_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Calafetacao Valor gasto
-8;8.5;categorica exclusiva;Var1905;q59_p1_r10,q59_p1_r11,q59_p1_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Calafetacao_observac�es
-8;8.5;categorica exclusiva;Var1906;q59_p2_r1,q59_p2_r2,q59_p2_r3,q59_p2_r4,q59_p2_r5,q59_p2_r6,q59_p2_r7,q59_p2_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Pintura Frequencia do gasto
-8;8.5;Textual-numerica;Var1907;q59_p2_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Pintura Valor gasto
-8;8.5;categorica exclusiva;Var1908;q59_p2_r10,q59_p2_r11,q59_p2_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Pintura_observac�es
-8;8.5;categorica exclusiva;Var1909;q59_p3_r1,q59_p3_r2,q59_p3_r3,q59_p3_r4,q59_p3_r5,q59_p3_r6,q59_p3_r7,q59_p3_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Ret�fica de motor Frequencia do gasto
-8;8.5;Textual-numerica;Var1910;q59_p3_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Ret�fica de motor Valor gasto
-8;8.5;categorica exclusiva;Var1911;q59_p3_r10,q59_p3_r11,q59_p3_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Ret�fica de motor_observac�es
-8;8.5;categorica exclusiva;Var1912;q59_p4_r1,q59_p4_r2,q59_p4_r3,q59_p4_r4,q59_p4_r5,q59_p4_r6,q59_p4_r7,q59_p4_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Troca de pecas Frequencia do gasto
-8;8.5;Textual-numerica;Var1913;q59_p4_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Troca de pecas Valor gasto
-8;8.5;categorica exclusiva;Var1914;q59_p4_r10,q59_p4_r11,q59_p4_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Troca de pecas_observac�es
-8;8.5;categorica exclusiva;Var1915;;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Outros: Qual?
-8;8.5;Textual-numerica;Var1916;q59_p5_r1,q59_p5_r2,q59_p5_r3,q59_p5_r4,q59_p5_r5,q59_p5_r6,q59_p5_r7,q59_p5_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Outros Frequencia do gasto
-8;8.5;categorica exclusiva;Var1917;q59_p5_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Outros Valor gasto
-8;8.5;categorica exclusiva;Var1918;q59_p5_r10,q59_p5_r11,q59_p5_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Outros_observac�es
-8;8.6;Textual-numerica;Var1919;q60_p1_r2;q60_p1_r1;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Reparo (remendar) do petrecho - horas por dia
-8;8.6;Textual-numerica;Var1920;q60_p1_r3;q60_p1_r1;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Reparo (remendar) do petrecho  - dias por semana
-8;8.6;Textual-numerica;Var1921;q60_p1_r2;q60_p1_r4;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Custo Reparo (remendar) do petrecho - horas por dia
-8;8.6;Textual-numerica;Var1922;q60_p1_r3;q60_p1_r4;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Custo Reparo (remendar) do petrecho  - dias por semana
-8;8.6;Textual-numerica;Var1923;q60_p2_r1;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Lavagem de rede
-8;8.6;Textual-numerica;Var1924;q60_p3_r1;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Recolher e lavar a embarcacao
-8;8.6;Textual-numerica;Var1925;;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Outros: qual?
-8;8.6;Textual-numerica;Var1926;q60_p4_r1;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Outros: tempo gasto
-8;8.6;Textual-numerica;Var1927;q60_p4_r2;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Outros: custo
-9;1;Textual-numerica;Var1928;q61_p1_r1;;De maneira geral, quais sao os principais problemas enfrentados? Quais seriam as soluﾍ_es?;Problemas
-9;1;Textual-numerica;Var1929;q61_p1_r2;;De maneira geral, quais sao os principais problemas enfrentados? Quais seriam as solu�_es?;Soluc�es
+8;8.5;categorica exclusiva;Var1900;q59_p1_r1,q59_p1_r2,q59_p1_r3,q59_p1_r4,q59_p1_r5,q59_p1_r6,q59_p1_r7,q59_p1_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Calafetacao Frequencia do gasto
+8;8.5;Textual-numerica;Var1901;q59_p1_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Calafetacao Valor gasto
+8;8.5;categorica exclusiva;Var1902;q59_p1_r10,q59_p1_r11,q59_p1_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Calafetacao_observac�es
+8;8.5;categorica exclusiva;Var1903;q59_p2_r1,q59_p2_r2,q59_p2_r3,q59_p2_r4,q59_p2_r5,q59_p2_r6,q59_p2_r7,q59_p2_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Pintura Frequencia do gasto
+8;8.5;Textual-numerica;Var1904;q59_p2_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Pintura Valor gasto
+8;8.5;categorica exclusiva;Var1905;q59_p2_r10,q59_p2_r11,q59_p2_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Pintura_observac�es
+8;8.5;categorica exclusiva;Var1906;q59_p3_r1,q59_p3_r2,q59_p3_r3,q59_p3_r4,q59_p3_r5,q59_p3_r6,q59_p3_r7,q59_p3_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Ret�fica de motor Frequencia do gasto
+8;8.5;Textual-numerica;Var1907;q59_p3_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Ret�fica de motor Valor gasto
+8;8.5;categorica exclusiva;Var1908;q59_p3_r10,q59_p3_r11,q59_p3_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Ret�fica de motor_observac�es
+8;8.5;categorica exclusiva;Var1909;q59_p4_r1,q59_p4_r2,q59_p4_r3,q59_p4_r4,q59_p4_r5,q59_p4_r6,q59_p4_r7,q59_p4_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Troca de pecas Frequencia do gasto
+8;8.5;Textual-numerica;Var1910;q59_p4_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Troca de pecas Valor gasto
+8;8.5;categorica exclusiva;Var1911;q59_p4_r10,q59_p4_r11,q59_p4_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Troca de pecas_observac�es
+8;8.5;categorica exclusiva;Var1912;;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Outros: Qual?
+8;8.5;Textual-numerica;Var1913;q59_p5_r1,q59_p5_r2,q59_p5_r3,q59_p5_r4,q59_p5_r5,q59_p5_r6,q59_p5_r7,q59_p5_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Outros Frequencia do gasto
+8;8.5;categorica exclusiva;Var1914;q59_p5_r9;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Outros Valor gasto
+8;8.5;categorica exclusiva;Var1915;q59_p5_r10,q59_p5_r11,q59_p5_r12;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?;Outros_observac�es
+8;8.6;Textual-numerica;Var1916;q60_p1_r1;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;REPARO Tempo Gasto
+8;8.6;categorica exclusiva;Var1917;q60_p1_r2,q60_p1_r3;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;REPARO :HORAS DIA/ DIAS SEMANA
+8;8.6;Textual-numerica;Var1918;q60_p1_r4;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;REPARO : CUSTO
+8;8.6;Textual-numerica;Var1919;q60_p2_r1;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;LAVAGEM Tempo Gasto
+8;8.6;Textual-numerica;Var1920;q60_p3_r1;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;Recolher e lavar a embarcação Tempo Gasto
+8;8.6;Textual-numerica;Var1921;q60_p4_r1;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;OUTROS: Tempo Gasto
+8;8.6;Textual-numerica;Var1922;q60_p4_r2;;Quais atividades realizadas antes ou depois da pescaria?  Quanto tempo _ gasto nessas atividades? ;OUTROS: CUSTO
+9;1;Textual-numerica;Var1923;q61_p1_r1;;De maneira geral, quais sao os principais problemas enfrentados? Quais seriam as soluﾍ_es?;Problemas
+9;1;Textual-numerica;Var1924;q61_p1_r2;;De maneira geral, quais sao os principais problemas enfrentados? Quais seriam as solu�_es?;Soluc�es

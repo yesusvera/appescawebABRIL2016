@@ -188,7 +188,7 @@ public class FormularioResourceREST extends BaseREST {
 		}
 		TemplateCVS templateCVS = new TemplateCVS();
 		templateCVS
-				.execute(new File(context.getRealPath("/WEB-INF/exportacaoTemplates/camaraoPiticaiaEBrancoVS1.csv")));
+				.execute(new File(context.getRealPath("/WEB-INF/exportacaoTemplates/"+nomeTemplate)));
 
 		String conteudoCSV = "";
 
