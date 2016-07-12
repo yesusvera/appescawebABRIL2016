@@ -952,326 +952,326 @@
 7;11.2;textual-numerica;Var0948;q64_p1_r4;;quanto (kg/mes)?;quantidade
 7;12;categorica exclusiva;Var0949;q65_p1;;Ha reaproveitamento da produçao nao vendida?  ;ocorrencia de reaproveitamento
 7;12.1;categorica exclusiva;Var0950;q65_p2;;Como e feito o reaproveitamento? ;3 alternativas de resposta ou nao sabe ou nao respondeu 
-8;1;categorica variada ;Var0951;;;Quais sao os bens utilizados na pesca e, se realizado, no beneficiamento? ;Embarcaçao
-8;1;numerica;Var0952;;;;Quantas possui?
-8;1;categorica variada ;Var0953;;;;Motor de popa
-8;1;numerica;Var0954;;;;Quantos possui?
-8;1;categorica variada ;Var0955;;;;Rede de arrasto
-8;1;numerica;Var0956;;;;Quantas possui?
-8;1;categorica variada ;Var0957;;;;Tarrafa
-8;1;numerica;Var0958;;;;Quantas possui?
-8;1;categorica variada ;Var0959;;;;Viveiro
-8;1;numerica;Var0960;;;;Quantos possui?
-8;1;categorica variada ;Var0961;;;;Matapi
-8;1;numerica;Var0962;;;;Quantos possui?
-8;1;categorica variada ;Var0963;;;;Fogao 
-8;1;numerica;Var0964;;;;Quantos possui?
-8;1;categorica variada ;Var0965;;;;Freezer
-8;1;numerica;Var0966;;;;Quantos possui?
-8;1;categorica variada ;Var0967;;;;Geladeira
-8;1;numerica;Var0968;;;;Quantas possui?
-8;1;categorica variada ;Var0969;;;;Outros
-8;1;numerica;Var0970;;;;Quantos possui?
-8;2;categorica exclusiva;Var0971;;;Sobre a embarcaçao principal, isto e, a mais utilizada para a pesca, ela e propria?;alternativa de responsta: sim ou nao
-8;2.1;categorica exclusiva;Var0972;;;Qual e o tipo de casco da embarcaçao principal? ;madeira: canoa a remo ou canoa a vela (batelao) ou canoa para rabeta ou outro
-8;2.1;categorica exclusiva;Var0973;;;;aluminio: barco a vela ou barco a motor (catraio) ou outro
-8;2.2;categorica variada ;Var0974;;;Quantos sao os tripulantes (piloto, proeiro, etc) da embarcaçao principal?;madeira canoa a remo    
-8;2.2;categorica variada ;Var0975;;;;madeira canoa a vela (batelao)      
-8;2.2;categorica variada ;Var0976;;;;madeira canoa para rabeta    
+8;1;categorica variada ;Var0951;q66_p1_r1;;Quais sao os bens utilizados na pesca e, se realizado, no beneficiamento? ;Embarcaçao
+8;1;numerica;Var0952;q66_p1_r2;;;Quantas possui?
+8;1;categorica variada ;Var0953;q66_p1_r3;;;Motor de popa
+8;1;numerica;Var0954;q66_p1_r4;;;Quantos possui?
+8;1;categorica variada ;Var0955;q66_p1_r5;;;Rede de arrasto
+8;1;numerica;Var0956;q66_p1_r6;;;Quantas possui?
+8;1;categorica variada ;Var0957;q66_p1_r7;;;Tarrafa
+8;1;numerica;Var0958;q66_p1_r8;;;Quantas possui?
+8;1;categorica variada ;Var0959;q66_p1_r9;;;Viveiro
+8;1;numerica;Var0960;q66_p1_r10;;;Quantos possui?
+8;1;categorica variada ;Var0961;q66_p1_r11;;;Matapi
+8;1;numerica;Var0962;q66_p1_r12;;;Quantos possui?
+8;1;categorica variada ;Var0963;q66_p1_r13;;;Fogao 
+8;1;numerica;Var0964;q66_p1_r14;;;Quantos possui?
+8;1;categorica variada ;Var0965;q66_p1_r15;;;Freezer
+8;1;numerica;Var0966;q66_p1_r16;;;Quantos possui?
+8;1;categorica variada ;Var0967;q66_p1_r17;;;Geladeira
+8;1;numerica;Var0968;q66_p1_r18;;;Quantas possui?
+8;1;categorica variada ;Var0969;q66_p1_r19;q66_p1_r20;;Outros
+8;1;numerica;Var0970;q66_p1_r21;;;Quantos possui?
+8;2;categorica exclusiva;Var0971;q67_p1;;Sobre a embarcaçao principal, isto e, a mais utilizada para a pesca, ela e propria?;alternativa de responsta: sim ou nao
+8;2.1;categorica exclusiva;Var0972;q67_p2_r1,q67_p2_r2,q67_p2_r3,q67_p2_r4,q67_p2_r5;;Qual e o tipo de casco da embarcaçao principal? ;madeira: canoa a remo ou canoa a vela (batelao) ou canoa para rabeta ou outro
+8;2.1;categorica exclusiva;Var0973;q67_p2_r6,q67_p2_r7,q67_p2_r8,q67_p2_r9;;;aluminio: barco a vela ou barco a motor (catraio) ou outro
+8;2.2;categorica variada ;Var0974;q67_p3_r1;q67_p3_r2;Quantos sao os tripulantes (piloto, proeiro, etc) da embarcaçao principal?;madeira canoa a remo    
+8;2.2;categorica variada ;Var0975;q67_p3_r3;q67_p3_r4;;madeira canoa a vela (batelao)      
+8;2.2;categorica variada ;Var0976;q67_p3_r5;q67_p3_r6;;madeira canoa para rabeta    
 8;2.2;categorica variada ;Var0977;;;;madeira outro
-8;2.2;categorica variada ;Var0978;;;;aluminio barco a vela
-8;2.2;categorica variada ;Var0979;;;;aluminio barco a motor (catraio)
-8;2.2;categorica variada ;Var0980;;;;aluminio outro
-8;2.3;categorica exclusiva;Var0981;;;Se nao e propria, de quem e a embarcaçao principal? ;4 alternativas de resposta: Emprestada (sem custo) por familiares ou amigos ou Alugada de familiares ou amigos ou alugada de alguem ou outros
-8;2.4;numerica;Var0982;;;Quanto e pago pelo aluguel da embarcaçao principal? ;valor
-8;2.4;categorica exclusiva;Var0983;;;;periodo de locaçao segundo valor inserido: por dia ou por semana ou por mes
-8;2.5;textual-numerica;Var0984;;;Quanto custaram os principais equipamentos para a pesca e o beneficiamento (custo de compra ou construçao/fabricaçao)? Com qual recursos foram adquiridos? Quando foram comprados e serao substituidos?;Tamanho embarcacao 1
-8;2.5;numerica;Var0985;;;;Ano de compra embarcacao 1
-8;2.5;numerica;Var0986;;;;Quantidade de embarcacao 1
-8;2.5;numerica;Var0987;;;;Valor Unitario da embarcacao 1
-8;2.5;categorica exclusiva;Var0988;;;;Fonte de recurso da embarcacao 1
-8;2.5;textual-numerica;Var0989;;;;Ano de substituicao da embarcacao 1
-8;2.5;textual-numerica;Var0990;;;;Tamanho embarcacao 2
-8;2.5;numerica;Var0991;;;;Ano de compra embarcacao 2
-8;2.5;numerica;Var0992;;;;Quantidade de embarcacao 2
-8;2.5;numerica;Var0993;;;;Valor Unitario da embarcacao 2
-8;2.5;categorica exclusiva;Var0994;;;;Fonte de recurso da embarcacao 2
-8;2.5;textual-numerica;Var0995;;;;Ano de substituicao da embarcacao 2
-8;2.5;textual-numerica;Var0996;;;;Tamanho embarcacao 3
-8;2.5;numerica;Var0997;;;;Ano de compra embarcacao 3
-8;2.5;numerica;Var0998;;;;Quantidade de embarcacao 3
-8;2.5;numerica;Var0999;;;;Valor Unitario da embarcacao 3
-8;2.5;categorica exclusiva;Var1000;;;;Fonte de recurso da embarcacao 3
-8;2.5;textual-numerica;Var1001;;;;Ano de substituicao da embarcacao 3
-8;2.5;textual-numerica;Var1002;;;;Potencia do motor de popa 1
-8;2.5;numerica;Var1003;;;;Ano de compra motor de popa 1
-8;2.5;numerica;Var1004;;;;Quantidade de motor de popa 1
-8;2.5;numerica;Var1005;;;;Valor Unitario da motor de popa 1
-8;2.5;categorica exclusiva;Var1006;;;;Fonte de recurso do motor de popa 1
-8;2.5;textual-numerica;Var1007;;;;Ano de substituicao do motor de popa 1
-8;2.5;textual-numerica;Var1008;;;;Potencia do motor de popa 2
-8;2.5;numerica;Var1009;;;;Ano de compra motor de popa 2
-8;2.5;numerica;Var1010;;;;Quantidade de motor de popa 2
-8;2.5;numerica;Var1011;;;;Valor Unitario da motor de popa 2
-8;2.5;categorica exclusiva;Var1012;;;;Fonte de recurso do motor de popa 2
-8;2.5;textual-numerica;Var1013;;;;Ano de substituicao do motor de popa 2
-8;2.5;textual-numerica;Var1014;;;;Potencia do motor de popa 3
-8;2.5;numerica;Var1015;;;;Ano de compra motor de popa 3
-8;2.5;numerica;Var1016;;;;Quantidade de motor de popa 3
-8;2.5;numerica;Var1017;;;;Valor Unitario da motor de popa 3
-8;2.5;categorica exclusiva;Var1018;;;;Fonte de recurso do motor de popa 3
-8;2.5;textual-numerica;Var1019;;;;Ano de substituicao do motor de popa 3
-8;2.5;textual-numerica;Var1020;;;;Tamanho da rede de arrasto 1
-8;2.5;numerica;Var1021;;;;Ano de compra rede de arrasto 1
-8;2.5;numerica;Var1022;;;;Quantidade de rede de arrasto 1
-8;2.5;numerica;Var1023;;;;Valor Unitario da  rede de arrasto 1
-8;2.5;categorica exclusiva;Var1024;;;;Fonte de recurso da  rede de arrasto 1
-8;2.5;textual-numerica;Var1025;;;;Ano de substituicao da  rede de arrasto 1
-8;2.5;textual-numerica;Var1026;;;;Tamanho da rede de arrasto 2
-8;2.5;numerica;Var1027;;;;Ano de compra rede de arrasto 2
-8;2.5;numerica;Var1028;;;;Quantidade de rede de arrasto 2
-8;2.5;numerica;Var1029;;;;Valor Unitario da  rede de arrasto 2
-8;2.5;categorica exclusiva;Var1030;;;;Fonte de recurso da  rede de arrasto 2
-8;2.5;textual-numerica;Var1031;;;;Ano de substituicao da  rede de arrasto 2
-8;2.5;textual-numerica;Var1032;;;;Tamanho da rede de arrasto 3
-8;2.5;numerica;Var1033;;;;Ano de compra rede de arrasto 3
-8;2.5;numerica;Var1034;;;;Quantidade de rede de arrasto 3
-8;2.5;numerica;Var1035;;;;Valor Unitario da  rede de arrasto 3
-8;2.5;categorica exclusiva;Var1036;;;;Fonte de recurso da  rede de arrasto 3
-8;2.5;textual-numerica;Var1037;;;;Ano de substituicao da  rede de arrasto 3
-8;2.5;textual-numerica;Var1038;;;;Tamanho da tarrafa 1
-8;2.5;numerica;Var1039;;;;Ano de compra tarrafa 1
-8;2.5;numerica;Var1040;;;;Quantidade de tarrafa 1
-8;2.5;numerica;Var1041;;;;Valor Unitario da  tarrafa 1
-8;2.5;categorica exclusiva;Var1042;;;;Fonte de recurso da  tarrafa 1
-8;2.5;textual-numerica;Var1043;;;;Ano de substituicao da  tarrafa 1
-8;2.5;textual-numerica;Var1044;;;;Tamanho da tarrafa 2
-8;2.5;numerica;Var1045;;;;Ano de compra tarrafa 2
-8;2.5;numerica;Var1046;;;;Quantidade de tarrafa 2
-8;2.5;numerica;Var1047;;;;Valor Unitario da  tarrafa 2
-8;2.5;categorica exclusiva;Var1048;;;;Fonte de recurso da  tarrafa 2
-8;2.5;textual-numerica;Var1049;;;;Ano de substituicao da  tarrafa 2
-8;2.5;textual-numerica;Var1050;;;;Tamanho da tarrafa 3
-8;2.5;numerica;Var1051;;;;Ano de compra tarrafa 3
-8;2.5;numerica;Var1052;;;;Quantidade de tarrafa 3
-8;2.5;numerica;Var1053;;;;Valor Unitario da  tarrafa 3
-8;2.5;categorica exclusiva;Var1054;;;;Fonte de recurso da  tarrafa 3
-8;2.5;textual-numerica;Var1055;;;;Ano de substituicao da  tarrafa 3
-8;2.5;textual-numerica;Var1056;;;;Tamanho do matapi 1
-8;2.5;numerica;Var1057;;;;Ano de compra do matapi 1
-8;2.5;numerica;Var1058;;;;Quantidade do matapi 1
-8;2.5;numerica;Var1059;;;;Valor Unitario do matapi 1
-8;2.5;categorica exclusiva;Var1060;;;;Fonte de recurso do matapi 1
-8;2.5;textual-numerica;Var1061;;;;Ano de substituicao do matapi 1
-8;2.5;textual-numerica;Var1062;;;;Tamanho do matapi 2
-8;2.5;numerica;Var1063;;;;Ano de compra do matapi 2
-8;2.5;numerica;Var1064;;;;Quantidade do matapi 2
-8;2.5;numerica;Var1065;;;;Valor Unitario do matapi 2
-8;2.5;categorica exclusiva;Var1066;;;;Fonte de recurso do matapi 2
-8;2.5;textual-numerica;Var1067;;;;Ano de substituicao do matapi 2
-8;2.5;textual-numerica;Var1068;;;;Tamanho do matapi 3
-9;2.5;numerica;Var1069;;;;Ano de compra do matapi 3
-8;2.5;numerica;Var1070;;;;Quantidade do matapi 3
-8;2.5;numerica;Var1071;;;;Valor Unitario do matapi 3
-8;2.5;categorica exclusiva;Var1072;;;;Fonte de recurso do matapi 3
-8;2.5;textual-numerica;Var1073;;;;Ano de substituicao do matapi 3
-8;2.5;textual-numerica;Var1074;;;;Tamanho do viveiroi 1
-8;2.5;numerica;Var1075;;;;Ano de compra do viveiro 1
-8;2.5;numerica;Var1076;;;;Quantidade do viveiro 1
-8;2.5;numerica;Var1077;;;;Valor Unitario do viveiro 1
-8;2.5;categorica exclusiva;Var1078;;;;Fonte de recurso do viveiro 1
-8;2.5;textual-numerica;Var1079;;;;Ano de substituicao do viveiro 1
-8;2.5;textual-numerica;Var1080;;;;Tamanho do viveiro 2
-8;2.5;numerica;Var1081;;;;Ano de compra do viveiro 2
-8;2.5;numerica;Var1082;;;;Quantidade do viveiro 2
-8;2.5;numerica;Var1083;;;;Valor Unitario do viveiro 2
-8;2.5;categorica exclusiva;Var1084;;;;Fonte de recurso do viveiro 2
-8;2.5;textual-numerica;Var1085;;;;Ano de substituicao do viveiro 2
-8;2.5;textual-numerica;Var1086;;;;Tamanho do viveiro 3
-8;2.5;numerica;Var1087;;;;Ano de compra do viveiro 3
-8;2.5;numerica;Var1088;;;;Quantidade do viveiro 3
-8;2.5;numerica;Var1089;;;;Valor Unitario do viveiro 3
-8;2.5;categorica exclusiva;Var1090;;;;Fonte de recurso do viveiro 3
-8;2.5;textual-numerica;Var1091;;;;Ano de substituicao do viveiro 3
-8;2.5;textual-numerica;Var1092;;;;Tamanho da cuba/cx isopor 1
-8;2.5;numerica;Var1093;;;;Ano de compra da cuba/cx isopor 1
-8;2.5;numerica;Var1094;;;;Quantidade da cuba/cx isopor 1
-8;2.5;numerica;Var1095;;;;Valor Unitario da cuba/cx isopor 1
-8;2.5;categorica exclusiva;Var1096;;;;Fonte de recurso da cuba/cx isopor 1
-8;2.5;textual-numerica;Var1097;;;;Ano de substituicao da cuba/cx isopor 1
-8;2.5;textual-numerica;Var1098;;;;Tamanho da cuba/cx isopor 2
-8;2.5;numerica;Var1099;;;;Ano de compra da cuba/cx isopor 2
-8;2.5;numerica;Var1100;;;;Quantidade da cuba/cx isopor 2
-8;2.5;numerica;Var1101;;;;Valor Unitario da cuba/cx isopor 2
-8;2.5;categorica exclusiva;Var1102;;;;Fonte de recurso da cuba/cx isopor 2
-8;2.5;textual-numerica;Var1103;;;;Ano de substituicao da cuba/cx isopor 2
-8;2.5;textual-numerica;Var1104;;;;Tamanho da cuba/cx isopor 3
-8;2.5;numerica;Var1105;;;;Ano de compra da cuba/cx isopor 3
-8;2.5;numerica;Var1106;;;;Quantidade da cuba/cx isopor 3
-8;2.5;numerica;Var1107;;;;Valor Unitario da cuba/cx isopor 3
-8;2.5;categorica exclusiva;Var1108;;;;Fonte de recurso da cuba/cx isopor 3
-8;2.5;textual-numerica;Var1109;;;;Ano de substituicao da cuba/cx isopor 3
-8;2.5;textual-numerica;Var1110;;;;Tamanho do fogao 1
-8;2.5;numerica;Var1111;;;;Ano de compra ddo fogao 1
-8;2.5;numerica;Var1112;;;;Quantidade do fogao 1
-8;2.5;numerica;Var1113;;;;Valor Unitario do fogao 1
-8;2.5;categorica exclusiva;Var1114;;;;Fonte de recurso do fogao 1
-8;2.5;textual-numerica;Var1115;;;;Ano de substituicao do fogao 1
-8;2.5;textual-numerica;Var1116;;;;Tamanho do fogao 2
-8;2.5;numerica;Var1117;;;;Ano de compra ddo fogao 2
-8;2.5;numerica;Var1118;;;;Quantidade do fogao 2
-8;2.5;numerica;Var1119;;;;Valor Unitario do fogao 2
-8;2.5;categorica exclusiva;Var1120;;;;Fonte de recurso do fogao 2
-8;2.5;textual-numerica;Var1121;;;;Ano de substituicao do fogao 2
-8;2.5;textual-numerica;Var1122;;;;Tamanho do fogao 3
-8;2.5;numerica;Var1123;;;;Ano de compra ddo fogao 3
-8;2.5;numerica;Var1124;;;;Quantidade do fogao 3
-8;2.5;numerica;Var1125;;;;Valor Unitario do fogao 3
-8;2.5;categorica exclusiva;Var1126;;;;Fonte de recurso do fogao 3
-8;2.5;textual-numerica;Var1127;;;;Ano de substituicao do fogao 3
-8;2.5;textual-numerica;Var1128;;;;Tamanho do freezer 1
-8;2.5;numerica;Var1129;;;;Ano de compra do freezer 1
-8;2.5;numerica;Var1130;;;;Quantidade do freezer 1
-8;2.5;numerica;Var1131;;;;Valor Unitario do freezer 1
-8;2.5;categorica exclusiva;Var1132;;;;Fonte de recurso do freezer 1
-8;2.5;textual-numerica;Var1133;;;;Ano de substituicao do freezer 1
-8;2.5;textual-numerica;Var1134;;;;Tamanho do freezer 2
-8;2.5;numerica;Var1135;;;;Ano de compra do freezer 2
-8;2.5;numerica;Var1136;;;;Quantidade do freezer 2
-8;2.5;numerica;Var1137;;;;Valor Unitario do freezer 2
-8;2.5;categorica exclusiva;Var1138;;;;Fonte de recurso do freezer 2
-8;2.5;textual-numerica;Var1139;;;;Ano de substituicao do freezer 2
-8;2.5;textual-numerica;Var1140;;;;Tamanho do freezer 3
-8;2.5;numerica;Var1141;;;;Ano de compra do freezer 3
-8;2.5;numerica;Var1142;;;;Quantidade do freezer 3
-8;2.5;numerica;Var1143;;;;Valor Unitario do freezer 3
-8;2.5;categorica exclusiva;Var1144;;;;Fonte de recurso do freezer 3
-8;2.5;textual-numerica;Var1145;;;;Ano de substituicao do freezer 3
-8;2.5;textual-numerica;Var1146;;;;Tamanho da geladeira 1
-8;2.5;numerica;Var1147;;;;Ano de compra da geladeira 1
-8;2.5;numerica;Var1148;;;;Quantidade da geladeira 1
-8;2.5;numerica;Var1149;;;;Valor Unitario da geladeira 1
-8;2.5;categorica exclusiva;Var1150;;;;Fonte de recurso da geladeira 1
-8;2.5;textual-numerica;Var1151;;;;Ano de substituicao da geladeira 1
-8;2.5;textual-numerica;Var1152;;;;Tamanho da geladeira 2
-8;2.5;numerica;Var1153;;;;Ano de compra da geladeira 2
-8;2.5;numerica;Var1154;;;;Quantidade da geladeira 2
-8;2.5;numerica;Var1155;;;;Valor Unitario da geladeira 2
-8;2.5;categorica exclusiva;Var1156;;;;Fonte de recurso da geladeira 2
-8;2.5;textual-numerica;Var1157;;;;Ano de substituicao da geladeira 2
-8;2.5;textual-numerica;Var1158;;;;Tamanho da geladeira 3
-8;2.5;numerica;Var1159;;;;Ano de compra da geladeira 3
-8;2.5;numerica;Var1160;;;;Quantidade da geladeira 3
-8;2.5;numerica;Var1161;;;;Valor Unitario da geladeira 3
-8;2.5;categorica exclusiva;Var1162;;;;Fonte de recurso da geladeira 3
-8;2.5;textual-numerica;Var1163;;;;Ano de substituicao da geladeira 3
+8;2.2;categorica variada ;Var0978;q67_p3_r7;q67_p3_r8;;aluminio barco a vela
+8;2.2;categorica variada ;Var0979;q67_p3_r9;q67_p3_r10;;aluminio barco a motor (catraio)
+8;2.2;categorica variada ;Var0980;q67_p3_r11;q67_p3_r12;;aluminio outro
+8;2.3;categorica exclusiva;Var0981;q67_p4;;Se nao e propria, de quem e a embarcaçao principal? ;4 alternativas de resposta: Emprestada (sem custo) por familiares ou amigos ou Alugada de familiares ou amigos ou alugada de alguem ou outros
+8;2.4;numerica;Var0982;q67_p5_r1;;Quanto e pago pelo aluguel da embarcaçao principal? ;valor
+8;2.4;categorica exclusiva;Var0983;q67_p5_r2,q67_p5_r3,q67_p5_r4;;;periodo de locaçao segundo valor inserido: por dia ou por semana ou por mes
+8;2.5;textual-numerica;Var0984;q67_p6_r1;;Quanto custaram os principais equipamentos para a pesca e o beneficiamento (custo de compra ou construçao/fabricaçao)? Com qual recursos foram adquiridos? Quando foram comprados e serao substituidos?;Tamanho embarcacao 1
+8;2.5;numerica;Var0985;q67_p6_r4;;;Ano de compra embarcacao 1
+8;2.5;numerica;Var0986;q67_p6_r7;;;Quantidade de embarcacao 1
+8;2.5;numerica;Var0987;q67_p6_r10;;;Valor Unitario da embarcacao 1
+8;2.5;categorica exclusiva;Var0988;q67_p6_r13,q67_p6_r14,q67_p6_r15;;;Fonte de recurso da embarcacao 1
+8;2.5;textual-numerica;Var0989;q67_p6_r22;;;Ano de substituicao da embarcacao 1
+8;2.5;textual-numerica;Var0990;q67_p6_r2;;;Tamanho embarcacao 2
+8;2.5;numerica;Var0991;q67_p6_r5;;;Ano de compra embarcacao 2
+8;2.5;numerica;Var0992;q67_p6_r8;;;Quantidade de embarcacao 2
+8;2.5;numerica;Var0993;q67_p6_r11;;;Valor Unitario da embarcacao 2
+8;2.5;categorica exclusiva;Var0994;q67_p6_r16,q67_p6_r17,q67_p6_r18;;;Fonte de recurso da embarcacao 2
+8;2.5;textual-numerica;Var0995;q67_p6_r23;;;Ano de substituicao da embarcacao 2
+8;2.5;textual-numerica;Var0996;q67_p6_r3;;;Tamanho embarcacao 3
+8;2.5;numerica;Var0997;q67_p6_r6;;;Ano de compra embarcacao 3
+8;2.5;numerica;Var0998;q67_p6_r9;;;Quantidade de embarcacao 3
+8;2.5;numerica;Var0999;q67_p6_r12;;;Valor Unitario da embarcacao 3
+8;2.5;categorica exclusiva;Var1000;q67_p6_r19,q67_p6_r20,q67_p6_r21;;;Fonte de recurso da embarcacao 3
+8;2.5;textual-numerica;Var1001;q67_p6_r24;;;Ano de substituicao da embarcacao 3
+8;2.5;textual-numerica;Var1002;q67_p7_r1;;;Potencia do motor de popa 1
+8;2.5;numerica;Var1003;q67_p7_r4;;;Ano de compra motor de popa 1
+8;2.5;numerica;Var1004;q67_p7_r7;;;Quantidade de motor de popa 1
+8;2.5;numerica;Var1005;q67_p7_r10;;;Valor Unitario da motor de popa 1
+8;2.5;categorica exclusiva;Var1006;q67_p7_r13,q67_p7_r14,q67_p7_r15;;;Fonte de recurso do motor de popa 1
+8;2.5;textual-numerica;Var1007;q67_p7_r22;;;Ano de substituicao do motor de popa 1
+8;2.5;textual-numerica;Var1008;q67_p7_r2;;;Potencia do motor de popa 2
+8;2.5;numerica;Var1009;q67_p7_r5;;;Ano de compra motor de popa 2
+8;2.5;numerica;Var1010;q67_p7_r8;;;Quantidade de motor de popa 2
+8;2.5;numerica;Var1011;q67_p7_r11;;;Valor Unitario da motor de popa 2
+8;2.5;categorica exclusiva;Var1012;q67_p7_r16,q67_p7_r17,q67_p7_r18;;;Fonte de recurso do motor de popa 2
+8;2.5;textual-numerica;Var1013;q67_p7_r23;;;Ano de substituicao do motor de popa 2
+8;2.5;textual-numerica;Var1014;q67_p7_r3;;;Potencia do motor de popa 3
+8;2.5;numerica;Var1015;q67_p7_r6;;;Ano de compra motor de popa 3
+8;2.5;numerica;Var1016;q67_p7_r9;;;Quantidade de motor de popa 3
+8;2.5;numerica;Var1017;q67_p7_r12;;;Valor Unitario da motor de popa 3
+8;2.5;categorica exclusiva;Var1018;q67_p7_r19,q67_p7_r20,q67_p7_r21;;;Fonte de recurso do motor de popa 3
+8;2.5;textual-numerica;Var1019;q67_p7_r24;;;Ano de substituicao do motor de popa 3
+8;2.5;textual-numerica;Var1020;q67_p8_r1;;;Tamanho da rede de arrasto 1
+8;2.5;numerica;Var1021;q67_p8_r4;;;Ano de compra rede de arrasto 1
+8;2.5;numerica;Var1022;q67_p8_r7;;;Quantidade de rede de arrasto 1
+8;2.5;numerica;Var1023;q67_p8_r10;;;Valor Unitario da  rede de arrasto 1
+8;2.5;categorica exclusiva;Var1024;q67_p8_r13,q67_p8_r14,q67_p8_r15;;;Fonte de recurso da  rede de arrasto 1
+8;2.5;textual-numerica;Var1025;q67_p8_r22;;;Ano de substituicao da  rede de arrasto 1
+8;2.5;textual-numerica;Var1026;q67_p8_r2;;;Tamanho da rede de arrasto 2
+8;2.5;numerica;Var1027;q67_p8_r5;;;Ano de compra rede de arrasto 2
+8;2.5;numerica;Var1028;q67_p8_r8;;;Quantidade de rede de arrasto 2
+8;2.5;numerica;Var1029;q67_p8_r11;;;Valor Unitario da  rede de arrasto 2
+8;2.5;categorica exclusiva;Var1030;q67_p8_r16,q67_p8_r17,q67_p8_r18;;;Fonte de recurso da  rede de arrasto 2
+8;2.5;textual-numerica;Var1031;q67_p8_r23;;;Ano de substituicao da  rede de arrasto 2
+8;2.5;textual-numerica;Var1032;q67_p8_r3;;;Tamanho da rede de arrasto 3
+8;2.5;numerica;Var1033;q67_p8_r6;;;Ano de compra rede de arrasto 3
+8;2.5;numerica;Var1034;q67_p8_r9;;;Quantidade de rede de arrasto 3
+8;2.5;numerica;Var1035;q67_p8_r12;;;Valor Unitario da  rede de arrasto 3
+8;2.5;categorica exclusiva;Var1036;q67_p8_r19,q67_p8_r20,q67_p8_r21;;;Fonte de recurso da  rede de arrasto 3
+8;2.5;textual-numerica;Var1037;q67_p8_r24;;;Ano de substituicao da  rede de arrasto 3
+8;2.5;textual-numerica;Var1038;q67_p9_r1;;;Tamanho da tarrafa 1
+8;2.5;numerica;Var1039;q67_p9_r4;;;Ano de compra tarrafa 1
+8;2.5;numerica;Var1040;q67_p9_r7;;;Quantidade de tarrafa 1
+8;2.5;numerica;Var1041;q67_p9_r10;;;Valor Unitario da  tarrafa 1
+8;2.5;categorica exclusiva;Var1042;q67_p9_r13,q67_p9_r14,q67_p9_r15;;;Fonte de recurso da  tarrafa 1
+8;2.5;textual-numerica;Var1043;q67_p9_r22;;;Ano de substituicao da  tarrafa 1
+8;2.5;textual-numerica;Var1044;q67_p9_r2;;;Tamanho da tarrafa 2
+8;2.5;numerica;Var1045;q67_p9_r5;;;Ano de compra tarrafa 2
+8;2.5;numerica;Var1046;q67_p9_r8;;;Quantidade de tarrafa 2
+8;2.5;numerica;Var1047;q67_p9_r11;;;Valor Unitario da  tarrafa 2
+8;2.5;categorica exclusiva;Var1048;q67_p9_r16,q67_p9_r17,q67_p9_r18;;;Fonte de recurso da  tarrafa 2
+8;2.5;textual-numerica;Var1049;q67_p9_r23;;;Ano de substituicao da  tarrafa 2
+8;2.5;textual-numerica;Var1050;q67_p9_r3;;;Tamanho da tarrafa 3
+8;2.5;numerica;Var1051;q67_p9_r6;;;Ano de compra tarrafa 3
+8;2.5;numerica;Var1052;q67_p9_r9;;;Quantidade de tarrafa 3
+8;2.5;numerica;Var1053;q67_p9_r12;;;Valor Unitario da  tarrafa 3
+8;2.5;categorica exclusiva;Var1054;q67_p9_r19,q67_p9_r20,q67_p9_r21;;;Fonte de recurso da  tarrafa 3
+8;2.5;textual-numerica;Var1055;q67_p9_r24;;;Ano de substituicao da  tarrafa 3
+8;2.5;textual-numerica;Var1056;q67_p10_r1;;;Tamanho do matapi 1
+8;2.5;numerica;Var1057;q67_p10_r4;;;Ano de compra do matapi 1
+8;2.5;numerica;Var1058;q67_p10_r7;;;Quantidade do matapi 1
+8;2.5;numerica;Var1059;q67_p10_r10;;;Valor Unitario do matapi 1
+8;2.5;categorica exclusiva;Var1060;q67_p10_r13,q67_p10_r14,q67_p10_r15;;;Fonte de recurso do matapi 1
+8;2.5;textual-numerica;Var1061;q67_p10_r22;;;Ano de substituicao do matapi 1
+8;2.5;textual-numerica;Var1062;q67_p10_r2;;;Tamanho do matapi 2
+8;2.5;numerica;Var1063;q67_p10_r5;;;Ano de compra do matapi 2
+8;2.5;numerica;Var1064;q67_p10_r8;;;Quantidade do matapi 2
+8;2.5;numerica;Var1065;q67_p10_r11;;;Valor Unitario do matapi 2
+8;2.5;categorica exclusiva;Var1066;q67_p10_r16,q67_p10_r17,q67_p10_r18;;;Fonte de recurso do matapi 2
+8;2.5;textual-numerica;Var1067;q67_p10_r23;;;Ano de substituicao do matapi 2
+8;2.5;textual-numerica;Var1068;q67_p10_r3;;;Tamanho do matapi 3
+9;2.5;numerica;Var1069;q67_p10_r6;;;Ano de compra do matapi 3
+8;2.5;numerica;Var1070;q67_p10_r9;;;Quantidade do matapi 3
+8;2.5;numerica;Var1071;q67_p10_r12;;;Valor Unitario do matapi 3
+8;2.5;categorica exclusiva;Var1072;q67_p10_r19,q67_p10_r20,q67_p10_r21;;;Fonte de recurso do matapi 3
+8;2.5;textual-numerica;Var1073;q67_p10_r24;;;Ano de substituicao do matapi 3
+8;2.5;textual-numerica;Var1074;q67_p11_r1;;;Tamanho do viveiroi 1
+8;2.5;numerica;Var1075;q67_p11_r4;;;Ano de compra do viveiro 1
+8;2.5;numerica;Var1076;q67_p11_r7;;;Quantidade do viveiro 1
+8;2.5;numerica;Var1077;q67_p11_r10;;;Valor Unitario do viveiro 1
+8;2.5;categorica exclusiva;Var1078;q67_p11_r13,q67_p11_r14,q67_p11_r15;;;Fonte de recurso do viveiro 1
+8;2.5;textual-numerica;Var1079;q67_p11_r22;;;Ano de substituicao do viveiro 1
+8;2.5;textual-numerica;Var1080;q67_p11_r2;;;Tamanho do viveiro 2
+8;2.5;numerica;Var1081;q67_p11_r5;;;Ano de compra do viveiro 2
+8;2.5;numerica;Var1082;q67_p11_r8;;;Quantidade do viveiro 2
+8;2.5;numerica;Var1083;q67_p11_r11;;;Valor Unitario do viveiro 2
+8;2.5;categorica exclusiva;Var1084;q67_p11_r16,q67_p11_r17,q67_p11_r18;;;Fonte de recurso do viveiro 2
+8;2.5;textual-numerica;Var1085;q67_p11_r23;;;Ano de substituicao do viveiro 2
+8;2.5;textual-numerica;Var1086;q67_p11_r3;;;Tamanho do viveiro 3
+8;2.5;numerica;Var1087;q67_p11_r6;;;Ano de compra do viveiro 3
+8;2.5;numerica;Var1088;q67_p11_r9;;;Quantidade do viveiro 3
+8;2.5;numerica;Var1089;q67_p11_r12;;;Valor Unitario do viveiro 3
+8;2.5;categorica exclusiva;Var1090;q67_p11_r19,q67_p11_r20,q67_p11_r21;;;Fonte de recurso do viveiro 3
+8;2.5;textual-numerica;Var1091;q67_p11_r24;;;Ano de substituicao do viveiro 3
+8;2.5;textual-numerica;Var1092;q67_p12_r1;;;Tamanho da cuba/cx isopor 1
+8;2.5;numerica;Var1093;q67_p12_r4;;;Ano de compra da cuba/cx isopor 1
+8;2.5;numerica;Var1094;q67_p12_r7;;;Quantidade da cuba/cx isopor 1
+8;2.5;numerica;Var1095;q67_p12_r10;;;Valor Unitario da cuba/cx isopor 1
+8;2.5;categorica exclusiva;Var1096;q67_p12_r13,q67_p12_r14,q67_p12_r15;;;Fonte de recurso da cuba/cx isopor 1
+8;2.5;textual-numerica;Var1097;q67_p12_r22;;;Ano de substituicao da cuba/cx isopor 1
+8;2.5;textual-numerica;Var1098;q67_p12_r2;;;Tamanho da cuba/cx isopor 2
+8;2.5;numerica;Var1099;q67_p12_r5;;;Ano de compra da cuba/cx isopor 2
+8;2.5;numerica;Var1100;q67_p12_r8;;;Quantidade da cuba/cx isopor 2
+8;2.5;numerica;Var1101;q67_p12_r11;;;Valor Unitario da cuba/cx isopor 2
+8;2.5;categorica exclusiva;Var1102;q67_p12_r16,q67_p12_r17,q67_p12_r18;;;Fonte de recurso da cuba/cx isopor 2
+8;2.5;textual-numerica;Var1103;q67_p12_r23;;;Ano de substituicao da cuba/cx isopor 2
+8;2.5;textual-numerica;Var1104;q67_p12_r3;;;Tamanho da cuba/cx isopor 3
+8;2.5;numerica;Var1105;q67_p12_r6;;;Ano de compra da cuba/cx isopor 3
+8;2.5;numerica;Var1106;q67_p12_r9;;;Quantidade da cuba/cx isopor 3
+8;2.5;numerica;Var1107;q67_p12_r12;;;Valor Unitario da cuba/cx isopor 3
+8;2.5;categorica exclusiva;Var1108;q67_p12_r19,q67_p12_r20,q67_p12_r21;;;Fonte de recurso da cuba/cx isopor 3
+8;2.5;textual-numerica;Var1109;q67_p12_r24;;;Ano de substituicao da cuba/cx isopor 3
+8;2.5;textual-numerica;Var1110;q67_p13_r1;;;Tamanho do fogao 1
+8;2.5;numerica;Var1111;q67_p13_r4;;;Ano de compra ddo fogao 1
+8;2.5;numerica;Var1112;q67_p13_r7;;;Quantidade do fogao 1
+8;2.5;numerica;Var1113;q67_p13_r10;;;Valor Unitario do fogao 1
+8;2.5;categorica exclusiva;Var1114;q67_p13_r13,q67_p13_r14,q67_p13_r15;;;Fonte de recurso do fogao 1
+8;2.5;textual-numerica;Var1115;q67_p13_r22;;;Ano de substituicao do fogao 1
+8;2.5;textual-numerica;Var1116;q67_p13_r2;;;Tamanho do fogao 2
+8;2.5;numerica;Var1117;q67_p13_r5;;;Ano de compra ddo fogao 2
+8;2.5;numerica;Var1118;q67_p13_r8;;;Quantidade do fogao 2
+8;2.5;numerica;Var1119;q67_p13_r11;;;Valor Unitario do fogao 2
+8;2.5;categorica exclusiva;Var1120;q67_p13_r16,q67_p13_r17,q67_p13_r18;;;Fonte de recurso do fogao 2
+8;2.5;textual-numerica;Var1121;q67_p13_r23;;;Ano de substituicao do fogao 2
+8;2.5;textual-numerica;Var1122;q67_p13_r3;;;Tamanho do fogao 3
+8;2.5;numerica;Var1123;q67_p13_r6;;;Ano de compra ddo fogao 3
+8;2.5;numerica;Var1124;q67_p13_r9;;;Quantidade do fogao 3
+8;2.5;numerica;Var1125;q67_p13_r12;;;Valor Unitario do fogao 3
+8;2.5;categorica exclusiva;Var1126;q67_p13_r19,q67_p13_r20,q67_p13_r21;;;Fonte de recurso do fogao 3
+8;2.5;textual-numerica;Var1127;q67_p13_r24;;;Ano de substituicao do fogao 3
+8;2.5;textual-numerica;Var1128;q67_p14_r1;;;Tamanho do freezer 1
+8;2.5;numerica;Var1129;q67_p14_r4;;;Ano de compra do freezer 1
+8;2.5;numerica;Var1130;q67_p14_r7;;;Quantidade do freezer 1
+8;2.5;numerica;Var1131;q67_p14_r10;;;Valor Unitario do freezer 1
+8;2.5;categorica exclusiva;Var1132;q67_p14_r13,q67_p14_r14,q67_p14_r15;;;Fonte de recurso do freezer 1
+8;2.5;textual-numerica;Var1133;q67_p14_r22;;;Ano de substituicao do freezer 1
+8;2.5;textual-numerica;Var1134;q67_p14_r2;;;Tamanho do freezer 2
+8;2.5;numerica;Var1135;q67_p14_r5;;;Ano de compra do freezer 2
+8;2.5;numerica;Var1136;q67_p14_r8;;;Quantidade do freezer 2
+8;2.5;numerica;Var1137;q67_p14_r11;;;Valor Unitario do freezer 2
+8;2.5;categorica exclusiva;Var1138;q67_p14_r16,q67_p14_r17,q67_p14_r18;;;Fonte de recurso do freezer 2
+8;2.5;textual-numerica;Var1139;q67_p14_r23;;;Ano de substituicao do freezer 2
+8;2.5;textual-numerica;Var1140;q67_p14_r3;;;Tamanho do freezer 3
+8;2.5;numerica;Var1141;q67_p14_r6;;;Ano de compra do freezer 3
+8;2.5;numerica;Var1142;q67_p14_r9;;;Quantidade do freezer 3
+8;2.5;numerica;Var1143;q67_p14_r12;;;Valor Unitario do freezer 3
+8;2.5;categorica exclusiva;Var1144;q67_p14_r19,q67_p14_r20,q67_p14_r21;;;Fonte de recurso do freezer 3
+8;2.5;textual-numerica;Var1145;q67_p14_r24;;;Ano de substituicao do freezer 3
+8;2.5;textual-numerica;Var1146;q67_p15_r1;;;Tamanho da geladeira 1
+8;2.5;numerica;Var1147;q67_p15_r4;;;Ano de compra da geladeira 1
+8;2.5;numerica;Var1148;q67_p15_r7;;;Quantidade da geladeira 1
+8;2.5;numerica;Var1149;q67_p15_r10;;;Valor Unitario da geladeira 1
+8;2.5;categorica exclusiva;Var1150;q67_p15_r13,q67_p15_r14,q67_p15_r15;;;Fonte de recurso da geladeira 1
+8;2.5;textual-numerica;Var1151;q67_p15_r22;;;Ano de substituicao da geladeira 1
+8;2.5;textual-numerica;Var1152;q67_p15_r2;;;Tamanho da geladeira 2
+8;2.5;numerica;Var1153;q67_p15_r5;;;Ano de compra da geladeira 2
+8;2.5;numerica;Var1154;q67_p15_r8;;;Quantidade da geladeira 2
+8;2.5;numerica;Var1155;q67_p15_r11;;;Valor Unitario da geladeira 2
+8;2.5;categorica exclusiva;Var1156;q67_p15_r16,q67_p15_r17,q67_p15_r18;;;Fonte de recurso da geladeira 2
+8;2.5;textual-numerica;Var1157;q67_p15_r23;;;Ano de substituicao da geladeira 2
+8;2.5;textual-numerica;Var1158;q67_p15_r3;;;Tamanho da geladeira 3
+8;2.5;numerica;Var1159;q67_p15_r6;;;Ano de compra da geladeira 3
+8;2.5;numerica;Var1160;q67_p15_r9;;;Quantidade da geladeira 3
+8;2.5;numerica;Var1161;q67_p15_r12;;;Valor Unitario da geladeira 3
+8;2.5;categorica exclusiva;Var1162;q67_p15_r19,q67_p15_r20,q67_p15_r21;;;Fonte de recurso da geladeira 3
+8;2.5;textual-numerica;Var1163;q67_p15_r24;;;Ano de substituicao da geladeira 3
 8;2.5;textual-numerica;Var1164;;;;Tamanho do outro 1
 8;2.5;numerica;Var1165;;;;Ano de compra do outro  1
 8;2.5;numerica;Var1166;;;;Quantidade do outro  1
 8;2.5;numerica;Var1167;;;;Valor Unitario do outro  1
-8;2.5;categorica exclusiva;Var1168;;;;Fonte de recurso do outro  1
-8;2.5;textual-numerica;Var1169;;;;Ano de substituicao do outro 1
+8;2.5;categorica exclusiva;Var1168;q67_p16_r1,q67_p16_r2,q67_p16_r3;;;Fonte de recurso do outro  1
+8;2.5;textual-numerica;Var1169;q67_p16_r10;;;Ano de substituicao do outro 1
 8;2.5;textual-numerica;Var1170;;;;Tamanho do outro 2
 8;2.5;numerica;Var1171;;;;Ano de compra do outro  2
 8;2.5;numerica;Var1172;;;;Quantidade do outro  2
 8;2.5;numerica;Var1173;;;;Valor Unitario do outro  2
-8;2.5;categorica exclusiva;Var1174;;;;Fonte de recurso do outro  2
+8;2.5;categorica exclusiva;Var1174;q67_p16_r4,q67_p16_r5,q67_p16_r6;;;Fonte de recurso do outro  2
 8;2.5;textual-numerica;Var1175;;;;Ano de substituicao do outro 2
 8;2.5;textual-numerica;Var1176;;;;Tamanho do outro 3
 8;2.5;numerica;Var1177;;;;Ano de compra do outro  3
 8;2.5;numerica;Var1178;;;;Quantidade do outro  3
 8;2.5;numerica;Var1179;;;;Valor Unitario do outro  3
-8;2.5;categorica exclusiva;Var1180;;;;Fonte de recurso do outro  3
+8;2.5;categorica exclusiva;Var1180;q67_p16_r7,q67_p16_r8,q67_p16_r9;;;Fonte de recurso do outro  3
 8;2.5;textual-numerica;Var1181;;;;Ano de substituicao do outro 3
-8;3;categorica exclusiva;Var1182;;;Quais sao os gastos por dia ou por viagem? Qual a quantidade e preço unitario em 2015?;Gasolina para transporte - frequencia
-8;3;textual-numerica;Var1183;;;;Gasolina para transporte - quantidade (litros)
-8;3;numerica;Var1184;;;;Gasolina para transporte - preço unitario(R$)
-8;3;categorica exclusiva;Var1185;;;;Gasolina para transporte - observaçao
-8;3;categorica exclusiva;Var1186;;;;Diesel para transporte - frequencia
-8;3;textual-numerica;Var1187;;;;Diesel para transporte - quantidade (litros)
-8;3;numerica;Var1188;;;;Diesel para transporte - preço unitario(R$)
-8;3;categorica exclusiva;Var1189;;;;Diesel para transporte - observacao
-8;3;categorica exclusiva;Var1190;;;;Diesel para lamparina - frequencia
-8;3;textual-numerica;Var1191;;;;Diesel para lamparina - quantidade (litros)
-8;3;numerica;Var1192;;;;Diesel para lamparina - preço unitario(R$)
-8;3;categorica exclusiva;Var1193;;;;Diesel para lamparina - observacao
-8;3;categorica exclusiva;Var1194;;;;Lubrificante para mistura na gasolina - frequencia
-8;3;textual-numerica;Var1195;;;;Lubrificante para mistura na gasolina - quantidade (litros)
-8;3;numerica;Var1196;;;;Lubrificante para mistura na gasolina - preço unitario(R$)
-8;3;categorica exclusiva;Var1197;;;;Lubrificante para mistura na gasolina - observacao
-8;3;categorica exclusiva;Var1198;;;;Querosene - frequencia
-8;3;textual-numerica;Var1199;;;;Querosene - quantidade (litros)
-8;3;numerica;Var1200;;;;Querosene - preço unitario(R$)
-8;3;categorica exclusiva;Var1201;;;;Querosene - observacao
-8;3;categorica exclusiva;Var1202;;;;Gelo para conservar - frequencia
-8;3;textual-numerica;Var1203;;;;Gelo para conservar - quantidade (kg)
-8;3;numerica;Var1204;;;;Gelo para conservar - preço unitario(R$)
-8;3;categorica exclusiva;Var1205;;;;Gelo para conservar - observacao
-8;3;categorica exclusiva;Var1206;;;;Alimentaçao em viagem de pesca - frequencia
-8;3;textual-numerica;Var1207;;;;Alimentaçao em viagem de pesca - quantidade (unidade)
-8;3;numerica;Var1208;;;;Alimentaçao em viagem de pesca - preço unitario(R$)
-8;3;categorica exclusiva;Var1209;;;;Alimentaçao em viagem de pesca - observaçao
-8;3;categorica exclusiva;Var1210;;;;Babaçu para isca (poqueca) - frequencia
-8;3;textual-numerica;Var1211;;;;Babaçu para isca (poqueca) - quantidade (kg)
-8;3;numerica;Var1212;;;;Babaçu para isca (poqueca) - preço unitario (R$)
-8;3;categorica exclusiva;Var1213;;;;Babaçu para isca (poqueca) - observaçao
-8;3;categorica exclusiva;Var1214;;;;Sal para beneficiar - frequencia
-8;3;textual-numerica;Var1215;;;;Sal para beneficiar - quantidade (kg)
-8;3;numerica;Var1216;;;;Sal para beneficiar -  preço unitario (R$)
-8;3;categorica exclusiva;Var1217;;;;Sal para beneficiar - observaçao
-8;3;categorica exclusiva;Var1218;;;;Lenha para beneficiar - frequencia
-8;3;textual-numerica;Var1219;;;;Lenha para beneficiar - quantidade (und)
-8;3;numerica;Var1220;;;;Lenha para beneficiar -  preço unitario (R$)
-8;3;categorica exclusiva;Var1221;;;;Lenha para beneficiar - observaçao
-8;3;categorica exclusiva;Var1222;;;;Mao de obra para beneficiar - frequencia
-8;3;textual-numerica;Var1223;;;;Mao de obra  para beneficiar - quantidade (pessoas)
-8;3;numerica;Var1224;;;;Mao de obra  para beneficiar -  preço unitario (R$)
-8;3;categorica exclusiva;Var1225;;;;Mao de obra  para beneficiar - observaçao
-8;3;categorica exclusiva;Var1226;;;;Outros - frequencia
-8;3;textual-numerica;Var1227;;;;Outros - quantidade  (unidade)
-8;3;numerica;Var1228;;;;Outros -  preço unitario (R$)
-8;3;categorica exclusiva;Var1229;;;;Outros - observaçao
-8;3.1;categorica exclusiva;Var1230;;;Quanto deste total e pago pelo patrao de pesca (se houver)?;Alternativas de valor pago pelo patrao de pesca
-8;4;categorica exclusiva;Var1231;;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual e o valor gasto ou correspondente para 2015? ;Recipientes - frequencia
-8;4;numerica;Var1232;;;;Recipientes - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1233;;;;Recipientes - observaçao
-8;4;categorica exclusiva;Var1234;;;;Material para manutençao de matapis - frequencia
-8;4;numerica;Var1235;;;;Material para manutençao de matapis - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1236;;;;Material para manutençao de matapis- observacao
-8;4;categorica exclusiva;Var1237;;;;Material para calafetar barco - frequencia
-8;4;numerica;Var1238;;;;Material para calafetar barco - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1239;;;;Material para calafetar barco - observacao
-8;4;categorica exclusiva;Var1240;;;;Serviço para calafetar barco - frequencia
-8;4;numerica;Var1241;;;;Serviço para calafetar barco - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1242;;;;Serviço para calafetar barco - observacao
-8;4;categorica exclusiva;Var1243;;;;Peças para manutençao de motor - frequencia
-8;4;numerica;Var1244;;;;Peças para manutençao de motor - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1245;;;;Peças para manutençao de motor - observaçao
-8;4;categorica exclusiva;Var1246;;;;Lubrificante para manutençao de motor - frequencia
-8;4;numerica;Var1247;;;;Lubrificante para manutençao de motor - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1248;;;;Lubrificante para manutençao de motor - observaçao
-8;4;categorica exclusiva;Var1249;;;;Serviço para manutençao de motor - frequencia
-8;4;numerica;Var1250;;;;Serviço para manutençao de motor - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1251;;;;Serviço para manutençao de motor - observaçao
-8;4;categorica exclusiva;Var1252;;;;Material para manutençao de viveiro - frequencia
-8;4;numerica;Var1253;;;;Material para manutençao de viveiro - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1254;;;;Material para manutençao de viveiro - observaçao
-8;4;categorica exclusiva;Var1255;;;;Material para manutençao de rede ou tarrafa - frequencia
-8;4;numerica;Var1256;;;;Material para manutençao de rede ou tarrafa - valor por cada vez que ocorre
-8;4;categorica exclusiva;Var1257;;;;Material para manutençao de rede ou tarrafa - observaçao
-8;4;categorica exclusiva;Var1258;;;;Outros - frequencia
-8;4;numerica;Var1259;;;;Outros - valor por cada vez que ocorre
-8;5;numerica;Var1260;;;Quanto tempo em media se gasta com a preparaçao de materiais (poqueca, alimento, coleta de lenha, folhas, fibras, etc)? ;Verao - horas gastas por dia
-8;5;numerica;Var1261;;;;Verao - horas gastas por semana
-8;5;numerica;Var1262;;;;Inverno - horas gastas por dia
-8;5;numerica;Var1263;;;;Inverno - horas gastas por semana
-8;5;categorica exclusiva;Var1264;;;;observaçao nao sabe ou nao respondeu
-8;6;numerica;Var1265;;;Se a propria familia realiza a manutençao dos equipamentos (matapi/viveiro, rede, tarrafa, motor, barco), quanto tempo normalmente se gasta?;Verao - horas gastas por dia
-8;6;numerica;Var1266;;;;Verao - horas gastas por semana
-8;6;numerica;Var1267;;;;Inverno - horas gastas por dia
-8;6;numerica;Var1268;;;;Inverno - horas gastas por semana
-8;6;categorica exclusiva;Var1269;;;;observaçao nao sabe ou nao respondeu
-8;7;numerica;Var1270;;;Quanto tempo e gasto para selecionar, descascar e/ou salgar o camarao?;Horas por dia
-8;7;numerica;Var1271;;;;Horas por semana
-9;1;textual;Var1272;;;Quais sao os problemas e soluções da CdV?;Descriçao dos problemas
-9;1;textual;Var1273;;;;Descriçao das soluções
+8;3;categorica exclusiva;Var1182;q68_p1_r1,q68_p1_r2,q68_p1_r3;;Quais sao os gastos por dia ou por viagem? Qual a quantidade e preço unitario em 2015?;Gasolina para transporte - frequencia
+8;3;textual-numerica;Var1183;q68_p1_r4;;;Gasolina para transporte - quantidade (litros)
+8;3;numerica;Var1184;q68_p1_r5;;;Gasolina para transporte - preço unitario(R$)
+8;3;categorica exclusiva;Var1185;q68_p1_r6,q68_p1_r7,q68_p1_r8;;;Gasolina para transporte - observaçao
+8;3;categorica exclusiva;Var1186;q68_p2_r1,q68_p2_r2,q68_p2_r3;;;Diesel para transporte - frequencia
+8;3;textual-numerica;Var1187;q68_p2_r4;;;Diesel para transporte - quantidade (litros)
+8;3;numerica;Var1188;q68_p2_r5;;;Diesel para transporte - preço unitario(R$)
+8;3;categorica exclusiva;Var1189;q68_p2_r6,q68_p2_r7,q68_p2_r8;;;Diesel para transporte - observacao
+8;3;categorica exclusiva;Var1190;q68_p3_r1,q68_p3_r2,q68_p3_r3;;;Diesel para lamparina - frequencia
+8;3;textual-numerica;Var1191;q68_p3_r4;;;Diesel para lamparina - quantidade (litros)
+8;3;numerica;Var1192;q68_p3_r5;;;Diesel para lamparina - preço unitario(R$)
+8;3;categorica exclusiva;Var1193;q68_p3_r6,q68_p3_r7,q68_p3_r8;;;Diesel para lamparina - observacao
+8;3;categorica exclusiva;Var1194;q68_p4_r1,q68_p4_r2,q68_p4_r3;;;Lubrificante para mistura na gasolina - frequencia
+8;3;textual-numerica;Var1195;q68_p4_r4;;;Lubrificante para mistura na gasolina - quantidade (litros)
+8;3;numerica;Var1196;q68_p4_r5;;;Lubrificante para mistura na gasolina - preço unitario(R$)
+8;3;categorica exclusiva;Var1197;q68_p4_r6,q68_p4_r7,q68_p4_r8;;;Lubrificante para mistura na gasolina - observacao
+8;3;categorica exclusiva;Var1198;q68_p5_r1,q68_p5_r2,q68_p5_r3;;;Querosene - frequencia
+8;3;textual-numerica;Var1199;q68_p5_r4;;;Querosene - quantidade (litros)
+8;3;numerica;Var1200;q68_p5_r5;;;Querosene - preço unitario(R$)
+8;3;categorica exclusiva;Var1201;q68_p5_r6,q68_p5_r7,q68_p5_r8;;;Querosene - observacao
+8;3;categorica exclusiva;Var1202;q68_p6_r1,q68_p6_r2,q68_p6_r3;;;Gelo para conservar - frequencia
+8;3;textual-numerica;Var1203;q68_p6_r4;;;Gelo para conservar - quantidade (kg)
+8;3;numerica;Var1204;q68_p6_r5;;;Gelo para conservar - preço unitario(R$)
+8;3;categorica exclusiva;Var1205;q68_p6_r6,q68_p6_r7,q68_p6_r8;;;Gelo para conservar - observacao
+8;3;categorica exclusiva;Var1206;q68_p7_r1,q68_p7_r2,q68_p7_r3;;;Alimentaçao em viagem de pesca - frequencia
+8;3;textual-numerica;Var1207;q68_p7_r4;;;Alimentaçao em viagem de pesca - quantidade (unidade)
+8;3;numerica;Var1208;q68_p7_r5;;;Alimentaçao em viagem de pesca - preço unitario(R$)
+8;3;categorica exclusiva;Var1209;q68_p7_r6,q68_p7_r7,q68_p7_r8;;;Alimentaçao em viagem de pesca - observaçao
+8;3;categorica exclusiva;Var1210;q68_p8_r1,q68_p8_r2,q68_p8_r3;;;Babaçu para isca (poqueca) - frequencia
+8;3;textual-numerica;Var1211;q68_p8_r4;;;Babaçu para isca (poqueca) - quantidade (kg)
+8;3;numerica;Var1212;q68_p8_r5;;;Babaçu para isca (poqueca) - preço unitario (R$)
+8;3;categorica exclusiva;Var1213;q68_p8_r6,q68_p8_r7,q68_p8_r8;;;Babaçu para isca (poqueca) - observaçao
+8;3;categorica exclusiva;Var1214;q68_p9_r1,q68_p9_r2,q68_p9_r3;;;Sal para beneficiar - frequencia
+8;3;textual-numerica;Var1215;q68_p9_r4;;;Sal para beneficiar - quantidade (kg)
+8;3;numerica;Var1216;q68_p9_r5;;;Sal para beneficiar -  preço unitario (R$)
+8;3;categorica exclusiva;Var1217;q68_p9_r6,q68_p9_r7,q68_p9_r8;;;Sal para beneficiar - observaçao
+8;3;categorica exclusiva;Var1218;q68_p10_r1,q68_p10_r2,q68_p10_r3;;;Lenha para beneficiar - frequencia
+8;3;textual-numerica;Var1219;q68_p10_r4;;;Lenha para beneficiar - quantidade (und)
+8;3;numerica;Var1220;q68_p10_r5;;;Lenha para beneficiar -  preço unitario (R$)
+8;3;categorica exclusiva;Var1221;q68_p10_r6,q68_p10_r7,q68_p10_r8;;;Lenha para beneficiar - observaçao
+8;3;categorica exclusiva;Var1222;q68_p11_r1,q68_p11_r2,q68_p11_r3;;;Mao de obra para beneficiar - frequencia
+8;3;textual-numerica;Var1223;q68_p11_r4;;;Mao de obra  para beneficiar - quantidade (pessoas)
+8;3;numerica;Var1224;q68_p11_r5;;;Mao de obra  para beneficiar -  preço unitario (R$)
+8;3;categorica exclusiva;Var1225;q68_p11_r6,q68_p11_r7,q68_p11_r8;;;Mao de obra  para beneficiar - observaçao
+8;3;categorica exclusiva;Var1226;q68_p12_r1,q68_p12_r2,q68_p12_r3;;;Outros - frequencia
+8;3;textual-numerica;Var1227;q68_p12_r4;;;Outros - quantidade  (unidade)
+8;3;numerica;Var1228;q68_p12_r5;;;Outros -  preço unitario (R$)
+8;3;categorica exclusiva;Var1229;q68_p12_r6,q68_p12_r7,q68_p12_r8;;;Outros - observaçao
+8;3.1;categorica exclusiva;Var1230;q68_p13;;Quanto deste total e pago pelo patrao de pesca (se houver)?;Alternativas de valor pago pelo patrao de pesca
+8;4;categorica exclusiva;Var1231;q69_p1_r1,q69_p1_r2,q69_p1_r3,q69_p1_r4,q69_p1_r5,q69_p1_r6,q69_p1_r7,q69_p1_r8;;Normalmente, quais sao os gastos que ocorrem frequentemente? Qual e o valor gasto ou correspondente para 2015? ;Recipientes - frequencia
+8;4;numerica;Var1232;q69_p1_r9;;;Recipientes - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1233;q69_p1_r10,q69_p1_r11,q69_p1_r12;;;Recipientes - observaçao
+8;4;categorica exclusiva;Var1234;q69_p2_r1,q69_p2_r2,q69_p2_r3,q69_p2_r4,q69_p2_r5,q69_p2_r6,q69_p2_r7,q69_p2_r8;;;Material para manutençao de matapis - frequencia
+8;4;numerica;Var1235;q69_p2_r9;;;Material para manutençao de matapis - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1236;q69_p2_r10,q69_p2_r11,q69_p2_r12;;;Material para manutençao de matapis- observacao
+8;4;categorica exclusiva;Var1237;q69_p3_r1,q69_p3_r2,q69_p3_r3,q69_p3_r4,q69_p3_r5,q69_p3_r6,q69_p3_r7,q69_p3_r8;;;Material para calafetar barco - frequencia
+8;4;numerica;Var1238;q69_p3_r9;;;Material para calafetar barco - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1239;q69_p3_r10,q69_p3_r11,q69_p3_r12;;;Material para calafetar barco - observacao
+8;4;categorica exclusiva;Var1240;q69_p4_r1,q69_p4_r2,q69_p4_r3,q69_p4_r4,q69_p4_r5,q69_p4_r6,q69_p4_r7,q69_p4_r8;;;Serviço para calafetar barco - frequencia
+8;4;numerica;Var1241;q69_p4_r9;;;Serviço para calafetar barco - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1242;q69_p4_r10,q69_p4_r11,q69_p4_r12;;;Serviço para calafetar barco - observacao
+8;4;categorica exclusiva;Var1243;q69_p5_r1,q69_p5_r2,q69_p5_r3,q69_p5_r4,q69_p5_r5,q69_p5_r6,q69_p5_r7,q69_p5_r8;;;Peças para manutençao de motor - frequencia
+8;4;numerica;Var1244;q69_p5_r9;;;Peças para manutençao de motor - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1245;q69_p5_r10,q69_p5_r11,q69_p5_r12;;;Peças para manutençao de motor - observaçao
+8;4;categorica exclusiva;Var1246;q69_p6_r1,q69_p6_r2,q69_p6_r3,q69_p6_r4,q69_p6_r5,q69_p6_r6,q69_p6_r7,q69_p6_r8;;;Lubrificante para manutençao de motor - frequencia
+8;4;numerica;Var1247;q69_p6_r9;;;Lubrificante para manutençao de motor - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1248;q69_p6_r10,q69_p6_r11,q69_p6_r12;;;Lubrificante para manutençao de motor - observaçao
+8;4;categorica exclusiva;Var1249;q69_p7_r1,q69_p7_r2,q69_p7_r3,q69_p7_r4,q69_p7_r5,q69_p7_r6,q69_p7_r7,q69_p7_r8;;;Serviço para manutençao de motor - frequencia
+8;4;numerica;Var1250;q69_p7_r9;;;Serviço para manutençao de motor - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1251;q69_p7_r10,q69_p7_r11,q69_p7_r12;;;Serviço para manutençao de motor - observaçao
+8;4;categorica exclusiva;Var1252;q69_p8_r1,q69_p8_r2,q69_p8_r3,q69_p8_r4,q69_p8_r5,q69_p8_r6,q69_p8_r7,q69_p8_r8;;;Material para manutençao de viveiro - frequencia
+8;4;numerica;Var1253;q69_p8_r9;;;Material para manutençao de viveiro - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1254;q69_p8_r10,q69_p8_r11,q69_p8_r12;;;Material para manutençao de viveiro - observaçao
+8;4;categorica exclusiva;Var1255;q69_p9_r1,q69_p9_r2,q69_p9_r3,q69_p9_r4,q69_p9_r5,q69_p9_r6,q69_p9_r7,q69_p9_r8;;;Material para manutençao de rede ou tarrafa - frequencia
+8;4;numerica;Var1256;q69_p9_r9;;;Material para manutençao de rede ou tarrafa - valor por cada vez que ocorre
+8;4;categorica exclusiva;Var1257;q69_p9_r10,q69_p9_r11,q69_p9_r12;;;Material para manutençao de rede ou tarrafa - observaçao
+8;4;categorica exclusiva;Var1258;q69_p10_r1,q69_p10_r2,q69_p10_r3,q69_p10_r4,q69_p10_r5,q69_p10_r6,q69_p10_r7,q69_p10_r8;;;Outros - frequencia
+8;4;numerica;Var1259;q69_p10_r9;;;Outros - valor por cada vez que ocorre
+8;5;numerica;Var1260;q70_p1_r1;;Quanto tempo em media se gasta com a preparaçao de materiais (poqueca, alimento, coleta de lenha, folhas, fibras, etc)? ;Verao - horas gastas por dia
+8;5;numerica;Var1261;q70_p1_r2;;;Verao - horas gastas por semana
+8;5;numerica;Var1262;q70_p2_r1;;;Inverno - horas gastas por dia
+8;5;numerica;Var1263;q70_p2_r2;;;Inverno - horas gastas por semana
+8;5;categorica exclusiva;Var1264;q70_p3;;;observaçao nao sabe ou nao respondeu
+8;6;numerica;Var1265;q71_p1_r1;;Se a propria familia realiza a manutençao dos equipamentos (matapi/viveiro, rede, tarrafa, motor, barco), quanto tempo normalmente se gasta?;Verao - horas gastas por dia
+8;6;numerica;Var1266;q71_p1_r2;;;Verao - horas gastas por semana
+8;6;numerica;Var1267;q71_p2_r1;;;Inverno - horas gastas por dia
+8;6;numerica;Var1268;q71_p2_r2;;;Inverno - horas gastas por semana
+8;6;categorica exclusiva;Var1269;q71_p3;;;observaçao nao sabe ou nao respondeu
+8;7;numerica;Var1270;q72_p1_r1;;Quanto tempo e gasto para selecionar, descascar e/ou salgar o camarao?;Horas por dia
+8;7;numerica;Var1271;q72_p1_r2;;;Horas por semana
+9;1;textual;Var1272;q73_p1_r1;;Quais sao os problemas e soluções da CdV?;Descriçao dos problemas
+9;1;textual;Var1273;q73_p1_r2;;;Descriçao das soluções
