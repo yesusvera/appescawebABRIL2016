@@ -2,7 +2,9 @@ package br.org.unesco.appesca.rest;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.enterprise.context.RequestScoped;
@@ -173,22 +175,30 @@ public class FormularioResourceREST extends BaseREST {
 	public Response exportacaoDeFormulario(@QueryParam("tipo") String strTipo) {
 		Integer tipoFormulario = Integer.valueOf(strTipo);
 		String nomeTemplate = "";
+		String nomeGerado = "";
 
 		switch (tipoFormulario) {
 		case 1: // camarao
 			nomeTemplate = "camaraoRegionalVS1.csv";
+			nomeGerado = "camaraoRegional";
 			break;
 		case 2:// caranguejo
 				// return Response.noContent().build();
 			nomeTemplate = "caranguejoVS1.csv";
+			nomeGerado = "caranguejo";
 			break;
 		case 3:// piticaia
 			nomeTemplate = "camaraoPiticaiaEBrancoVS1.csv";
+			nomeGerado = "camaraoPiticaiaEBranco";
 			break;
 		}
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_hhmm");
+		nomeGerado += sdf.format(new Date());
+		nomeGerado += ".csv";
+		
 		TemplateCVS templateCVS = new TemplateCVS();
-		templateCVS
-				.execute(new File(context.getRealPath("/WEB-INF/exportacaoTemplates/"+nomeTemplate)));
+		templateCVS.execute(new File(context.getRealPath("/WEB-INF/exportacaoTemplates/" + nomeTemplate)));
 
 		String conteudoCSV = "";
 
@@ -207,35 +217,38 @@ public class FormularioResourceREST extends BaseREST {
 		int x = 1;
 
 		for (Formulario form : listaFormulario) {
-			if (form.getSituacao() < 2) { //SOMENTE PARA FORMULARIOS FINALIZADOS.
+			if (form.getSituacao() < 2) { // SOMENTE PARA FORMULARIOS
+											// FINALIZADOS.
 				continue;
 			}
 			System.out.println("-_-_-> Processando formulário (" + x++ + ") " + form.getIdSincronizacao());
 
 			ExportacaoCSV expCSV = exportacaoCSVService.findByIdFormulario(form.getId());
 
-//			if (expCSV != null && expCSV.getLinhaCSV() != null && !expCSV.getLinhaCSV().isEmpty()) {
-//				conteudoCSV += expCSV.getLinhaCSV();
-//			} else {
-				String linhaCSV = "";
-				Usuario usr = null;
+			// if (expCSV != null && expCSV.getLinhaCSV() != null &&
+			// !expCSV.getLinhaCSV().isEmpty()) {
+			// conteudoCSV += expCSV.getLinhaCSV();
+			// } else {
+			String linhaCSV = "";
+			Usuario usr = null;
 
-				for (Usuario usrTmp : listaUsuarios) {
-					if (form.getIdUsuario() == usrTmp.getId().intValue()) {
-						usr = usrTmp;
-					}
+			for (Usuario usrTmp : listaUsuarios) {
+				if (form.getIdUsuario() == usrTmp.getId().intValue()) {
+					usr = usrTmp;
 				}
-				linhaCSV += form.getIdSincronizacao() + ";";
-				linhaCSV += formularioService.getRespostaTexto(0, 1, 1, form) + ";";
-				linhaCSV += "?" + ";";
-				linhaCSV += formularioService.getUF(form) + ";";
-				linhaCSV += formularioService.getRespostaTexto(0, 4, 1, form) + ";";
-				linhaCSV += formularioService.getRespostaTexto(0, 5, 1, form) + ";";
-				linhaCSV += "?" + ";";
-				linhaCSV += (form.getLatitude() == null ? "" : form.getLatitude()) + ";";
-				linhaCSV += (form.getLongitude() == null ? "" : form.getLongitude()) + ";";
+			}
+			linhaCSV += form.getIdSincronizacao() + ";";
+			linhaCSV += formularioService.getRespostaTexto(0, 1, 1, form) + ";";
+			linhaCSV += "?" + ";";
+			linhaCSV += formularioService.getUF(form) + ";";
+			linhaCSV += formularioService.getRespostaTexto(0, 4, 1, form) + ";";
+			linhaCSV += formularioService.getRespostaTexto(0, 5, 1, form) + ";";
+			linhaCSV += "?" + ";";
+			linhaCSV += (form.getLatitude() == null ? "" : form.getLatitude()) + ";";
+			linhaCSV += (form.getLongitude() == null ? "" : form.getLongitude()) + ";";
 
-				for (RowExportCVS row : templateCVS.getListRowCVS()) {
+			for (RowExportCVS row : templateCVS.getListRowCVS()) {
+				try {
 					if (row.getCod1AppescaAndroid() != null && !row.getCod1AppescaAndroid().trim().isEmpty()) {
 						if (TemplateCVS.rowIsDataAplicacao(row)) {
 							linhaCSV += form.getData();
@@ -250,52 +263,53 @@ public class FormularioResourceREST extends BaseREST {
 										formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto());
 							} else {
 								String respStr = "";
-								
-								if(row.getCod1AppescaAndroid()!=null ){
-									if(row.getCod1AppescaAndroid().indexOf(",")==-1){
-										 respStr = "\""
-												+ formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto()
-												+ "\"";
-									}else{
+
+								if (row.getCod1AppescaAndroid() != null) {
+									if (row.getCod1AppescaAndroid().indexOf(",") == -1) {
+										respStr = "\"" + formularioService
+												.getResposta(row.getCod1AppescaAndroid(), form).getTexto() + "\"";
+									} else {
 										String[] listaCodigos = row.getCod1AppescaAndroid().split(",");
-										
-										for(String codAppescaAndroid: listaCodigos){
+
+										for (String codAppescaAndroid : listaCodigos) {
 											Resposta resp = formularioService.getResposta(codAppescaAndroid, form);
-											
-											if(resp!=null && resp.getTexto()!=null && resp.getTexto().trim().length() > 0){
-												 respStr = "\""
-															+ resp.getTexto()
-															+ "\"";
-												 
-												 break;
+
+											if (resp != null && resp.getTexto() != null
+													&& resp.getTexto().trim().length() > 0) {
+												respStr = "\"" + resp.getTexto() + "\"";
+
+												break;
 											}
 										}
 									}
 								}
-								
+
 								if (respStr != null) {
-									respStr = respStr.replaceAll("\n", "");
+									respStr = respStr.replaceAll("\n", "").replaceAll("\r", "");
 								}
 								linhaCSV += respStr;
 							}
 						}
 					}
-					linhaCSV += ";";
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
-				conteudoCSV += linhaCSV;
-				
-				expCSV = new ExportacaoCSV();
-				expCSV.setIdFormulario(form.getId());
-				expCSV.setIdSincronizacao(form.getIdSincronizacao());
-				expCSV.setIdTipoFormulario(form.getIdTipoFormulario());
-				expCSV.setLinhaCSV(linhaCSV);
-				
-//				exportacaoCSVService.save(expCSV);
-//			}
-			
+				linhaCSV += ";";
+			}
+			conteudoCSV += linhaCSV.replace("\n", "").replace("\r", "");
+
+//			expCSV = new ExportacaoCSV();
+//			expCSV.setIdFormulario(form.getId());
+//			expCSV.setIdSincronizacao(form.getIdSincronizacao());
+//			expCSV.setIdTipoFormulario(form.getIdTipoFormulario());
+//			expCSV.setLinhaCSV(linhaCSV);
+
+			// exportacaoCSVService.save(expCSV);
+			// }
+
 			conteudoCSV += "\n";
 		}
 
-		return Response.ok(conteudoCSV).header("Content-Disposition", "attachment; filename=" + nomeTemplate).build();
+		return Response.ok(conteudoCSV).header("Content-Disposition", "attachment; filename=" + nomeGerado).build();
 	}
 }

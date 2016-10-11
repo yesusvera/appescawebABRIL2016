@@ -982,7 +982,7 @@
 7;12.1;Textual;Var0978;q65_p2_r3;;Como e feito o reaproveitamento? ;Comercializada de outra forma, qual?
 7;12.1;categorica exclusiva;Var0979;q65_p2_r4;;Como e feito o reaproveitamento? ;comercializada de outra forma.
 7;12.1;Textual;Var0980;q65_p2_r5;;Como e feito o reaproveitamento? ;Comercializada de outra forma, qual?
-7;12.1;categorica exclusiva;Var0981;q65_p2_r7;;Como e feito o reaproveitamento? ;comercializada de outra forma.
+7;12.1;categorica exclusiva;Var0981;q65_p2_r7,q65_p2_r8;;Como e feito o reaproveitamento? ;comercializada de outra forma.  Não sabe e não respondeu
 8;1;categorica variada ;Var0982;q66_p1_r1;;Quais sao os bens utilizados na pesca e, se realizado, no beneficiamento? ;EmbarcaÃ§ao
 8;1;numerica;Var0983;q66_p1_r2;;;Quantas possui?
 8;1;categorica variada ;Var0984;q66_p1_r3;;;Motor de popa
