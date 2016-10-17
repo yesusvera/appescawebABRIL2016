@@ -3,7 +3,6 @@ package br.org.unesco.appesca.filter;
 import java.io.IOException;
 
 import javax.enterprise.inject.Model;
-import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
@@ -24,8 +23,8 @@ public class PermissionsFilter implements Filter {
 	@Inject
 	Identidade identidade;
 	
-	@Inject
-    private FacesContext facesContext;
+//	@Inject
+//    private FacesContext facesContext;
 
 	@Override
 	public void doFilter(ServletRequest req, ServletResponse res, FilterChain chain)

@@ -28,8 +28,8 @@ import br.org.unesco.appesca.service.UsuarioService;
 public class EquipeController implements Serializable {
 	private static final long serialVersionUID = 7096314126107579474L;
 
-	@Inject
-    private FacesContext facesContext;
+//	@Inject
+//    private FacesContext facesContext;
 
     @Inject
     private EquipeService equipeService;

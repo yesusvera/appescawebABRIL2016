@@ -109,15 +109,15 @@ public class UsuarioResourceRESTService extends BaseREST{
 		lat = lat.replace(".", ",");
 		longit = longit.replace(".", ",");
 		
-		conteudoCSV = conteudoCSV.concat("\n"+loc.getData() + " " + loc.getHora())
+		conteudoCSV = conteudoCSV.concat("\n\""+loc.getData() + " " + loc.getHora() + "\"")
 			.concat(";")
 			.concat(lat)
 			.concat(";")
 			.concat(longit)
 			.concat(";")
-			.concat(usr.getNome()+"")
+			.concat("\""+usr.getNome()+"\"")
 			.concat(";")
-			.concat(loc.getProvided()!=null?loc.getProvided():""+"");
+			.concat("\""+loc.getProvided()!=null?loc.getProvided():""+"\"");
 		return conteudoCSV;
 	}
 	

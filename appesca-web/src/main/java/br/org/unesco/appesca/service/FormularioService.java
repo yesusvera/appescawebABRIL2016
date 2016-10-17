@@ -18,7 +18,6 @@ package br.org.unesco.appesca.service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
@@ -34,8 +33,8 @@ import br.org.unesco.appesca.model.Usuario;
 @Stateless
 public class FormularioService {
 
-	@Inject
-	private Logger log;
+//	@Inject
+//	private Logger log;
 
 	@Inject
 	private FormularioRepository formularioRepository;

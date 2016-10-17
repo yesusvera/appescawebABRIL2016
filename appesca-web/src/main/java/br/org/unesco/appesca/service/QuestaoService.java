@@ -16,8 +16,6 @@
  */
 package br.org.unesco.appesca.service;
 
-import java.util.logging.Logger;
-
 import javax.ejb.Stateless;
 import javax.inject.Inject;
 
@@ -28,8 +26,8 @@ import br.org.unesco.appesca.model.Questao;
 @Stateless
 public class QuestaoService {
 
-    @Inject
-    private Logger log;
+//    @Inject
+//    private Logger log;
 
     @Inject
     private QuestaoRepository questaoRespository;

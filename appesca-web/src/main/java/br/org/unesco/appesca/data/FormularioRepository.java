@@ -61,7 +61,8 @@ public class FormularioRepository {
      * @param idCoordenadorEquipe - o coordenador neste caso pode ser perfil Coordenador ou Administrador.
      * @return
      */
-    public List<Formulario> listByEquipesCoordenador(int idCoordenadorEquipe, int tipoFormulario){
+    @SuppressWarnings("unchecked")
+	public List<Formulario> listByEquipesCoordenador(int idCoordenadorEquipe, int tipoFormulario){
     	 Query query = em.createQuery("SELECT form FROM Formulario form, Usuario usrForm, Equipe equipe "
     			 						+ " inner join equipe.listaMembrosEquipe as eqp "
     			 						+ " where eqp.coordenador.id = :idCoordenadorEquipe and form.idTipoFormulario = :tipoFormulario"

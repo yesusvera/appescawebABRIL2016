@@ -339,21 +339,21 @@ public class FormularioController implements Serializable {
 		}
 	}
 
-	private void carregarRespostasEditaveisRegional() {
-		this.problemasF1Q72 = getResposta("q72_p1_r1");
-		this.solucoesF1Q72 = getResposta("q72_p1_r2");
+//	private void carregarRespostasEditaveisRegional() {
+//		this.problemasF1Q72 = getResposta("q72_p1_r1");
+//		this.solucoesF1Q72 = getResposta("q72_p1_r2");
+//
+//	}
 
-	}
-
-	private void carregarRespostasEditaveisBranco() {
-		this.problemasF2Q60 = getResposta("q60_p1_r1");
-		this.solucoesF2Q60 = getResposta("q60_p1_r2");
-	}
-
-	private void carregarRespostasEditaveisCaranguejo() {
-		this.problemasF3Q74 = getResposta("q74_p1_r1");
-		this.solucoesF3Q74 = getResposta("q74_p1_r2");
-	}
+//	private void carregarRespostasEditaveisBranco() {
+//		this.problemasF2Q60 = getResposta("q60_p1_r1");
+//		this.solucoesF2Q60 = getResposta("q60_p1_r2");
+//	}
+//
+//	private void carregarRespostasEditaveisCaranguejo() {
+//		this.problemasF3Q74 = getResposta("q74_p1_r1");
+//		this.solucoesF3Q74 = getResposta("q74_p1_r2");
+//	}
 
 	public List<Formulario> getListaFormularios() {
 		return listaFormularios;

@@ -29,8 +29,8 @@ import br.org.unesco.appesca.service.UsuarioService;
 @RequestScoped
 public class LocalizacaoResourceREST extends BaseREST {
 
-	@Inject
-	private LocalizacaoUsuarioRepository localizacaoUsuarioRepository;
+//	@Inject
+//	private LocalizacaoUsuarioRepository localizacaoUsuarioRepository;
 	
 	@Inject
 	private UsuarioService usuarioService;

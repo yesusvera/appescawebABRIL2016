@@ -24,7 +24,6 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
 import br.org.unesco.appesca.data.UsuarioRepository;
-import br.org.unesco.appesca.model.ExportacaoCSV;
 import br.org.unesco.appesca.model.Formulario;
 import br.org.unesco.appesca.model.Pergunta;
 import br.org.unesco.appesca.model.Questao;
@@ -34,7 +33,6 @@ import br.org.unesco.appesca.model.exp.RowExportCVS;
 import br.org.unesco.appesca.rest.model.FormularioREST;
 import br.org.unesco.appesca.rest.model.RespEnvioFormulario;
 import br.org.unesco.appesca.rest.model.RespFormularioREST;
-import br.org.unesco.appesca.service.ExportacaoCSVService;
 import br.org.unesco.appesca.service.FormularioService;
 import br.org.unesco.appesca.service.TemplateCVS;
 import br.org.unesco.appesca.service.UsuarioService;
@@ -55,8 +53,8 @@ public class FormularioResourceREST extends BaseREST {
 	@Inject
 	private UsuarioRepository usuarioRespository;
 
-	@Inject
-	private ExportacaoCSVService exportacaoCSVService;
+//	@Inject
+//	private ExportacaoCSVService exportacaoCSVService;
 
 	@Context
 	private ServletContext context;
@@ -223,7 +221,7 @@ public class FormularioResourceREST extends BaseREST {
 			}
 			System.out.println("-_-_-> Processando formulário (" + x++ + ") " + form.getIdSincronizacao());
 
-			ExportacaoCSV expCSV = exportacaoCSVService.findByIdFormulario(form.getId());
+//			ExportacaoCSV expCSV = exportacaoCSVService.findByIdFormulario(form.getId());
 
 			// if (expCSV != null && expCSV.getLinhaCSV() != null &&
 			// !expCSV.getLinhaCSV().isEmpty()) {
