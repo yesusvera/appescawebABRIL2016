@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TB_EXPORTACAO_CSV", schema="appesca")
+@Table(name = "tb_exportacao_csv", schema="speed046_appesca")
 public class ExportacaoCSV {
 
 	private Integer id;

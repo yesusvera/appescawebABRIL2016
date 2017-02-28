@@ -19,7 +19,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name = "TB_HIST_RASTRO", schema="appesca")
+@Table(name = "tb_hist_rastro", schema="speed046_appesca")
 public class LocalizacaoUsuario implements java.io.Serializable {
 
 	private static final long serialVersionUID = 2165508619825487958L;

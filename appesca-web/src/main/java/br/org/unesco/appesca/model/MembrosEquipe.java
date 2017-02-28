@@ -13,7 +13,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "TB_MEMBROS_EQUIPE", schema = "appesca")
+@Table(name = "tb_membros_equipe", schema = "speed046_appesca")
 public class MembrosEquipe implements java.io.Serializable {
 
 	private static final long serialVersionUID = -472814831281223441L;

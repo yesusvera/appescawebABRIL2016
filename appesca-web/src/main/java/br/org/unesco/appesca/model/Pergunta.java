@@ -19,7 +19,7 @@ import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 @Entity
-@Table(name = "TB_PERGUNTA", schema="appesca")
+@Table(name = "tb_pergunta", schema="speed046_appesca")
 public class Pergunta implements java.io.Serializable {
 
 	private static final long serialVersionUID = -8806813412918825907L;

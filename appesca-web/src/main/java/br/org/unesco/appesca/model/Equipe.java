@@ -20,7 +20,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-@Table(name = "TB_EQUIPE", schema = "appesca")
+@Table(name = "tb_equipe", schema = "speed046_appesca")
 public class Equipe implements java.io.Serializable, Cloneable {
 
 	private static final long serialVersionUID = -4258798850777666253L;
@@ -96,7 +96,7 @@ public class Equipe implements java.io.Serializable, Cloneable {
 	}
 
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	@JoinTable(name = "TB_MEMBROS_EQUIPE", schema = "appesca", joinColumns = { 
+	@JoinTable(name = "tb_membros_equipe", schema = "speed046_appesca", joinColumns = { 
 			@JoinColumn(name = "id_equipe", nullable = false, updatable = false) }, 
 			inverseJoinColumns = { @JoinColumn(name = "id_usuario", 
 					nullable = false, updatable = false) })

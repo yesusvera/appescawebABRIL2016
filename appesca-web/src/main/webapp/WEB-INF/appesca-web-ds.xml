@@ -27,11 +27,18 @@
         pool-name="appesca-web" enabled="true" jta="true"
         use-java-context="true">
         <!-- <connection-url>jdbc:mysql://localhost:3306/appesca?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</connection-url> -->
-        <connection-url>jdbc:mysql://localhost:3306/appesca</connection-url>
+        <!-- <connection-url>jdbc:mysql://localhost:3306/appesca</connection-url>
         <driver>mysql</driver>
         <security>
             <user-name>root</user-name>
-			<password>root</password>
+			<password></password>
+        </security>-->
+        
+        <connection-url>jdbc:mysql://108.167.168.26:3306/speed046_appesca</connection-url>
+        <driver>mysql</driver>
+        <security>
+            <user-name>speed046_appesca</user-name>
+			<password>appesca%2017</password>
             <!-- <password>appesca2016</password> -->
         </security>
     </datasource>
