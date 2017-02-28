@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TB_TIPO_FORMULARIO", schema="appesca")
+@Table(name = "tb_tipo_formulario", schema="speed046_appesca")
 public class TipoFormulario implements java.io.Serializable {
 
 	private static final long serialVersionUID = -1968974358816603465L;

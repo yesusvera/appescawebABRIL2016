@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name = "TB_RESPOSTA", schema="appesca")
+@Table(name = "tb_resposta", schema="speed046_appesca")
 public class Resposta implements java.io.Serializable {
 
 	private static final long serialVersionUID = 6100540469341649847L;

@@ -28,7 +28,7 @@ import org.primefaces.model.StreamedContent;
 import br.org.unesco.appesca.enums.PerfilEnum;
 
 @Entity
-@Table(name = "TB_USUARIO", schema = "appesca")
+@Table(name = "tb_usuario", schema = "speed046_appesca")
 public class Usuario implements java.io.Serializable {
 
 	private static final long serialVersionUID = -7140175801442164346L;
