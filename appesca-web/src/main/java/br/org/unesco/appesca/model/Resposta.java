@@ -11,8 +11,10 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
+import br.org.unesco.appesca.util.ConstantesUNESCO;
+
 @Entity
-@Table(name = "tb_resposta", schema="speed046_appesca")
+@Table(name = "tb_resposta", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class Resposta implements java.io.Serializable {
 
 	private static final long serialVersionUID = 6100540469341649847L;

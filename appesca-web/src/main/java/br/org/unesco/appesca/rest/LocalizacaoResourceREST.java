@@ -15,7 +15,6 @@ import javax.ws.rs.core.MediaType;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 
-import br.org.unesco.appesca.data.LocalizacaoUsuarioRepository;
 import br.org.unesco.appesca.model.LocalizacaoUsuario;
 import br.org.unesco.appesca.model.Usuario;
 import br.org.unesco.appesca.rest.model.LocalizacaoREST;

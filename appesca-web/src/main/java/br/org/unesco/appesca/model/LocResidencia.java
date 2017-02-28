@@ -9,8 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import br.org.unesco.appesca.util.ConstantesUNESCO;
+
 @Entity
-@Table(name = "tb_loc_residencia", schema="speed046_appesca")
+@Table(name = "tb_loc_residencia", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class LocResidencia implements java.io.Serializable {
 
 	private static final long serialVersionUID = 3251866057864092677L;

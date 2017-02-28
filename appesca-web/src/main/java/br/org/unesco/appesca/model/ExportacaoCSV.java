@@ -8,8 +8,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import br.org.unesco.appesca.util.ConstantesUNESCO;
+
 @Entity
-@Table(name = "tb_exportacao_csv", schema="speed046_appesca")
+@Table(name = "tb_exportacao_csv", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class ExportacaoCSV {
 
 	private Integer id;

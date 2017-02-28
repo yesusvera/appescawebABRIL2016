@@ -23,8 +23,10 @@ import javax.persistence.UniqueConstraint;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+import br.org.unesco.appesca.util.ConstantesUNESCO;
+
 @Entity
-@Table(name = "tb_formulario", schema="speed046_appesca", uniqueConstraints = @UniqueConstraint(columnNames = "nome") )
+@Table(name = "tb_formulario", schema=ConstantesUNESCO.SCHEMA_APPESCA, uniqueConstraints = @UniqueConstraint(columnNames = "nome") )
 public class Formulario implements java.io.Serializable {
 
 	private static final long serialVersionUID = 2165508619825487958L;

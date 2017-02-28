@@ -11,7 +11,7 @@
 
 			<p:accordionPanel>
 				<p:tab title="Filtros">
-					<h:outputText value="Filtros" />
+					<!-- <h:outputText value="Filtros" /> -->
 				</p:tab>
 
 			</p:accordionPanel>
@@ -20,25 +20,23 @@
 
 			<p:growl id="message" showDetail="true" />
 
-			<p:commandButton value="Exportar Planilha"
-				actionListener="#{dialogView.destroyWorld}" update="message">
-				<p:confirm header="Confirmation" message="Are you sure?"
+
+			<p:commandButton value="Exportar Planilha"  update="message">
+				<p:confirm header="Confirme" message="Deseja realmente exportar a planilha?"
 					icon="ui-icon-alert" />
 			</p:commandButton>
 
 			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-				<p:commandButton value="Yes" type="button"
-					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
-				<p:commandButton value="No" type="button"
+				<p:button value="Exportar"
+					href="/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}"
+					target="_blank">
+				</p:button>
+				<p:commandButton value="Não" type="button"
 					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
 			</p:confirmDialog>
 
 
-			<p:button value="Exportar Planilha"
-				href="/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}"
-				target="_blank">
-
-			</p:button>
+			
 
 			<hr />
 

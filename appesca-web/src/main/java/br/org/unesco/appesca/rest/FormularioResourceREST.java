@@ -30,6 +30,7 @@ import br.org.unesco.appesca.model.Questao;
 import br.org.unesco.appesca.model.Resposta;
 import br.org.unesco.appesca.model.Usuario;
 import br.org.unesco.appesca.model.exp.RowExportCVS;
+import br.org.unesco.appesca.model.exp.TypeVariables;
 import br.org.unesco.appesca.rest.model.FormularioREST;
 import br.org.unesco.appesca.rest.model.RespEnvioFormulario;
 import br.org.unesco.appesca.rest.model.RespFormularioREST;
@@ -248,13 +249,18 @@ public class FormularioResourceREST extends BaseREST {
 			for (RowExportCVS row : templateCVS.getListRowCVS()) {
 				try {
 					if (row.getCod1AppescaAndroid() != null && !row.getCod1AppescaAndroid().trim().isEmpty()) {
-						if (TemplateCVS.rowIsDataAplicacao(row)) {
-							linhaCSV += form.getData();
-						} else if (TemplateCVS.rowIsNomePesquisador(row)) {
-							if (usr != null) {
-								linhaCSV += "\"" + usr.getNome() + "\"";
-							}
-						} else {
+						
+						if(row.getCod1AppescaAndroid().equalsIgnoreCase(TypeVariables.NOME_PESQUISADOR) ||
+								row.getCod1AppescaAndroid().equalsIgnoreCase(TypeVariables.DATA_APLICACAO)){
+							continue;
+						}
+//						if (TemplateCVS.rowIsDataAplicacao(row)) {
+//							linhaCSV += form.getData();
+//						} else if (TemplateCVS.rowIsNomePesquisador(row)) {
+//							if (usr != null) {
+//								linhaCSV += "\"" + usr.getNome() + "\"";
+//							}
+//						} else {
 							if (TemplateCVS.temDoisCodigos(row)) {
 								linhaCSV = templateCVS.priorizaRespostaComDoisCodigos(linhaCSV,
 										formularioService.getResposta(row.getCod2AppescaAndroid(), form).getTexto(),
@@ -287,7 +293,7 @@ public class FormularioResourceREST extends BaseREST {
 								}
 								linhaCSV += respStr;
 							}
-						}
+//						}
 					}
 				} catch (Exception e) {
 					e.printStackTrace();

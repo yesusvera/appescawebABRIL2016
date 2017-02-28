@@ -18,8 +18,10 @@ import javax.persistence.Table;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
+import br.org.unesco.appesca.util.ConstantesUNESCO;
+
 @Entity
-@Table(name = "tb_pergunta", schema="speed046_appesca")
+@Table(name = "tb_pergunta", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class Pergunta implements java.io.Serializable {
 
 	private static final long serialVersionUID = -8806813412918825907L;

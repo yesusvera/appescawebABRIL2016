@@ -8,8 +8,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import br.org.unesco.appesca.util.ConstantesUNESCO;
+
 @Entity
-@Table(name = "tb_tipo_formulario", schema="speed046_appesca")
+@Table(name = "tb_tipo_formulario", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class TipoFormulario implements java.io.Serializable {
 
 	private static final long serialVersionUID = -1968974358816603465L;

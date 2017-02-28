@@ -159,8 +159,8 @@ public class FormularioService {
 				}
 			}
 		}catch (NumberFormatException nfe){
-			nfe.printStackTrace();
-			System.out.println("CHAVE COM PROBLEMA: " + chave);
+//			nfe.printStackTrace();
+			System.out.println("CHAVE COM PROBLEMA: " + chave +  "\n" + nfe.getMessage());
 		}catch (Exception e) {
 			e.printStackTrace();
 		}

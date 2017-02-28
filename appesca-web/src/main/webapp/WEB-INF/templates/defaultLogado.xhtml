@@ -31,24 +31,31 @@
 	<div id="cardNoBorder">
 		<hr size="35" width="865"
 			style="border-top: 1px solid #2d86c1; color: #2d86c1; background: #2d86c1; margin-top: 0" />
-		<h:graphicImage value="/resources/gfx/topoAppesca.png" />
+		<p:link href="index.jsf">
+			<h:graphicImage value="/resources/gfx/topoAppesca.png"/>
+		</p:link>
 	</div>
 	
 
 	<div id="cardNoBorder">
 		<h:form>
 			<p:menubar style="background:white;">
+				<p:menuitem value="Home" icon="ui-icon-home" url="index.jsf"/>
 				<p:submenu label="Cadastros" icon="ui-icon-document"
 					rendered="#{identidade.eAdministrador() or identidade.eCoordenador()}">
 					<p:menuitem value="Equipes" url="/admin/equipes.jsf" />
 					<p:menuitem value="Usuários" url="/admin/usuarios.jsf" />
 				</p:submenu>
 				<p:submenu label="Formulários de pesquisa" icon="ui-icon-pencil">
-				
 					<p:menuitem value="Camarão Regional" action="#{formularioController.listarFormularios(1)}" />
 					<p:menuitem value="Caranguejo" action="#{formularioController.listarFormularios(2)}"/>
 					<p:menuitem value="Camarão Piticaia e Branco" action="#{formularioController.listarFormularios(3)}"/>
 				</p:submenu>
+				<p:submenu label="Exportação de Planilha" icon="ui-icon-arrowstop-1-s">
+					<p:menuitem icon="ui-icon-arrowstop-1-s" value="Camarão Regional" url="/rest/formulario/exportacaoDeFormulario?tipo=1"/>
+					<p:menuitem icon="ui-icon-arrowstop-1-s" value="Caranguejo" url="/rest/formulario/exportacaoDeFormulario?tipo=2"/>
+					<p:menuitem icon="ui-icon-arrowstop-1-s" value="Camarão Pit. e Branco" url="/rest/formulario/exportacaoDeFormulario?tipo=2"/>
+				</p:submenu> 
 				<f:facet name="options">
 					<p:commandButton value="Sair" action="#{loginController.logout()}"
 						icon="ui-icon-extlink">

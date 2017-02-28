@@ -82,10 +82,10 @@ public class FormularioController implements Serializable {
 
 	public String listarFormularios(long tipoFormulario) {
 		this.tipoFormulario = (int) tipoFormulario;
+		listaFormularios = new ArrayList<>();
+		
 		listaFormularios = formularioService.listByTipoFormulario((int) tipoFormulario);
-		// listaFormularios =
-		// formularioService.listByEquipesCoordenador(identidade.getUsuarioLogado().getId(),
-		// (int)tipoFormulario);
+		
 		switch (this.tipoFormulario) {
 		case 1:
 			setTitulo("Formulário Camarão Regional");

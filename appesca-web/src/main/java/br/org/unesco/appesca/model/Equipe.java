@@ -19,10 +19,12 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-@Entity
-@Table(name = "tb_equipe", schema = "speed046_appesca")
-public class Equipe implements java.io.Serializable, Cloneable {
+import br.org.unesco.appesca.util.ConstantesUNESCO;
 
+@Entity
+@Table(name = "tb_equipe", schema = ConstantesUNESCO.SCHEMA_APPESCA)
+public class Equipe implements java.io.Serializable, Cloneable {
+	
 	private static final long serialVersionUID = -4258798850777666253L;
 	
 	private Integer id;
@@ -96,7 +98,7 @@ public class Equipe implements java.io.Serializable, Cloneable {
 	}
 
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	@JoinTable(name = "tb_membros_equipe", schema = "speed046_appesca", joinColumns = { 
+	@JoinTable(name = "tb_membros_equipe", schema = ConstantesUNESCO.SCHEMA_APPESCA, joinColumns = { 
 			@JoinColumn(name = "id_equipe", nullable = false, updatable = false) }, 
 			inverseJoinColumns = { @JoinColumn(name = "id_usuario", 
 					nullable = false, updatable = false) })

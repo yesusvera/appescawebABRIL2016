@@ -10,8 +10,10 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import br.org.unesco.appesca.util.ConstantesUNESCO;
+
 @Entity
-@Table(name = "tb_ident_entrevistado", schema="speed046_appesca")
+@Table(name = "tb_ident_entrevistado", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class IdentEntrevistado implements java.io.Serializable {
 
 	private static final long serialVersionUID = -4061574933952985453L;
