@@ -615,4 +615,12 @@ public class FormularioController implements Serializable {
 	public void setTipoFormulario(int tipoFormulario) {
 		this.tipoFormulario = tipoFormulario;
 	}
+	
+	public int getTotalFormularios(){
+		if(listaFormularios==null){
+			return 0;
+		}else{
+			return listaFormularios.size();
+		}
+	}
 }

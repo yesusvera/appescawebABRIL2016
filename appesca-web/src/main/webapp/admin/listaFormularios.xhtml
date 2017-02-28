@@ -1,65 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-    xmlns:ui="http://java.sun.com/jsf/facelets"
-    xmlns:f="http://java.sun.com/jsf/core"
-    xmlns:h="http://java.sun.com/jsf/html"
-    xmlns:p="http://primefaces.org/ui"
-    template="/WEB-INF/templates/defaultLogado.xhtml">
-    <ui:define name="content">
-        <h1>#{formularioController.titulo}</h1>
-       <h:form>
-     	  	<!-- <p:commandLink action="#{formularioController.exportar()}">
-				<i class="fa fa-file"> EXPORTAR</i>
-			</p:commandLink> -->
-			
-			
-			<a href="/appesca-web/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}" target="_blank">
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="/WEB-INF/templates/defaultLogado.xhtml">
+	<ui:define name="content">
+		<h1>#{formularioController.titulo}</h1>
+		<h:form>
+
+			<p:accordionPanel>
+				<p:tab title="Filtros">
+					<h:outputText value="Filtros" />
+				</p:tab>
+
+			</p:accordionPanel>
+			<br />
+			<p:button value="Pesquisar" />
+
+			<p:growl id="message" showDetail="true" />
+
+			<p:commandButton value="Exportar Planilha"
+				actionListener="#{dialogView.destroyWorld}" update="message">
+				<p:confirm header="Confirmation" message="Are you sure?"
+					icon="ui-icon-alert" />
+			</p:commandButton>
+
+			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+				<p:commandButton value="Yes" type="button"
+					styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+				<p:commandButton value="No" type="button"
+					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+			</p:confirmDialog>
+
+
+			<p:button value="Exportar Planilha"
+				href="/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}"
+				target="_blank">
+
+			</p:button>
+
+			<hr />
+
+			<!-- <a href="/appesca-web/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}" target="_blank">
 				<i class="fa fa-file-excel-o">Exportar Dados</i>
-			</a><br/><br/>
-			
-			<i><b>#{formularioController.listaFormularios==null?'0':formularioController.listaFormularios.size()} </b></i> formulários encontrados.
-			<p:dataTable var="formulario" value="#{formularioController.listaFormularios}" emptyMessage="Nenhum formulário encontrado." style="font-size:small">
-				<p:column headerText="Pesquisador" filterBy="#{formularioController.getUsuario(formulario).nome}" sortBy="#{formularioController.getUsuario(formulario).nome}" style="text-align: center;" >
-					<h:outputText value="#{formularioController.getUsuario(formulario).nome}"/>
+			</a><br/><br/> -->
+
+			<br />
+			<center>
+				<i><b>#{formularioController.getTotalFormularios()} </b></i>
+				formulários encontrados.
+			</center>
+			<br />
+
+			<p:dataTable var="formulario"
+				value="#{formularioController.listaFormularios}"
+				emptyMessage="Nenhum formulário encontrado." style="font-size:small">
+				<p:column headerText="Pesquisador"
+					filterBy="#{formularioController.getUsuario(formulario).nome}"
+					sortBy="#{formularioController.getUsuario(formulario).nome}"
+					style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getUsuario(formulario).nome}" />
 				</p:column>
-				<p:column headerText="Registro" filterBy="#{formulario.idSincronizacao}" sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
+				<p:column headerText="Registro"
+					filterBy="#{formulario.idSincronizacao}"
+					sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
 					<h:outputText value="#{formulario.idSincronizacao}" />
 				</p:column>
 				<p:column headerText="Nome Entrevistado" style="text-align: center;">
-					<h:outputText value="#{formularioController.getRespTxt(0,1,1,formulario)}"/>
+					<h:outputText
+						value="#{formularioController.getRespTxt(0,1,1,formulario)}" />
 				</p:column>
-				<p:column headerText="UF" filterBy="#{formularioController.getUFTabela(formulario)}"  style="text-align: center;">
-					<h:outputText value="#{formularioController.getUFTabela(formulario)}"/>
+				<p:column headerText="UF"
+					filterBy="#{formularioController.getUFTabela(formulario)}"
+					style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getUFTabela(formulario)}" />
 				</p:column>
 				<p:column headerText="Data" filterBy="#{formulario.data}"
-						  sortBy="#{formulario.data}" 
-						  style="text-align: center;">
-					<h:outputText value="#{formulario.data}" /> <br/>
+					sortBy="#{formulario.data}" style="text-align: center;">
+					<h:outputText value="#{formulario.data}" />
+					<br />
 					<h:outputText value="#{formulario.hora}" />
 				</p:column>
-				<p:column headerText="Situação" 
-						  filterBy="#{formularioController.getSituacao(formulario)}" 
-						  sortBy="#{formularioController.getSituacao(formulario)}" 
-						  style="text-align: center;">
-					<h:outputText value="#{formularioController.getSituacao(formulario)}" 
-								  style="#{formulario.situacao==2?'color:green':'color:red'}"/>
+				<p:column headerText="Situação"
+					filterBy="#{formularioController.getSituacao(formulario)}"
+					sortBy="#{formularioController.getSituacao(formulario)}"
+					style="text-align: center;">
+					<h:outputText
+						value="#{formularioController.getSituacao(formulario)}"
+						style="#{formulario.situacao==2?'color:green':'color:red'}" />
 				</p:column>
-				
-				<p:column headerText="Questões"  
-						  style="text-align: center;">
+
+				<p:column headerText="Questões" style="text-align: center;">
 					#{formulario.listaQuestoes.size()} de #{formularioController.getQtdeMax(formulario)} respondidas
 				</p:column>
-				<p:column headerText="Ações" 
-						  style="text-align: center;">
-					<p:commandLink action="#{formularioController.visualizar(formulario)}" target="_blank">
+				<p:column headerText="Ações" style="text-align: center;">
+					<p:commandLink
+						action="#{formularioController.visualizar(formulario)}"
+						target="_blank">
 						<i class="fa fa-info-circle"></i>
 					</p:commandLink>
 				</p:column>
-				
-				<p:column headerText="Degravação" width="95" sortBy="#{formularioController.labelTemDegravacao(formulario)}" style="align:center">
-					<h:outputText value="Não" rendered="#{!formularioController.temDegravacao(formulario)}"/>
-					<a href="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}" style="visibility:#{formularioController.temDegravacao(formulario)?'visibile':'hidden'}" target="_blank">
-						 <i class="fa fa-play" aria-hidden="true"></i> Ouvir
+
+				<p:column headerText="Degravação" width="95"
+					sortBy="#{formularioController.labelTemDegravacao(formulario)}"
+					style="align:center">
+					<h:outputText value="Não"
+						rendered="#{!formularioController.temDegravacao(formulario)}" />
+					<a
+						href="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}"
+						style="visibility:#{formularioController.temDegravacao(formulario)?'visibile':'hidden'} "
+						target="_blank"> <i class="fa fa-play" aria-hidden="true"></i>
+						Ouvir
 					</a>
 					<!-- <p:outputPanel rendered="#{formularioController.temDegravacao(formulario)}" style="border:0px;margin-left:0px;margin-right:0px;">
 						<br/>
@@ -68,10 +122,10 @@
 								src="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}"
 								type="video/mp4"/>
 						</video
-					</p:outputPanel> --> 
+					</p:outputPanel> -->
 				</p:column>
-				
+
 			</p:dataTable>
 		</h:form>
-    </ui:define>
+	</ui:define>
 </ui:composition>
