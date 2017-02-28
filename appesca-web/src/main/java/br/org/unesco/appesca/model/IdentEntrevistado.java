@@ -11,7 +11,7 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "TB_IDENT_ENTREVISTADO", schema="appesca")
+@Table(name = "tb_ident_entrevistado", schema="speed046_appesca")
 public class IdentEntrevistado implements java.io.Serializable {
 
 	private static final long serialVersionUID = -4061574933952985453L;
