@@ -16,16 +16,16 @@
     limitations under the License.
 -->
 <!-- This is an unmanaged datasource. It should be used for proofs of concept 
-    or testing only. It uses H2, an in memory database that ships with JBoss 
-    AS. -->
+or testing only. It uses H2, an in memory database that ships with JBoss 
+AS. -->
 <datasources xmlns="http://www.jboss.org/ironjacamar/schema"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.jboss.org/ironjacamar/schema http://docs.jboss.org/ironjacamar/schema/datasources_1_0.xsd">
     <!-- The datasource is bound into JNDI at this location. We reference 
-        this in META-INF/persistence.xml -->
+    this in META-INF/persistence.xml -->
     <datasource jndi-name="java:jboss/datasources/appesca-webDS"
-        pool-name="appesca-web" enabled="true" jta="true"
-        use-java-context="true">
+                pool-name="appesca-web" enabled="true" jta="true"
+                use-java-context="true">
         <!-- <connection-url>jdbc:mysql://localhost:3306/appesca?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</connection-url> -->
         
         <!-- ************* LOCAL ************* -->
@@ -33,16 +33,16 @@
         <driver>mysql</driver>
         <security>
             <user-name>root</user-name>
-			<password></password>
+            <password>root</password>
         </security>
-        
+       
         
         <!-- ************* REMOTO ************* -->
-        <!--<connection-url>jdbc:mysql://108.167.168.26:3306/speed046_appesca</connection-url>
+<!--        <connection-url>jdbc:mysql://108.167.168.26:3306/speed046_appesca</connection-url>
         <driver>mysql</driver>
         <security>
             <user-name>speed046_appesca</user-name>
-			<password>appesca%2017</password>
+            <password>appesca%2017</password>
         </security>-->
     </datasource>
 </datasources>

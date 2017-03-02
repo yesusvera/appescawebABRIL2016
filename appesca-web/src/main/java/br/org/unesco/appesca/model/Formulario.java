@@ -13,7 +13,6 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -41,7 +40,7 @@ public class Formulario implements java.io.Serializable {
 	private BigDecimal longitude;
 	private int situacao;
 	
-	private IdentEntrevistado entrevistado;
+//	private IdentEntrevistado entrevistado;
 	
 	private List<Questao> listaQuestoes;
 
@@ -115,14 +114,14 @@ public class Formulario implements java.io.Serializable {
 		return sd.format(getDataAplicacao());
 	}
 
-	@OneToOne(mappedBy = "formulario")
-	public IdentEntrevistado getEntrevistado() {
-		return entrevistado;
-	}
-
-	public void setEntrevistado(IdentEntrevistado identEntrevistado) {
-		this.entrevistado = identEntrevistado;
-	}
+//	@OneToOne(mappedBy = "formulario")
+//	public IdentEntrevistado getEntrevistado() {
+//		return entrevistado;
+//	}
+//
+//	public void setEntrevistado(IdentEntrevistado identEntrevistado) {
+//		this.entrevistado = identEntrevistado;
+//	}
 	
 	@OneToMany(fetch = FetchType.EAGER, cascade=javax.persistence.CascadeType.ALL ,mappedBy = "formulario")
 	@Fetch(FetchMode.SUBSELECT)

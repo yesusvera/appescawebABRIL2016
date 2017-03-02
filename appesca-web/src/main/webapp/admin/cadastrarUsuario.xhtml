@@ -8,7 +8,7 @@
 		<h1>#{usuarioController.usuario.id==null?"Cadastrar":"Alterar"} Usuário</h1>
 		<h:form id="formularioCad">
 			<p:growl id="messages" showDetail="true" />
-			<p:fieldset legend="Capturar Foto" rendered="#{usuarioController.usuario.imagem == null}"  toggleable="true" toggleSpeed="500" height="90">
+			<p:fieldset legend="Capturar Foto" rendered="#{usuarioController.usuario.imagem == null}"  toggleable="true" toggleSpeed="500">
 		        <h:panelGrid id="capturaFoto" columns="2">
 					<p:photoCam widgetVar="pc" forceFlash="true" listener="#{usuarioController.oncapture}" update="formularioCad" immediate="true" width="300"  />
 					<p:commandLink  onclick="PF('pc').capture()">

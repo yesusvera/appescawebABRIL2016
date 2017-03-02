@@ -1,129 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:p="http://primefaces.org/ui"
-	template="/WEB-INF/templates/defaultLogado.xhtml">
-	<ui:define name="content">
-		<h1>#{formularioController.titulo}</h1>
-		<h:form>
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/templates/defaultLogado.xhtml">
+    <ui:define name="content">
+        <h1>#{formularioController.titulo}</h1>
+        <h:form id="mainForm">
 
-			<p:accordionPanel>
-				<p:tab title="Filtros">
-					<!-- <h:outputText value="Filtros" /> -->
-				</p:tab>
+            <p:accordionPanel>
+                <p:tab title="Filtros de pesquisa" id="filtrosTab">
+                    <h:panelGrid columns="4">
 
-			</p:accordionPanel>
-			<br />
-			<p:button value="Pesquisar" />
-
-			<p:growl id="message" showDetail="true" />
-
-
-			<p:commandButton value="Exportar Planilha"  update="message">
-				<p:confirm header="Confirme" message="Deseja realmente exportar a planilha?"
-					icon="ui-icon-alert" />
-			</p:commandButton>
-
-			<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
-				<p:button value="Exportar"
-					href="/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}"
-					target="_blank">
-				</p:button>
-				<p:commandButton value="Não" type="button"
-					styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
-			</p:confirmDialog>
+                        <h:outputLabel for="situacaoFiltro" value="Situação:" />
+                        <p:selectOneMenu id="situacaoFiltro" value="#{formularioController.filtroFormulario.situacao}">
+                            <f:selectItem itemLabel="Todos" itemValue="" />
+                            <f:selectItem itemLabel="Devolvido" itemValue="-1" />
+                            <f:selectItem itemLabel="Pendente de Aprovação" itemValue="1" />
+                            <f:selectItem itemLabel="Finalizado" itemValue="2" />
+                        </p:selectOneMenu>
 
 
-			
+                        <h:outputLabel for="pesquisadorFiltro" value="Nome Pesquisador:" />
+                        <h:inputText id="pesquisadorFiltro" value="#{formularioController.filtroFormulario.pesquisador}"/>
 
-			<hr />
+                    </h:panelGrid>
 
-			<!-- <a href="/appesca-web/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}" target="_blank">
-				<i class="fa fa-file-excel-o">Exportar Dados</i>
-			</a><br/><br/> -->
+                    <p:fieldset  legend="Filtros Entrevistado" toggleable="true" toggleSpeed="500">
+                        <h:panelGrid columns="4">
+                            <h:outputLabel for="ufFiltro" value="UF" />
+                            <p:selectOneMenu id="ufFiltro" value="#{formularioController.filtroFormulario.uf}">
+                                <f:selectItem itemLabel="Todos" itemValue="" />
+                                <f:selectItems value="#{usuarioController.listaUFs()}"  />
+                            </p:selectOneMenu>
 
-			<br />
-			<center>
-				<i><b>#{formularioController.getTotalFormularios()} </b></i>
-				formulários encontrados.
-			</center>
-			<br />
+                            <h:outputLabel for="municipioFiltro" value="Município" />
+                            <h:inputText id="municipioFiltro" value="#{formularioController.filtroFormulario.municipio}"/>
 
-			<p:dataTable var="formulario"
-				value="#{formularioController.listaFormularios}"
-				emptyMessage="Nenhum formulário encontrado." style="font-size:small">
-				<p:column headerText="Pesquisador"
-					filterBy="#{formularioController.getUsuario(formulario).nome}"
-					sortBy="#{formularioController.getUsuario(formulario).nome}"
-					style="text-align: center;">
-					<h:outputText
-						value="#{formularioController.getUsuario(formulario).nome}" />
-				</p:column>
-				<p:column headerText="Registro"
-					filterBy="#{formulario.idSincronizacao}"
-					sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
-					<h:outputText value="#{formulario.idSincronizacao}" />
-				</p:column>
-				<p:column headerText="Nome Entrevistado" style="text-align: center;">
-					<h:outputText
-						value="#{formularioController.getRespTxt(0,1,1,formulario)}" />
-				</p:column>
-				<p:column headerText="UF"
-					filterBy="#{formularioController.getUFTabela(formulario)}"
-					style="text-align: center;">
-					<h:outputText
-						value="#{formularioController.getUFTabela(formulario)}" />
-				</p:column>
-				<p:column headerText="Data" filterBy="#{formulario.data}"
-					sortBy="#{formulario.data}" style="text-align: center;">
-					<h:outputText value="#{formulario.data}" />
-					<br />
-					<h:outputText value="#{formulario.hora}" />
-				</p:column>
-				<p:column headerText="Situação"
-					filterBy="#{formularioController.getSituacao(formulario)}"
-					sortBy="#{formularioController.getSituacao(formulario)}"
-					style="text-align: center;">
-					<h:outputText
-						value="#{formularioController.getSituacao(formulario)}"
-						style="#{formulario.situacao==2?'color:green':'color:red'}" />
-				</p:column>
+                            <h:outputLabel for="comunidadeFiltro" value="Comunidade" />
+                            <h:inputText id="comunidadeFiltro" value="#{formularioController.filtroFormulario.comunidade}"/>
 
-				<p:column headerText="Questões" style="text-align: center;">
-					#{formulario.listaQuestoes.size()} de #{formularioController.getQtdeMax(formulario)} respondidas
-				</p:column>
-				<p:column headerText="Ações" style="text-align: center;">
-					<p:commandLink
-						action="#{formularioController.visualizar(formulario)}"
-						target="_blank">
-						<i class="fa fa-info-circle"></i>
-					</p:commandLink>
-				</p:column>
+                            <h:outputLabel for="idadeFiltro" value="Idade" />
+                            <h:inputText id="idadeFiltro" value="#{formularioController.filtroFormulario.idadeEntrevistado}"/>
 
-				<p:column headerText="Degravação" width="95"
-					sortBy="#{formularioController.labelTemDegravacao(formulario)}"
-					style="align:center">
-					<h:outputText value="Não"
-						rendered="#{!formularioController.temDegravacao(formulario)}" />
-					<a
-						href="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}"
-						style="visibility:#{formularioController.temDegravacao(formulario)?'visibile':'hidden'} "
-						target="_blank"> <i class="fa fa-play" aria-hidden="true"></i>
-						Ouvir
-					</a>
-					<!-- <p:outputPanel rendered="#{formularioController.temDegravacao(formulario)}" style="border:0px;margin-left:0px;margin-right:0px;">
-						<br/>
-						<video width="95" height="30" controls="controls" style="margin-left:-5px;">
-							<source
-								src="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}"
-								type="video/mp4"/>
-						</video
-					</p:outputPanel> -->
-				</p:column>
 
-			</p:dataTable>
-		</h:form>
-	</ui:define>
+                            <h:outputLabel for="sexoFiltro" value="Sexo" />
+                            <p:selectOneMenu id="sexoFiltro" value="#{formularioController.filtroFormulario.sexo}">
+                                <f:selectItem itemLabel="Todos" itemValue="" />
+                                <f:selectItem itemLabel="Masculino" itemValue="Masculino"/>
+                                <f:selectItem itemLabel="Feminino" itemValue="Feminino"/>
+                            </p:selectOneMenu>
+
+                            <h:outputLabel value="Pescador:" />
+                            <p:selectBooleanCheckbox value="#{formularioController.filtroFormulario.pescadorB2Q1Ra}" />
+
+                            <h:outputLabel value="Pescador Camarão/Caranguejo:" />
+                            <p:selectBooleanCheckbox value="#{formularioController.filtroFormulario.pescadorCamCarB2Rb}" />
+                        </h:panelGrid>
+                    </p:fieldset>
+                    <br/><br/>
+
+                    <p:commandButton id="btnPesquisar"
+                                     action="#{formularioController.pesquisar()}"
+                                     value="Pesquisar" update="mainForm"/>
+                    <p:commandButton
+                        action="#{formularioController.limparFiltro()}" update="mainForm"
+                        value="Limpar Filtros"/>
+                </p:tab>
+
+            </p:accordionPanel>
+            <br />
+
+            <hr />
+            <p:button value="Exportar Planilha"
+                      href="/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}"
+                      target="_blank">
+            </p:button>
+
+
+            <!-- <a href="/appesca-web/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}" target="_blank">
+                    <i class="fa fa-file-excel-o">Exportar Dados</i>
+            </a><br/><br/> -->
+
+            <br />
+            <center>
+                <i><b>#{formularioController.getTotalFormularios()} </b></i>
+                formulários encontrados.
+            </center>
+            <br />
+
+            <p:dataTable var="formulario"
+                         value="#{formularioController.listaFormularios}"
+                         emptyMessage="Nenhum formulário encontrado." style="font-size:small">
+                <p:column headerText="Pesquisador"
+                          filterBy="#{formularioController.getUsuario(formulario).nome}"
+                          sortBy="#{formularioController.getUsuario(formulario).nome}"
+                          style="text-align: center;">
+                    <h:outputText
+                        value="#{formularioController.getUsuario(formulario).nome}" />
+                </p:column>
+                <p:column headerText="Registro"
+                          filterBy="#{formulario.idSincronizacao}"
+                          sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
+                    <h:outputText value="#{formulario.idSincronizacao}" />
+                </p:column>
+                <p:column headerText="Nome Entrevistado" style="text-align: center;">
+                    <h:outputText
+                        value="#{formularioController.getRespTxt(0,1,1,formulario)}" />
+                </p:column>
+                <p:column headerText="UF"
+                          filterBy="#{formularioController.getUFTabela(formulario)}"
+                          style="text-align: center;">
+                    <h:outputText
+                        value="#{formularioController.getUFTabela(formulario)}" />
+                </p:column>
+                <p:column headerText="Data" filterBy="#{formulario.data}"
+                          sortBy="#{formulario.data}" style="text-align: center;">
+                    <h:outputText value="#{formulario.data}" />
+                    <br />
+                    <h:outputText value="#{formulario.hora}" />
+                </p:column>
+                <p:column headerText="Situação"
+                          filterBy="#{formularioController.getSituacao(formulario)}"
+                          sortBy="#{formularioController.getSituacao(formulario)}"
+                          style="text-align: center;">
+                    <h:outputText
+                        value="#{formularioController.getSituacao(formulario)}"
+                        style="#{formulario.situacao==2?'color:green':'color:red'}" />
+                </p:column>
+
+                <p:column headerText="Questões" style="text-align: center;">
+                    #{formulario.listaQuestoes.size()} de #{formularioController.getQtdeMax(formulario)} respondidas
+                </p:column>
+                <p:column headerText="Ações" style="text-align: center;">
+                    <p:commandLink
+                        action="#{formularioController.visualizar(formulario)}"
+                        target="_blank">
+                        <i class="fa fa-info-circle"></i>
+                    </p:commandLink>
+                </p:column>
+
+                <p:column headerText="Degravação" width="95"
+                          sortBy="#{formularioController.labelTemDegravacao(formulario)}"
+                          style="align:center">
+                    <h:outputText value="Não"
+                                  rendered="#{!formularioController.temDegravacao(formulario)}" />
+                    <a
+                        href="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}"
+                        style="visibility:#{formularioController.temDegravacao(formulario)?'visibile':'hidden'} "
+                        target="_blank"> <i class="fa fa-play" aria-hidden="true"></i>
+                        Ouvir
+                    </a>
+                    <!-- <p:outputPanel rendered="#{formularioController.temDegravacao(formulario)}" style="border:0px;margin-left:0px;margin-right:0px;">
+                            <br/>
+                            <video width="95" height="30" controls="controls" style="margin-left:-5px;">
+                                    <source
+                                            src="/appesca-web/rest/formulario/audioB9Q1?idFormulario=#{formulario.id}"
+                                            type="video/mp4"/>
+                            </video
+                    </p:outputPanel> -->
+                </p:column>
+
+            </p:dataTable>
+        </h:form>
+    </ui:define>
 </ui:composition>

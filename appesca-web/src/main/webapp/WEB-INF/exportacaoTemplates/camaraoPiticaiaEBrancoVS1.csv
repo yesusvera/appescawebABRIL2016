@@ -1,0 +1,2096 @@
+0;1;Textual;Var0001;dt_aplicacao;;Data de aplicaç‹o: __________
+0;2;Textual;Var0002;nome_pesquisador;;Pesquisador: __________
+0;3;Categorica exclusiva;Var0003;;;Local de residência: _ Zona urbana _ Zona rural 
+0;4;Categorica exclusiva;Var0004;;;A residência est‡ em Unidades de Conservaç‹o? _ Sim _ N‹o
+0;5;Textual-numerica;Var0005;;;A1 Nome completo: __________
+0;6;Textual-numerica;Var0006;;;A2 Apelido: __________
+0;7;Categorica exclusiva;Var0007;;;A3 UF: _ MA _ AP _ PA
+0;8;Textual-numerica;Var0008;;;A4 Munic’pio: __________
+0;9;Textual-numerica;Var0009;;;A5 Comunidade: __________
+0;10;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;A6 Documentos pessoais: 
+0;10.1;Categorica variada;Var0010;;;_ Certid‹o de Nascimento 
+0;10.2;Categorica variada;Var0011;;;_ Carteira de Identidade (RG) 
+0;10.3;Categorica variada;Var0012;;;_ Cadastro de Pessoa Fesica (CPF)
+0;10.4;Categorica variada;Var0013;;;_ Carteira de Trabalho
+0;10.5;Categorica variada;Var0014;;;_ Registro Geral da Pesca (RGP)
+0;10.6;Categorica variada;Var0015;;;_ Declaraç‹o de Aptid‹o ao Pronaf (DAP)
+0;10.7;Categorica variada;Var0016;;;_ Outro.
+0;10.7.1;Textual-numerica;Var0017;;;Outros: __________
+0;11;Numerica;Var0018;;;A7 Idade: __________
+0;12;Categorica exclusiva;Var0019;;;Sexo: _ Masculino _ Feminino
+0;13;Numerica;Var0020;;;A8 Telefone ou contato:__________
+0;14;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;A9 Acesso ˆ comunidade: 
+0;14.1;Categorica variada;Var0021;;;_ Terrestre
+0;14.2;Categorica variada;Var0022;;;_ Fluvial
+0;14.3;Categorica variada;Var0023;;;_ Mar’timo
+0;15;Textual-numerica;Var0024;;;A10 Dist‰ncia do munic’pio mais pr—ximo (horas/km): ____________________
+0;16;Categorica exclusiva;Var0025;;;A13 Estado Civil: _ Casado _ Solteiro _ Divorciado _ Viœvo _ Uni‹o Est‡vel
+0;17;Categorica exclusiva;Var0026;;;A14 Escolaridade: _ Analfabeto _ Fundamental I incompleto _ Fundamental I completo _ Fundamental II incompleto _ Fundamental II completo _ M_dio incompleto _ M_dio completo _ Superior incompleto _ Superior completo _ N‹o Sabe _ N‹o respondeu
+0;18;Categorica exclusiva;Var0027;;;Respons‡vel pela unidade familiar: _ Sim _ Nao
+1;1.1;Numerica;Var0028;;;Quantas pessoas moram na sua casa? 
+1;1.1.1x1;Textual-numerica;Var0029;;;Identificaç‹o (primeiro nome)
+1;1.1.1x2;Categorica exclusiva;Var0030;;;Sexo: _ M _ F
+1;1.1.1x3;Numerica;Var0031;;;Idade
+1;1.1.1x4;Textual-numerica;Var0032;;;Parentesco
+1;1.1.1x5;Categorica exclusiva;Var0033;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.1x6;Numerica;Var0034;;;At_ que ano?
+1;1.1.1x7;Categorica exclusiva;Var0035;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.2x1;Textual-numerica;Var0036;;;Identificaç‹o (primeiro nome)
+1;1.1.2x2;Categorica exclusiva;Var0037;;;Sexo: _ M _ F
+1;1.1.2x3;Numerica;Var0038;;;Idade
+1;1.1.2x4;Textual-numerica;Var0039;;;Parentesco
+1;1.1.2x5;Categorica exclusiva;Var0040;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.2x6;Numerica;Var0041;;;At_ que ano?
+1;1.1.2x7;Categorica exclusiva;Var0042;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.3x1;Textual-numerica;Var0043;;;Identificaç‹o (primeiro nome)
+1;1.1.3x2;Categorica exclusiva;Var0044;;;Sexo: _ M _ F
+1;1.1.3x3;Numerica;Var0045;;;Idade
+1;1.1.3x4;Textual-numerica;Var0046;;;Parentesco
+1;1.1.3x5;Categorica exclusiva;Var0047;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.3x6;Numerica;Var0048;;;At_ que ano?
+1;1.1.3x7;Categorica exclusiva;Var0049;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.4x1;Textual-numerica;Var0050;;;Identificaç‹o (primeiro nome)
+1;1.1.4x2;Categorica exclusiva;Var0051;;;Sexo: _ M _ F
+1;1.1.4x3;Numerica;Var0052;;;Idade
+1;1.1.4x4;Textual-numerica;Var0053;;;Parentesco
+1;1.1.4x5;Categorica exclusiva;Var0054;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.4x6;Numerica;Var0055;;;At_ que ano?
+1;1.1.4x7;Categorica exclusiva;Var0056;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.5x1;Textual-numerica;Var0057;;;Identificaç‹o (primeiro nome)
+1;1.1.5x2;Categorica exclusiva;Var0058;;;Sexo: _ M _ F
+1;1.1.5x3;Numerica;Var0059;;;Idade
+1;1.1.5x4;Textual-numerica;Var0060;;;Parentesco
+1;1.1.5x5;Categorica exclusiva;Var0061;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.5x6;Numerica;Var0062;;;At_ que ano?
+1;1.1.5x7;Categorica exclusiva;Var0063;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.6x1;Textual-numerica;Var0064;;;Identificaç‹o (primeiro nome)
+1;1.1.6x2;Categorica exclusiva;Var0065;;;Sexo: _ M _ F
+1;1.1.6x3;Numerica;Var0066;;;Idade
+1;1.1.6x4;Textual-numerica;Var0067;;;Parentesco
+1;1.1.6x5;Categorica exclusiva;Var0068;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.6x6;Numerica;Var0069;;;At_ que ano?
+1;1.1.6x7;Categorica exclusiva;Var0070;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.7x1;Textual-numerica;Var0071;;;Identificaç‹o (primeiro nome)
+1;1.1.7x2;Categorica exclusiva;Var0072;;;Sexo: _ M _ F
+1;1.1.7x3;Numerica;Var0073;;;Idade
+1;1.1.7x4;Textual-numerica;Var0074;;;Parentesco
+1;1.1.7x5;Categorica exclusiva;Var0075;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.7x6;Numerica;Var0076;;;At_ que ano?
+1;1.1.7x7;Categorica exclusiva;Var0077;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.8x1;Textual-numerica;Var0078;;;Identificaç‹o (primeiro nome)
+1;1.1.8x2;Categorica exclusiva;Var0079;;;Sexo: _ M _ F
+1;1.1.8x3;Numerica;Var0080;;;Idade
+1;1.1.8x4;Textual-numerica;Var0081;;;Parentesco
+1;1.1.8x5;Categorica exclusiva;Var0082;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.8x6;Numerica;Var0083;;;At_ que ano?
+1;1.1.8x7;Categorica exclusiva;Var0084;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.9x1;Textual-numerica;Var0085;;;Identificaç‹o (primeiro nome)
+1;1.1.9x2;Categorica exclusiva;Var0086;;;Sexo: _ M _ F
+1;1.1.9x3;Numerica;Var0087;;;Idade
+1;1.1.9x4;Textual-numerica;Var0088;;;Parentesco
+1;1.1.9x5;Categorica exclusiva;Var0089;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.9x6;Numerica;Var0090;;;At_ que ano?
+1;1.1.9x7;Categorica exclusiva;Var0091;;;Atualmente estuda? _ Sim _ N‹o
+1;1.1.10x1;Textual-numerica;Var0092;;;Identificaç‹o (primeiro nome)
+1;1.1.10x2;Categorica exclusiva;Var0093;;;Sexo: _ M _ F
+1;1.1.10x3;Numerica;Var0094;;;Idade
+1;1.1.10x4;Textual-numerica;Var0095;;;Parentesco
+1;1.1.10x5;Categorica exclusiva;Var0096;;;Ja frequentou a escola? _ Sim _ N‹o
+1;1.1.10x6;Numerica;Var0097;;;At_ que ano?
+1;1.1.10x7;Categorica exclusiva;Var0098;;;Atualmente estuda? _ Sim _ N‹o
+1;1.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quem _ respons‡vel pela unidade familiar?
+1;1.2.1x1;Textual-numerica;Var0099;;;Parentesco/V’nculo: __________
+1;1.2.1x2;Categorica exclusiva;Var0100;;;Sexo: _ M _ F
+1;1.2.2x1;Textual-numerica;Var0101;;;Parentesco/V’nculo: __________
+1;1.2.2x2;Categorica exclusiva;Var0102;;;Sexo: _ M _ F
+1;1.2.3x1;Textual-numerica;Var0103;;;Parentesco/V’nculo: __________
+1;1.2.3x2;Categorica exclusiva;Var0104;;;Sexo: _ M _ F
+1;1.2.4x1;Textual-numerica;Var0105;;;Parentesco/V’nculo: __________
+1;1.2.4x2;Categorica exclusiva;Var0106;;;Sexo: _ M _ F
+1;2.1;Categorica exclusiva;Var0107;;;Algum dos seus filhos/irm‹os n‹o vive mais na comunidade? _ Sim _ N‹o
+1;2.2;Numerica;Var0108;;;Se sim, quantos?
+1;2.3;Categorica exclusiva;Var0109;;;Se sim, por que? _ Para trabalhar _ Para buscar oportunidade ...  _ Outro.
+1;2.3.1;Textual-numerica;Var0110;;;Outro. Qual? __________
+1;3.1;Categorica exclusiva;Var0111;;;Você _ proprietario do terreno onde mora? _ Sim _ N‹o
+1;3.2;Categorica exclusiva;Var0112;;;Se sim, qual foi a forma de aquisiç‹o? _ Compra _ Herança ... _ Outra
+1;3.3;Categorica exclusiva;Var0113;;;Se n‹o, qual _ o seu v’nculo com o propriet‡rio do terreno? _ Filho _ C™njuge ... _ Arrendat‡rio
+1;4.1;Categorica exclusiva;Var0114;;;Qual _ a forma de abastecimento de energia el_trica na sua casa? _ N‹o tem energia el_trica _ Gerador comunit‡rio ... _ Outro.
+1;4.1.1;Textual-numerica;Var0115;;;Outro. Qual? __________
+1;5.1;Categorica exclusiva;Var0116;;;Como _ feito o abastecimento de agua da sua casa? _ Rede de distribuiç‹o _ Poço ... _ Outro.
+1;5.1.1;Textual-numerica;Var0117;;;Outro. Qual? __________
+1;6.1;Categorica exclusiva;Var0118;;;Como _ tratada a ‡gua para beber na sua casa? _ ƒ filtrada _ ƒ tratada com cloro/hipoclorito/‡gua sanit‡ria _ ƒ fervida _ Outro.
+1;6.1.1;Textual-numerica;Var0119;;;Outro: __________
+1;7.1;Categorica exclusiva;Var0120;;;O que _ feito com o lixo da casa? _ ƒ queimado _ ƒ enterrado ... _ Outro.
+1;7.1.1;Textual-numerica;Var0121;;;Outro: __________
+1;8.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Você tem acesso ˆ informaç‹o por quais meios?
+1;8.1.1;Categorica variada;Var0122;;;_ Televis‹o
+1;8.1.2;Categorica variada;Var0123;;;_ R‡dio
+1;8.1.3;Categorica variada;Var0124;;;_ R‡dio Comunit‡ria
+1;8.1.4;Categorica variada;Var0125;;;_ R‡dio amador
+1;8.1.5;Categorica variada;Var0126;;;_ Internet
+1;8.1.6;Categorica variada;Var0127;;;_ Telefone celular
+1;8.1.7;Categorica variada;Var0128;;;_ Telefone fixo
+1;8.1.8;Categorica variada;Var0129;;;_ Telefone pœblico (orelh‹o)
+1;8.1.9;Categorica variada;Var0130;;;_ Telefone rural
+1;8.1.10;Categorica variada;Var0131;;;_ Sindicato
+1;8.1.11;Categorica variada;Var0132;;;_ Associaç‹o
+1;8.1.12;Categorica variada;Var0133;;;_ Sistema de som (carro, moto, bicicleta)
+1;8.1.13;Categorica variada;Var0134;;;_ Sistema pœblico de som
+1;8.1.14;Categorica variada;Var0135;;;_ Material impresso (jornal, revista, jornal comunit‡rio)
+1;9.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais programas sociais (benef’cios do governo) atendem a sua fam’lia?
+1;9.1.1x1;Categorica variada;Var 0136;;;_ Bolsa fam’lia
+1;9.1.1x2;Numerica;Var 0137;;;Valor da parcela
+1;9.1.2x1;Categorica variada;Var 0138;;;_ Luz para Todos
+1;9.1.2x2;Numerica;Var 0139;;;Valor da parcela
+1;9.1.3x1;Categorica variada;Var 0140;;;_ Bolsa Verde
+1;9.1.3x2;Numerica;Var 0141;;;Valor da parcela
+1;9.1.4x1;Categorica variada;Var 0142;;;_ Seguro defeso
+1;9.1.4x2;Numerica;Var 0143;;;Valor da parcela
+1;9.1.5x1;Categorica variada;Var 0144;;;_ Seguro desemprego
+1;9.1.5x2;Numerica;Var 0145;;;Valor da parcela
+1;9.1.6x1;Categorica variada;Var 0146;;;_ Aposentadoria
+1;9.1.6x2;Numerica;Var 0147;;;Valor da parcela
+1;9.1.7x1;Categorica variada;Var 0148;;;_ Aux’lio-doença
+1;9.1.7x2;Numerica;Var 0149;;;Valor da parcela
+1;9.1.8x1;Categorica variada;Var 0150;;;_ Seguro maternidade
+1;9.1.8x2;Numerica;Var 0151;;;Valor da parcela
+1;9.1.9x1;Categorica variada;Var 0152;;;_ Minha casa, minha vida
+1;9.1.9x2;Numerica;Var 0153;;;Valor da parcela
+1;9.1.10x1;Categorica variada;Var 0154;;;_ Outros.
+1;9.1.10x2;Numerica;Var 0155;;;Valor da parcela
+;9.1.11x1;Textual-numerica;;;;Outros. Quais? __________
+1;10.1;Categorica exclusiva;Var 0156;;;Você faz parte de algum grupo ou organizaç‹o? _ Sim _ N‹o
+1;10.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, Qual(is) organizaç‹o(›es)? 
+1;10.2.1;Categorica variada;Var0157;;;_ Associaç‹o comunit‡ria
+1;10.2.2;Categorica variada;Var0158;;;_ Associaç‹o de pescadores
+1;10.2.3;Categorica variada;Var0159;;;_ Associaç‹o de mulheres
+1;10.2.4;Categorica variada;Var0160;;;_ Col™nia de pescadores
+1;10.2.5;Categorica variada;Var0161;;;_ Sindicato de pescadores
+1;10.2.6;Categorica variada;Var0162;;;_ Sindicato dos Trabalhadores Rurais
+1;10.2.7;Categorica variada;Var0163;;;_ Cooperativas de pesca
+1;10.2.8;Categorica variada;Var0164;;;_ Outras.
+1;10.2.8.1;Textual-numerica;Var0165;;;Outras. Quais? __________
+1;10.3;Categorica exclusiva;Var0166;;;Outra pessoa da sua fam’lia tamb_m faz parte de algum grupo ou organizaç‹o? _ Sim _ N‹o
+1;10.4;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, quem?
+1;10.4.1;Categorica variada;Var0167;;;_ M‹e
+1;10.4.2;Categorica variada;Var0168;;;_ Pai
+1;10.4.3;Categorica variada;Var0169;;;_ Irm‹o/Irm‹
+1;10.4.3.1;Numerica;Var0170;;;Quantos? __________
+1;10.4.4;Categorica variada;Var0171;;;_ Marido/Esposa
+1;10.4.5;Categorica variada;Var0172;;;_ Filha/Filho
+1;10.4.5.1;Numerica;Var0173;;;Quantos? __________
+1;11.1;Categorica exclusiva;Var0174;;;Você participa da gest‹o da RESEX? _ Sim _ N‹o _ N‹o se aplica
+1;11.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, como? 
+1;11.2.1;Categorica variada;Var0175;;;_ Participa do Conselho Deliberativo
+1;11.2.2;Categorica variada;Var0176;;;_ Participa da Associaç‹o de Moradores
+1;11.2.3;Categorica variada;Var0177;;;_ Participa de reuni›es comunit‡rias
+1;11.2.4;Categorica variada;Var0178;;;_ Recebe informaç›es dos representantes da comunidade no Conselho
+1;11.2.5;Categorica variada;Var0179;;;_ Outros
+1;12.1;Categorica exclusiva;Var0180;;;Você j‡ participou de algum curso de formaç‹o ou capacitaç‹o na sua comunidade? _ Sim _ N‹o _ N‹o lembra
+1;12.2;Textual-numerica;Var0181;;;Se sim, qual foi o tema do curso?
+1;13.1;Categorica exclusiva;Var0182;;;Você j‡ fez algum curso de capacitaç‹o fora da comunidade? _ Sim _ N‹o _ N‹o lembra
+1;13.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, qual foi o tema do curso?
+1;13.2.1;Categorica variada;Var0183;;;_ Organizaç‹o, associativismo e cooperativismo
+1;13.2.2;Categorica variada;Var0184;;;_ Comercializaç‹o e acesso ao mercado
+1;13.2.3;Categorica variada;Var0185;;;_ Gerenciamento de projetos
+1;13.2.4;Categorica variada;Var0186;;;_ Educaç‹o ambiental
+1;13.2.5;Categorica variada;Var0187;;;_ Segurança no trabalho da pesca
+1;13.2.6;Categorica variada;Var0188;;;_ T_cnicas de pesca
+1;13.2.7;Categorica variada;Var0189;;;_ Manejo do pescado
+1;13.2.8;Categorica variada;Var0190;;;_ Manutenç‹o de embarcaç‹o
+1;13.2.9;Categorica variada;Var0191;;;_ Confecç‹o de apetrechos de pesca
+1;13.2.10;Categorica variada;Var0192;;;_ Manejo de produtos extrativistas
+1;13.2.11;Categorica variada;Var0193;;;_ Produç‹o agr’cola
+1;13.2.12;Categorica variada;Var0194;;;_ Outros. Quais?
+1;13.2.12.1;Textual-numerica;Var0195;;;Outros. Quais? __________
+1;14.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais cursos você acha que poderiam ser realizados na comunidade?
+1;14.1.1;Categorica variada;Var0196;;;_ Organizaç‹o, associativismo e cooperativismo
+1;14.1.2;Categorica variada;Var0197;;;_ Comercializaç‹o e acesso ao mercado
+1;14.1.3;Categorica variada;Var0198;;;_ Gerenciamento de projetos
+1;14.1.4;Categorica variada;Var0199;;;_ Educaç‹o ambiental
+1;14.1.5;Categorica variada;Var0200;;;_ Segurança no trabalho da pesca
+1;14.1.6;Categorica variada;Var0201;;;_ T_cnicas de pesca
+1;14.1.7;Categorica variada;Var0202;;;_ Manejo do pescado
+1;14.1.8;Categorica variada;Var0203;;;_ Manutenç‹o de embarcaç‹o
+1;14.1.9;Categorica variada;Var0204;;;_ Confecç‹o de apetrechos de pesca
+1;14.1.10;Categorica variada;Var0205;;;_ Manejo de produtos extrativistas
+1;14.1.11;Categorica variada;Var0206;;;_ Produç‹o agr’cola
+1;14.1.12;Categorica variada;Var0207;;;_ Outros. Quais?
+1;14.1.12.1;Textual;Var0208;;;Outros. Quais? __________
+1;15.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais s‹o os principais problemas que atingem a comunidade hoje? 
+1;15.1.1;Categorica variada;Var0209;;;_ Falta de energia el_trica
+1;15.1.2;Categorica variada;Var0210;;;_ Energia el_trica de m‡ qualidade
+1;15.1.3;Categorica variada;Var0211;;;_ Falta de distribuiç‹o de ‡gua
+1;15.1.4;Categorica variada;Var0212;;;_ çgua de m‡ qualidade
+1;15.1.5;Categorica variada;Var0213;;;_ Falta de posto de saœde
+1;15.1.6;Categorica variada;Var0214;;;_ M‡ qualidade no atendimento de saœde
+1;15.1.7;Categorica variada;Var0215;;;_ Lixo
+1;15.1.8;Categorica variada;Var0216;;;_ Violência
+1;15.1.9;Categorica variada;Var0217;;;_ Conflitos entre moradores
+1;15.1.10;Categorica variada;Var0218;;;_ Falta de oportunidades de emprego
+1;15.1.11;Categorica variada;Var0219;;;_ Falta de escola
+1;15.1.12;Categorica variada;Var0220;;;_ Falta de transporte escolar
+1;15.1.13;Categorica variada;Var0221;;;_ Falta de estradas de acesso
+1;15.1.14;Categorica variada;Var0222;;;_ Falta de trapiche
+1;15.1.15;Categorica variada;Var0223;;;_ Outros. Quais?
+1;15.1.15.1;Textual;Var0224;;;Outros. Quais? __________
+2;1.1;Categoria exclusiva;Var0225;;;Qual  sua principal ocupaç‹o no momento? _ Pescador _ Pescador de camar‹o/caranguejo _ Agricultor(a) familiar/Trabalhador(a) rural ... _ Outra
+2;2.1;Categorica exclusiva;Var0226;;;Al_m da sua ocupaç‹o principal, você tem outra fonte de renda? _ Sim _ N‹o
+2;2.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, qual? 
+2;2.1.1;Categorica variada;Var0227;;;_ Pesca
+2;2.1.2;Categorica variada;Var0228;;;_ Pesca de camar‹o/caranguejo ...
+2;2.1.3;Categorica variada;Var0229;;;_ Agricultura familiar/Trabalho rural 
+2;2.1.4;Categorica variada;Var0230;;;_ Extrativismo - Aça’
+2;2.1.5;Categorica variada;Var0231;;;_ Extrativismo (castanha, castanha de andiroba, buriti, pracaxi, bacaba, tapereba, etc.)
+2;2.1.6;Categorica variada;Var0232;;;_ Criaç‹o de gado
+2;2.1.7;Categorica variada;Var0233;;;_ Criaç‹o de animais (pato, galinha, porco, boi) 
+2;2.1.8;Categorica variada;Var0234;;;_ Artesanato  
+2;2.1.9;Categorica variada;Var0235;;;_ Atividades de ensino 
+2;2.1.10;Categorica variada;Var0236;;;_ Aposentadoria
+2;2.1.11;Categorica variada;Var0237;;;_ Com_rcio
+2;2.1.12;Categorica variada;Var0238;;;_ Emprego pœblico
+2;2.1.13;Categorica variada;Var0239;;;_ Emprego privado 
+2;2.1.14;Categorica variada;Var0240;;;_ Outra 
+2;3.1;Categorica exclusiva;Var0241;;;A sua fam’lia tem fonte de renda? _ Sim _ N‹o
+2;3.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, qual? 
+2;3.2.1;Categorica variada;Var0242;;;_ Pesca
+2;3.2.2;Categorica variada;Var0243;;;_ Pesca de camar‹o/caranguejo ...
+2;3.2.3;Categorica variada;Var0244;;;_ Agricultura familiar/Trabalho rural 
+2;3.2.4;Categorica variada;Var0245;;;_ Extrativismo - Aça’
+2;3.2.5;Categorica variada;Var0246;;;_ Extrativismo (castanha, castanha de andiroba, buriti, pracaxi, bacaba, tapereba, etc.)
+2;3.2.6;Categorica variada;Var0247;;;_ Criaç‹o de gado
+2;3.2.7;Categorica variada;Var0248;;;_ Criaç‹o de animais (pato, galinha, porco, boi) 
+2;3.2.8;Categorica variada;Var0249;;;_ Artesanato  
+2;3.2.9;Categorica variada;Var0250;;;_ Atividades de ensino 
+2;3.2.10;Categorica variada;Var0251;;;_ Aposentadoria
+2;3.2.11;Categorica variada;Var0252;;;_ Com_rcio
+2;3.2.12;Categorica variada;Var0253;;;_ Emprego pœblico
+2;3.2.13;Categorica variada;Var0254;;;_ Emprego privado 
+2;3.2.14;Categorica variada;Var0255;;;_ Outra 
+2;3.2.14.1;Textual;Var0256;;;Outra: __________
+2;4.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais pessoas participam do sustento da casa?
+2;4.1.1x1;Textual-numerica;Var0257;;;Parentesco/v’nculo
+2;4.1.1x2;Categorica exclusiva;Var0258;;;Sexo _ M _ F
+2;4.1.1x3;Numerica;Var0259;;;Idade
+2;4.1.2x1;Textual-numerica;Var0260;;;Parentesco/v’nculo
+2;4.1.2x2;Categorica exclusiva;Var0261;;;Sexo _ M _ F
+2;4.1.2x3;Numerica;Var0262;;;Idade
+2;4.1.3x1;Textual-numerica;Var0263;;;Parentesco/v’nculo
+2;4.1.3x2;Categorica exclusiva;Var0264;;;Sexo _ M _ F
+2;4.1.3x3;Numerica;Var0265;;;Idade
+2;4.1.4x1;Textual-numerica;Var0266;;;Parentesco/v’nculo
+2;4.1.4x2;Categorica exclusiva;Var0267;;;Sexo _ M _ F
+2;4.1.4x3;Numerica;Var0268;;;Idade
+2;4.1.5x1;Textual-numerica;Var0269;;;Parentesco/v’nculo
+2;4.1.5x2;Categorica exclusiva;Var0270;;;Sexo _ M _ F
+2;4.1.5x3;Numerica;Var0271;;;Idade
+2;4.1.6x1;Textual-numerica;Var0272;;;Parentesco/v’nculo
+2;4.1.6x2;Categorica exclusiva;Var0273;;;Sexo _ M _ F
+2;4.1.6x3;Numerica;Var0274;;;Idade
+2;5.1;Categorica exclusiva;Var0275;;;Quanto _ a renda da sua fam’lia hoje (sem contar os benef’cios do governo)? _ Menos de 1/2 sal‡rio-m’nimo (menos de R$400,00) _ De 1/2 a 1 sal‡rio-m’nimo (de R$400,00 a R$800,00) ... _ N‹o sabe
+2;6.1;Categorica exclusiva;Var0276;;;Você j‡ acessou algum programa de cr_dito ou incentivo ˆ produç‹o oferecido pelo governo? _ Sim _ N‹o _ N‹o se aplica
+2;6.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, qual? 
+2;6.2.1x1;Categorica variada;Var0277;;;_ Pronaf
+2;6.2.1x2;Numerica;Var0278;;;Valor Pronaf
+2;6.2.2x1;Categorica variada;Var0279;;;_ Pronaf Mulher
+2;6.2.2x2;Numerica;Var0280;;;Valor Pronaf Mulher
+2;6.2.3x1;Categorica variada;Var0281;;;_ Cr_dito Amigo
+2;6.2.3x2;Numerica;Var0282;;;Valor Cr_dito Amigo
+2;6.2.4x1;Categorica variada;Var0283;;;_ PAA
+2;6.2.4x2;Numerica;Var0284;;;Valor PAA
+2;6.2.5x1;Categorica variada;Var0285;;;_ PNAE
+2;6.2.5x2;Numerica;Var0286;;;Valor PNAE
+2;6.2.6x1;Categorica variada;Var0287;;;_ PGPMBio
+2;6.2.6x2;Numerica;Var0288;;;Valor PGPMBio
+2;6.2.7x1;Categorica variada;Var0289;;;_ POPMR
+2;6.2.7x2;Numerica;Var0290;;;Valor POPMR
+2;6.2.8x1;Categorica variada;Var0291;;;_ Outros. Quais?
+2;6.2.8x2;Numerica;Var0292;;;"Valor ""Outros"""
+2;6.2.9x1;Textual-numerica;;;;Outros. Quais? __________
+2;6.3;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se você j‡ acessou algum tipo de cr_dito/financiamento, foi para qual finalidade?
+2;6.3.1;Categorica variada;Var0293;;;_ Compra de material de pesca
+2;6.3.2;Categorica variada;Var0294;;;_ Compra de embarcaç‹o
+2;6.3.3;Categorica variada;Var0295;;;_ Beneficiamento de pescado
+2;6.3.4;Categorica variada;Var0296;;;_ Produ•ç‹o agr’cola
+2;6.3.5;Categorica variada;Var0297;;;_ Criaç‹o de animais
+2;6.3.6;Categorica variada;Var0298;;;_ Pequenos empreendimentos
+2;6.3.7;Categorica variada;Var0299;;;_ Artesanato
+2;6.3.8;Categorica variada;Var0300;;;_ Beneficiamento de produtos extrativistas
+2;6.3.9;Categorica variada;Var0301;;;_ Outros
+2;6.4;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se você j‡ acessou algum tipo de cr_dito/financiamento, foi para qual instituiç‹o?
+2;6.4.1;Categorica variada;Var0302;;;_ Banco da Amaz™nia
+2;6.4.2;Categorica variada;Var0303;;;_ Banco do Nordeste
+2;6.4.3;Categorica variada;Var0304;;;_ Caixa Econ™mica
+2;6.4.4;Categorica variada;Var0305;;;_ Banco do Par‡
+2;6.4.5;Categorica variada;Var0306;;;_ Banco do Brasil
+2;6.4.6;Categorica variada;Var0307;;;_ Outro
+3;1.1;Categorica exclusiva;Var0308;;;Você _ nascido na comunidade? _ Sim _ N‹o
+3;1.2;Numerica;Var0309;;;Se n‹o, você vive aqui h‡ quantos anos?__________
+3;1.3;Textual-numerica;Var0310;;;De onde você veio? UF:__________
+3;1.3;Textual-numerica;Var0311;;;De onde você veio? Cidade:__________
+3;2.1;Categorica exclusiva;Var0312;;;Você tem alguma religi‹o? _ Sim _ N‹o
+3;2.2;Categorica exclusiva;Var0313;;;Se sim, Qual? _ Cat—lica _ Protestante _ Evang_lica ... _ Outra.
+3;2.2.1;Textual-numerica;Var0314;;;Outra: __________
+3;3.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais outras religi›es existem aqui na comunidade?
+3;3.1.1;Categorica variada;Var0315;;;_ Cat—lica
+3;3.1.2;Categorica variada;Var0316;;;_ Protestante
+3;3.1.3;Categorica variada;Var0317;;;_ Evang_lica
+3;3.1.4;Categorica variada;Var0318;;;_ Esp’rita
+3;3.1.5;Categorica variada;Var0319;;;_ Umbanda
+3;3.1.6;Categorica variada;Var0320;;;_ Candombl_
+3;3.1.7;Categorica variada;Var0321;;;_ Tambor de Mina
+3;3.1.8;Categorica variada;Var0322;;;_ Outro.
+3;3.8.8.1;Textual-numerica;Var0323;;;Outro. Qual? __________
+3;4.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais festas importantes acontecem hoje em dia na comunidade? 
+3;4.1.1;Categorica variada;Var0324;;;_ Festa de S‹o Lucas
+3;4.1.2;Categorica variada;Var0325;;;_ Festa de S‹o Gonçalo
+3;4.1.3;Categorica variada;Var0326;;;_ Festa de Santo Ant™nio
+3;4.1.4;Categorica variada;Var0327;;;_ Festa de S‹o Sebasti‹o
+3;4.1.5;Categorica variada;Var0328;;;_ Festa do Divino Esp’rito Santo
+3;4.1.6;Categorica variada;Var0329;;;_ Dia do pescador/S‹o Pedro
+3;4.1.7;Categorica variada;Var0330;;;_ Festa da G—
+3;4.1.8;Categorica variada;Var0331;;;_ Festa do C’rio de Bragança
+3;4.1.9;Categorica variada;Var0332;;;_Festa de S‹o Jo‹o
+3;4.1.10;Categorica variada;Var0333;;;_ Festa Junina
+3;4.1.11;Categorica variada;Var0334;;;_ Festa de Santana
+3;4.1.12;Categorica variada;Var0335;;;_ Festa de S‹o Pedro
+3;4.1.13;Categorica variada;Var0336;;;_ Festival do Caranguejo
+3;4.1.14;Categorica variada;Var0337;;;_ Festival da Dourada
+3;4.1.15;Categorica variada;Var0338;;;_ Festival do Camar‹o
+3;4.1.16;Categorica variada;Var0339;;;_ Festival do Aça’
+3;4.1.17;Categorica variada;Var0340;;;_ Festival do Carimb—
+3;4.1.18;Categorica variada;Var0341;;;_ Festa da Marujada
+3;4.1.19;Categorica variada;Var0342;;;_ Festa de S‹o Benedito
+3;4.1.20;Categorica variada;Var0343;;;_ Festa de Santa Maria
+3;4.1.21;Categorica variada;Var0344;;;_ S’rio de Nazar_
+3;4.1.22;Categorica variada;Var0345;;;_ Festa de Nossa Senhora da Conceiç‹o
+3;4.1.23;Categorica variada;Var0346;;;_ Outras
+3;4.1.23.1;Textual-numerica;Var0347;;;Outras. Quais? __________
+3;5.1;Categorica exclusiva;Var0348;;;Tem alguma festa ou atividade que se fazia na comunidade e n‹o se faz mais? _ Sim _ N‹o
+3;5.2;Textual-numerica;Var0349;;;Se sim, qual? __________
+3;6.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como as pessoas da sua comunidade cuidam da saœde? 
+3;6.1.1;Categorica variada;Var0350;;;_ Posto de saœde
+3;6.1.2;Categorica variada;Var0351;;;_ Hospital
+3;6.1.3;Categorica variada;Var0352;;;_ Unidades fluviais de saœde
+3;6.1.4;Categorica variada;Var0353;;;_ Agentes de saœde
+3;6.1.5;Categorica variada;Var0354;;;_ Rem_dios caseiros
+3;6.1.6;Categorica variada;Var0355;;;_ Rezas e benzeduras
+3;6.1.7;Categorica variada;Var0356;;;_ Outros
+3;7.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Algu_m da sua fam’lia usa os rem_dios naturais ou os tratamentos caseiros listados abaixo?
+3;7.1.1;Categorica variada;Var0357;;;_ Plantas medicinais
+3;7.1.2;Categorica variada;Var0358;;;_ Ch‡s e infus›es
+3;7.1.3;Categorica variada;Var0359;;;_ Banhos de ervas
+3;7.1.4;Categorica variada;Var0360;;;_ Preparados e garrafadas
+3;7.1.5;Categorica variada;Var0361;;;_ Tinturas
+3;7.1.6;Categorica variada;Var0362;;;_ Xaropes, ra’zes e outros alimentos
+3;7.1.7;Categorica variada;Var0363;;;_ Rezas e benzeduras
+3;7.1.8;Categorica variada;Var0364;;;_ Outros
+3;8.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais sao as atividades importantes que seus pais, av—s, bisav—s praticavam, que você acha que devem ser transmitidas ˆs  futuras geraç›es?
+3;8.1.1;Categorica variada;Var0365;;;_ Extrativismo/coleta 
+3;8.1.2;Categorica variada;Var0366;;;_ Caça
+3;8.1.3;Categorica variada;Var0367;;;_ Pesca 
+3;8.1.4;Categorica variada;Var0368;;;_ Fabricaç‹o de apetrechos de pesca
+3;8.1.5;Categorica variada;Var0369;;;_ Agricultura 
+3;8.1.6;Categorica variada;Var0370;;;_ Arte, mœsica, cantos (Quadrilha, Bumba Boi, Marabaixo, Carimb—, Caixa do Divino, etc.)
+3;8.1.7;Categorica variada;Var0371;;;_ Puxador/a, rezador/a, benzedor/a 
+3;8.1.8;Categorica variada;Var0372;;;_ Participar de missas, cultos 
+3;8.1.9;Categorica variada;Var0373;;;_ Participar de festas religiosas 
+3;8.1.10;Categorica variada;Var0374;;;_ Construir canoa, casas e (outras) 
+3;8.1.11;Categorica variada;Var0375;;;_ Utilizar rem_dios caseiros, erveiros/as
+3;8.1.12;Categorica variada;Var0376;;;_ Outro.
+3;8.1.12.1;Textual-numerica;Var0377;;;Outro. Quais? __________
+3;9.1;Categorica exclusiva;Var0378;;;Vocêê acha bom viver aqui? _ Sim _ Nao
+4;1.1;Categorica exclusiva;Var0379;;;Hoje vocêê percebe alguma diferença em relaç‹o ˆ quantidade de peixe e camar‹o que tinha aqui antigamente? _ Sim _ N‹o
+4;2.1;Categorica exclusiva;Var0380;;;Na sua opini‹o, os locais onde os moradores da comunidade pescam encontram-se preservados? _ Sim _ N‹o
+4;3.1;Categorica exclusiva;Var0381;;;Existem pessoas da comunidade que prejudicam o meio ambiente aqui na regi‹o? _ Sim _ N‹o
+4;3.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, de que forma? 
+4;3.2.1;Categorica variada;Var0382;;;_ Desmatando a floresta
+4;3.2.2;Categorica variada;Var0383;;;_ Usando zangaria para a pesca do camar‹o
+4;3.2.3;Categorica variada;Var0384;;;_ Usando tapagem nos igarap_s/rios
+4;3.2.4;Categorica variada;Var0385;;;_ Jogando lixo no rio
+4;3.2.5;Categorica variada;Var0386;;;_ Criando gado/bœfalo
+4;3.2.6;Categorica variada;Var0387;;;_ Pescando camar‹o pequeno
+4;3.2.7;Categorica variada;Var0388;;;_ Outro.
+4;3.2.7.1;Textual-numerica;Var0389;;;Outro. Qual? __________
+4;4.1;Categorica exclusiva;Var0390;;;Existem pessoas de fora da comunidade que prejudicam o meio ambiente aqui na regi‹o? _ Sim _ Nao
+4;4.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, de que forma? 
+4;4.2.1;Categorica variada;Var0391;;;_ Desmatando a floresta
+4;4.2.2;Categorica variada;Var0392;;;_ Usando zangaria para a pesca do camar‹o
+4;4.2.3;Categorica variada;Var0393;;;_ Usando tapagem nos igarap_s/rios
+4;4.2.4;Categorica variada;Var0394;;;_ Jogando lixo no rio
+4;4.2.5;Categorica variada;Var0395;;;_ Criando gado/bœfalo
+4;4.2.6;Categorica variada;Var0396;;;_ Pescando camar‹o pequeno
+4;4.2.7;Categorica variada;Var0397;;;_ Outro.
+4;4.2.7.1;Textual-numerica;Var0398;;;Outro. Qual? __________
+4;5.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais sao os principais problemas ambientais que você percebe aqui na regi‹o atualmente? 
+4;5.1.1;Categorica variada;Var0399;;;_ Desmatamento das nascentes
+4;5.1.2;Categorica variada;Var0400;;;_ Desmatamento dos rios e igarap_s
+4;5.1.3;Categorica variada;Var0401;;;_ Desmatamento da floresta
+4;5.1.4;Categorica variada;Var0402;;;_ Eros‹o
+4;5.1.5;Categorica variada;Var0403;;;_ Poluiç‹o das ‡guas dos rios ou do mar
+4;5.1.6;Categorica variada;Var0404;;;_ Extrativismo
+4;5.1.7;Categorica variada;Var0405;;;_ Diminuiç‹o dos pescados
+4;5.1.8;Categorica variada;Var0406;;;_ Outros
+4;5.1.8.1;Textual-numerica;Var0407;;;Outro. Quais? __________
+4;6.1;Categorica exclusiva;Var0408;;;Existem conflitos por causa de uso dos recursos naturais? _ Sim _ N‹o
+4;6.2;Textual-numerica;Var0409;;;Se sim, quais? __________
+4;7.1;Categorica exclusiva;Var0410;;;Apenas para moradores de RESEX: a criaç‹o da RESEX trouxe benef’cios para a sua comunidade? _ Sim _ N‹o _ N‹o se aplica
+4;7.2;Textual-numerica;Var0411;;;Se sim, quais? __________
+4;8.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Apenas para moradores de RESEX: na sua visao, qual _ o papel da RESEX para a sua comunidade? 
+4;8.1.1;Categorica variada;Var0412;;;_ Melhorar a estrutura da comunidade
+4;8.1.2;Categorica variada;Var0413;;;_ Melhorar os serviços b‡sicos na comunidade (saœde, ..., e energia, etc.)
+4;8.1.3;Categorica variada;Var0414;;;_ Facilitar o acesso a programas sociais do governo
+4;8.1.4;Categorica variada;Var0415;;;_ Melhorar as condiç›es de vida (de modo geral)
+4;8.1.5;Categorica variada;Var0416;;;_ Mediar conflitos entre comunidades
+4;8.1.6;Categorica variada;Var0417;;;_ Promover aç›es de fiscalizaç‹o ambiental
+4;8.1.7;Categorica variada;Var0418;;;_ Promover aç›es de educaç‹o ambiental
+4;8.1.8;Categorica variada;Var0419;;;_ Promover a sustentabilidade das atividades extrativistas
+4;8.1.9;Categorica variada;Var0420;;;_ Outro.
+4;8.1.9.1;Textual-numerica;Var0421;;;Outro. Qual? __________
+4;8.1.10;Categorica variada;Var0422;;;_ Nao se aplica
+4;9.1;Categorica exclusiva;Var0423;;;Você acredita que as futuras geraç›es da comunidade poder‹o sobreviver dos recursos naturais? _ Sim _ N‹o 
+4;10.1;Categorica exclusiva;Var0424;;;Existe algum projeto ou programa de educaç‹o ambiental acontecendo na comunidade? _ Sim _ N‹o _ N‹o Sei
+4;10.2;Textual-numerica;Var0425;;;Se sim, qual? __________
+4;11.1;Categorica exclusiva;Var0426;;;Vocêê acha importante que aconteçam formaç›es ou capacitaç›es para conscientizar as pessoas da comunidade sobre o meio ambiente? _ Sim _ N‹o _ N‹o Sei
+5;1.1;Numerica;Var0427;;;A partir de que idade você começou a trabalhar com a pesca do camar‹o?
+5;2.1;Categorica exclusiva;Var0428;;;Você acha que o valor que você recebe pela venda do camar‹o _ justo? _ Sim _ N‹o
+5;3.1;Categorica exclusiva;Var0429;;;O dinheiro da pesca representa quanto na renda familiar? _ Nada _ Menos de metade _ Metade ... _ N‹o respondeu
+5;4.1;Categorica exclusiva;Var0430;;;D‡ para se sustentar o ano todo somente com a atividade de pesca do camar‹o? _ Sim _ N‹o
+5;5.1;Categorica exclusiva;Var0431;;;Você _ benefici‡rio de algum projeto ou programa para o desenvolvimento comunit‡rio? _ Sim _ N‹o
+5;5.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Se sim, qual?
+5;5.2.1;Categorica variada;Var0432;;;_ Entre mar_s
+5;5.2.2;Categorica variada;Var0433;;;_ Mar_ solid‡ria
+5;5.2.3;Categorica variada;Var0434;;;_ Conservaç‹o internacional
+5;5.2.4;Categorica variada;Var0435;;;_ Unesco
+5;5.2.5;Categorica variada;Var0436;;;_ Manguezais do Brasil
+5;5.2.6;Categorica variada;Var0437;;;_ Feiras do governo do Estado
+5;5.2.7;Categorica variada;Var0438;;;_ Outro.
+5;5.2.7.1;Textual-numerica;Var0439;;;Outro. Qual? __________
+6;1.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Normalmente, como _ feita a pesca do camar‹o?
+6;1.1.1;Categorica variada;Var0440;;;_ Individual (sozinho)
+6;1.1.2;Categorica variada;Var0441;;;_ Em fam’lia
+6;1.1.2.1;Numerica;Var0442;;;Em fam’lia: quantas pessoas?
+6;1.1.3;Categorica variada;Var0443;;;_ Em grupo de companheiros(as)
+6;1.1.3.1;Numerica;Var0444;;;Em grupo de companheiros(as): quantas pessoas?
+6;1.1.4;Categorica variada;Var0445;;;_ Em grupo de companheiros(as) e fam’lia
+6;1.1.4.1;Numerica;Var0446;;;Em grupo de companheiros(as) e fam’lia: quantas pessoas?
+6;1.1.5;Categorica variada;Var0447;;;_ Outros
+6;1.1.5.1;Textual-numerica;Var0448;;;Outros: __________
+6;1.1.5.2;Numerica;Var0449;;;Outros: quantas pessoas? __________
+6;2.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como o senhor realiza este tipo de pescaria?
+6;2.1.1;Categorica variada;Var0450;;;"_ Vai e volta no mesmo dia (""ir e vir"" ou ""bate e volta"")."
+6;2.1.1.1;Textual-numerica;Var0451;;;"Vai e volta no mesmo dia (""ir e vir"" ou ""bate e volta""): quantos dias por semana realiza a pesca?"
+6;2.1.2;Categorica variada;Var0452;;;_ Pesca de decida ou de baixada (pesca que dura mais de um dia fora de casa)
+6;2.1.2.1;Textual-numerica;Var0453;;;Pesca de decida ou de baixada (pesca que dura mais de um dia fora de casa): quantos dias dura, em m_dia, a viagem?
+6;2.1.3;Textual-numerica;Var0454;;;Quantas viagens realiza por semana?
+6;2.1.4;Textual-numerica;Var0455;;;Quantas viagens realiza por mês?
+6;2.2;Textual-numerica;Var0456;;;Quanto tempo se gasta para chegar ao local de pesca (pesqueiro) mais distante?
+6;2.2.1;Categorica exclusiva;Var0457;;;_ Hora _ Minutos _ N‹o sabe _ N‹o respondeu
+6;2.3;Textual-numerica;Var0459;;;Quanto tempo se gasta para chegar ao local de pesca (pesqueiro) mais perto?
+6;2.3.1;Categorica exclusiva;Var0460;;;_ Hora _ Minutos _ N‹o sabe _ N‹o respondeu
+6;3.1;Textual-numerica;Var0462;;;Que tipo de arte se utiliza. Quantas horas s‹o trabalhadas por você ou pelo grupo por dia, em m_dia? Qual _ a produç‹o por mar_ no inverno e ver‹o?
+6;4.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Em qual estaç‹o do ano realiza a pesca (camar‹o piticaia)?
+6;4.1.1;Categorica variada;Var0463;;;_ Ver‹o
+6;4.1.2;Categorica variada;Var0464;;;_ Inverno
+6;4.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Em qual mar_ _ realizada a pesca?
+6;4.2.1;Categorica variada;Var0465;;;_ Pequena/Baixa/Morta
+6;4.2.2;Categorica variada;Var0466;;;_ Alta/Grande/Lançante
+6;4.3;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Qual _ a quantidade m_dia capturada/dia nas mar_s alta e baixa, nos per’odos de inverno e ver‹o, por arte de pesca? Quanto tempo _ gasto? Quantos dias s‹o trabalhados (o dia de pesca se refere tanto ao per’odo diurno quanto noturno)
+6;;Descriç‹o;Descriç‹o;;;Inverno_Mar_ pequena/baixa/morta
+6;4.3.1x1;Categorica variada;Var0467;;;_ Puça
+6;4.3.1x2;Textual-numerica;Var0468;;;Quilos Pescados/dia
+6;4.3.1x3;Numerica;Var0469;;;N_ Lances/dia
+6;4.3.1x4;Numerica;Var0470;;;Tempo gasto (horas/dia)
+6;4.3.1x5;Numerica;Var0471;;;Dias trabalhados/semana
+6;4.3.2x1;Categorica variada;Var0472;;;_ Zangaria
+6;4.3.2x2;Textual-numerica;Var0473;;;Quilos Pescados/dia
+6;4.3.2x3;Numerica;Var0474;;;N_ Lances/dia
+6;4.3.2x4;Numerica;Var0475;;;Tempo gasto (horas/dia)
+6;4.3.2x5;Numerica;Var0476;;;Dias trabalhados/semana
+6;4.3.3x1;Categorica variada;Var0477;;;_ Redinha ou Cal‹o
+6;4.3.3x2;Textual-numerica;Var0478;;;Quilos Pescados/dia
+6;4.3.3x3;Numerica;Var0479;;;N_ Lances/dia
+6;4.3.3x4;Numerica;Var0480;;;Tempo gasto (horas/dia)
+6;4.3.3x5;Numerica;Var0481;;;Dias trabalhados/semana
+6;4.3.4x1;Categorica variada;Var0482;;;_ Muruada
+6;4.3.4x2;Textual-numerica;Var0483;;;Quilos Pescados/dia
+6;4.3.4x3;Numerica;Var0484;;;N_ Lances/dia
+6;4.3.4x4;Numerica;Var0485;;;Tempo gasto (horas/dia)
+6;4.3.4x5;Numerica;Var0486;;;Dias trabalhados/semana
+6;4.3.5x1;Categorica variada;Var0487;;;_ Calqueira
+6;4.3.5x2;Textual-numerica;Var0488;;;Quilos Pescados/dia
+6;4.3.5x3;Numerica;Var0489;;;N_ Lances/dia
+6;4.3.5x4;Numerica;Var0490;;;Tempo gasto (horas/dia)
+6;4.3.5x5;Numerica;Var0491;;;Dias trabalhados/semana
+6;4.3.6x1;Categorica variada;Var0492;;;_ Tarrafa
+6;4.3.6x2;Textual-numerica;Var0493;;;Quilos Pescados/dia
+6;4.3.6x3;Numerica;Var0494;;;N_ Lances/dia
+6;4.3.6x4;Numerica;Var0495;;;Tempo gasto (horas/dia)
+6;4.3.6x5;Numerica;Var0496;;;Dias trabalhados/semana
+6;4.3.7x1;Categorica variada;Var0497;;;_ Camaroeira/Rede de saco
+6;4.3.7x2;Textual-numerica;Var0498;;;Quilos Pescados/dia
+6;4.3.7x3;Numerica;Var0499;;;N_ Lances/dia
+6;4.3.7x4;Numerica;Var0500;;;Tempo gasto (horas/dia)
+6;4.3.7x5;Numerica;Var0501;;;Dias trabalhados/semana
+6;4.3.8x1;Categorica variada;Var0502;;;_ Outros
+6;4.3.8x2;Textual-numerica;Var0503;;;Quilos Pescados/dia
+6;4.3.8x3;Numerica;Var0504;;;N_ Lances/dia
+6;4.3.8x4;Numerica;Var0505;;;Tempo gasto (horas/dia)
+6;4.3.8x5;Numerica;Var0506;;;Dias trabalhados/semana
+6;;Descriç‹o;Descriç‹o;;;Inverno_Mar_ alta/grande/lançante
+6;4.3.9x1;Categorica variada;Var0507;;;_ Puça
+6;4.3.9x2;Textual-numerica;Var0508;;;Quilos Pescados/dia
+6;4.3.9x3;Numerica;Var0509;;;N_ Lances/dia
+6;4.3.9x4;Numerica;Var0510;;;Tempo gasto (horas/dia)
+6;4.3.9x5;Numerica;Var0511;;;Dias trabalhados/semana
+6;4.3.10x1;Categorica variada;Var0512;;;_ Zangaria
+6;4.3.10x2;Textual-numerica;Var0513;;;Quilos Pescados/dia
+6;4.3.10x3;Numerica;Var0514;;;N_ Lances/dia
+6;4.3.10x4;Numerica;Var0515;;;Tempo gasto (horas/dia)
+6;4.3.10x5;Numerica;Var0516;;;Dias trabalhados/semana
+6;4.3.11x1;Categorica variada;Var0517;;;_ Redinha ou Cal‹o
+6;4.3.11x2;Textual-numerica;Var0518;;;Quilos Pescados/dia
+6;4.3.11x3;Numerica;Var0519;;;N_ Lances/dia
+6;4.3.11x4;Numerica;Var0520;;;Tempo gasto (horas/dia)
+6;4.3.11x5;Numerica;Var0521;;;Dias trabalhados/semana
+6;4.3.12x1;Categorica variada;Var0522;;;_ Muruada
+6;4.3.12x2;Textual-numerica;Var0523;;;Quilos Pescados/dia
+6;4.3.12x3;Numerica;Var0524;;;N_ Lances/dia
+6;4.3.12x4;Numerica;Var0525;;;Tempo gasto (horas/dia)
+6;4.3.12x5;Numerica;Var0526;;;Dias trabalhados/semana
+6;4.3.13x1;Categorica variada;Var0527;;;_ Calqueira
+6;4.3.13x2;Textual-numerica;Var0528;;;Quilos Pescados/dia
+6;4.3.13x3;Numerica;Var0529;;;N_ Lances/dia
+6;4.3.13x4;Numerica;Var0530;;;Tempo gasto (horas/dia)
+6;4.3.13x5;Numerica;Var0531;;;Dias trabalhados/semana
+6;4.3.14x1;Categorica variada;Var0532;;;_ Tarrafa
+6;4.3.14x2;Textual-numerica;Var0533;;;Quilos Pescados/dia
+6;4.3.14x3;Numerica;Var0534;;;N_ Lances/dia
+6;4.3.14x4;Numerica;Var0535;;;Tempo gasto (horas/dia)
+6;4.3.14x5;Numerica;Var0536;;;Dias trabalhados/semana
+6;4.3.15x1;Categorica variada;Var0537;;;_ Camaroeira/Rede de saco
+6;4.3.15x2;Textual-numerica;Var0538;;;Quilos Pescados/dia
+6;4.3.15x3;Numerica;Var0539;;;N_ Lances/dia
+6;4.3.15x4;Numerica;Var0540;;;Tempo gasto (horas/dia)
+6;4.3.15x5;Numerica;Var0541;;;Dias trabalhados/semana
+6;4.3.16x1;Categorica variada;Var0542;;;_ Outros
+6;4.3.16x2;Textual-numerica;Var0543;;;Quilos Pescados/dia
+6;4.3.16x3;Numerica;Var0544;;;N_ Lances/dia
+6;4.3.16x4;Numerica;Var0545;;;Tempo gasto (horas/dia)
+6;4.3.16x5;Numerica;Var0546;;;Dias trabalhados/semana
+6;;Descriç‹o;Descriç‹o;;;Ver‹o_Mar_ pequena/baixa/morta
+6;4.3.1x1;Categorica variada;Var0547;;;_ Puça
+6;4.3.1x2;Textual-numerica;Var0548;;;Quilos Pescados/dia
+6;4.3.1x3;Numerica;Var0549;;;N_ Lances/dia
+6;4.3.1x4;Numerica;Var0550;;;Tempo gasto (horas/dia)
+6;4.3.1x5;Numerica;Var0551;;;Dias trabalhados/semana
+6;4.3.2x1;Categorica variada;Var0552;;;_ Zangaria
+6;4.3.2x2;Textual-numerica;Var0553;;;Quilos Pescados/dia
+6;4.3.2x3;Numerica;Var0554;;;N_ Lances/dia
+6;4.3.2x4;Numerica;Var0555;;;Tempo gasto (horas/dia)
+6;4.3.2x5;Numerica;Var0556;;;Dias trabalhados/semana
+6;4.3.3x1;Categorica variada;Var0557;;;_ Redinha ou Cal‹o
+6;4.3.3x2;Textual-numerica;Var0558;;;Quilos Pescados/dia
+6;4.3.3x3;Numerica;Var0559;;;N_ Lances/dia
+6;4.3.3x4;Numerica;Var0560;;;Tempo gasto (horas/dia)
+6;4.3.3x5;Numerica;Var0561;;;Dias trabalhados/semana
+6;4.3.4x1;Categorica variada;Var0562;;;_ Muruada
+6;4.3.4x2;Textual-numerica;Var0563;;;Quilos Pescados/dia
+6;4.3.4x3;Numerica;Var0564;;;N_ Lances/dia
+6;4.3.4x4;Numerica;Var0565;;;Tempo gasto (horas/dia)
+6;4.3.4x5;Numerica;Var0566;;;Dias trabalhados/semana
+6;4.3.5x1;Categorica variada;Var0567;;;_ Calqueira
+6;4.3.5x2;Textual-numerica;Var0568;;;Quilos Pescados/dia
+6;4.3.5x3;Numerica;Var0569;;;N_ Lances/dia
+6;4.3.5x4;Numerica;Var0570;;;Tempo gasto (horas/dia)
+6;4.3.5x5;Numerica;Var0571;;;Dias trabalhados/semana
+6;4.3.6x1;Categorica variada;Var0572;;;_ Tarrafa
+6;4.3.6x2;Textual-numerica;Var0573;;;Quilos Pescados/dia
+6;4.3.6x3;Numerica;Var0574;;;N_ Lances/dia
+6;4.3.6x4;Numerica;Var0575;;;Tempo gasto (horas/dia)
+6;4.3.6x5;Numerica;Var0576;;;Dias trabalhados/semana
+6;4.3.7x1;Categorica variada;Var0577;;;_ Camaroeira/Rede de saco
+6;4.3.7x2;Textual-numerica;Var0578;;;Quilos Pescados/dia
+6;4.3.7x3;Numerica;Var0579;;;N_ Lances/dia
+6;4.3.7x4;Numerica;Var0580;;;Tempo gasto (horas/dia)
+6;4.3.7x5;Numerica;Var0581;;;Dias trabalhados/semana
+6;4.3.8x1;Categorica variada;Var0582;;;_ Outros
+6;4.3.8x2;Textual-numerica;Var0583;;;Quilos Pescados/dia
+6;4.3.8x3;Numerica;Var0584;;;N_ Lances/dia
+6;4.3.8x4;Numerica;Var0585;;;Tempo gasto (horas/dia)
+6;4.3.8x5;Numerica;Var0586;;;Dias trabalhados/semana
+6;;Descriç‹o;Descriç‹o;;;Ver‹o_Mar_ alta/grande/lançante
+6;4.3.9x1;Categorica variada;Var0587;;;_ Puça
+6;4.3.9x2;Textual-numerica;Var0588;;;Quilos Pescados/dia
+6;4.3.9x3;Numerica;Var0589;;;N_ Lances/dia
+6;4.3.9x4;Numerica;Var0590;;;Tempo gasto (horas/dia)
+6;4.3.9x5;Numerica;Var0591;;;Dias trabalhados/semana
+6;4.3.10x1;Categorica variada;Var0592;;;_ Zangaria
+6;4.3.10x2;Textual-numerica;Var0593;;;Quilos Pescados/dia
+6;4.3.10x3;Numerica;Var0594;;;N_ Lances/dia
+6;4.3.10x4;Numerica;Var0595;;;Tempo gasto (horas/dia)
+6;4.3.10x5;Numerica;Var0596;;;Dias trabalhados/semana
+6;4.3.11x1;Categorica variada;Var0597;;;_ Redinha ou Cal‹o
+6;4.3.11x2;Textual-numerica;Var0598;;;Quilos Pescados/dia
+6;4.3.11x3;Numerica;Var0599;;;N_ Lances/dia
+6;4.3.11x4;Numerica;Var0600;;;Tempo gasto (horas/dia)
+6;4.3.11x5;Numerica;Var0601;;;Dias trabalhados/semana
+6;4.3.12x1;Categorica variada;Var0602;;;_ Muruada
+6;4.3.12x2;Textual-numerica;Var0603;;;Quilos Pescados/dia
+6;4.3.12x3;Numerica;Var0604;;;N_ Lances/dia
+6;4.3.12x4;Numerica;Var0605;;;Tempo gasto (horas/dia)
+6;4.3.12x5;Numerica;Var0606;;;Dias trabalhados/semana
+6;4.3.13x1;Categorica variada;Var0607;;;_ Calqueira
+6;4.3.13x2;Textual-numerica;Var0608;;;Quilos Pescados/dia
+6;4.3.13x3;Numerica;Var0609;;;N_ Lances/dia
+6;4.3.13x4;Numerica;Var0610;;;Tempo gasto (horas/dia)
+6;4.3.13x5;Numerica;Var0611;;;Dias trabalhados/semana
+6;4.3.14x1;Categorica variada;Var0612;;;_ Tarrafa
+6;4.3.14x2;Textual-numerica;Var0613;;;Quilos Pescados/dia
+6;4.3.14x3;Numerica;Var0614;;;N_ Lances/dia
+6;4.3.14x4;Numerica;Var0615;;;Tempo gasto (horas/dia)
+6;4.3.14x5;Numerica;Var0616;;;Dias trabalhados/semana
+6;4.3.15x1;Categorica variada;Var0617;;;_ Camaroeira/Rede de saco
+6;4.3.15x2;Textual-numerica;Var0618;;;Quilos Pescados/dia
+6;4.3.15x3;Numerica;Var0619;;;N_ Lances/dia
+6;4.3.15x4;Numerica;Var0620;;;Tempo gasto (horas/dia)
+6;4.3.15x5;Numerica;Var0621;;;Dias trabalhados/semana
+6;4.3.16x1;Categorica variada;Var0622;;;_ Outros
+6;4.3.16x2;Textual-numerica;Var0623;;;Quilos Pescados/dia
+6;4.3.16x3;Numerica;Var0624;;;N_ Lances/dia
+6;4.3.16x4;Numerica;Var0625;;;Tempo gasto (horas/dia)
+6;4.3.16x5;Numerica;Var0626;;;Dias trabalhados/semana
+6;4.4;Textual;Var0627;;;Quais s‹o os pontos de pesca (pesqueiros) que o senhor mais pesca camar‹o piticaia?
+6;5.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Em qual estaç‹o do ano realiza a pesca (camar‹o branco)?
+6;5.1.1;Categorica variada;Var0628;;;_ Ver‹o
+6;5.1.2;Categorica variada;Var0629;;;_ Inverno
+6;5.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Em qual mar_ _ realizada a pesca?
+6;5.2.1;Categorica variada;Var0630;;;_ Pequena/Baixa/Morta
+6;5.2.2;Categorica variada;Var0631;;;_ Alta/Grande/Lançante
+6;5.3;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Qual _ a quantidade m_dia capturada/dia nas mar_s alta e baixa, nos per’odos de inverno e ver‹o, por arte de pesca? Quanto tempo _ gasto? Quantos dias s‹o trabalhados (o dia de pesca se refere tanto ao per’odo diurno quanto noturno)
+6;;Descriç‹o;Descriç‹o;;;Inverno_Mar_ pequena/baixa/morta
+6;5.3.1x1;Categorica variada;Var0632;;;_ Puça
+6;5.3.1x2;Textual-numerica;Var0633;;;Quilos Pescados/dia
+6;5.3.1x3;Numerica;Var0634;;;N_ Lances/dia
+6;5.3.1x4;Numerica;Var0635;;;Tempo gasto (horas/dia)
+6;5.3.1x5;Numerica;Var0636;;;Dias trabalhados/semana
+6;5.3.2x1;Categorica variada;Var0637;;;_ Zangaria
+6;5.3.2x2;Textual-numerica;Var0638;;;Quilos Pescados/dia
+6;5.3.2x3;Numerica;Var0639;;;N_ Lances/dia
+6;5.3.2x4;Numerica;Var0640;;;Tempo gasto (horas/dia)
+6;5.3.2x5;Numerica;Var0641;;;Dias trabalhados/semana
+6;5.3.3x1;Categorica variada;Var0642;;;_ Redinha ou Cal‹o
+6;5.3.3x2;Textual-numerica;Var0643;;;Quilos Pescados/dia
+6;5.3.3x3;Numerica;Var0644;;;N_ Lances/dia
+6;5.3.3x4;Numerica;Var0645;;;Tempo gasto (horas/dia)
+6;5.3.3x5;Numerica;Var0646;;;Dias trabalhados/semana
+6;5.3.4x1;Categorica variada;Var0647;;;_ Muruada
+6;5.3.4x2;Textual-numerica;Var0648;;;Quilos Pescados/dia
+6;5.3.4x3;Numerica;Var0649;;;N_ Lances/dia
+6;5.3.4x4;Numerica;Var0650;;;Tempo gasto (horas/dia)
+6;5.3.4x5;Numerica;Var0651;;;Dias trabalhados/semana
+6;5.3.5x1;Categorica variada;Var0652;;;_ Calqueira
+6;5.3.5x2;Textual-numerica;Var0653;;;Quilos Pescados/dia
+6;5.3.5x3;Numerica;Var0654;;;N_ Lances/dia
+6;5.3.5x4;Numerica;Var0655;;;Tempo gasto (horas/dia)
+6;5.3.5x5;Numerica;Var0656;;;Dias trabalhados/semana
+6;5.3.6x1;Categorica variada;Var0657;;;_ Tarrafa
+6;5.3.6x2;Textual-numerica;Var0658;;;Quilos Pescados/dia
+6;5.3.6x3;Numerica;Var0659;;;N_ Lances/dia
+6;5.3.6x4;Numerica;Var0660;;;Tempo gasto (horas/dia)
+6;5.3.6x5;Numerica;Var0661;;;Dias trabalhados/semana
+6;5.3.7x1;Categorica variada;Var0662;;;_ Camaroeira/Rede de saco
+6;5.3.7x2;Textual-numerica;Var0663;;;Quilos Pescados/dia
+6;5.3.7x3;Numerica;Var0664;;;N_ Lances/dia
+6;5.3.7x4;Numerica;Var0665;;;Tempo gasto (horas/dia)
+6;5.3.7x5;Numerica;Var0666;;;Dias trabalhados/semana
+6;5.3.8x1;Categorica variada;Var0667;;;_ Outros
+6;5.3.8x2;Textual-numerica;Var0668;;;Quilos Pescados/dia
+6;5.3.8x3;Numerica;Var0669;;;N_ Lances/dia
+6;5.3.8x4;Numerica;Var0670;;;Tempo gasto (horas/dia)
+6;5.3.8x5;Numerica;Var0671;;;Dias trabalhados/semana
+6;;Descriç‹o;Descriç‹o;;;Inverno_Mar_ alta/grande/lançante
+6;5.3.9x1;Categorica variada;Var0672;;;_ Puça
+6;5.3.9x2;Textual-numerica;Var0673;;;Quilos Pescados/dia
+6;5.3.9x3;Numerica;Var0674;;;N_ Lances/dia
+6;5.3.9x4;Numerica;Var0675;;;Tempo gasto (horas/dia)
+6;5.3.9x5;Numerica;Var0676;;;Dias trabalhados/semana
+6;5.3.10x1;Categorica variada;Var0677;;;_ Zangaria
+6;5.3.10x2;Textual-numerica;Var0678;;;Quilos Pescados/dia
+6;5.3.10x3;Numerica;Var0679;;;N_ Lances/dia
+6;5.3.10x4;Numerica;Var0680;;;Tempo gasto (horas/dia)
+6;5.3.10x5;Numerica;Var0681;;;Dias trabalhados/semana
+6;5.3.11x1;Categorica variada;Var0682;;;_ Redinha ou Cal‹o
+6;5.3.11x2;Textual-numerica;Var0683;;;Quilos Pescados/dia
+6;5.3.11x3;Numerica;Var0684;;;N_ Lances/dia
+6;5.3.11x4;Numerica;Var0685;;;Tempo gasto (horas/dia)
+6;5.3.11x5;Numerica;Var0686;;;Dias trabalhados/semana
+6;5.3.12x1;Categorica variada;Var0687;;;_ Muruada
+6;5.3.12x2;Textual-numerica;Var0688;;;Quilos Pescados/dia
+6;5.3.12x3;Numerica;Var0689;;;N_ Lances/dia
+6;5.3.12x4;Numerica;Var0690;;;Tempo gasto (horas/dia)
+6;5.3.12x5;Numerica;Var0691;;;Dias trabalhados/semana
+6;5.3.13x1;Categorica variada;Var0692;;;_ Calqueira
+6;5.3.13x2;Textual-numerica;Var0693;;;Quilos Pescados/dia
+6;5.3.13x3;Numerica;Var0694;;;N_ Lances/dia
+6;5.3.13x4;Numerica;Var0695;;;Tempo gasto (horas/dia)
+6;5.3.13x5;Numerica;Var0696;;;Dias trabalhados/semana
+6;5.3.14x1;Categorica variada;Var0697;;;_ Tarrafa
+6;5.3.14x2;Textual-numerica;Var0698;;;Quilos Pescados/dia
+6;5.3.14x3;Numerica;Var0699;;;N_ Lances/dia
+6;5.3.14x4;Numerica;Var0700;;;Tempo gasto (horas/dia)
+6;5.3.14x5;Numerica;Var0701;;;Dias trabalhados/semana
+6;5.3.15x1;Categorica variada;Var0702;;;_ Camaroeira/Rede de saco
+6;5.3.15x2;Textual-numerica;Var0703;;;Quilos Pescados/dia
+6;5.3.15x3;Numerica;Var0704;;;N_ Lances/dia
+6;5.3.15x4;Numerica;Var0705;;;Tempo gasto (horas/dia)
+6;5.3.15x5;Numerica;Var0706;;;Dias trabalhados/semana
+6;5.3.16x1;Categorica variada;Var0707;;;_ Outros
+6;5.3.16x2;Textual-numerica;Var0708;;;Quilos Pescados/dia
+6;5.3.16x3;Numerica;Var0709;;;N_ Lances/dia
+6;5.3.16x4;Numerica;Var0710;;;Tempo gasto (horas/dia)
+6;5.3.16x5;Numerica;Var0711;;;Dias trabalhados/semana
+6;;Descriç‹o;Descriç‹o;;;Ver‹o_Mar_ pequena/baixa/morta
+6;5.3.1x1;Categorica variada;Var0712;;;_ Puça
+6;5.3.1x2;Textual-numerica;Var0713;;;Quilos Pescados/dia
+6;5.3.1x3;Numerica;Var0714;;;N_ Lances/dia
+6;5.3.1x4;Numerica;Var0715;;;Tempo gasto (horas/dia)
+6;5.3.1x5;Numerica;Var0716;;;Dias trabalhados/semana
+6;5.3.2x1;Categorica variada;Var0717;;;_ Zangaria
+6;5.3.2x2;Textual-numerica;Var0718;;;Quilos Pescados/dia
+6;5.3.2x3;Numerica;Var0719;;;N_ Lances/dia
+6;5.3.2x4;Numerica;Var0720;;;Tempo gasto (horas/dia)
+6;5.3.2x5;Numerica;Var0721;;;Dias trabalhados/semana
+6;5.3.3x1;Categorica variada;Var0722;;;_ Redinha ou Cal‹o
+6;5.3.3x2;Textual-numerica;Var0723;;;Quilos Pescados/dia
+6;5.3.3x3;Numerica;Var0724;;;N_ Lances/dia
+6;5.3.3x4;Numerica;Var0725;;;Tempo gasto (horas/dia)
+6;5.3.3x5;Numerica;Var0726;;;Dias trabalhados/semana
+6;5.3.4x1;Categorica variada;Var0727;;;_ Muruada
+6;5.3.4x2;Textual-numerica;Var0728;;;Quilos Pescados/dia
+6;5.3.4x3;Numerica;Var0729;;;N_ Lances/dia
+6;5.3.4x4;Numerica;Var0730;;;Tempo gasto (horas/dia)
+6;5.3.4x5;Numerica;Var0731;;;Dias trabalhados/semana
+6;5.3.5x1;Categorica variada;Var0732;;;_ Calqueira
+6;5.3.5x2;Textual-numerica;Var0733;;;Quilos Pescados/dia
+6;5.3.5x3;Numerica;Var0734;;;N_ Lances/dia
+6;5.3.5x4;Numerica;Var0735;;;Tempo gasto (horas/dia)
+6;5.3.5x5;Numerica;Var0736;;;Dias trabalhados/semana
+6;5.3.6x1;Categorica variada;Var0737;;;_ Tarrafa
+6;5.3.6x2;Textual-numerica;Var0738;;;Quilos Pescados/dia
+6;5.3.6x3;Numerica;Var0739;;;N_ Lances/dia
+6;5.3.6x4;Numerica;Var0740;;;Tempo gasto (horas/dia)
+6;5.3.6x5;Numerica;Var0741;;;Dias trabalhados/semana
+6;5.3.7x1;Categorica variada;Var0742;;;_ Camaroeira/Rede de saco
+6;5.3.7x2;Textual-numerica;Var0743;;;Quilos Pescados/dia
+6;5.3.7x3;Numerica;Var0744;;;N_ Lances/dia
+6;5.3.7x4;Numerica;Var0745;;;Tempo gasto (horas/dia)
+6;5.3.7x5;Numerica;Var0746;;;Dias trabalhados/semana
+6;5.3.8x1;Categorica variada;Var0747;;;_ Outros
+6;5.3.8x2;Textual-numerica;Var0748;;;Quilos Pescados/dia
+6;5.3.8x3;Numerica;Var0749;;;N_ Lances/dia
+6;5.3.8x4;Numerica;Var0750;;;Tempo gasto (horas/dia)
+6;5.3.8x5;Numerica;Var0751;;;Dias trabalhados/semana
+6;;Descriç‹o;Descriç‹o;;;Ver‹o_Mar_ alta/grande/lançante
+6;5.3.9x1;Categorica variada;Var0752;;;_ Puça
+6;5.3.9x2;Textual-numerica;Var0753;;;Quilos Pescados/dia
+6;5.3.9x3;Numerica;Var0754;;;N_ Lances/dia
+6;5.3.9x4;Numerica;Var0755;;;Tempo gasto (horas/dia)
+6;5.3.9x5;Numerica;Var0756;;;Dias trabalhados/semana
+6;5.3.10x1;Categorica variada;Var0757;;;_ Zangaria
+6;5.3.10x2;Textual-numerica;Var0758;;;Quilos Pescados/dia
+6;5.3.10x3;Numerica;Var0759;;;N_ Lances/dia
+6;5.3.10x4;Numerica;Var0760;;;Tempo gasto (horas/dia)
+6;5.3.10x5;Numerica;Var0761;;;Dias trabalhados/semana
+6;5.3.11x1;Categorica variada;Var0762;;;_ Redinha ou Cal‹o
+6;5.3.11x2;Textual-numerica;Var0763;;;Quilos Pescados/dia
+6;5.3.11x3;Numerica;Var0764;;;N_ Lances/dia
+6;5.3.11x4;Numerica;Var0765;;;Tempo gasto (horas/dia)
+6;5.3.11x5;Numerica;Var0766;;;Dias trabalhados/semana
+6;5.3.12x1;Categorica variada;Var0767;;;_ Muruada
+6;5.3.12x2;Textual-numerica;Var0768;;;Quilos Pescados/dia
+6;5.3.12x3;Numerica;Var0769;;;N_ Lances/dia
+6;5.3.12x4;Numerica;Var0770;;;Tempo gasto (horas/dia)
+6;5.3.12x5;Numerica;Var0771;;;Dias trabalhados/semana
+6;5.3.13x1;Categorica variada;Var0772;;;_ Calqueira
+6;5.3.13x2;Textual-numerica;Var0773;;;Quilos Pescados/dia
+6;5.3.13x3;Numerica;Var0774;;;N_ Lances/dia
+6;5.3.13x4;Numerica;Var0775;;;Tempo gasto (horas/dia)
+6;5.3.13x5;Numerica;Var0776;;;Dias trabalhados/semana
+6;5.3.14x1;Categorica variada;Var0777;;;_ Tarrafa
+6;5.3.14x2;Textual-numerica;Var0778;;;Quilos Pescados/dia
+6;5.3.14x3;Numerica;Var0779;;;N_ Lances/dia
+6;5.3.14x4;Numerica;Var0780;;;Tempo gasto (horas/dia)
+6;5.3.14x5;Numerica;Var0781;;;Dias trabalhados/semana
+6;5.3.15x1;Categorica variada;Var0782;;;_ Camaroeira/Rede de saco
+6;5.3.15x2;Textual-numerica;Var0783;;;Quilos Pescados/dia
+6;5.3.15x3;Numerica;Var0784;;;N_ Lances/dia
+6;5.3.15x4;Numerica;Var0785;;;Tempo gasto (horas/dia)
+6;5.3.15x5;Numerica;Var0786;;;Dias trabalhados/semana
+6;5.3.16x1;Categorica variada;Var0787;;;_ Outros
+6;5.3.16x2;Textual-numerica;Var0788;;;Quilos Pescados/dia
+6;5.3.16x3;Numerica;Var0789;;;N_ Lances/dia
+6;5.3.16x4;Numerica;Var0790;;;Tempo gasto (horas/dia)
+6;5.3.16x5;Numerica;Var0791;;;Dias trabalhados/semana
+6;5.4;Textual-numerica;Var0792;;;Quais s‹o os pontos de pesca (pesqueiros) que o senhor mais pesca camar‹o branco?
+6;6.1;Categorica exclusiva;Var0793;;;H‡ captura de outras esp_cies junto ao camar‹o? _ N‹o _ Sim. Responda:
+6;6.2;Textual-numerica;Var0794;;;Quais s‹o as principais?
+6;6.3;Textual-numerica;Var0795;;;No geral, quanto _ capturado por dia (kg)?
+6;6.4;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;O que _ feito?
+6;6.4.1;Categorica variada;Var0796;;;_ Uso para consumo da fam’lia
+6;6.4.2;Categorica variada;Var0797;;;_ Vendido
+6;6.4.2.1;Textual-numerica;Var0798;;;Vendido: por qual preço (R$/kg)?
+6;6.4.3;Categorica variada;Var0799;;;_ Outros
+6;6.4.3.1;Textual-numerica;Var0800;;;Outros: __________
+7;1.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como _ vendido o camar‹o piticaia?
+7;1.1.1;Categorica variada;Var0801;;;_ Misturado inteiro fresco
+7;1.1.2;Categorica variada;Var0802;;;_ Misturado inteiro resfriado (no gelo)
+7;1.1.3;Categorica variada;Var0803;;;_ Misturado inteiro congelado
+7;1.1.4;Categorica variada;Var0804;;;_ Misturado descascado fresco
+7;1.1.5;Categorica variada;Var0805;;;_ Misturado torrado
+7;1.1.6;Categorica variada;Var0806;;;_ Misturado batido
+7;1.1.7;Categorica variada;Var0807;;;_ Graœdo inteiro fresco
+7;1.1.8;Categorica variada;Var0808;;;_ Graœdo inteiro resfriado (no gelo)
+7;1.1.9;Categorica variada;Var0809;;;_ Graœdo inteiro congelado
+7;1.1.10;Categorica variada;Var0810;;;_ Graœdo descascado fresco
+7;1.1.11;Categorica variada;Var0811;;;_ Graœdo torrado
+7;1.1.12;Categorica variada;Var0812;;;_ Graœdo batido
+7;1.1.13;Categorica variada;Var0813;;;_ M_dio inteiro fresco
+7;1.1.14;Categorica variada;Var0814;;;_ M_dio inteiro resfriado (no gelo)
+7;1.1.15;Categorica variada;Var0815;;;_ M_dio inteiro congelado
+7;1.1.16;Categorica variada;Var0816;;;_ M_dio descascado fresco
+7;1.1.17;Categorica variada;Var0817;;;_ M_dio torrado
+7;1.1.18;Categorica variada;Var0818;;;_ M_dio batido
+7;1.1.19;Categorica variada;Var0819;;;_ Pequeno inteiro fresco
+7;1.1.20;Categorica variada;Var0820;;;_ Pequeno inteiro resfriado (no gelo)
+7;1.1.21;Categorica variada;Var0821;;;_ Pequeno inteiro congelado
+7;1.1.22;Categorica variada;Var0822;;;_ Pequeno descascado fresco
+7;1.1.23;Categorica variada;Var0823;;;_ Pequeno torrado
+7;1.1.24;Categorica variada;Var0824;;;_ Pequeno descascado batido
+7;1.1.25;Categorica variada;Var0825;;;_ Outros
+7;1.1.25.1;Textual-numerica;Var0826;;;Outros: __________
+7;1.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?
+7;1.2.1x1;Descriç‹o;Descriç‹o;;;Misturado inteiro fresco
+7;1.2.1x2;Categorica exclusiva;Var0827;;;Per’do: _ Por dia _ Por semana
+7;1.2.1x3;Textual-numerica;Var0828;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.1x4;Textual-numerica;Var0829;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.1x5;Textual-numerica;Var0830;;;Observaç›es: __________
+7;1.2.2x1;Descriç‹o;Descriç‹o;;;Misturado inteiro resfriado (no gelo)
+7;1.2.2x2;Categorica exclusiva;Var0831;;;Per’do: _ Por dia _ Por semana
+7;1.2.2x3;Textual-numerica;Var0832;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.2x4;Textual-numerica;Var0833;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.2x5;Textual-numerica;Var0834;;;Observaç›es: __________
+7;1.2.3x1;Descriç‹o;Descriç‹o;;;Misturado inteiro congelado
+7;1.2.3x2;Categorica exclusiva;Var0835;;;Per’do: _ Por dia _ Por semana
+7;1.2.3x3;Textual-numerica;Var0836;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.3x4;Textual-numerica;Var0837;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.3x5;Textual-numerica;Var0838;;;Observaç›es: __________
+7;1.2.4x1;Descriç‹o;Descriç‹o;;;Misturado descascado fresco
+7;1.2.4x2;Categorica exclusiva;Var0839;;;Per’do: _ Por dia _ Por semana
+7;1.2.4x3;Textual-numerica;Var0840;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.4x4;Textual-numerica;Var0841;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.4x5;Textual-numerica;Var0842;;;Observaç›es: __________
+7;1.2.5x1;Descriç‹o;Descriç‹o;;;Misturado torrado
+7;1.2.5x2;Categorica exclusiva;Var0843;;;Per’do: _ Por dia _ Por semana
+7;1.2.5x3;Textual-numerica;Var0844;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.5x4;Textual-numerica;Var0845;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.5x5;Textual-numerica;Var0846;;;Observaç›es: __________
+7;1.2.6x1;Descriç‹o;Descriç‹o;;;Misturado batido
+7;1.2.6x2;Categorica exclusiva;Var0847;;;Per’do: _ Por dia _ Por semana
+7;1.2.6x3;Textual-numerica;Var0848;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.6x4;Textual-numerica;Var0849;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.6x5;Textual-numerica;Var0850;;;Observaç›es: __________
+7;1.2.7x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro fresco
+7;1.2.7x2;Categorica exclusiva;Var0851;;;Per’do: _ Por dia _ Por semana
+7;1.2.7x3;Textual-numerica;Var0852;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.7x4;Textual-numerica;Var0853;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.7x5;Textual-numerica;Var0854;;;Observaç›es: __________
+7;1.2.8x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro resfriado (no gelo)
+7;1.2.8x2;Categorica exclusiva;Var0855;;;Per’do: _ Por dia _ Por semana
+7;1.2.8x3;Textual-numerica;Var0856;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.8x4;Textual-numerica;Var0857;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.8x5;Textual-numerica;Var0858;;;Observaç›es: __________
+7;1.2.9x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro congelado
+7;1.2.9x2;Categorica exclusiva;Var0859;;;Per’do: _ Por dia _ Por semana
+7;1.2.9x3;Textual-numerica;Var0860;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.9x4;Textual-numerica;Var0861;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.9x5;Textual-numerica;Var0862;;;Observaç›es: __________
+7;1.2.10x1;Descriç‹o;Descriç‹o;;;Graœdo descascado fresco
+7;1.2.10x2;Categorica exclusiva;Var0863;;;Per’do: _ Por dia _ Por semana
+7;1.2.10x3;Textual-numerica;Var0864;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.10x4;Textual-numerica;Var0865;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.10x5;Textual-numerica;Var0866;;;Observaç›es: __________
+7;1.2.11x1;Descriç‹o;Descriç‹o;;;Graœdo torrado
+7;1.2.11x2;Categorica exclusiva;Var0867;;;Per’do: _ Por dia _ Por semana
+7;1.2.11x3;Textual-numerica;Var0868;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.11x4;Textual-numerica;Var0869;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.11x5;Textual-numerica;Var0870;;;Observaç›es: __________
+7;1.2.12x1;Descriç‹o;Descriç‹o;;;Graœdo batido
+7;1.2.12x2;Categorica exclusiva;Var0871;;;Per’do: _ Por dia _ Por semana
+7;1.2.12x3;Textual-numerica;Var0872;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.12x4;Textual-numerica;Var0873;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.12x5;Textual-numerica;Var0874;;;Observaç›es: __________
+7;1.2.13x1;Descriç‹o;Descriç‹o;;;M_dio inteiro fresco
+7;1.2.13x2;Categorica exclusiva;Var0875;;;Per’do: _ Por dia _ Por semana
+7;1.2.13x3;Textual-numerica;Var0876;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.13x4;Textual-numerica;Var0877;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.13x5;Textual-numerica;Var0878;;;Observaç›es: __________
+7;1.2.14x1;Descriç‹o;Descriç‹o;;;M_dio inteiro resfriado (no gelo)
+7;1.2.14x2;Categorica exclusiva;Var0879;;;Per’do: _ Por dia _ Por semana
+7;1.2.14x3;Textual-numerica;Var0880;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.14x4;Textual-numerica;Var0881;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.14x5;Textual-numerica;Var0882;;;Observaç›es: __________
+7;1.2.15x1;Descriç‹o;Descriç‹o;;;M_dio inteiro congelado
+7;1.2.15x2;Categorica exclusiva;Var0883;;;Per’do: _ Por dia _ Por semana
+7;1.2.15x3;Textual-numerica;Var0884;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.15x4;Textual-numerica;Var0885;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.15x5;Textual-numerica;Var0886;;;Observaç›es: __________
+7;1.2.16x1;Descriç‹o;Descriç‹o;;;M_dio descascado fresco
+7;1.2.16x2;Categorica exclusiva;Var0887;;;Per’do: _ Por dia _ Por semana
+7;1.2.16x3;Textual-numerica;Var0888;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.16x4;Textual-numerica;Var0889;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.16x5;Textual-numerica;Var0890;;;Observaç›es: __________
+7;1.2.17x1;Descriç‹o;Descriç‹o;;;M_dio torrado
+7;1.2.17x2;Categorica exclusiva;Var0891;;;Per’do: _ Por dia _ Por semana
+7;1.2.17x3;Textual-numerica;Var0892;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.17x4;Textual-numerica;Var0893;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.17x5;Textual-numerica;Var0894;;;Observaç›es: __________
+7;1.2.18x1;Descriç‹o;Descriç‹o;;;M_dio batido
+7;1.2.18x2;Categorica exclusiva;Var0895;;;Per’do: _ Por dia _ Por semana
+7;1.2.18x3;Textual-numerica;Var0896;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.18x4;Textual-numerica;Var0897;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.18x5;Textual-numerica;Var0898;;;Observaç›es: __________
+7;1.2.19x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro fresco
+7;1.2.19x2;Categorica exclusiva;Var0899;;;Per’do: _ Por dia _ Por semana
+7;1.2.19x3;Textual-numerica;Var0900;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.19x4;Textual-numerica;Var0901;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.19x5;Textual-numerica;Var0902;;;Observaç›es: __________
+7;1.2.20x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro resfriado (no gelo)
+7;1.2.20x2;Categorica exclusiva;Var0903;;;Per’do: _ Por dia _ Por semana
+7;1.2.20x3;Textual-numerica;Var0904;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.20x4;Textual-numerica;Var0905;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.20x5;Textual-numerica;Var0906;;;Observaç›es: __________
+7;1.2.21x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro congelado
+7;1.2.21x2;Categorica exclusiva;Var0907;;;Per’do: _ Por dia _ Por semana
+7;1.2.21x3;Textual-numerica;Var0908;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.21x4;Textual-numerica;Var0909;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.21x5;Textual-numerica;Var0910;;;Observaç›es: __________
+7;1.2.22x1;Descriç‹o;Descriç‹o;;;Pequeno descascado fresco
+7;1.2.22x2;Categorica exclusiva;Var0911;;;Per’do: _ Por dia _ Por semana
+7;1.2.22x3;Textual-numerica;Var0912;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.22x4;Textual-numerica;Var0913;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.22x5;Textual-numerica;Var0914;;;Observaç›es: __________
+7;1.2.23x1;Descriç‹o;Descriç‹o;;;Pequeno torrado
+7;1.2.23x2;Categorica exclusiva;Var0915;;;Per’do: _ Por dia _ Por semana
+7;1.2.23x3;Textual-numerica;Var0916;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.23x4;Textual-numerica;Var0917;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.23x5;Textual-numerica;Var0918;;;Observaç›es: __________
+7;1.2.24x1;Descriç‹o;Descriç‹o;;;Pequeno descascado batido
+7;1.2.24x2;Categorica exclusiva;Var0919;;;Per’do: _ Por dia _ Por semana
+7;1.2.24x3;Textual-numerica;Var0920;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.24x4;Textual-numerica;Var0921;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.24x5;Textual-numerica;Var0922;;;Observaç›es: __________
+7;1.2.25x1;Descriç‹o;Descriç‹o;;;Outros: __________
+7;1.2.25x2;Categorica exclusiva;Var0923;;;Per’do: _ Por dia _ Por semana
+7;1.2.25x3;Textual-numerica;Var0924;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;1.2.25x4;Textual-numerica;Var0925;;;Quantidade m_dia (kg/dia): Inverno __________
+7;1.2.25x5;Textual-numerica;Var0926;;;Observaç›es: __________
+7;1.3;Numerica;Var0927;;;"Qual _ a proporç‹o de ""quebra"" (beneficiamento): Quantos quilos de camar‹o piticaia fresco _ preciso para produzir 1 kg de camar‹o torrado?"
+7;1.3;Numerica;Var0928;;;"Qual _ a proporç‹o de ""quebra"" (beneficiamento): Quantos quilos de camar‹o piticaia torrado _ preciso para produzir 1 kg de camar‹o batido?"
+7;1.4;Categorica exclusiva;Var0929;;;O senhor armazena o camar‹o piticaia? _ N‹o (pule para 1.6) _ Sim
+7;1.5;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como o senhor armazena o camarao piticaia?
+7;1.5.1;Categorica variada;Var0930;;;_ Geladeira
+7;1.5.2;Categorica variada;Var0931;;;_ Freezer
+7;1.5.3;Categorica variada;Var0932;;;_ C‰mara fria
+7;1.5.4;Categorica variada;Var0933;;;_ Sacos
+7;1.5.5;Categorica variada;Var0934;;;_ Caixas
+7;1.5.6;Categorica variada;Var0935;;;_ Outros
+7;1.5.6.1;Textual-numerica;Var0936;;;Outros: __________
+7;1.6;Textual-numerica;Var0937;;;Por quanto tempo, em m_dia o camar‹o piticaia fica armazenado? __________ dias
+7;1.6;Textual-numerica;Var0938;;;Por quanto tempo, em m_dia o camar‹o piticaia fica armazenado? __________ semanas
+7;1.6;Textual-numerica;Var0939;;;Por quanto tempo, em m_dia o camar‹o piticaia fica armazenado? __________ meses
+7;1.7;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como ocorre a venda? 
+7;1.7.1;Categorica variada;Var0940;;;_ Vendido sob encomenda
+7;1.7.2;Categorica variada;Var0941;;;_ Em ponto de venda pr—prio
+7;1.7.3;Categorica variada;Var0942;;;_ Oferece antes da pesca a compradores/vendedores
+7;1.7.4;Categorica variada;Var0943;;;_ Oferece ap—s a pesca a compradores/vendedores
+7;1.8;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Para quem se vende o camar‹o piticaia? Na comunidade:
+7;1.8.1;Categorica variada;Var0944;;;_ Outro pescador
+7;1.8.2;Categorica variada;Var0945;;;_ Catadeira
+7;1.8.3;Categorica variada;Var0946;;;_ Fam’lias
+7;1.8.4;Categorica variada;Var0947;;;_ Restaurantes
+7;1.8.5;Categorica variada;Var0948;;;_ Pousadas
+7;1.8.6;Categorica variada;Var0949;;;_ Peixarias
+7;1.8.7;Categorica variada;Var0950;;;_ Feirantes
+7;1.8.8;Categorica variada;Var0951;;;_ Pequenos com_rcios
+7;1.8.9;Categorica variada;Var0952;;;_ Compradores locais/beneficiadores
+7;1.8.10;Categorica variada;Var0953;;;_ Cooperativa
+7;1.8.11;Categorica variada;Var0954;;;_ F‡brica de beneficiamento
+7;1.8.12;Categorica variada;Var0955;;;_ CONAB
+7;1.8.13;Categorica variada;Var0956;;;_ Outros
+7;1.8.13.1;Textual-numerica;Var0957;;;Outros: __________
+7;1.8;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Para quem se vende o camar‹o piticaia? Fora da comunidade:
+7;1.8.1;Categora-variada;Var0958;;;_ Fam’lias
+7;1.8.2;Categora-variada;Var0959;;;_ Restaurantes
+7;1.8.3;Categora-variada;Var0960;;;_ Pousadas
+7;1.8.4;Categora-variada;Var0961;;;_ Peixarias
+7;1.8.5;Categora-variada;Var0962;;;_ Feirantes
+7;1.8.6;Categora-variada;Var0963;;;_ Pequenos com_rcios
+7;1.8.7;Categora-variada;Var0964;;;_ Compradores externos
+7;1.8.8;Categora-variada;Var0965;;;_ Cooperativa
+7;1.8.9;Categora-variada;Var0966;;;_ Frigor’fico (empresa)
+7;1.8.10;Categora-variada;Var0967;;;_ CONAB
+7;1.8.11;Categora-variada;Var0968;;;_ Outros
+7;1.8.11.1;Textual-numerica;Var0969;;;Outros: __________
+7;1.9;Categorica exclusiva;Var0970;;;Desses compradores/consumidores quais sao os trêês principais? 1_
+7;1.9;Categorica exclusiva;Var0971;;;Desses compradores/consumidores quais sao os trêês principais? 2_
+7;1.9;Categorica exclusiva;Var0972;;;Desses compradores/consumidores quais sao os trêês principais? 3_
+7;1.10;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Qual _ o preço de venda do camar‹o piticaia pelos principais compradores ao longo do ano (R$/kg - inverno e ver‹o)?
+7;1.10.1x1;Descriç‹o;Descriç‹o;;;Misturado inteiro fresco
+7;1.10.1x2;Numerico;Var0973;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.1x3;Numerico;Var0974;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.1x4;Numerico;Var0975;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.1x5;Numerico;Var0976;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.1x6;Numerico;Var0977;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.1x7;Numerico;Var0978;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.2x1;Descriç‹o;Descriç‹o;;;Misturado inteiro resfriado (no gelo)
+7;1.10.2x2;Numerico;Var0979;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.2x3;Numerico;Var0980;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.2x4;Numerico;Var0981;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.2x5;Numerico;Var0982;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.2x6;Numerico;Var0983;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.2x7;Numerico;Var0984;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.3x1;Descriç‹o;Descriç‹o;;;Misturado inteiro congelado
+7;1.10.3x2;Numerico;Var0985;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.3x3;Numerico;Var0986;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.3x4;Numerico;Var0987;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.3x5;Numerico;Var0988;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.3x6;Numerico;Var0989;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.3x7;Numerico;Var0990;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.4x1;Descriç‹o;Descriç‹o;;;Misturado descascado fresco
+7;1.10.4x2;Numerico;Var0991;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.4x3;Numerico;Var0992;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.4x4;Numerico;Var0993;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.4x5;Numerico;Var0994;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.4x6;Numerico;Var0995;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.4x7;Numerico;Var0996;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.5x1;Descriç‹o;Descriç‹o;;;Misturado torrado
+7;1.10.5x2;Numerico;Var0997;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.5x3;Numerico;Var0998;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.5x4;Numerico;Var0999;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.5x5;Numerico;Var1000;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.5x6;Numerico;Var1001;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.5x7;Numerico;Var1002;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.6x1;Descriç‹o;Descriç‹o;;;Misturado batido
+7;1.10.6x2;Numerico;Var1003;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.6x3;Numerico;Var1004;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.6x4;Numerico;Var1005;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.6x5;Numerico;Var1006;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.6x6;Numerico;Var1007;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.6x7;Numerico;Var1008;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.7x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro fresco
+7;1.10.7x2;Numerico;Var1009;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.7x3;Numerico;Var1010;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.7x4;Numerico;Var1011;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.7x5;Numerico;Var1012;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.7x6;Numerico;Var1013;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.7x7;Numerico;Var1014;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.8x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro resfriado (no gelo)
+7;1.10.8x2;Numerico;Var1015;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.8x3;Numerico;Var1016;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.8x4;Numerico;Var1017;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.8x5;Numerico;Var1018;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.8x6;Numerico;Var1019;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.8x7;Numerico;Var1020;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.9x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro congelado
+7;1.10.9x2;Numerico;Var1021;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.9x3;Numerico;Var1022;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.9x4;Numerico;Var1023;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.9x5;Numerico;Var1024;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.9x6;Numerico;Var1025;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.9x7;Numerico;Var1026;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.10x1;Descriç‹o;Descriç‹o;;;Graœdo descascado fresco
+7;1.10.10x2;Numerico;Var1027;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.10x3;Numerico;Var1028;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.10x4;Numerico;Var1029;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.10x5;Numerico;Var1030;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.10x6;Numerico;Var1031;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.10x7;Numerico;Var1032;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.11x1;Descriç‹o;Descriç‹o;;;Graœdo torrado
+7;1.10.11x2;Numerico;Var1033;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.11x3;Numerico;Var1034;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.11x4;Numerico;Var1035;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.11x5;Numerico;Var1036;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.11x6;Numerico;Var1037;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.11x7;Numerico;Var1038;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.12x1;Descriç‹o;Descriç‹o;;;Graœdo batido
+7;1.10.12x2;Numerico;Var1039;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.12x3;Numerico;Var1040;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.12x4;Numerico;Var1041;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.12x5;Numerico;Var1042;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.12x6;Numerico;Var1043;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.12x7;Numerico;Var1044;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.13x1;Descriç‹o;Descriç‹o;;;M_dio inteiro fresco
+7;1.10.13x2;Numerico;Var1045;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.13x3;Numerico;Var1046;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.13x4;Numerico;Var1047;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.13x5;Numerico;Var1048;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.13x6;Numerico;Var1049;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.13x7;Numerico;Var1050;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.14x1;Descriç‹o;Descriç‹o;;;M_dio inteiro resfriado (no gelo)
+7;1.10.14x2;Numerico;Var1051;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.14x3;Numerico;Var1052;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.14x4;Numerico;Var1053;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.14x5;Numerico;Var1054;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.14x6;Numerico;Var1055;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.14x7;Numerico;Var1056;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.15x1;Descriç‹o;Descriç‹o;;;M_dio inteiro congelado
+7;1.10.15x2;Numerico;Var1057;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.15x3;Numerico;Var1058;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.15x4;Numerico;Var1059;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.15x5;Numerico;Var1060;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.15x6;Numerico;Var1061;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.15x7;Numerico;Var1062;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.16x1;Descriç‹o;Descriç‹o;;;M_dio descascado fresco
+7;1.10.16x2;Numerico;Var1063;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.16x3;Numerico;Var1064;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.16x4;Numerico;Var1065;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.16x5;Numerico;Var1066;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.16x6;Numerico;Var1067;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.16x7;Numerico;Var1068;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.17x1;Descriç‹o;Descriç‹o;;;M_dio torrado
+7;1.10.17x2;Numerico;Var1069;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.17x3;Numerico;Var1070;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.17x4;Numerico;Var1071;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.17x5;Numerico;Var1072;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.17x6;Numerico;Var1073;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.17x7;Numerico;Var1074;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.18x1;Descriç‹o;Descriç‹o;;;M_dio batido
+7;1.10.18x2;Numerico;Var1075;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.18x3;Numerico;Var1076;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.18x4;Numerico;Var1077;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.18x5;Numerico;Var1078;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.18x6;Numerico;Var1079;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.18x7;Numerico;Var1080;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.19x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro fresco
+7;1.10.19x2;Numerico;Var1081;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.19x3;Numerico;Var1082;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.19x4;Numerico;Var1083;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.19x5;Numerico;Var1084;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.19x6;Numerico;Var1085;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.19x7;Numerico;Var1086;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.20x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro resfriado (no gelo)
+7;1.10.20x2;Numerico;Var1087;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.20x3;Numerico;Var1088;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.20x4;Numerico;Var1089;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.20x5;Numerico;Var1090;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.20x6;Numerico;Var1091;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.20x7;Numerico;Var1092;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.21x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro congelado
+7;1.10.21x2;Numerico;Var1093;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.21x3;Numerico;Var1094;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.21x4;Numerico;Var1095;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.21x5;Numerico;Var1096;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.21x6;Numerico;Var1097;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.21x7;Numerico;Var1098;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.22x1;Descriç‹o;Descriç‹o;;;Pequeno descascado fresco
+7;1.10.22x2;Numerico;Var1099;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.22x3;Numerico;Var1100;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.22x4;Numerico;Var1101;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.22x5;Numerico;Var1102;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.22x6;Numerico;Var1103;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.22x7;Numerico;Var1104;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.23x1;Descriç‹o;Descriç‹o;;;Pequeno torrado
+7;1.10.23x2;Numerico;Var1105;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.23x3;Numerico;Var1106;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.23x4;Numerico;Var1107;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.23x5;Numerico;Var1108;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.23x6;Numerico;Var1109;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.23x7;Numerico;Var1110;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.24x1;Descriç‹o;Descriç‹o;;;Pequeno descascado batido
+7;1.10.24x2;Numerico;Var1111;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.24x3;Numerico;Var1112;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.24x4;Numerico;Var1113;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.24x5;Numerico;Var1114;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.24x6;Numerico;Var1115;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.24x7;Numerico;Var1116;;;Preço (R$/kg) do 3_ - ver‹o
+7;1.10.25x1;Descriç‹o;Descriç‹o;;;Outros: __________
+7;1.10.25x2;Numerico;Var1117;;;Preço (R$/kg) do 1_ - inverno
+7;1.10.25x3;Numerico;Var1118;;;Preço (R$/kg) do 1_ - ver‹o
+7;1.10.25x4;Numerico;Var1119;;;Preço (R$/kg) do 2_ - inverno
+7;1.10.25x5;Numerico;Var1120;;;Preço (R$/kg) do 2_ - ver‹o
+7;1.10.25x6;Numerico;Var1121;;;Preço (R$/kg) do 3_ - inverno
+7;1.10.25x7;Numerico;Var1122;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como _ vendido o camar‹o branco?
+7;2.1.1;Categorica variada;Var1123;;;_ Misturado inteiro fresco
+7;2.1.2;Categorica variada;Var1124;;;_ Misturado inteiro resfriado (no gelo)
+7;2.1.3;Categorica variada;Var1125;;;_ Misturado inteiro congelado
+7;2.1.4;Categorica variada;Var1126;;;_ Misturado descascado fresco
+7;2.1.5;Categorica variada;Var1127;;;_ Misturado torrado
+7;2.1.6;Categorica variada;Var1128;;;_ Misturado batido
+7;2.1.7;Categorica variada;Var1129;;;_ Graœdo inteiro fresco
+7;2.1.8;Categorica variada;Var1130;;;_ Graœdo inteiro resfriado (no gelo)
+7;2.1.9;Categorica variada;Var1131;;;_ Graœdo inteiro congelado
+7;2.1.10;Categorica variada;Var1132;;;_ Graœdo descascado fresco
+7;2.1.11;Categorica variada;Var1133;;;_ Graœdo torrado
+7;2.1.12;Categorica variada;Var1134;;;_ Graœdo batido
+7;2.1.13;Categorica variada;Var1135;;;_ M_dio inteiro fresco
+7;2.1.14;Categorica variada;Var1136;;;_ M_dio inteiro resfriado (no gelo)
+7;2.1.15;Categorica variada;Var1137;;;_ M_dio inteiro congelado
+7;2.1.16;Categorica variada;Var1138;;;_ M_dio descascado fresco
+7;2.1.17;Categorica variada;Var1139;;;_ M_dio torrado
+7;2.1.18;Categorica variada;Var1140;;;_ M_dio batido
+7;2.1.19;Categorica variada;Var1141;;;_ Pequeno inteiro fresco
+7;2.1.20;Categorica variada;Var1142;;;_ Pequeno inteiro resfriado (no gelo)
+7;2.1.21;Categorica variada;Var1143;;;_ Pequeno inteiro congelado
+7;2.1.22;Categorica variada;Var1144;;;_ Pequeno descascado fresco
+7;2.1.23;Categorica variada;Var1145;;;_ Pequeno torrado
+7;2.1.24;Categorica variada;Var1146;;;_ Pequeno descascado batido
+7;2.1.25;Categorica variada;Var1147;;;_ Outros
+7;2.1.25.1;Textual-numerica;Var1148;;;Outros: __________
+7;2.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Dos produtos selecionados e/ou processados, qual _ quantidade vendida?
+7;2.2.1x1;Descriç‹o;Descriç‹o;;;Misturado inteiro fresco
+7;2.2.1x2;Categorica exclusiva;Var1149;;;Per’do: _ Por dia _ Por semana
+7;2.2.1x3;Textual-numerica;Var1150;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.1x4;Textual-numerica;Var1151;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.1x5;Textual-numerica;Var1152;;;Observaç›es: __________
+7;2.2.2x1;Descriç‹o;Descriç‹o;;;Misturado inteiro resfriado (no gelo)
+7;2.2.2x2;Categorica exclusiva;Var1153;;;Per’do: _ Por dia _ Por semana
+7;2.2.2x3;Textual-numerica;Var1154;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.2x4;Textual-numerica;Var1155;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.2x5;Textual-numerica;Var1156;;;Observaç›es: __________
+7;2.2.3x1;Descriç‹o;Descriç‹o;;;Misturado inteiro congelado
+7;2.2.3x2;Categorica exclusiva;Var1157;;;Per’do: _ Por dia _ Por semana
+7;2.2.3x3;Textual-numerica;Var1158;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.3x4;Textual-numerica;Var1159;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.3x5;Textual-numerica;Var1160;;;Observaç›es: __________
+7;2.2.4x1;Descriç‹o;Descriç‹o;;;Misturado descascado fresco
+7;2.2.4x2;Categorica exclusiva;Var1161;;;Per’do: _ Por dia _ Por semana
+7;2.2.4x3;Textual-numerica;Var1162;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.4x4;Textual-numerica;Var1163;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.4x5;Textual-numerica;Var1164;;;Observaç›es: __________
+7;2.2.5x1;Descriç‹o;Descriç‹o;;;Misturado torrado
+7;2.2.5x2;Categorica exclusiva;Var1165;;;Per’do: _ Por dia _ Por semana
+7;2.2.5x3;Textual-numerica;Var1166;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.5x4;Textual-numerica;Var1167;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.5x5;Textual-numerica;Var1168;;;Observaç›es: __________
+7;2.2.6x1;Descriç‹o;Descriç‹o;;;Misturado batido
+7;2.2.6x2;Categorica exclusiva;Var1169;;;Per’do: _ Por dia _ Por semana
+7;2.2.6x3;Textual-numerica;Var1170;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.6x4;Textual-numerica;Var1171;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.6x5;Textual-numerica;Var1172;;;Observaç›es: __________
+7;2.2.7x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro fresco
+7;2.2.7x2;Categorica exclusiva;Var1173;;;Per’do: _ Por dia _ Por semana
+7;2.2.7x3;Textual-numerica;Var1174;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.7x4;Textual-numerica;Var1175;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.7x5;Textual-numerica;Var1176;;;Observaç›es: __________
+7;2.2.8x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro resfriado (no gelo)
+7;2.2.8x2;Categorica exclusiva;Var1177;;;Per’do: _ Por dia _ Por semana
+7;2.2.8x3;Textual-numerica;Var1178;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.8x4;Textual-numerica;Var1179;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.8x5;Textual-numerica;Var1180;;;Observaç›es: __________
+7;2.2.9x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro congelado
+7;2.2.9x2;Categorica exclusiva;Var1181;;;Per’do: _ Por dia _ Por semana
+7;2.2.9x3;Textual-numerica;Var1182;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.9x4;Textual-numerica;Var1183;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.9x5;Textual-numerica;Var1184;;;Observaç›es: __________
+7;2.2.10x1;Descriç‹o;Descriç‹o;;;Graœdo descascado fresco
+7;2.2.10x2;Categorica exclusiva;Var1185;;;Per’do: _ Por dia _ Por semana
+7;2.2.10x3;Textual-numerica;Var1186;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.10x4;Textual-numerica;Var1187;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.10x5;Textual-numerica;Var1188;;;Observaç›es: __________
+7;2.2.11x1;Descriç‹o;Descriç‹o;;;Graœdo torrado
+7;2.2.11x2;Categorica exclusiva;Var1189;;;Per’do: _ Por dia _ Por semana
+7;2.2.11x3;Textual-numerica;Var1190;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.11x4;Textual-numerica;Var1191;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.11x5;Textual-numerica;Var1192;;;Observaç›es: __________
+7;2.2.12x1;Descriç‹o;Descriç‹o;;;Graœdo batido
+7;2.2.12x2;Categorica exclusiva;Var1193;;;Per’do: _ Por dia _ Por semana
+7;2.2.12x3;Textual-numerica;Var1194;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.12x4;Textual-numerica;Var1195;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.12x5;Textual-numerica;Var1196;;;Observaç›es: __________
+7;2.2.13x1;Descriç‹o;Descriç‹o;;;M_dio inteiro fresco
+7;2.2.13x2;Categorica exclusiva;Var1197;;;Per’do: _ Por dia _ Por semana
+7;2.2.13x3;Textual-numerica;Var1198;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.13x4;Textual-numerica;Var1199;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.13x5;Textual-numerica;Var1200;;;Observaç›es: __________
+7;2.2.14x1;Descriç‹o;Descriç‹o;;;M_dio inteiro resfriado (no gelo)
+7;2.2.14x2;Categorica exclusiva;Var1201;;;Per’do: _ Por dia _ Por semana
+7;2.2.14x3;Textual-numerica;Var1202;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.14x4;Textual-numerica;Var1203;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.14x5;Textual-numerica;Var1204;;;Observaç›es: __________
+7;2.2.15x1;Descriç‹o;Descriç‹o;;;M_dio inteiro congelado
+7;2.2.15x2;Categorica exclusiva;Var1205;;;Per’do: _ Por dia _ Por semana
+7;2.2.15x3;Textual-numerica;Var1206;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.15x4;Textual-numerica;Var1207;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.15x5;Textual-numerica;Var1208;;;Observaç›es: __________
+7;2.2.16x1;Descriç‹o;Descriç‹o;;;M_dio descascado fresco
+7;2.2.16x2;Categorica exclusiva;Var1209;;;Per’do: _ Por dia _ Por semana
+7;2.2.16x3;Textual-numerica;Var1210;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.16x4;Textual-numerica;Var1211;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.16x5;Textual-numerica;Var1212;;;Observaç›es: __________
+7;2.2.17x1;Descriç‹o;Descriç‹o;;;M_dio torrado
+7;2.2.17x2;Categorica exclusiva;Var1213;;;Per’do: _ Por dia _ Por semana
+7;2.2.17x3;Textual-numerica;Var1214;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.17x4;Textual-numerica;Var1215;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.17x5;Textual-numerica;Var1216;;;Observaç›es: __________
+7;2.2.18x1;Descriç‹o;Descriç‹o;;;M_dio batido
+7;2.2.18x2;Categorica exclusiva;Var1217;;;Per’do: _ Por dia _ Por semana
+7;2.2.18x3;Textual-numerica;Var1218;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.18x4;Textual-numerica;Var1219;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.18x5;Textual-numerica;Var1220;;;Observaç›es: __________
+7;2.2.19x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro fresco
+7;2.2.19x2;Categorica exclusiva;Var1221;;;Per’do: _ Por dia _ Por semana
+7;2.2.19x3;Textual-numerica;Var1222;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.19x4;Textual-numerica;Var1223;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.19x5;Textual-numerica;Var1224;;;Observaç›es: __________
+7;2.2.20x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro resfriado (no gelo)
+7;2.2.20x2;Categorica exclusiva;Var1225;;;Per’do: _ Por dia _ Por semana
+7;2.2.20x3;Textual-numerica;Var1226;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.20x4;Textual-numerica;Var1227;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.20x5;Textual-numerica;Var1228;;;Observaç›es: __________
+7;2.2.21x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro congelado
+7;2.2.21x2;Categorica exclusiva;Var1229;;;Per’do: _ Por dia _ Por semana
+7;2.2.21x3;Textual-numerica;Var1230;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.21x4;Textual-numerica;Var1231;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.21x5;Textual-numerica;Var1232;;;Observaç›es: __________
+7;2.2.22x1;Descriç‹o;Descriç‹o;;;Pequeno descascado fresco
+7;2.2.22x2;Categorica exclusiva;Var1233;;;Per’do: _ Por dia _ Por semana
+7;2.2.22x3;Textual-numerica;Var1234;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.22x4;Textual-numerica;Var1235;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.22x5;Textual-numerica;Var1236;;;Observaç›es: __________
+7;2.2.23x1;Descriç‹o;Descriç‹o;;;Pequeno torrado
+7;2.2.23x2;Categorica exclusiva;Var1237;;;Per’do: _ Por dia _ Por semana
+7;2.2.23x3;Textual-numerica;Var1238;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.23x4;Textual-numerica;Var1239;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.23x5;Textual-numerica;Var1240;;;Observaç›es: __________
+7;2.2.24x1;Descriç‹o;Descriç‹o;;;Pequeno descascado batido
+7;2.2.24x2;Categorica exclusiva;Var1241;;;Per’do: _ Por dia _ Por semana
+7;2.2.24x3;Textual-numerica;Var1242;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.24x4;Textual-numerica;Var1243;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.24x5;Textual-numerica;Var1244;;;Observaç›es: __________
+7;2.2.25x1;Descriç‹o;Descriç‹o;;;Outros: __________
+7;2.2.25x2;Categorica exclusiva;Var1245;;;Per’do: _ Por dia _ Por semana
+7;2.2.25x3;Textual-numerica;Var1246;;;Quantidade m_dia (kg/dia): Ver‹o __________
+7;2.2.25x4;Textual-numerica;Var1247;;;Quantidade m_dia (kg/dia): Inverno __________
+7;2.2.25x5;Textual-numerica;Var1248;;;Observaç›es: __________
+7;2.3;Numerica;Var1249;;;"Qual _ a proporç‹o de ""quebra"" (beneficiamento): Quantos quilos de camar‹o branco fresco _ preciso para produzir 1 kg de camar‹o torrado?"
+7;2.3;Numerica;Var1250;;;"Qual _ a proporç‹o de ""quebra"" (beneficiamento): Quantos quilos de camar‹o branco torrado _ preciso para produzir 1 kg de camar‹o batido?"
+7;2.4;Categorica exclusiva;Var1251;;;O senhor armazena o camar‹o branco? _ N‹o _ Sim
+7;2.5;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como o senhor armazena o camarao branco?
+7;2.5.1;Categorica variada;Var1252;;;_ Geladeira
+7;2.5.2;Categorica variada;Var1253;;;_ Freezer
+7;2.5.3;Categorica variada;Var1254;;;_ C‰mara fria
+7;2.5.4;Categorica variada;Var1255;;;_ Sacos
+7;2.5.5;Categorica variada;Var1256;;;_ Caixas
+7;2.5.6;Categorica variada;Var1257;;;_ Outros
+7;2.5.6.1;Textual-numerica;Var1258;;;Outros: __________
+7;2.6;Textual-numerica;Var1259;;;Por quanto tempo, em m_dia o camar‹o branco fica armazenado? __________ dias
+7;2.6;Textual-numerica;Var1260;;;Por quanto tempo, em m_dia o camar‹o branco fica armazenado? __________ semanas
+7;2.6;Textual-numerica;Var1261;;;Por quanto tempo, em m_dia o camar‹o branco fica armazenado? __________ meses
+7;2.7;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como ocorre a venda? 
+7;2.7.1;Categorica variada;Var1262;;;_ Vendido sob encomenda
+7;2.7.2;Categorica variada;Var1263;;;_ Em ponto de venda pr—prio
+7;2.7.3;Categorica variada;Var1264;;;_ Oferece antes da pesca a compradores/vendedores
+7;2.7.4;Categorica variada;Var1265;;;_ Oferece ap—s a pesca a compradores/vendedores
+7;2.8;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Para quem se vende o camar‹o branco?
+;;Descriç‹o;Descriç‹o;;;Na comunidade:
+7;2.8.1;Categorica variada;Var1266;;;_ Outro pescador
+7;2.8.2;Categorica variada;Var1267;;;_ Catadeira
+7;2.8.3;Categorica variada;Var1268;;;_ Fam’lias
+7;2.8.4;Categorica variada;Var1269;;;_ Restaurantes
+7;2.8.5;Categorica variada;Var1270;;;_ Pousadas
+7;2.8.6;Categorica variada;Var1271;;;_ Peixarias
+7;2.8.7;Categorica variada;Var1272;;;_ Feirantes
+7;2.8.8;Categorica variada;Var1273;;;_ Pequenos com_rcios
+7;2.8.9;Categorica variada;Var1274;;;_ Compradores locais/beneficiadores
+7;2.8.10;Categorica variada;Var1275;;;_ Cooperativa
+7;2.8.11;Categorica variada;Var1276;;;_ F‡brica de beneficiamento
+7;2.8.12;Categorica variada;Var1277;;;_ CONAB
+7;2.8.13;Categorica variada;Var1278;;;_ Outros
+7;2.8.13.1;Textual-numerica;Var1279;;;Outros: __________
+;;Descriç‹o;Descriç‹o;;;Fora:
+7;1.8.1;Categorica variada;Var1280;;;_ Fam’lias
+7;1.8.2;Categorica variada;Var1281;;;_ Restaurantes
+7;1.8.3;Categorica variada;Var1282;;;_ Pousadas
+7;1.8.4;Categorica variada;Var1283;;;_ Peixarias
+7;1.8.5;Categorica variada;Var1284;;;_ Feirantes
+7;1.8.6;Categorica variada;Var1285;;;_ Pequenos com_rcios
+7;1.8.7;Categorica variada;Var1286;;;_ Compradores externos
+7;1.8.8;Categorica variada;Var1287;;;_ Cooperativa
+7;1.8.9;Categorica variada;Var1288;;;_ Frigor’fico (empresa)
+7;1.8.10;Categorica variada;Var1289;;;_ CONAB
+7;1.8.11;Categorica variada;Var1290;;;_ Outros
+7;1.8.11.1;Textual-numerica;Var1291;;;Outros: __________
+7;2.9;Categorica exclusiva;Var1292;;;Desses compradores/consumidores quais sao os trêês principais? 1_
+7;2.9;Categorica exclusiva;Var1293;;;Desses compradores/consumidores quais sao os trêês principais? 2_
+7;2.9;Categorica exclusiva;Var1294;;;Desses compradores/consumidores quais sao os trêês principais? 3_
+7;2.10;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Qual _ o preço de venda do camar‹o branco pelos principais compradores ao longo do ano (R$/kg - inverno e ver‹o)?
+7;2.10.1x1;Descriç‹o;Descriç‹o;;;Misturado inteiro fresco
+7;2.10.1x2;Numerico;Var1295;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.1x3;Numerico;Var1296;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.1x4;Numerico;Var1297;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.1x5;Numerico;Var1298;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.1x6;Numerico;Var1299;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.1x7;Numerico;Var1300;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.2x1;Descriç‹o;Descriç‹o;;;Misturado inteiro resfriado (no gelo)
+7;2.10.2x2;Numerico;Var1301;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.2x3;Numerico;Var1302;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.2x4;Numerico;Var1303;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.2x5;Numerico;Var1304;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.2x6;Numerico;Var1305;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.2x7;Numerico;Var1306;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.3x1;Descriç‹o;Descriç‹o;;;Misturado inteiro congelado
+7;2.10.3x2;Numerico;Var1307;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.3x3;Numerico;Var1308;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.3x4;Numerico;Var1309;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.3x5;Numerico;Var1310;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.3x6;Numerico;Var1311;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.3x7;Numerico;Var1312;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.4x1;Descriç‹o;Descriç‹o;;;Misturado descascado fresco
+7;2.10.4x2;Numerico;Var1313;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.4x3;Numerico;Var1314;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.4x4;Numerico;Var1315;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.4x5;Numerico;Var1316;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.4x6;Numerico;Var1317;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.4x7;Numerico;Var1318;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.5x1;Descriç‹o;Descriç‹o;;;Misturado torrado
+7;2.10.5x2;Numerico;Var1319;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.5x3;Numerico;Var1320;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.5x4;Numerico;Var1321;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.5x5;Numerico;Var1322;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.5x6;Numerico;Var1323;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.5x7;Numerico;Var1324;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.6x1;Descriç‹o;Descriç‹o;;;Misturado batido
+7;2.10.6x2;Numerico;Var1325;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.6x3;Numerico;Var1326;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.6x4;Numerico;Var1327;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.6x5;Numerico;Var1328;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.6x6;Numerico;Var1329;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.6x7;Numerico;Var1330;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.7x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro fresco
+7;2.10.7x2;Numerico;Var1331;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.7x3;Numerico;Var1332;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.7x4;Numerico;Var1333;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.7x5;Numerico;Var1334;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.7x6;Numerico;Var1335;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.7x7;Numerico;Var1336;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.8x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro resfriado (no gelo)
+7;2.10.8x2;Numerico;Var1337;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.8x3;Numerico;Var1338;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.8x4;Numerico;Var1339;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.8x5;Numerico;Var1340;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.8x6;Numerico;Var1341;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.8x7;Numerico;Var1342;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.9x1;Descriç‹o;Descriç‹o;;;Graœdo inteiro congelado
+7;2.10.9x2;Numerico;Var1343;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.9x3;Numerico;Var1344;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.9x4;Numerico;Var1345;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.9x5;Numerico;Var1346;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.9x6;Numerico;Var1347;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.9x7;Numerico;Var1348;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.10x1;Descriç‹o;Descriç‹o;;;Graœdo descascado fresco
+7;2.10.10x2;Numerico;Var1349;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.10x3;Numerico;Var1350;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.10x4;Numerico;Var1351;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.10x5;Numerico;Var1352;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.10x6;Numerico;Var1353;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.10x7;Numerico;Var1354;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.11x1;Descriç‹o;Descriç‹o;;;Graœdo torrado
+7;2.10.11x2;Numerico;Var1355;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.11x3;Numerico;Var1356;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.11x4;Numerico;Var1357;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.11x5;Numerico;Var1358;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.11x6;Numerico;Var1359;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.11x7;Numerico;Var1360;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.12x1;Descriç‹o;Descriç‹o;;;Graœdo batido
+7;2.10.12x2;Numerico;Var1361;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.12x3;Numerico;Var1362;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.12x4;Numerico;Var1363;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.12x5;Numerico;Var1364;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.12x6;Numerico;Var1365;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.12x7;Numerico;Var1366;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.13x1;Descriç‹o;Descriç‹o;;;M_dio inteiro fresco
+7;2.10.13x2;Numerico;Var1367;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.13x3;Numerico;Var1368;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.13x4;Numerico;Var1369;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.13x5;Numerico;Var1370;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.13x6;Numerico;Var1371;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.13x7;Numerico;Var1372;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.14x1;Descriç‹o;Descriç‹o;;;M_dio inteiro resfriado (no gelo)
+7;2.10.14x2;Numerico;Var1373;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.14x3;Numerico;Var1374;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.14x4;Numerico;Var1375;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.14x5;Numerico;Var1376;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.14x6;Numerico;Var1377;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.14x7;Numerico;Var1378;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.15x1;Descriç‹o;Descriç‹o;;;M_dio inteiro congelado
+7;2.10.15x2;Numerico;Var1379;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.15x3;Numerico;Var1380;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.15x4;Numerico;Var1381;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.15x5;Numerico;Var1382;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.15x6;Numerico;Var1383;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.15x7;Numerico;Var1384;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.16x1;Descriç‹o;Descriç‹o;;;M_dio descascado fresco
+7;2.10.16x2;Numerico;Var1385;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.16x3;Numerico;Var1386;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.16x4;Numerico;Var1387;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.16x5;Numerico;Var1388;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.16x6;Numerico;Var1389;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.16x7;Numerico;Var1390;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.17x1;Descriç‹o;Descriç‹o;;;M_dio torrado
+7;2.10.17x2;Numerico;Var1391;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.17x3;Numerico;Var1392;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.17x4;Numerico;Var1393;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.17x5;Numerico;Var1394;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.17x6;Numerico;Var1395;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.17x7;Numerico;Var1396;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.18x1;Descriç‹o;Descriç‹o;;;M_dio batido
+7;2.10.18x2;Numerico;Var1397;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.18x3;Numerico;Var1398;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.18x4;Numerico;Var1399;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.18x5;Numerico;Var1400;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.18x6;Numerico;Var1401;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.18x7;Numerico;Var1402;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.19x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro fresco
+7;2.10.19x2;Numerico;Var1403;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.19x3;Numerico;Var1404;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.19x4;Numerico;Var1405;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.19x5;Numerico;Var1406;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.19x6;Numerico;Var1407;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.19x7;Numerico;Var1408;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.20x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro resfriado (no gelo)
+7;2.10.20x2;Numerico;Var1409;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.20x3;Numerico;Var1410;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.20x4;Numerico;Var1411;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.20x5;Numerico;Var1412;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.20x6;Numerico;Var1413;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.20x7;Numerico;Var1414;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.21x1;Descriç‹o;Descriç‹o;;;Pequeno inteiro congelado
+7;2.10.21x2;Numerico;Var1415;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.21x3;Numerico;Var1416;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.21x4;Numerico;Var1417;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.21x5;Numerico;Var1418;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.21x6;Numerico;Var1419;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.21x7;Numerico;Var1420;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.22x1;Descriç‹o;Descriç‹o;;;Pequeno descascado fresco
+7;2.10.22x2;Numerico;Var1421;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.22x3;Numerico;Var1422;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.22x4;Numerico;Var1423;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.22x5;Numerico;Var1424;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.22x6;Numerico;Var1425;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.22x7;Numerico;Var1426;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.23x1;Descriç‹o;Descriç‹o;;;Pequeno torrado
+7;2.10.23x2;Numerico;Var1427;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.23x3;Numerico;Var1428;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.23x4;Numerico;Var1429;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.23x5;Numerico;Var1430;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.23x6;Numerico;Var1431;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.23x7;Numerico;Var1432;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.24x1;Descriç‹o;Descriç‹o;;;Pequeno descascado batido
+7;2.10.24x2;Numerico;Var1433;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.24x3;Numerico;Var1434;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.24x4;Numerico;Var1435;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.24x5;Numerico;Var1436;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.24x6;Numerico;Var1437;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.24x7;Numerico;Var1438;;;Preço (R$/kg) do 3_ - ver‹o
+7;2.10.25x1;Descriç‹o;Descriç‹o;;;Outros: __________
+7;2.10.25x2;Numerico;Var1439;;;Preço (R$/kg) do 1_ - inverno
+7;2.10.25x3;Numerico;Var1440;;;Preço (R$/kg) do 1_ - ver‹o
+7;2.10.25x4;Numerico;Var1441;;;Preço (R$/kg) do 2_ - inverno
+7;2.10.25x5;Numerico;Var1442;;;Preço (R$/kg) do 2_ - ver‹o
+7;2.10.25x6;Numerico;Var1443;;;Preço (R$/kg) do 3_ - inverno
+7;2.10.25x7;Numerico;Var1444;;;Preço (R$/kg) do 3_ - ver‹o
+8;1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais s‹o os bens utilizados na pesca e, se realizado, no beneficiamento?
+8;1.1;Categorica variada;Var1445;;;_ Embarcaç‹o
+8;1.1.1;Textual-numerica;Var1446;;;Quantas possui?
+8;1.2;Categorica variada;Var1447;;;_ Motor de polpa
+8;1.2.1;Textual-numerica;Var1448;;;Quantos possui?
+8;1.3;Categorica variada;Var1449;;;_ Rede de arrasto
+8;1.3.1;Textual-numerica;Var1450;;;Quantos possui?
+8;1.4;Categorica variada;Var1451;;;_ Tarrafa
+8;1.4.1;Textual-numerica;Var1452;;;Quantos possui?
+8;1.5;Categorica variada;Var1453;;;_ Puça
+8;1.5.1;Textual-numerica;Var1454;;;Quantos possui?
+8;1.6;Categorica variada;Var1455;;;_ Zangaria
+8;1.6.1;Textual-numerica;Var1456;;;Quantos possui?
+8;1.7;Categorica variada;Var1457;;;_ Redinha (cal‹o)
+8;1.7.1;Textual-numerica;Var1458;;;Quantos possui?
+8;1.8;Categorica variada;Var1459;;;_ Caiqueira
+8;1.8.1;Textual-numerica;Var1460;;;Quantos possui?
+8;1.9;Categorica variada;Var1461;;;_ Camaroeira
+8;1.9.1;Textual-numerica;Var1462;;;Quantos possui?
+8;1.10;Categorica variada;Var1463;;;_ Fog‹o
+8;1.10.1;Textual-numerica;Var1464;;;Quantos possui?
+8;1.11;Categorica variada;Var1465;;;_ Freezer
+8;1.11.1;Textual-numerica;Var1466;;;Quantos possui?
+8;1.12;Categorica variada;Var1467;;;_ Geladeira
+8;1.12.1;Textual-numerica;Var1468;;;Quantos possui?
+8;1.13;Categorica variada;Var1469;;;_ Outros
+8;1.13.1;Textual-numerica;Var1470;;;Quais?
+8;1.13.2;Textual-numerica;Var1471;;;Quantos possui?
+8;2.1;Categorica exclusiva;Var1472;;;Este tipo de pesca o senhor realiza...: _ Com embarcaç‹o _ Sem embarcaç‹o
+8;2.2;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Que tipo de embarcaç‹o utiliza?
+8;2.2.1;Categorica variada;Var1473;;;_ Canoa e vela
+8;2.2.2;Categorica variada;Var1474;;;_ Canoa e remo
+8;2.2.3;Categorica variada;Var1475;;;_ Canoa a motor
+8;2.2.4;Categorica variada;Var1476;;;_ Biana a vela
+8;2.2.5;Categorica variada;Var1477;;;_ Biana a motor
+8;2.2.6;Categorica variada;Var1478;;;_ Barco a vela
+8;2.2.7;Categorica variada;Var1479;;;_ Barco a motor
+8;2.2.8;Categorica variada;Var1480;;;_ Outro
+8;2.2.8.1;Textual-numerica;Var1481;;;Outro: __________
+8;2.3;Textual-numerica;Var1482;;;Quantas pessoas (tripulantes) cabem na embarcaç‹o?
+8;2.4;Categorica exclusiva;Var1483;;;O senhor possui embarcaç‹o pr—pria? _ Sim _ N‹o
+8;2.5;Categorica exclusiva;Var1484;;;Se o senhor n‹o possui embarcaç‹o pr—pria, esta embarcaç‹o _: _ Emprestada gratuitamente pela fam’lia _ Emprestada gratuitamente por amigos ... _ Outros
+8;2.5.1;Textual-numerica;Var1485;;;Outros: __________
+8;2.6;Numerico;Var1486;;;Se aluga, quanto o senhor paga?
+8;2.6.1;Categorica exclusiva;Var1487;;;_ Por dia _ Por semana _ Por mês
+8;2.7;Categorica exclusiva;Var1488;;;Que combust’vel o senhor utiliza? _ Diesel _ Gasolina
+8;2.8;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Como _ realizado o transporte de camar‹o na embarcaç‹o?
+8;2.8.1;Categorica variada;Var1489;;;_ Soalho do barco
+8;2.8.2;Categorica variada;Var1490;;;_ Manobloco (cesto de cip—)
+8;2.8.3;Categorica variada;Var1491;;;_ Paneiro
+8;2.8.4;Categorica variada;Var1492;;;_ Cofo
+8;2.8.5;Categorica variada;Var1493;;;_ Caixa de isopor
+8;2.8.6;Categorica variada;Var1494;;;_ Caixa pl‡stica
+8;2.8.7;Categorica variada;Var1495;;;_ Balde
+8;2.8.8;Categorica variada;Var1496;;;_ Saca de feira
+8;2.8.9;Categorica variada;Var1497;;;_ Carote pl‡stico 5 litros
+8;2.8.10;Categorica variada;Var1498;;;_ Outros
+8;2.8.10.1;Categorica variada;Var1499;;;Outros: __________
+8;2.9;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais foram os custos de equipamentos para pesca e beneficiamento? Com quais recursos foram adquiridos? Quando foram comprados e ser‹o substitu’dos? 
+;;Descriç‹o;Descriç‹o;;;Embarcaç‹o
+8;2.9.1x1;Textual-numerica;Var1500;;;Bens: Qual a metragem? 1_ __________
+8;2.9.1x2;Textual-numerica;Var1501;;;Ano de compra: 1_ __________
+8;2.9.1x3;Textual-numerica;Var1502;;;Quantidade: 1_ __________
+8;2.9.1x4;Textual-numerica;Var1503;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.1x5;Categorica exclusiva;Var1504;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.1x6;Textual-numerica;Var1505;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.1x7;Categorica exclusiva;Var1506;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.2x1;Textual-numerica;Var1507;;;Bens: Qual a metragem? 2_ __________
+8;2.9.2x2;Textual-numerica;Var1508;;;Ano de compra: 2_ __________
+8;2.9.2x3;Textual-numerica;Var1509;;;Quantidade: 2_ __________
+8;2.9.2x4;Textual-numerica;Var1510;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.2x5;Categorica exclusiva;Var1511;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.2x6;Textual-numerica;Var1512;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.2x7;Categorica exclusiva;Var1513;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.3x1;Textual-numerica;Var1514;;;Bens: Qual a metragem? 3_ __________
+8;2.9.3x2;Textual-numerica;Var1515;;;Ano de compra: 3_ __________
+8;2.9.3x3;Textual-numerica;Var1516;;;Quantidade: 3_ __________
+8;2.9.3x4;Textual-numerica;Var1517;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.3x5;Categorica exclusiva;Var1518;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.3x6;Textual-numerica;Var1519;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.3x7;Categorica exclusiva;Var1520;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Motor
+8;2.9.4x1;Textual-numerica;Var1521;;;Bens: Qual potência? 1_ __________
+8;2.9.4x2;Textual-numerica;Var1522;;;Ano de compra: 1_ __________
+8;2.9.4x3;Textual-numerica;Var1523;;;Quantidade: 1_ __________
+8;2.9.4x4;Textual-numerica;Var1524;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.4x5;Categorica exclusiva;Var1525;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.4x6;Textual-numerica;Var1526;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.4x7;Categorica exclusiva;Var1527;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.5x1;Textual-numerica;Var1528;;;Bens: Qual potência? 2_ __________
+8;2.9.5x2;Textual-numerica;Var1529;;;Ano de compra: 2_ __________
+8;2.9.5x3;Textual-numerica;Var1530;;;Quantidade: 2_ __________
+8;2.9.5x4;Textual-numerica;Var1531;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.5x5;Categorica exclusiva;Var1532;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.5x6;Textual-numerica;Var1533;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.5x7;Categorica exclusiva;Var1534;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.6x1;Textual-numerica;Var1535;;;Bens: Qual potência? 3_ __________
+8;2.9.6x2;Textual-numerica;Var1536;;;Ano de compra: 3_ __________
+8;2.9.6x3;Textual-numerica;Var1537;;;Quantidade: 3_ __________
+8;2.9.6x4;Textual-numerica;Var1538;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.6x5;Categorica exclusiva;Var1539;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.6x6;Textual-numerica;Var1540;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.6x7;Categorica exclusiva;Var1541;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Rede de arrasto (tecido, chumbo e b—ia)
+8;2.9.7x1;Textual-numerica;Var1542;;;Bens: Qual tamanho? 1_ __________
+8;2.9.7x2;Textual-numerica;Var1543;;;Ano de compra: 1_ __________
+8;2.9.7x3;Textual-numerica;Var1544;;;Quantidade: 1_ __________
+8;2.9.7x4;Textual-numerica;Var1545;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.7x5;Categorica exclusiva;Var1546;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.7x6;Textual-numerica;Var1547;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.7x7;Categorica exclusiva;Var1548;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.8x1;Textual-numerica;Var1549;;;Bens: Qual tamanho? 2_ __________
+8;2.9.8x2;Textual-numerica;Var1550;;;Ano de compra: 2_ __________
+8;2.9.8x3;Textual-numerica;Var1551;;;Quantidade: 2_ __________
+8;2.9.8x4;Textual-numerica;Var1552;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.8x5;Categorica exclusiva;Var1553;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.8x6;Textual-numerica;Var1554;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.8x7;Categorica exclusiva;Var1555;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.9x1;Textual-numerica;Var1556;;;Bens: Qual tamanho? 3_ __________
+8;2.9.9x2;Textual-numerica;Var1557;;;Ano de compra: 3_ __________
+8;2.9.9x3;Textual-numerica;Var1558;;;Quantidade: 3_ __________
+8;2.9.9x4;Textual-numerica;Var1559;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.9x5;Categorica exclusiva;Var1560;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.9x6;Textual-numerica;Var1561;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.9x7;Categorica exclusiva;Var1562;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Tarrafa
+8;2.9.10x1;Textual-numerica;Var1563;;;Bens: Qual tamanho? 1_ __________
+8;2.9.10x2;Textual-numerica;Var1564;;;Ano de compra: 1_ __________
+8;2.9.10x3;Textual-numerica;Var1565;;;Quantidade: 1_ __________
+8;2.9.10x4;Textual-numerica;Var1566;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.10x5;Categorica exclusiva;Var1567;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.10x6;Textual-numerica;Var1568;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.10x7;Categorica exclusiva;Var1569;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.11x1;Textual-numerica;Var1570;;;Bens: Qual tamanho? 2_ __________
+8;2.9.11x2;Textual-numerica;Var1571;;;Ano de compra: 2_ __________
+8;2.9.11x3;Textual-numerica;Var1572;;;Quantidade: 2_ __________
+8;2.9.11x4;Textual-numerica;Var1573;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.11x5;Categorica exclusiva;Var1574;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.11x6;Textual-numerica;Var1575;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.11x7;Categorica exclusiva;Var1576;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.12x1;Textual-numerica;Var1577;;;Bens: Qual tamanho? 3_ __________
+8;2.9.12x2;Textual-numerica;Var1578;;;Ano de compra: 3_ __________
+8;2.9.12x3;Textual-numerica;Var1579;;;Quantidade: 3_ __________
+8;2.9.12x4;Textual-numerica;Var1580;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.12x5;Categorica exclusiva;Var1581;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.12x6;Textual-numerica;Var1582;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.12x7;Categorica exclusiva;Var1583;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Puça
+8;2.9.13x1;Textual-numerica;Var1584;;;Bens: Qual tamanho? 1_ __________
+8;2.9.13x2;Textual-numerica;Var1585;;;Ano de compra: 1_ __________
+8;2.9.13x3;Textual-numerica;Var1586;;;Quantidade: 1_ __________
+8;2.9.13x4;Textual-numerica;Var1587;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.13x5;Categorica exclusiva;Var1588;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.13x6;Textual-numerica;Var1589;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.13x7;Categorica exclusiva;Var1590;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.14x1;Textual-numerica;Var1591;;;Bens: Qual tamanho? 2_ __________
+8;2.9.14x2;Textual-numerica;Var1592;;;Ano de compra: 2_ __________
+8;2.9.14x3;Textual-numerica;Var1593;;;Quantidade: 2_ __________
+8;2.9.14x4;Textual-numerica;Var1594;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.14x5;Categorica exclusiva;Var1595;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.14x6;Textual-numerica;Var1596;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.14x7;Categorica exclusiva;Var1597;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.15x1;Textual-numerica;Var1598;;;Bens: Qual tamanho? 3_ __________
+8;2.9.15x2;Textual-numerica;Var1599;;;Ano de compra: 3_ __________
+8;2.9.15x3;Textual-numerica;Var1600;;;Quantidade: 3_ __________
+8;2.9.15x4;Textual-numerica;Var1601;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.15x5;Categorica exclusiva;Var1602;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.15x6;Textual-numerica;Var1603;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.15x7;Categorica exclusiva;Var1604;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Zangaria
+8;2.9.16x1;Textual-numerica;Var1605;;;Bens: Qual tamanho? 1_ __________
+8;2.9.16x2;Textual-numerica;Var1606;;;Ano de compra: 1_ __________
+8;2.9.16x3;Textual-numerica;Var1607;;;Quantidade: 1_ __________
+8;2.9.16x4;Textual-numerica;Var1608;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.16x5;Categorica exclusiva;Var1609;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.16x6;Textual-numerica;Var1610;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.16x7;Categorica exclusiva;Var1611;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.17x1;Textual-numerica;Var1612;;;Bens: Qual tamanho? 2_ __________
+8;2.9.17x2;Textual-numerica;Var1613;;;Ano de compra: 2_ __________
+8;2.9.17x3;Textual-numerica;Var1614;;;Quantidade: 2_ __________
+8;2.9.17x4;Textual-numerica;Var1615;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.17x5;Categorica exclusiva;Var1616;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.17x6;Textual-numerica;Var1617;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.17x7;Categorica exclusiva;Var1618;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.18x1;Textual-numerica;Var1619;;;Bens: Qual tamanho? 3_ __________
+8;2.9.18x2;Textual-numerica;Var1620;;;Ano de compra: 3_ __________
+8;2.9.18x3;Textual-numerica;Var1621;;;Quantidade: 3_ __________
+8;2.9.18x4;Textual-numerica;Var1622;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.18x5;Categorica exclusiva;Var1623;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.18x6;Textual-numerica;Var1624;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.18x7;Categorica exclusiva;Var1625;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Redinha
+8;2.9.19x1;Textual-numerica;Var1626;;;Bens: Qual tamanho? 1_ __________
+8;2.9.19x2;Textual-numerica;Var1627;;;Ano de compra: 1_ __________
+8;2.9.19x3;Textual-numerica;Var1628;;;Quantidade: 1_ __________
+8;2.9.19x4;Textual-numerica;Var1629;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.19x5;Categorica exclusiva;Var1630;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.19x6;Textual-numerica;Var1631;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.19x7;Categorica exclusiva;Var1632;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.20x1;Textual-numerica;Var1633;;;Bens: Qual tamanho? 2_ __________
+8;2.9.20x2;Textual-numerica;Var1634;;;Ano de compra: 2_ __________
+8;2.9.20x3;Textual-numerica;Var1635;;;Quantidade: 2_ __________
+8;2.9.20x4;Textual-numerica;Var1636;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.20x5;Categorica exclusiva;Var1637;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.20x6;Textual-numerica;Var1638;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.20x7;Categorica exclusiva;Var1639;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.21x1;Textual-numerica;Var1640;;;Bens: Qual tamanho? 3_ __________
+8;2.9.21x2;Textual-numerica;Var1641;;;Ano de compra: 3_ __________
+8;2.9.21x3;Textual-numerica;Var1642;;;Quantidade: 3_ __________
+8;2.9.21x4;Textual-numerica;Var1643;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.21x5;Categorica exclusiva;Var1644;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.21x6;Textual-numerica;Var1645;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.21x7;Categorica exclusiva;Var1646;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Caiqueira
+8;2.9.22x1;Textual-numerica;Var1647;;;Bens: Qual tamanho? 1_ __________
+8;2.9.22x2;Textual-numerica;Var1648;;;Ano de compra: 1_ __________
+8;2.9.22x3;Textual-numerica;Var1649;;;Quantidade: 1_ __________
+8;2.9.22x4;Textual-numerica;Var1650;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.22x5;Categorica exclusiva;Var1651;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.22x6;Textual-numerica;Var1652;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.22x7;Categorica exclusiva;Var1653;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.23x1;Textual-numerica;Var1654;;;Bens: Qual tamanho? 2_ __________
+8;2.9.23x2;Textual-numerica;Var1655;;;Ano de compra: 2_ __________
+8;2.9.23x3;Textual-numerica;Var1656;;;Quantidade: 2_ __________
+8;2.9.23x4;Textual-numerica;Var1657;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.23x5;Categorica exclusiva;Var1658;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.23x6;Textual-numerica;Var1659;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.23x7;Categorica exclusiva;Var1660;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.24x1;Textual-numerica;Var1661;;;Bens: Qual tamanho? 3_ __________
+8;2.9.24x2;Textual-numerica;Var1662;;;Ano de compra: 3_ __________
+8;2.9.24x3;Textual-numerica;Var1663;;;Quantidade: 3_ __________
+8;2.9.24x4;Textual-numerica;Var1664;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.24x5;Categorica exclusiva;Var1665;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.24x6;Textual-numerica;Var1666;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.24x7;Categorica exclusiva;Var1667;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Camaroeira
+8;2.9.25x1;Textual-numerica;Var1668;;;Bens: Qual tamanho? 1_ __________
+8;2.9.25x2;Textual-numerica;Var1669;;;Ano de compra: 1_ __________
+8;2.9.25x3;Textual-numerica;Var1670;;;Quantidade: 1_ __________
+8;2.9.25x4;Textual-numerica;Var1671;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.25x5;Categorica exclusiva;Var1672;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.25x6;Textual-numerica;Var1673;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.25x7;Categorica exclusiva;Var1674;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.26x1;Textual-numerica;Var1675;;;Bens: Qual tamanho? 2_ __________
+8;2.9.26x2;Textual-numerica;Var1676;;;Ano de compra: 2_ __________
+8;2.9.26x3;Textual-numerica;Var1677;;;Quantidade: 2_ __________
+8;2.9.26x4;Textual-numerica;Var1678;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.26x5;Categorica exclusiva;Var1679;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.26x6;Textual-numerica;Var1680;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.26x7;Categorica exclusiva;Var1681;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.27x1;Textual-numerica;Var1682;;;Bens: Qual tamanho? 3_ __________
+8;2.9.27x2;Textual-numerica;Var1683;;;Ano de compra: 3_ __________
+8;2.9.27x3;Textual-numerica;Var1684;;;Quantidade: 3_ __________
+8;2.9.27x4;Textual-numerica;Var1685;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.27x5;Categorica exclusiva;Var1686;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.27x6;Textual-numerica;Var1687;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.27x7;Categorica exclusiva;Var1688;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Fog‹o
+8;2.9.28x1;Textual-numerica;Var1689;;;Bens: 1_ __________
+8;2.9.28x2;Textual-numerica;Var1690;;;Ano de compra: 1_ __________
+8;2.9.28x3;Textual-numerica;Var1691;;;Quantidade: 1_ __________
+8;2.9.28x4;Textual-numerica;Var1692;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.28x5;Categorica exclusiva;Var1693;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.28x6;Textual-numerica;Var1694;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.28x7;Categorica exclusiva;Var1695;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.29x1;Textual-numerica;Var1696;;;Bens: 2_ __________
+8;2.9.29x2;Textual-numerica;Var1697;;;Ano de compra: 2_ __________
+8;2.9.29x3;Textual-numerica;Var1698;;;Quantidade: 2_ __________
+8;2.9.29x4;Textual-numerica;Var1699;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.29x5;Categorica exclusiva;Var1700;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.29x6;Textual-numerica;Var1701;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.29x7;Categorica exclusiva;Var1702;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.30x1;Textual-numerica;Var1703;;;Bens: 3_ __________
+8;2.9.30x2;Textual-numerica;Var1704;;;Ano de compra: 3_ __________
+8;2.9.30x3;Textual-numerica;Var1705;;;Quantidade: 3_ __________
+8;2.9.30x4;Textual-numerica;Var1706;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.30x5;Categorica exclusiva;Var1707;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.30x6;Textual-numerica;Var1708;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.30x7;Categorica exclusiva;Var1709;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Freezer
+8;2.9.31x1;Textual-numerica;Var1710;;;Bens: 1_ __________
+8;2.9.31x2;Textual-numerica;Var1711;;;Ano de compra: 1_ __________
+8;2.9.31x3;Textual-numerica;Var1712;;;Quantidade: 1_ __________
+8;2.9.31x4;Textual-numerica;Var1713;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.31x5;Categorica exclusiva;Var1714;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.31x6;Textual-numerica;Var1715;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.31x7;Categorica exclusiva;Var1716;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.32x1;Textual-numerica;Var1717;;;Bens: 2_ __________
+8;2.9.32x2;Textual-numerica;Var1718;;;Ano de compra: 2_ __________
+8;2.9.32x3;Textual-numerica;Var1719;;;Quantidade: 2_ __________
+8;2.9.32x4;Textual-numerica;Var1720;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.32x5;Categorica exclusiva;Var1721;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.32x6;Textual-numerica;Var1722;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.32x7;Categorica exclusiva;Var1723;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.33x1;Textual-numerica;Var1724;;;Bens: 3_ __________
+8;2.9.33x2;Textual-numerica;Var1725;;;Ano de compra: 3_ __________
+8;2.9.33x3;Textual-numerica;Var1726;;;Quantidade: 3_ __________
+8;2.9.33x4;Textual-numerica;Var1727;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.33x5;Categorica exclusiva;Var1728;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.33x6;Textual-numerica;Var1729;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.33x7;Categorica exclusiva;Var1730;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Geladeira
+8;2.9.34x1;Textual-numerica;Var1731;;;Bens: 1_ __________
+8;2.9.34x2;Textual-numerica;Var1732;;;Ano de compra: 1_ __________
+8;2.9.34x3;Textual-numerica;Var1733;;;Quantidade: 1_ __________
+8;2.9.34x4;Textual-numerica;Var1734;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.34x5;Categorica exclusiva;Var1735;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.34x6;Textual-numerica;Var1736;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.34x7;Categorica exclusiva;Var1737;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.35x1;Textual-numerica;Var1738;;;Bens: 2_ __________
+8;2.9.35x2;Textual-numerica;Var1739;;;Ano de compra: 2_ __________
+8;2.9.35x3;Textual-numerica;Var1740;;;Quantidade: 2_ __________
+8;2.9.35x4;Textual-numerica;Var1741;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.35x5;Categorica exclusiva;Var1742;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.35x6;Textual-numerica;Var1743;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.35x7;Categorica exclusiva;Var1744;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.36x1;Textual-numerica;Var1745;;;Bens: 3_ __________
+8;2.9.36x2;Textual-numerica;Var1746;;;Ano de compra: 3_ __________
+8;2.9.36x3;Textual-numerica;Var1747;;;Quantidade: 3_ __________
+8;2.9.36x4;Textual-numerica;Var1748;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.36x5;Categorica exclusiva;Var1749;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.36x6;Textual-numerica;Var1750;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.36x7;Categorica exclusiva;Var1751;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+;;Descriç‹o;Descriç‹o;;;Outros
+8;2.9.37x1;Textual-numerica;Var1752;;;Bens: 1_ __________
+8;2.9.37x2;Textual-numerica;Var1753;;;Ano de compra: 1_ __________
+8;2.9.37x3;Textual-numerica;Var1754;;;Quantidade: 1_ __________
+8;2.9.37x4;Textual-numerica;Var1755;;;Valor Unit‡rio de Compra (R$): 1_ __________
+8;2.9.37x5;Categorica exclusiva;Var1756;;;Fonte de recurso: 1_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.37x6;Textual-numerica;Var1757;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.37x7;Categorica exclusiva;Var1758;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.38x1;Textual-numerica;Var1759;;;Bens: 2_ __________
+8;2.9.38x2;Textual-numerica;Var1760;;;Ano de compra: 2_ __________
+8;2.9.38x3;Textual-numerica;Var1761;;;Quantidade: 2_ __________
+8;2.9.38x4;Textual-numerica;Var1762;;;Valor Unit‡rio de Compra (R$): 2_ __________
+8;2.9.38x5;Categorica exclusiva;Var1763;;;Fonte de recurso: 2_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.38x6;Textual-numerica;Var1764;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.38x7;Categorica exclusiva;Var1765;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;2.9.39x1;Textual-numerica;Var1766;;;Bens: 3_ __________
+8;2.9.39x2;Textual-numerica;Var1767;;;Ano de compra: 3_ __________
+8;2.9.39x3;Textual-numerica;Var1768;;;Quantidade: 3_ __________
+8;2.9.39x4;Textual-numerica;Var1769;;;Valor Unit‡rio de Compra (R$): 3_ __________
+8;2.9.39x5;Categorica exclusiva;Var1770;;;Fonte de recurso: 3_ _ Pr—pria _ Financiada _ Doaç‹o
+8;2.9.39x6;Textual-numerica;Var1771;;;Quando ser‡ substitu’do? Ano __________
+8;2.9.39x7;Categorica exclusiva;Var1772;;;Quando ser‡ substitu’do? _ N‹o sabe _ N‹o respondeu
+8;3.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais recursos necess‡rios para pesca? Qual a quantidade e preço unit‡rio em 2015?
+8;3.1.1x1;Descriç‹o;Descriç‹o;;;Recurso: Combust’vel
+8;3.1.1x2;Numerico;Var1773;;;"Quantidade ""ida e volta"" no mesmo dia: Litros: __________"
+8;3.1.1x3;Categorica exclusiva;Var1774;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.1x4;Numerico;Var1775;;;"Quantidade ""descida"" durante alguns dias: Litros: __________"
+8;3.1.1x5;Categorica exclusiva;Var1776;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.1x6;Textual-numerica;Var1777;;;Preço unit‡rio (R$): __________
+8;3.1.2x1;Descriç‹o;Descriç‹o;;;Recurso: Farinha
+8;3.1.2x2;Numerico;Var1778;;;"Quantidade ""ida e volta"" no mesmo dia: Quilos/Litros: __________"
+8;3.1.2x3;Categorica exclusiva;Var1779;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.2x4;Numerico;Var1780;;;"Quantidade ""descida"" durante alguns dias: Quilos/Litros: __________"
+8;3.1.2x5;Categorica exclusiva;Var1781;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.2x6;Textual-numerica;Var1782;;;Preço unit‡rio (R$): __________
+8;3.1.3x1;Descriç‹o;Descriç‹o;;;Recurso: Sardinha
+8;3.1.3x2;Numerico;Var1783;;;"Quantidade ""ida e volta"" no mesmo dia: Latas: __________"
+8;3.1.3x3;Categorica exclusiva;Var1784;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.3x4;Numerico;Var1785;;;"Quantidade ""descida"" durante alguns dias: Latas: __________"
+8;3.1.3x5;Categorica exclusiva;Var1786;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.3x6;Textual-numerica;Var1787;;;Preço unit‡rio (R$): __________
+8;3.1.4x1;Descriç‹o;Descriç‹o;;;Recurso: Conserva
+8;3.1.4x2;Numerico;Var1788;;;"Quantidade ""ida e volta"" no mesmo dia: Latas: __________"
+8;3.1.4x3;Categorica exclusiva;Var1789;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.4x4;Numerico;Var1790;;;"Quantidade ""descida"" durante alguns dias: Latas: __________"
+8;3.1.4x5;Categorica exclusiva;Var1791;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.4x6;Textual-numerica;Var1792;;;Preço unit‡rio (R$): __________
+8;3.1.5x1;Descriç‹o;Descriç‹o;;;Recurso: Sal
+8;3.1.5x2;Numerico;Var1793;;;"Quantidade ""ida e volta"" no mesmo dia: Quilos: __________"
+8;3.1.5x3;Categorica exclusiva;Var1794;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.5x4;Numerico;Var1795;;;"Quantidade ""descida"" durante alguns dias: Quilos: __________"
+8;3.1.5x5;Categorica exclusiva;Var1796;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.5x6;Textual-numerica;Var1797;;;Preço unit‡rio (R$): __________
+8;3.1.6x1;Descriç‹o;Descriç‹o;;;Recurso: Arroz
+8;3.1.6x2;Numerico;Var1798;;;"Quantidade ""ida e volta"" no mesmo dia: Quilos: __________"
+8;3.1.6x3;Categorica exclusiva;Var1799;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.6x4;Numerico;Var1800;;;"Quantidade ""descida"" durante alguns dias: Quilos: __________"
+8;3.1.6x5;Categorica exclusiva;Var1801;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.6x6;Textual-numerica;Var1802;;;Preço unit‡rio (R$): __________
+8;3.1.7x1;Descriç‹o;Descriç‹o;;;Recurso: Feij‹o
+8;3.1.7x2;Numerico;Var1803;;;"Quantidade ""ida e volta"" no mesmo dia: Quilos: __________"
+8;3.1.7x3;Categorica exclusiva;Var1804;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.7x4;Numerico;Var1805;;;"Quantidade ""descida"" durante alguns dias: Quilos: __________"
+8;3.1.7x5;Categorica exclusiva;Var1806;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.7x6;Textual-numerica;Var1807;;;Preço unit‡rio (R$): __________
+8;3.1.8x1;Descriç‹o;Descriç‹o;;;Recurso: Suco
+8;3.1.8x2;Numerico;Var1808;;;"Quantidade ""ida e volta"" no mesmo dia: Pct: __________"
+8;3.1.8x3;Categorica exclusiva;Var1809;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.8x4;Numerico;Var1810;;;"Quantidade ""descida"" durante alguns dias: Pct: __________"
+8;3.1.8x5;Categorica exclusiva;Var1811;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.8x6;Textual-numerica;Var1812;;;Preço unit‡rio (R$): __________
+8;3.1.9x1;Descriç‹o;Descriç‹o;;;Recurso: Bolacha
+8;3.1.9x2;Numerico;Var1813;;;"Quantidade ""ida e volta"" no mesmo dia: Pct: __________"
+8;3.1.9x3;Categorica exclusiva;Var1814;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.9x4;Numerico;Var1815;;;"Quantidade ""descida"" durante alguns dias: Pct: __________"
+8;3.1.9x5;Categorica exclusiva;Var1816;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.9x6;Textual-numerica;Var1817;;;Preço unit‡rio (R$): __________
+8;3.1.10x1;Descriç‹o;Descriç‹o;;;Recurso: Gelo
+8;3.1.10x2;Numerico;Var1818;;;"Quantidade ""ida e volta"" no mesmo dia: Quilos: __________"
+8;3.1.10x3;Categorica exclusiva;Var1819;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.10x4;Numerico;Var1820;;;"Quantidade ""descida"" durante alguns dias: Quilos: __________"
+8;3.1.10x5;Categorica exclusiva;Var1821;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.10x6;Textual-numerica;Var1822;;;Preço unit‡rio (R$): __________
+8;3.1.11x1;Descriç‹o;Descriç‹o;;;Recurso: Querosene
+8;3.1.11x2;Numerico;Var1823;;;"Quantidade ""ida e volta"" no mesmo dia: Litros: __________"
+8;3.1.11x3;Categorica exclusiva;Var1824;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.11x4;Numerico;Var1825;;;"Quantidade ""descida"" durante alguns dias: Litros: __________"
+8;3.1.11x5;Categorica exclusiva;Var1826;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.11x6;Textual-numerica;Var1827;;;Preço unit‡rio (R$): __________
+8;3.1.12x1;Descriç‹o;Descriç‹o;;;Recurso: îleo Diesel (acender fogo e repelente)
+8;3.1.12x2;Numerico;Var1828;;;"Quantidade ""ida e volta"" no mesmo dia: Litros: __________"
+8;3.1.12x3;Categorica exclusiva;Var1829;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.12x4;Numerico;Var1830;;;"Quantidade ""descida"" durante alguns dias: Litros: __________"
+8;3.1.12x5;Categorica exclusiva;Var1831;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.12x6;Textual-numerica;Var1832;;;Preço unit‡rio (R$): __________
+8;3.1.13x1;Descriç‹o;Descriç‹o;;;Recurso: Carv‹o
+8;3.1.13x2;Numerico;Var1833;;;"Quantidade ""ida e volta"" no mesmo dia: Quilos: __________"
+8;3.1.13x3;Categorica exclusiva;Var1834;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.13x4;Numerico;Var1835;;;"Quantidade ""descida"" durante alguns dias: Quilos: __________"
+8;3.1.13x5;Categorica exclusiva;Var1836;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.13x6;Textual-numerica;Var1837;;;Preço unit‡rio (R$): __________
+8;3.1.14x1;Descriç‹o;Descriç‹o;;;Recurso: Lenha para beneficiamento de um cofo
+8;3.1.14x2;Numerico;Var1838;;;"Quantidade ""ida e volta"" no mesmo dia: Unid: __________"
+8;3.1.14x3;Categorica exclusiva;Var1839;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.14x4;Numerico;Var1840;;;"Quantidade ""descida"" durante alguns dias: Unid: __________"
+8;3.1.14x5;Categorica exclusiva;Var1841;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.14x6;Textual-numerica;Var1842;;;Preço unit‡rio (R$): __________
+8;3.1.15x1;Descriç‹o;Descriç‹o;;;Recurso: Sal para beneficiamento de um cofo
+8;3.1.15x2;Numerico;Var1843;;;"Quantidade ""ida e volta"" no mesmo dia: Quilos: __________"
+8;3.1.15x3;Categorica exclusiva;Var1844;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.15x4;Numerico;Var1845;;;"Quantidade ""descida"" durante alguns dias: Quilos: __________"
+8;3.1.15x5;Categorica exclusiva;Var1846;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.15x6;Textual-numerica;Var1847;;;Preço unit‡rio (R$): __________
+8;3.1.16x1;Descriç‹o;Descriç‹o;;;Recurso: M‹o de obra para beneficiamento de um cofo
+8;3.1.16x2;Numerico;Var1848;;;"Quantidade ""ida e volta"" no mesmo dia: Pessoas: __________"
+8;3.1.16x3;Categorica exclusiva;Var1849;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.16x4;Numerico;Var1850;;;"Quantidade ""descida"" durante alguns dias: Pessoas: __________"
+8;3.1.16x5;Categorica exclusiva;Var1851;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.16x6;Textual-numerica;Var1852;;;Preço unit‡rio (R$): __________
+8;3.1.17x1;Descriç‹o;Descriç‹o;;;Recurso: Outros
+8;3.1.17x2;Numerico;Var1853;;;"Quantidade ""ida e volta"" no mesmo dia: Unid: __________"
+8;3.1.17x3;Categorica exclusiva;Var1854;;;Frequência de uso: _ Por dia _ Por semana
+8;3.1.17x4;Numerico;Var1855;;;"Quantidade ""descida"" durante alguns dias: Unid: __________"
+8;3.1.17x5;Categorica exclusiva;Var1856;;;Frequência de uso: _ Por viagem _ Por semana
+8;3.1.17x6;Textual-numerica;Var1857;;;Preço unit‡rio (R$): __________
+8;4.1;Categorica exclusiva;Var1858;;;Quanto deste total _ pago pelo patr‹o de pesca? _ Nada _ 1/4 (menos da metade) ... _ Todo o custo
+8;5.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Normalmente, quais os gastos que ocorrem frequentemente? Qual _ o valor gasto ou correspondente para 2015?
+8;5.1.1x1;Descriç‹o;Descriç‹o;;;Materiais e serviços: Calefaç‹o
+8;5.1.1x2;Categorica exclusiva;Var1859;;;Frequência do gasto: _ Todo mês _ 3 x no ano _ 2 x no ano ... _ Outro
+8;5.1.1x3;Textual-numerica;Var1860;;;Outro: __________
+8;5.1.1x4;Textual-numerica;Var1861;;;Valor por per’odo (R$) __________
+8;5.1.1x5;Categorica exclusiva;Var1862;;;Observaç‹o: _ N‹o sabe _ N‹o utiliza _ N‹o respondeu
+8;5.1.2x1;Descriç‹o;Descriç‹o;;;Materiais e serviços: Pintura
+8;5.1.2x2;Categorica exclusiva;Var1863;;;Frequência do gasto: _ Todo mês _ 3 x no ano _ 2 x no ano ... _ Outro
+8;5.1.2x3;Textual-numerica;Var1864;;;Outro: __________
+8;5.1.2x4;Textual-numerica;Var1865;;;Valor por per’odo (R$) __________
+8;5.1.2x5;Categorica exclusiva;Var1866;;;Observaç‹o: _ N‹o sabe _ N‹o utiliza _ N‹o respondeu
+8;5.1.3x1;Descriç‹o;Descriç‹o;;;Materiais e serviços: Retifica de motor
+8;5.1.3x2;Categorica exclusiva;Var1867;;;Frequência do gasto: _ Todo mês _ 3 x no ano _ 2 x no ano ... _ Outro
+8;5.1.3x3;Textual-numerica;Var1868;;;Outro: __________
+8;5.1.3x4;Textual-numerica;Var1869;;;Valor por per’odo (R$) __________
+8;5.1.3x5;Categorica exclusiva;Var1870;;;Observaç‹o: _ N‹o sabe _ N‹o utiliza _ N‹o respondeu
+8;5.1.4x1;Descriç‹o;Descriç‹o;;;Materiais e serviços: Trocas de peças
+8;5.1.4x2;Categorica exclusiva;Var1871;;;Frequência do gasto: _ Todo mês _ 3 x no ano _ 2 x no ano ... _ Outro
+8;5.1.4x3;Textual-numerica;Var1872;;;Outro: __________
+8;5.1.4x4;Textual-numerica;Var1873;;;Valor por per’odo (R$) __________
+8;5.1.4x5;Categorica exclusiva;Var1874;;;Observaç‹o: _ N‹o sabe _ N‹o utiliza _ N‹o respondeu
+8;5.1.5x1;Descriç‹o;Descriç‹o;;;Materiais e serviços: Outros
+8;5.1.5x2;Categorica exclusiva;Var1875;;;Frequência do gasto: _ Todo mês _ 3 x no ano _ 2 x no ano ... _ Outro
+8;5.1.5x3;Textual-numerica;Var1876;;;Outro: __________
+8;5.1.5x4;Textual-numerica;Var1877;;;Valor por per’odo (R$) __________
+8;6.1;N‹o h‡ (enunciado de quest‹o);N‹o h‡ (enunciado de quest‹o);;;Quais atividades realizadas antes ou depois da pescaria? Quanto tempo _ gasto nessas atividades?
+8;6.1.1x1;Descriç‹o;Descriç‹o;;;Atividade: Reparo (remendar) do petrecho
+8;6.1.1x2;Textual-numerica;Var1878;;;Tempo gasto __________
+8;6.1.1x3;Categorica exclusiva;Var1879;;;_ horas/dia _ dias/semana
+8;6.1.1x4;Textual-numerica;Var1880;;;Custo R$/ano __________
+8;6.1.2x1;Descriç‹o;Descriç‹o;;;Atividade: Lavagem de rede
+8;6.1.2x2;Textual-numerica;Var1881;;;Tempo gasto __________
+8;6.1.2x3;Categorica exclusiva;Var1882;;;_ horas/dia _ dias/semana
+8;6.1.2x4;Textual-numerica;Var1883;;;Custo R$/ano __________
+8;6.1.3x1;Descriç‹o;Descriç‹o;;;Atividade: Recolher e lavar a embarcaç‹o
+8;6.1.3x2;Textual-numerica;Var1884;;;Tempo gasto __________
+8;6.1.3x3;Categorica exclusiva;Var1885;;;_ horas/dia _ dias/semana
+8;6.1.3x4;Textual-numerica;Var1886;;;Custo R$/ano __________
+8;6.1.4x1;Descriç‹o;Descriç‹o;;;Atividade: Outros
+8;6.1.4x2;Textual-numerica;Var1887;;;Tempo gasto __________
+8;6.1.4x3;Categorica exclusiva;Var1888;;;_ horas/dia _ dias/semana
+8;6.1.4x4;Textual-numerica;Var1889;;;Custo R$/ano __________
+9;1.1;Textual-numerica;Var1890;;;De maneira geral, quais s‹o os principais problemas enfrentados? Quais seriam as soluç›es? Problemas
+9;1.1;Textual-numerica;Var1891;;;De maneira geral, quais s‹o os principais problemas enfrentados? Quais seriam as soluç›es? Soluç›es

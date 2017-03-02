@@ -23,6 +23,7 @@ import javax.ejb.Stateless;
 import javax.inject.Inject;
 
 import br.org.unesco.appesca.data.FormularioRepository;
+import br.org.unesco.appesca.model.FormFiltroPesquisa;
 import br.org.unesco.appesca.model.Formulario;
 import br.org.unesco.appesca.model.Pergunta;
 import br.org.unesco.appesca.model.Questao;
@@ -59,6 +60,10 @@ public class FormularioService {
 	public List<Formulario> listByTipoFormulario(int tipoFormulario) {
 		return formularioRepository.listByTipoFormulario(tipoFormulario);
 	}
+        
+        public List<Formulario> listarPorFiltro(FormFiltroPesquisa filtro, int tipoFormulario){
+            return formularioRepository.listarPorFiltro(filtro, tipoFormulario);
+        }
 
 	public List<Formulario> listByEquipesCoordenador(int idCoordenadorEquipe, int tipoFormulario) {
 		return formularioRepository.listByEquipesCoordenador(idCoordenadorEquipe, tipoFormulario);
