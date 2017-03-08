@@ -15,7 +15,7 @@ import javax.persistence.TemporalType;
 import br.org.unesco.appesca.util.ConstantesUNESCO;
 
 @Entity
-@Table(name = "tb_membros_equipe", schema = ConstantesUNESCO.SCHEMA_APPESCA)
+@Table(name = "TB_MEMBROS_EQUIPE", schema = ConstantesUNESCO.SCHEMA_APPESCA)
 public class MembrosEquipe implements java.io.Serializable {
 
 	private static final long serialVersionUID = -472814831281223441L;

@@ -11,7 +11,7 @@ import javax.persistence.Table;
 import br.org.unesco.appesca.util.ConstantesUNESCO;
 
 @Entity
-@Table(name = "tb_tipo_formulario", schema=ConstantesUNESCO.SCHEMA_APPESCA)
+@Table(name = "TB_TIPO_FORMULARIO", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class TipoFormulario implements java.io.Serializable {
 
 	private static final long serialVersionUID = -1968974358816603465L;

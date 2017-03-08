@@ -81,10 +81,15 @@ public class FormularioController implements Serializable {
     private Resposta problemasF3Q74;
     private Resposta solucoesF3Q74;
     private int tipoFormulario;
+    
+    private String urlExportacao;
 
     private FormFiltroPesquisa filtroFormulario = new FormFiltroPesquisa();
 
     public String listarFormularios(long tipoFormulario) {
+        
+        setUrlExportacao("/rest/formulario/exportacaoDeFormulario?tipo="+tipoFormulario);
+        
         this.tipoFormulario = (int) tipoFormulario;
         listaFormularios = new ArrayList<>();
 
@@ -224,15 +229,15 @@ public class FormularioController implements Serializable {
     }
 
     public String pesquisar() {
-        System.out.println(filtroFormulario);
+        System.out.println(getFiltroFormulario());
 
-        listaFormularios = formularioService.listarPorFiltro(filtroFormulario, tipoFormulario);
+        listaFormularios = formularioService.listarPorFiltro(getFiltroFormulario(), tipoFormulario);
 
         return "";
     }
 
     public void limparFiltro() {
-        filtroFormulario = new FormFiltroPesquisa();
+        setFiltroFormulario(new FormFiltroPesquisa());
     }
 
     public String getTitulo() {
@@ -638,6 +643,25 @@ public class FormularioController implements Serializable {
         }
     }
 
+    
+    public String urlExportacaoTodos(int tipoFormulario){
+        return "/rest/formulario/exportacaoDeFormulario?tipo="+tipoFormulario+"&todos=true";
+    }
+
+    /**
+     * @return the urlExportacao
+     */
+    public String getUrlExportacao() {
+        return urlExportacao;
+    }
+
+    /**
+     * @param urlExportacao the urlExportacao to set
+     */
+    public void setUrlExportacao(String urlExportacao) {
+        this.urlExportacao = urlExportacao;
+    }
+
     /**
      * @return the filtroFormulario
      */
@@ -651,5 +675,6 @@ public class FormularioController implements Serializable {
     public void setFiltroFormulario(FormFiltroPesquisa filtroFormulario) {
         this.filtroFormulario = filtroFormulario;
     }
-
+    
+    
 }

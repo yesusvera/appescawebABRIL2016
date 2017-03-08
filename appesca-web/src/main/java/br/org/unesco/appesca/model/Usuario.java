@@ -29,7 +29,7 @@ import br.org.unesco.appesca.enums.PerfilEnum;
 import br.org.unesco.appesca.util.ConstantesUNESCO;
 
 @Entity
-@Table(name = "tb_usuario", schema = ConstantesUNESCO.SCHEMA_APPESCA)
+@Table(name = "TB_USUARIO", schema = ConstantesUNESCO.SCHEMA_APPESCA)
 public class Usuario implements java.io.Serializable {
 
 	private static final long serialVersionUID = -7140175801442164346L;

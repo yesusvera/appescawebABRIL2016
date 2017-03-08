@@ -21,7 +21,7 @@ import javax.persistence.Transient;
 import br.org.unesco.appesca.util.ConstantesUNESCO;
 
 @Entity
-@Table(name = "tb_hist_rastro", schema=ConstantesUNESCO.SCHEMA_APPESCA)
+@Table(name = "TB_HIST_RASTRO", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class LocalizacaoUsuario implements java.io.Serializable {
 
 	private static final long serialVersionUID = 2165508619825487958L;

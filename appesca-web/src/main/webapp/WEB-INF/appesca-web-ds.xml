@@ -29,15 +29,23 @@ AS. -->
         <!-- <connection-url>jdbc:mysql://localhost:3306/appesca?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8</connection-url> -->
         
         <!-- ************* LOCAL ************* -->
-         <connection-url>jdbc:mysql://localhost:3306/speed046_appesca</connection-url>
+         <connection-url>jdbc:mysql://localhost:3306/appesca</connection-url>
+        <driver>mysql</driver>
+        <security>
+            <user-name>root</user-name>
+            <password>appesca2016</password>
+        </security>
+        
+        <!-- ************* DESENV LOCAL ************* -->
+<!--         <connection-url>jdbc:mysql://localhost:3306/speed046_appesca</connection-url>
         <driver>mysql</driver>
         <security>
             <user-name>root</user-name>
             <password>root</password>
-        </security>
+        </security>-->
        
         
-        <!-- ************* REMOTO ************* -->
+        <!-- ************* DESENV REMOTO ************* -->
 <!--        <connection-url>jdbc:mysql://108.167.168.26:3306/speed046_appesca</connection-url>
         <driver>mysql</driver>
         <security>

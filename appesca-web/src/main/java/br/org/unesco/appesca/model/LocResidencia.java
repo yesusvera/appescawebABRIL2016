@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import br.org.unesco.appesca.util.ConstantesUNESCO;
 
 @Entity
-@Table(name = "tb_loc_residencia", schema=ConstantesUNESCO.SCHEMA_APPESCA)
+@Table(name = "TB_LOC_RESIDENCIA", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 public class LocResidencia implements java.io.Serializable {
 
 	private static final long serialVersionUID = 3251866057864092677L;

@@ -58,9 +58,9 @@
 					<p:menuitem value="Camarão Piticaia e Branco" action="#{formularioController.listarFormularios(3)}"/>
 				</p:submenu>
 				<p:submenu label="Exportação de Planilha" icon="ui-icon-arrowstop-1-s">
-					<p:menuitem icon="ui-icon-arrowstop-1-s" value="Camarão Regional" url="/rest/formulario/exportacaoDeFormulario?tipo=1"/>
-					<p:menuitem icon="ui-icon-arrowstop-1-s" value="Caranguejo" url="/rest/formulario/exportacaoDeFormulario?tipo=2"/>
-					<p:menuitem icon="ui-icon-arrowstop-1-s" value="Camarão Pit. e Branco" url="/rest/formulario/exportacaoDeFormulario?tipo=2"/>
+                                    <p:menuitem icon="ui-icon-arrowstop-1-s" value="Camarão Regional (Finalizados)" url="#{formularioController.urlExportacaoTodos(1)}"/>
+					<p:menuitem icon="ui-icon-arrowstop-1-s" value="Caranguejo (Finalizados)" url="#{formularioController.urlExportacaoTodos(2)}"/>
+					<p:menuitem icon="ui-icon-arrowstop-1-s" value="Camarão Pit. e Branco (Finalizados)" url="#{formularioController.urlExportacaoTodos(3)}"/>
 				</p:submenu>
 				<f:facet name="options">
 					<p:commandButton value="Sair" action="#{loginController.logout()}"
@@ -108,7 +108,7 @@
 			<hr width="865" />
 			<p:clock pattern="HH:mm:ss dd.MM.yyyy" mode="server" />
 			<br />
-			<br />	Projeto de Pesquisa 2016 - Appesca (Versão 1.1.5 PROD)<br />
+			<br />	Projeto de Pesquisa 2017 - Appesca (Versão 2.0 PROD)<br />
 			<h:graphicImage value="/resources/gfx/onda_footer.png" width="865"
 				style="margin-bottom:-20px" />
 		</div>

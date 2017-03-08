@@ -73,10 +73,13 @@
             <br />
 
             <hr />
+            <center>
             <p:button value="Exportar Planilha"
-                      href="/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}"
+                      disabled="#{formularioController.getTotalFormularios() == 0}"
+                      href="#{formularioController.urlExportacao}"
                       target="_blank">
             </p:button>
+                </center>
 
 
             <!-- <a href="/appesca-web/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}" target="_blank">

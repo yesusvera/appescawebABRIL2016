@@ -13,7 +13,7 @@
 //import br.org.unesco.appesca.util.ConstantesUNESCO;
 //
 //@Entity
-//@Table(name = "tb_ident_entrevistado", schema=ConstantesUNESCO.SCHEMA_APPESCA)
+//@Table(name = "TB_IDENT_ENTREVISTADO", schema=ConstantesUNESCO.SCHEMA_APPESCA)
 //public class IdentEntrevistado implements java.io.Serializable {
 //
 //	private static final long serialVersionUID = -4061574933952985453L;
