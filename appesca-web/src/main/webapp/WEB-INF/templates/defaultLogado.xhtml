@@ -35,6 +35,12 @@
 			<h:graphicImage value="/resources/gfx/topoAppesca.png"/>
 		</p:link>
 	</div>
+    
+        <p:ajaxStatus onstart="PF('statusDialog').show()" onsuccess="PF('statusDialog').hide()" />
+ 
+        <p:dialog widgetVar="statusDialog" modal="true" draggable="false" closable="false" resizable="false" showHeader="false">
+            <h:graphicImage value="/resources/gfx/loading.gif" width="90" />
+        </p:dialog>
 	
 
 	<div id="cardNoBorder">
@@ -100,8 +106,7 @@
 	<div id="cardNoBorder">
 		<div id="footer">
 			<hr width="865" />
-			<p:clock pattern="HH:mm:ss dd.MM.yyyy" mode="server"
-				style="background:white;" />
+			<p:clock pattern="HH:mm:ss dd.MM.yyyy" mode="server" />
 			<br />
 			<br />	Projeto de Pesquisa 2016 - Appesca (Versão 1.1.5 PROD)<br />
 			<h:graphicImage value="/resources/gfx/onda_footer.png" width="865"

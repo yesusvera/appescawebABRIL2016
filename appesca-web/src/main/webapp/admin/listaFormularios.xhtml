@@ -93,7 +93,8 @@
             <p:dataTable var="formulario"
                          value="#{formularioController.listaFormularios}"
                          emptyMessage="Nenhum formulário encontrado." style="font-size:small">
-                <p:column headerText="Pesquisador"
+                <p:column headerText=" Pesquisador   "
+                          width="100"
                           filterBy="#{formularioController.getUsuario(formulario).nome}"
                           sortBy="#{formularioController.getUsuario(formulario).nome}"
                           style="text-align: center;">
@@ -101,27 +102,30 @@
                         value="#{formularioController.getUsuario(formulario).nome}" />
                 </p:column>
                 <p:column headerText="Registro"
+                          width="75"
                           filterBy="#{formulario.idSincronizacao}"
                           sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
                     <h:outputText value="#{formulario.idSincronizacao}" />
                 </p:column>
-                <p:column headerText="Nome Entrevistado" style="text-align: center;">
+                <p:column headerText="Nome Entrevistado" width="110" style="text-align: center;">
                     <h:outputText
                         value="#{formularioController.getRespTxt(0,1,1,formulario)}" />
                 </p:column>
                 <p:column headerText="UF"
+                          width="50"
                           filterBy="#{formularioController.getUFTabela(formulario)}"
                           style="text-align: center;">
                     <h:outputText
                         value="#{formularioController.getUFTabela(formulario)}" />
                 </p:column>
-                <p:column headerText="Data" filterBy="#{formulario.data}"
+                <p:column headerText="Data" filterBy="#{formulario.data}" width="60"
                           sortBy="#{formulario.data}" style="text-align: center;">
                     <h:outputText value="#{formulario.data}" />
                     <br />
                     <h:outputText value="#{formulario.hora}" />
                 </p:column>
-                <p:column headerText="Situação"
+                <p:column headerText="Status"
+                          width="70"
                           filterBy="#{formularioController.getSituacao(formulario)}"
                           sortBy="#{formularioController.getSituacao(formulario)}"
                           style="text-align: center;">
@@ -130,8 +134,8 @@
                         style="#{formulario.situacao==2?'color:green':'color:red'}" />
                 </p:column>
 
-                <p:column headerText="Questões" style="text-align: center;">
-                    #{formulario.listaQuestoes.size()} de #{formularioController.getQtdeMax(formulario)} respondidas
+                <p:column headerText="Questões" width="60" style="text-align: center;">
+                    #{formulario.listaQuestoes.size()} de #{formularioController.getQtdeMax(formulario)}
                 </p:column>
                 <p:column headerText="Ações" style="text-align: center;">
                     <p:commandLink
@@ -141,7 +145,7 @@
                     </p:commandLink>
                 </p:column>
 
-                <p:column headerText="Degravação" width="95"
+                <p:column headerText="Áudio" width="35"
                           sortBy="#{formularioController.labelTemDegravacao(formulario)}"
                           style="align:center">
                     <h:outputText value="Não"
