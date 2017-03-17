@@ -10,24 +10,37 @@
         <h:form id="mainForm">
 
             <p:accordionPanel>
-                <p:tab title="Filtros de pesquisa" id="filtrosTab">
-                    <h:panelGrid columns="4">
+                <p:tab title="Filtros" id="filtrosTab">
 
-                        <h:outputLabel for="situacaoFiltro" value="Situação:" />
-                        <p:selectOneMenu id="situacaoFiltro" value="#{formularioController.filtroFormulario.situacao}">
-                            <f:selectItem itemLabel="Todos" itemValue="" />
-                            <f:selectItem itemLabel="Devolvido" itemValue="-1" />
-                            <f:selectItem itemLabel="Pendente de Aprovação" itemValue="1" />
-                            <f:selectItem itemLabel="Finalizado" itemValue="2" />
-                        </p:selectOneMenu>
+                    <p:fieldset legend="Filtros Formulário" toggleable="true" toggleSpeed="500">
+                        <h:panelGrid columns="4">
 
+                            <h:outputLabel for="situacaoFiltro" value="Situação:" />
+                            <p:selectOneMenu id="situacaoFiltro" value="#{formularioController.filtroFormulario.situacao}">
+                                <f:selectItem itemLabel="Todos" itemValue="" />
+                                <f:selectItem itemLabel="Devolvido" itemValue="-1" />
+                                <f:selectItem itemLabel="Pendente de Aprovação" itemValue="1" />
+                                <f:selectItem itemLabel="Finalizado" itemValue="2" />
+                            </p:selectOneMenu>
 
-                        <h:outputLabel for="pesquisadorFiltro" value="Nome Pesquisador:" />
-                        <h:inputText id="pesquisadorFiltro" value="#{formularioController.filtroFormulario.pesquisador}"/>
+                            <h:outputLabel for="pesquisadorFiltro" value="Nome Pesquisador:" />
+                            <h:inputText id="pesquisadorFiltro" value="#{formularioController.filtroFormulario.pesquisador}"/>
 
-                    </h:panelGrid>
+                            <h:outputLabel for="codigoFiltro" value="Código Registro" />
+                            <h:inputText id="codigoFiltro" value="#{formularioController.filtroFormulario.codigoRegistro}"/>
 
-                    <p:fieldset  legend="Filtros Entrevistado" toggleable="true" toggleSpeed="500">
+                            <h:outputLabel for="dataFiltro" value="Data Início" />
+                            <p:calendar id="dataFiltro" value="#{formularioController.filtroFormulario.dataInicio}" showOn="button" />
+
+                            <h:outputLabel for="dataFim" value="Data Fim" />
+                            <p:calendar id="dataFim" value="#{formularioController.filtroFormulario.dataFim}" showOn="button" />
+
+                        </h:panelGrid>
+
+                    </p:fieldset>
+
+                    <br/>
+                    <p:fieldset legend="Filtros Entrevistado" toggleable="true" toggleSpeed="500">
                         <h:panelGrid columns="4">
                             <h:outputLabel for="ufFiltro" value="UF" />
                             <p:selectOneMenu id="ufFiltro" value="#{formularioController.filtroFormulario.uf}">
@@ -41,8 +54,12 @@
                             <h:outputLabel for="comunidadeFiltro" value="Comunidade" />
                             <h:inputText id="comunidadeFiltro" value="#{formularioController.filtroFormulario.comunidade}"/>
 
-                            <h:outputLabel for="idadeFiltro" value="Idade" />
-                            <h:inputText id="idadeFiltro" value="#{formularioController.filtroFormulario.idadeEntrevistado}"/>
+                            <h:outputLabel  value="Idade" />
+                            <h:panelGroup>
+                                <h:inputText value="#{formularioController.filtroFormulario.idadeInicial}" size="3"/>
+                                a
+                                <h:inputText value="#{formularioController.filtroFormulario.idadeFim}" size="3"/>
+                            </h:panelGroup>
 
 
                             <h:outputLabel for="sexoFiltro" value="Sexo" />
@@ -74,12 +91,12 @@
 
             <hr />
             <center>
-            <p:button value="Exportar Planilha"
-                      disabled="#{formularioController.getTotalFormularios() == 0}"
-                      href="#{formularioController.urlExportacao}"
-                      target="_blank">
-            </p:button>
-                </center>
+                <p:button value="Exportar Planilha"
+                          disabled="#{formularioController.getTotalFormularios() == 0}"
+                          href="#{formularioController.urlExportacao}"
+                          target="_blank">
+                </p:button>
+            </center>
 
 
             <!-- <a href="/appesca-web/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}" target="_blank">
@@ -98,7 +115,6 @@
                          emptyMessage="Nenhum formulário encontrado." style="font-size:small">
                 <p:column headerText=" Pesquisador   "
                           width="100"
-                          filterBy="#{formularioController.getUsuario(formulario).nome}"
                           sortBy="#{formularioController.getUsuario(formulario).nome}"
                           style="text-align: center;">
                     <h:outputText
@@ -106,22 +122,21 @@
                 </p:column>
                 <p:column headerText="Registro"
                           width="75"
-                          filterBy="#{formulario.idSincronizacao}"
                           sortBy="#{formulario.idSincronizacao}" style="text-align: center;">
                     <h:outputText value="#{formulario.idSincronizacao}" />
                 </p:column>
-                <p:column headerText="Nome Entrevistado" width="110" style="text-align: center;">
+                <p:column sortBy="#{formularioController.getRespTxt(0,1,1,formulario)}" headerText="Nome Entrevistado" width="110" style="text-align: center;">
                     <h:outputText
                         value="#{formularioController.getRespTxt(0,1,1,formulario)}" />
                 </p:column>
                 <p:column headerText="UF"
+                          sortBy="#{formularioController.getUFTabela(formulario)}"
                           width="50"
-                          filterBy="#{formularioController.getUFTabela(formulario)}"
                           style="text-align: center;">
                     <h:outputText
                         value="#{formularioController.getUFTabela(formulario)}" />
                 </p:column>
-                <p:column headerText="Data" filterBy="#{formulario.data}" width="60"
+                <p:column headerText="Data" width="60"
                           sortBy="#{formulario.data}" style="text-align: center;">
                     <h:outputText value="#{formulario.data}" />
                     <br />
@@ -129,7 +144,6 @@
                 </p:column>
                 <p:column headerText="Status"
                           width="70"
-                          filterBy="#{formularioController.getSituacao(formulario)}"
                           sortBy="#{formularioController.getSituacao(formulario)}"
                           style="text-align: center;">
                     <h:outputText
@@ -137,7 +151,7 @@
                         style="#{formulario.situacao==2?'color:green':'color:red'}" />
                 </p:column>
 
-                <p:column headerText="Questões" width="60" style="text-align: center;">
+                <p:column headerText="Questões" sortBy="#{formulario.listaQuestoes.size()}" width="60" style="text-align: center;">
                     #{formulario.listaQuestoes.size()} de #{formularioController.getQtdeMax(formulario)}
                 </p:column>
                 <p:column headerText="Ações" style="text-align: center;">

@@ -33,6 +33,7 @@ import javax.transaction.UserTransaction;
 
 import br.org.unesco.appesca.model.Formulario;
 import br.org.unesco.appesca.model.Usuario;
+import java.util.Date;
 
 @ApplicationScoped
 public class FormularioRepository {
@@ -95,6 +96,22 @@ public class FormularioRepository {
                 + " inner join pergunta.listaRespostas as resposta ";
 
         String hqlWhereCabecalho = " where form.idTipoFormulario = " + tipoFormulario;
+        
+        if(filtro.getCodigoRegistro()!=null && !filtro.getCodigoRegistro().isEmpty()){
+            hqlWhereCabecalho += " and form.idSincronizacao LIKE '%"+filtro.getCodigoRegistro()+ "%'";
+        }
+        
+        if (filtro.getSituacao() != null && !filtro.getSituacao().isEmpty()) {
+            hqlWhereCabecalho += " and form.situacao = " + filtro.getSituacao();
+        }
+        
+        if (filtro.getDataInicio()!= null) {
+            hqlWhereCabecalho += " and form.dataAplicacao >= :dataIni " ;//+ sdf.format(filtro.getDataInicio());
+        }
+        if (filtro.getDataFim()!= null) {
+            hqlWhereCabecalho += " and form.dataAplicacao <= :dataFim " ;//+ sdf.format(filtro.getDataFim());
+        }
+
 
         String hqlWhereCorpo = "";
 
@@ -104,10 +121,6 @@ public class FormularioRepository {
             hqlWhereCorpo += " and usuario.id = form.idUsuario and usuario.nome LIKE '%" + filtro.getPesquisador() + "%' ";
         }
         
-        if (filtro.getSituacao() != null && !filtro.getSituacao().isEmpty()) {
-            hqlWhereCorpo += " and form.situacao = " + filtro.getSituacao();
-        }
-
 
         String hqlWhereFiltros = " and ( ";
         if (filtro.getUf() != null && !filtro.getUf().isEmpty()) {
@@ -151,7 +164,7 @@ public class FormularioRepository {
                     + ")";
         }
 
-        if (filtro.getIdadeEntrevistado() != null && !filtro.getIdadeEntrevistado().isEmpty()) {
+        if (filtro.getIdadeInicial() != null && !filtro.getIdadeInicial().isEmpty()) {
              if (precisaInners) {
                 hqlWhereFiltros += " or ";
             } else {
@@ -159,7 +172,7 @@ public class FormularioRepository {
             }
             hqlWhereFiltros += " (questao.ordem = 0 "
                     + "and pergunta.ordem = 7 "
-                    + "and resposta.ordem = 1 and resposta.texto LIKE '%" + filtro.getIdadeEntrevistado() + "%')";
+                    + "and resposta.ordem = 1 and resposta.texto LIKE '%" + filtro.getIdadeInicial() + "%')";
         }
 
         if (filtro.isPescadorB2Q1Ra()) {
@@ -185,33 +198,35 @@ public class FormularioRepository {
 
         }
         hqlWhereFiltros += ")";
-//        hql += " and questao.ordem in (0, 16) and pergunta.ordem in (1,3,4,5,7,8) and resposta.ordem in (1,2,3,4) ";
-//        hql += " and (1=0";
-//
-//        if (filtro.getComunidade() != null && !filtro.getComunidade().isEmpty()) {
-//            hql += " or resposta.texto LIKE '%" + filtro.getComunidade() + "%'";
-//        }
-//
-//        if (filtro.getMunicipio() != null && !filtro.getMunicipio().isEmpty()) {
-//            hql += " or resposta.texto LIKE '%" + filtro.getMunicipio() + "%'";
-//        }
-//        if (filtro.getSexo() != null && !filtro.getSexo().isEmpty()) {
-//            hql += " or resposta.texto LIKE '%" + filtro.getSexo() + "%'";
-//        }
-//      
-//        if (filtro.getIdadeEntrevistado() != null && !filtro.getIdadeEntrevistado().isEmpty()) {
-//            hql += " or resposta.texto LIKE '%" + filtro.getIdadeEntrevistado() + "%'";
-//        }
-//        hql += ")";
 
         if (!precisaInners) {
             hqlInners = "";
             hqlWhereFiltros = "";
         }
+        
+        //APENAS PARA RETIRAR OS FILTROS POR BANCO, DEPOIS ARRANCAR O CODIGO DOS FILTROS DAQUI
+        hqlInners = "";
+        hqlWhereFiltros = "";
+        
 
         String hqlCompleto = hqlCabecalho + hqlInners + hqlWhereCabecalho + hqlWhereCorpo + hqlWhereFiltros;
 
         Query query = em.createQuery(hqlCompleto);
+        
+         if (filtro.getDataInicio()!= null) {
+            Date dtIni = new Date(filtro.getDataInicio().getYear(),
+                                    filtro.getDataInicio().getMonth(),
+                                    filtro.getDataInicio().getDate(),
+                                    0,0,0);
+            query.setParameter("dataIni", dtIni);
+        }
+        if (filtro.getDataFim()!= null) {
+            Date dtFim = new Date(filtro.getDataFim().getYear(),
+                                  filtro.getDataFim().getMonth(),
+                                  filtro.getDataFim().getDate(),
+                                  23,59,59);
+            query.setParameter("dataFim", dtFim);
+        }
 
         return (List<Formulario>) query.getResultList();
     }

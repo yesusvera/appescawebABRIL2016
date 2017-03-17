@@ -81,15 +81,17 @@ public class FormularioController implements Serializable {
     private Resposta problemasF3Q74;
     private Resposta solucoesF3Q74;
     private int tipoFormulario;
-    
+
     private String urlExportacao;
 
     private FormFiltroPesquisa filtroFormulario = new FormFiltroPesquisa();
 
     public String listarFormularios(long tipoFormulario) {
         
-        setUrlExportacao("/rest/formulario/exportacaoDeFormulario?tipo="+tipoFormulario);
-        
+        limparFiltro();
+
+        setUrlExportacao("/rest/formulario/exportacaoDeFormulario?tipo=" + tipoFormulario);
+
         this.tipoFormulario = (int) tipoFormulario;
         listaFormularios = new ArrayList<>();
 
@@ -223,15 +225,111 @@ public class FormularioController implements Serializable {
             addMessage("Formulário devolvido para correção");
         } catch (Exception e) {
             addMessage("Aconteceu um problema.");
-        }
+        }   
 
         return "";
     }
 
     public String pesquisar() {
-        System.out.println(getFiltroFormulario());
+//        System.out.println(getFiltroFormulario());
 
-        listaFormularios = formularioService.listarPorFiltro(getFiltroFormulario(), tipoFormulario);
+        List<Formulario> listaFormulariosCache = formularioService.listarPorFiltro(getFiltroFormulario(), tipoFormulario);
+        
+        listaFormularios = new ArrayList<>();
+
+        FormFiltroPesquisa filtro = getFiltroFormulario();
+
+        for (Formulario form : listaFormulariosCache) {
+
+            if (filtro.getUf() != null && !filtro.getUf().isEmpty()) {
+                String uf = getUF(form);
+                if (!uf.equalsIgnoreCase(filtro.getUf())) {
+                    continue;
+                }
+            }
+
+            if (filtro.getMunicipio() != null && !filtro.getMunicipio().isEmpty()) {
+                String municipio = getRespTxt(0, 4, 1, form);
+                if (!municipio.toLowerCase().contains(filtro.getMunicipio().toLowerCase())) {
+                    continue;
+                }
+            }
+
+            if (filtro.getComunidade() != null && !filtro.getComunidade().isEmpty()) {
+                String comunidade = getRespTxt(0, 5, 1, form);
+                if (!comunidade.toLowerCase().contains(filtro.getComunidade().toLowerCase())) {
+                    continue;
+                }
+            }
+
+            if (filtro.getSexo() != null && !filtro.getSexo().isEmpty()) {
+                boolean masculino = getRespBool(0, 8, 1, form);
+                boolean feminino = getRespBool(0, 8, 2, form);
+
+                if (filtro.getSexo().equalsIgnoreCase("Masculino")) {
+                    if (!masculino) {
+                        continue;
+                    }
+                } else if (filtro.getSexo().equalsIgnoreCase("Feminino")) {
+                    if (!feminino) {
+                        continue;
+                    }
+                }
+            }
+
+            if ((filtro.getIdadeInicial() != null && !filtro.getIdadeInicial().isEmpty())
+                    || (filtro.getIdadeFim() != null && !filtro.getIdadeFim().isEmpty())) {
+                String strIdade = getRespTxt(0, 7, 1, form);
+
+                Integer idadeResposta = null, idadeIniFiltro = null, idadeFimFiltro = null;
+
+                try {
+                    idadeResposta = new Integer(strIdade);
+                } catch (NumberFormatException nfe) {
+                    continue;
+                }
+                try {
+                    idadeIniFiltro = new Integer(filtro.getIdadeInicial());
+                } catch (NumberFormatException nfe) {
+                }
+                try {
+                    idadeFimFiltro = new Integer(filtro.getIdadeFim());
+                } catch (NumberFormatException nfe) {
+                }
+
+                if (idadeIniFiltro != null && idadeFimFiltro != null) {
+                    if (!(idadeResposta >= idadeIniFiltro && idadeResposta <= idadeFimFiltro)) {
+                        continue;
+                    }
+                } else {
+                    if (idadeIniFiltro != null) {
+                        if (!(idadeResposta >= idadeIniFiltro)) {
+                            continue;
+                        }
+                    } else {
+                        if (!(idadeResposta <= idadeFimFiltro)) {
+                            continue;
+                        }
+                    }
+                }
+
+            }
+
+            if (filtro.isPescadorB2Q1Ra()) {
+                boolean isPescador = getRespBool(16, 1, 1, form);
+                if (isPescador != filtro.isPescadorB2Q1Ra()) {
+                    continue;
+                }
+            }
+            if (filtro.isPescadorCamCarB2Rb()) {
+                boolean isPescadorCamarao = getRespBool(16, 1, 2, form);
+                if (isPescadorCamarao != filtro.isPescadorCamCarB2Rb()) {
+                    continue;
+                }
+            }
+
+            listaFormularios.add(form);
+        }
 
         return "";
     }
@@ -359,20 +457,6 @@ public class FormularioController implements Serializable {
         }
     }
 
-//	private void carregarRespostasEditaveisRegional() {
-//		this.problemasF1Q72 = getResposta("q72_p1_r1");
-//		this.solucoesF1Q72 = getResposta("q72_p1_r2");
-//
-//	}
-//	private void carregarRespostasEditaveisBranco() {
-//		this.problemasF2Q60 = getResposta("q60_p1_r1");
-//		this.solucoesF2Q60 = getResposta("q60_p1_r2");
-//	}
-//
-//	private void carregarRespostasEditaveisCaranguejo() {
-//		this.problemasF3Q74 = getResposta("q74_p1_r1");
-//		this.solucoesF3Q74 = getResposta("q74_p1_r2");
-//	}
     public List<Formulario> getListaFormularios() {
         return listaFormularios;
     }
@@ -643,9 +727,8 @@ public class FormularioController implements Serializable {
         }
     }
 
-    
-    public String urlExportacaoTodos(int tipoFormulario){
-        return "/rest/formulario/exportacaoDeFormulario?tipo="+tipoFormulario+"&todos=true";
+    public String urlExportacaoTodos(int tipoFormulario) {
+        return "/rest/formulario/exportacaoDeFormulario?tipo=" + tipoFormulario + "&todos=true";
     }
 
     /**
@@ -675,6 +758,5 @@ public class FormularioController implements Serializable {
     public void setFiltroFormulario(FormFiltroPesquisa filtroFormulario) {
         this.filtroFormulario = filtroFormulario;
     }
-    
-    
+
 }

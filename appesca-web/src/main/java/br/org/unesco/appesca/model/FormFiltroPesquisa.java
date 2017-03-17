@@ -5,6 +5,8 @@
  */
 package br.org.unesco.appesca.model;
 
+import java.util.Date;
+
 /**
  *
  * @author yesus
@@ -15,9 +17,13 @@ public class FormFiltroPesquisa {
     private String comunidade;
     private String pesquisador;
     private String sexo;
-    private String idadeEntrevistado;
+    private String idadeInicial;
+    private String idadeFim;
     private String intervaloBlocoQuestoes;
     private String situacao;
+    private String codigoRegistro;
+    private Date dataInicio;
+    private Date dataFim;
     private boolean pescadorB2Q1Ra;
     private boolean pescadorCamCarB2Rb;
 
@@ -94,15 +100,15 @@ public class FormFiltroPesquisa {
     /**
      * @return the idadeEntrevistado
      */
-    public String getIdadeEntrevistado() {
-        return idadeEntrevistado;
+    public String getIdadeInicial() {
+        return idadeInicial;
     }
 
     /**
      * @param idadeEntrevistado the idadeEntrevistado to set
      */
-    public void setIdadeEntrevistado(String idadeEntrevistado) {
-        this.idadeEntrevistado = idadeEntrevistado;
+    public void setIdadeInicial(String idadeEntrevistado) {
+        this.idadeInicial = idadeEntrevistado;
     }
 
     /**
@@ -160,5 +166,62 @@ public class FormFiltroPesquisa {
     public void setSituacao(String situacao) {
         this.situacao = situacao;
     }
+
+    /**
+     * @return the codigoRegistro
+     */
+    public String getCodigoRegistro() {
+        return codigoRegistro;
+    }
+
+    /**
+     * @param codigoRegistro the codigoRegistro to set
+     */
+    public void setCodigoRegistro(String codigoRegistro) {
+        this.codigoRegistro = codigoRegistro;
+    }
+
+    /**
+     * @return the dataInicio
+     */
+    public Date getDataInicio() {
+        return dataInicio;
+    }
+
+    /**
+     * @param dataInicio the dataInicio to set
+     */
+    public void setDataInicio(Date dataInicio) {
+        this.dataInicio = dataInicio;
+    }
+
+    /**
+     * @return the dataFim
+     */
+    public Date getDataFim() {
+        return dataFim;
+    }
+
+    /**
+     * @param dataFim the dataFim to set
+     */
+    public void setDataFim(Date dataFim) {
+        this.dataFim = dataFim;
+    }
+
+    /**
+     * @return the idadeFim
+     */
+    public String getIdadeFim() {
+        return idadeFim;
+    }
+
+    /**
+     * @param idadeFim the idadeFim to set
+     */
+    public void setIdadeFim(String idadeFim) {
+        this.idadeFim = idadeFim;
+    }
+    
     
 }
