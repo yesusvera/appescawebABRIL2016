@@ -202,18 +202,16 @@ public class FormularioResourceREST extends BaseREST {
         TemplateCVS templateCVS = new TemplateCVS();
         templateCVS.execute(new File(context.getRealPath("/WEB-INF/exportacaoTemplates/" + nomeTemplate)));
 
-         List<Formulario> listaFormulario = formularioController.getListaFormularios();
+        List<Formulario> listaFormulario = formularioController.getListaFormularios();
 
         if (todos) {
             listaFormulario = formularioService.listByTipoFormulario((int) tipoFormulario);
         }
-        
+
         String conteudoCSV = "";
 
         // CABEÇALHO
         conteudoCSV = templateCVS.montaCabecalho(conteudoCSV, formularioController.getFiltroFormulario(), listaFormulario.size());
-
-       
 
         List<Usuario> listaUsuarios = new ArrayList<>();
 
@@ -270,7 +268,7 @@ public class FormularioResourceREST extends BaseREST {
                             if (usr != null) {
                                 linhaCSV += usr.getNome();
                             }
-                        }else if (TemplateCVS.temDoisCodigos(row)) {
+                        } else if (TemplateCVS.temDoisCodigos(row)) {
                             linhaCSV = templateCVS.priorizaRespostaComDoisCodigos(linhaCSV,
                                     formularioService.getResposta(row.getCod2AppescaAndroid(), form).getTexto(),
                                     formularioService.getResposta(row.getCod1AppescaAndroid(), form).getTexto());

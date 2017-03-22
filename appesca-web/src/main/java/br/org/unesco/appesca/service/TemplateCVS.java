@@ -75,21 +75,21 @@ public class TemplateCVS {
 
     public String montaCabecalho(String conteudoCSV, FormFiltroPesquisa filtroFormulario, int qtdeRegistros) {
 
-        conteudoCSV += "Filtros Formulário:" + ";\n";
-        conteudoCSV += linhaInformativoFiltro("Situação:", filtroFormulario.getSituacao());
+        conteudoCSV += "FILTROS FORMULÁRIO" + ";\n";
+        conteudoCSV += linhaInformativoFiltro("Situação:", filtroFormulario.getSituacao(), true);
         conteudoCSV += linhaInformativoFiltro("Nome Pesquisador:", filtroFormulario.getPesquisador());
         conteudoCSV += linhaInformativoFiltro("Código Registro:", filtroFormulario.getCodigoRegistro());
         conteudoCSV += linhaInformativoFiltro("Data Início:", filtroFormulario.getDataInicio());
         conteudoCSV += linhaInformativoFiltro("Data Fim:", filtroFormulario.getDataFim());
-        conteudoCSV += "\n;\n;";
+        conteudoCSV += "\n\n";
 
-        conteudoCSV += "Filtros Entrevistado:" + ";\n";
-        conteudoCSV += linhaInformativoFiltro("UF:", filtroFormulario.getUf());
+        conteudoCSV += "FILTROS ENTREVISTADO" + ";\n";
+        conteudoCSV += linhaInformativoFiltro("UF:", filtroFormulario.getUf(), true);
         conteudoCSV += linhaInformativoFiltro("Município:", filtroFormulario.getMunicipio());
         conteudoCSV += linhaInformativoFiltro("Comunidade:", filtroFormulario.getComunidade());
         conteudoCSV += linhaInformativoFiltro("Idade mínima:", filtroFormulario.getIdadeInicial());
         conteudoCSV += linhaInformativoFiltro("Idade máxima:", filtroFormulario.getIdadeFim());
-        conteudoCSV += linhaInformativoFiltro("Sexo:", filtroFormulario.getSexo());
+        conteudoCSV += linhaInformativoFiltro("Sexo:", filtroFormulario.getSexo(), true);
         conteudoCSV += linhaInformativoFiltro("Pescador:", filtroFormulario.isPescadorB2Q1Ra() ? "Sim" : "Não");
         conteudoCSV += linhaInformativoFiltro("Pescador Camarão/Caranguejo:", filtroFormulario.isPescadorCamCarB2Rb() ? "Sim" : "Não");
 
@@ -105,8 +105,15 @@ public class TemplateCVS {
         return conteudoCSV;
     }
 
-    public String linhaInformativoFiltro(String label, Object valorParam) {
+     public String linhaInformativoFiltro(String label, Object valorParam){
+         return linhaInformativoFiltro(label, valorParam, false);
+     } 
+    
+    public String linhaInformativoFiltro(String label, Object valorParam, boolean todosPadrao) {
         String valor = "-";
+        if(todosPadrao){
+            valor = "TODOS";
+        }
 
         if (valorParam != null) {
             if (valorParam instanceof String) {
