@@ -1,5 +1,6 @@
 package br.org.unesco.appesca.service;
 
+import br.org.unesco.appesca.model.FormFiltroExportacao;
 import br.org.unesco.appesca.model.FormFiltroPesquisa;
 import java.io.BufferedReader;
 import java.io.File;
@@ -20,7 +21,12 @@ import java.util.Date;
 public class TemplateCVS {
 
     private List<RowExportCVS> listRowCVS = new ArrayList<>();
+    private FormFiltroExportacao filtroExportacao;
 
+    public TemplateCVS(FormFiltroExportacao filtroExportacao) {
+        this.filtroExportacao = filtroExportacao;
+    }
+    
     public void execute(File file) {
         try {
             BufferedReader buffReader = new BufferedReader(new FileReader(file));
@@ -76,7 +82,13 @@ public class TemplateCVS {
     public String montaCabecalho(String conteudoCSV, FormFiltroPesquisa filtroFormulario, int qtdeRegistros) {
 
         conteudoCSV += "FILTROS FORMULÁRIO" + ";\n";
-        conteudoCSV += linhaInformativoFiltro("Situação:", filtroFormulario.getSituacao(), true);
+        String labelSituacao = "";
+        switch(filtroFormulario.getSituacao()){
+            case "-1" : labelSituacao = "DEVOLVIDO"; break;
+            case "1" : labelSituacao = "PENDENTE DE APROVAÇÃO";  break;
+            case "2" : labelSituacao = "FINALIZADO";  break;
+        }
+        conteudoCSV += linhaInformativoFiltro("Situação:", labelSituacao, true);
         conteudoCSV += linhaInformativoFiltro("Nome Pesquisador:", filtroFormulario.getPesquisador());
         conteudoCSV += linhaInformativoFiltro("Código Registro:", filtroFormulario.getCodigoRegistro());
         conteudoCSV += linhaInformativoFiltro("Data Início:", filtroFormulario.getDataInicio());
@@ -95,9 +107,28 @@ public class TemplateCVS {
 
         conteudoCSV += "Total de registros encontrados:;" + qtdeRegistros + ";\n;;\n;;\n";
 
+        //PRIMEIRA LINHA DE CABECALHO BLOCO
+        conteudoCSV += ";;;;;;;;;";
+        for (RowExportCVS row : getListRowCVS()) {
+            if (exportarColuna(row)) {
+                conteudoCSV += "Bloco " + row.getNumeroBloco() + ";";
+            }
+        }
+        conteudoCSV += "\n";
+        
+         //SEGUNDA LINHA DE CABECALHO QUESTAO
+        conteudoCSV += ";;;;;;;;;";
+        for (RowExportCVS row : getListRowCVS()) {
+            if (exportarColuna(row)) {
+                conteudoCSV += "Quest. " + row.getQuestao() + ";";
+            }
+        }
+        conteudoCSV += "\n";
+         
+         //SEGUNDA LINHA DE CABECALHO 
         conteudoCSV += "Codigo;Pesquisador;Recurso;Estado;Municipio;Comunidade;UC;lat;long;";
         for (RowExportCVS row : getListRowCVS()) {
-            if (codigoExportacaoValido(row.getCodigoExportacao())) {
+            if (exportarColuna(row)) {
                 conteudoCSV += row.getCodigoExportacao() + ";";
             }
         }
@@ -119,21 +150,49 @@ public class TemplateCVS {
             if (valorParam instanceof String) {
                 if (!((String) valorParam).isEmpty()) {
                     valor = (String) valorParam;
+                }else{
+                    return "";
                 }
             } else if (valorParam instanceof Date) {
                 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
                 valor = sdf.format((Date) valorParam);
             }
+        }else{
+            return "";
         }
 
         String linhaFiltro = label + ";" + valor + ";\n";
         return linhaFiltro;
     }
 
-    public static boolean codigoExportacaoValido(String codigoExportacao) {
-        return codigoExportacao != null
-                && !codigoExportacao.isEmpty()
-                && codigoExportacao.toLowerCase().startsWith("var");
+    /**
+     * IMPORTANTE PARA VALIDAR SE ESTA COLUNA PODE SER EXPORTADA,
+     * BASEADO NO CODIGO DE EXPORTACAO VALIDO E
+     * SE ESTA NOS FILTROS DE EXPORTACAO
+     * @param codigoExportacao
+     * @return 
+     */
+    public boolean exportarColuna(RowExportCVS row) {
+        if(row.getCodigoExportacao() != null
+                && !row.getCodigoExportacao().isEmpty()
+                && row.getCodigoExportacao().toLowerCase().startsWith("var")){
+            try{
+                if(row.getNumeroBloco()>=filtroExportacao.getBlocoIni() && 
+                        row.getNumeroBloco()<=filtroExportacao.getBlocoFim()){
+                    
+                    int questaoIni = filtroExportacao.getBlocosQuestaoIni()[row.getNumeroBloco()-1];
+                    int questaoFim = filtroExportacao.getBlocosQuestaoFim()[row.getNumeroBloco()-1];
+                    
+                    if(row.getNumeroQuestao()>=questaoIni && 
+                       row.getNumeroQuestao()<=questaoFim){
+                        return true;
+                    }
+                }
+            }catch(NullPointerException e){
+                e.printStackTrace();
+            }
+        }
+        return false;
     }
 
     public String priorizaRespostaComDoisCodigos(String linhaMontada, String respCod2, String respCod1) {

@@ -1,5 +1,6 @@
 package br.org.unesco.appesca.controller;
 
+import br.org.unesco.appesca.model.FormFiltroExportacao;
 import br.org.unesco.appesca.model.FormFiltroPesquisa;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -37,6 +38,7 @@ import br.org.unesco.appesca.service.FormularioService;
 import br.org.unesco.appesca.service.QuestaoService;
 import br.org.unesco.appesca.service.RespostaService;
 import br.org.unesco.appesca.service.UsuarioService;
+import br.org.unesco.appesca.util.StringUtils;
 
 @Model
 @SessionScoped
@@ -62,6 +64,8 @@ public class FormularioController implements Serializable {
 
     private List<Usuario> listaUsuarios = new ArrayList<>();
 
+    private List<String> listaBlocos = new ArrayList<>();
+
     private Formulario formulario;
 
     private String titulo;
@@ -85,9 +89,10 @@ public class FormularioController implements Serializable {
     private String urlExportacao;
 
     private FormFiltroPesquisa filtroFormulario = new FormFiltroPesquisa();
+    private FormFiltroExportacao filtroExportacao;
 
     public String listarFormularios(long tipoFormulario) {
-        
+
         limparFiltro();
 
         setUrlExportacao("/rest/formulario/exportacaoDeFormulario?tipo=" + tipoFormulario);
@@ -99,12 +104,15 @@ public class FormularioController implements Serializable {
         switch (this.tipoFormulario) {
             case 1:
                 setTitulo("Formulário Camarão Regional");
+                filtroExportacao = new FormFiltroExportacao(new int[]{15, 6, 9, 11, 5, 7, 12, 7, 1});
                 break;
             case 2:
                 setTitulo("Formulário Caranguejo");
+                filtroExportacao = new FormFiltroExportacao(new int[]{15, 6, 9, 11, 5, 8, 13, 6, 1});
                 break;
             case 3:
                 setTitulo("Formulário Camarão Piticaia e Branco");
+                filtroExportacao = new FormFiltroExportacao(new int[]{15, 6, 9, 11, 5, 6, 2, 6, 1});
                 break;
         }
 
@@ -225,16 +233,17 @@ public class FormularioController implements Serializable {
             addMessage("Formulário devolvido para correção");
         } catch (Exception e) {
             addMessage("Aconteceu um problema.");
-        }   
+        }
 
         return "";
     }
+
 
     public String pesquisar() {
 //        System.out.println(getFiltroFormulario());
 
         List<Formulario> listaFormulariosCache = formularioService.listarPorFiltro(getFiltroFormulario(), tipoFormulario);
-        
+
         listaFormularios = new ArrayList<>();
 
         FormFiltroPesquisa filtro = getFiltroFormulario();
@@ -250,6 +259,15 @@ public class FormularioController implements Serializable {
 
             if (filtro.getMunicipio() != null && !filtro.getMunicipio().isEmpty()) {
                 String municipio = getRespTxt(0, 4, 1, form);
+                
+                if(municipio!=null){
+                    municipio = StringUtils.unaccent(municipio);
+                }
+                
+                if(filtro.getMunicipio()!=null){
+                    filtro.setMunicipio(StringUtils.unaccent(filtro.getMunicipio()));
+                }
+                
                 if (!municipio.toLowerCase().contains(filtro.getMunicipio().toLowerCase())) {
                     continue;
                 }
@@ -257,6 +275,15 @@ public class FormularioController implements Serializable {
 
             if (filtro.getComunidade() != null && !filtro.getComunidade().isEmpty()) {
                 String comunidade = getRespTxt(0, 5, 1, form);
+                
+                if(comunidade!=null){
+                    comunidade = StringUtils.unaccent(comunidade);
+                }
+                
+                if(filtro.getComunidade()!=null){
+                    filtro.setComunidade(StringUtils.unaccent(filtro.getComunidade()));
+                }
+                
                 if (!comunidade.toLowerCase().contains(filtro.getComunidade().toLowerCase())) {
                     continue;
                 }
@@ -312,22 +339,27 @@ public class FormularioController implements Serializable {
                         }
                     }
                 }
-
             }
 
-            if (filtro.isPescadorB2Q1Ra()) {
-                boolean isPescador = getRespBool(16, 1, 1, form);
-                if (isPescador != filtro.isPescadorB2Q1Ra()) {
+            boolean isPescador = getRespBool(16, 1, 1, form);
+            boolean isPescadorCamarao = getRespBool(16, 1, 2, form);
+
+            if (filtro.isPescadorB2Q1Ra() && filtro.isPescadorCamCarB2Rb()) {
+                if (!isPescador && !isPescadorCamarao) {
                     continue;
                 }
-            }
-            if (filtro.isPescadorCamCarB2Rb()) {
-                boolean isPescadorCamarao = getRespBool(16, 1, 2, form);
-                if (isPescadorCamarao != filtro.isPescadorCamCarB2Rb()) {
-                    continue;
+            } else {
+                if (filtro.isPescadorB2Q1Ra()) {
+                    if (isPescador != filtro.isPescadorB2Q1Ra()) {
+                        continue;
+                    }
+                }
+                if (filtro.isPescadorCamCarB2Rb()) {
+                    if (isPescadorCamarao != filtro.isPescadorCamCarB2Rb()) {
+                        continue;
+                    }
                 }
             }
-
             listaFormularios.add(form);
         }
 
@@ -757,6 +789,20 @@ public class FormularioController implements Serializable {
      */
     public void setFiltroFormulario(FormFiltroPesquisa filtroFormulario) {
         this.filtroFormulario = filtroFormulario;
+    }
+
+    /**
+     * @return the filtroExportacao
+     */
+    public FormFiltroExportacao getFiltroExportacao() {
+        return filtroExportacao;
+    }
+
+    /**
+     * @param filtroExportacao the filtroExportacao to set
+     */
+    public void setFiltroExportacao(FormFiltroExportacao filtroExportacao) {
+        this.filtroExportacao = filtroExportacao;
     }
 
 }

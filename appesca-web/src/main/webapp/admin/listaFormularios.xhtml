@@ -12,9 +12,9 @@
             <p:accordionPanel>
                 <p:tab title="Filtros" id="filtrosTab">
 
+                    <p:messages autoUpdate="true"/>
                     <p:fieldset legend="Filtros Formulário" toggleable="true" toggleSpeed="500">
                         <h:panelGrid columns="4">
-
                             <h:outputLabel for="situacaoFiltro" value="Situação:" />
                             <p:selectOneMenu id="situacaoFiltro" value="#{formularioController.filtroFormulario.situacao}">
                                 <f:selectItem itemLabel="Todos" itemValue="" />
@@ -22,21 +22,20 @@
                                 <f:selectItem itemLabel="Pendente de Aprovação" itemValue="1" />
                                 <f:selectItem itemLabel="Finalizado" itemValue="2" />
                             </p:selectOneMenu>
-
                             <h:outputLabel for="pesquisadorFiltro" value="Nome Pesquisador:" />
                             <h:inputText id="pesquisadorFiltro" value="#{formularioController.filtroFormulario.pesquisador}"/>
 
                             <h:outputLabel for="codigoFiltro" value="Código Registro" />
                             <h:inputText id="codigoFiltro" value="#{formularioController.filtroFormulario.codigoRegistro}"/>
 
+                            <h:outputLabel value=""/><h:outputLabel value=""/>
+
                             <h:outputLabel for="dataFiltro" value="Data Início" />
-                            <p:calendar id="dataFiltro" value="#{formularioController.filtroFormulario.dataInicio}" showOn="button" />
+                            <p:calendar id="dataFiltro" converterMessage="Data Início Inválida" validatorMessage="Data Início Inválida" value="#{formularioController.filtroFormulario.dataInicio}" showOn="button" />
 
                             <h:outputLabel for="dataFim" value="Data Fim" />
-                            <p:calendar id="dataFim" value="#{formularioController.filtroFormulario.dataFim}" showOn="button" />
-
+                            <p:calendar id="dataFim" converterMessage="Data Fim Inválida" validatorMessage="Data Fim Inválida" value="#{formularioController.filtroFormulario.dataFim}" showOn="button" />
                         </h:panelGrid>
-
                     </p:fieldset>
 
                     <br/>
@@ -56,11 +55,10 @@
 
                             <h:outputLabel  value="Idade" />
                             <h:panelGroup>
-                                <h:inputText value="#{formularioController.filtroFormulario.idadeInicial}" size="3"/>
+                                <p:inputNumber decimalPlaces="0" maxValue="130" value="#{formularioController.filtroFormulario.idadeInicial}" size="3"/>
                                 a
-                                <h:inputText value="#{formularioController.filtroFormulario.idadeFim}" size="3"/>
+                                <p:inputNumber decimalPlaces="0" maxValue="130" value="#{formularioController.filtroFormulario.idadeFim}" size="3"/>
                             </h:panelGroup>
-
 
                             <h:outputLabel for="sexoFiltro" value="Sexo" />
                             <p:selectOneMenu id="sexoFiltro" value="#{formularioController.filtroFormulario.sexo}">
@@ -69,6 +67,8 @@
                                 <f:selectItem itemLabel="Feminino" itemValue="Feminino"/>
                             </p:selectOneMenu>
 
+                            <h:outputLabel value=""/><h:outputLabel value=""/>
+
                             <h:outputLabel value="Pescador:" />
                             <p:selectBooleanCheckbox value="#{formularioController.filtroFormulario.pescadorB2Q1Ra}" />
 
@@ -76,6 +76,153 @@
                             <p:selectBooleanCheckbox value="#{formularioController.filtroFormulario.pescadorCamCarB2Rb}" />
                         </h:panelGrid>
                     </p:fieldset>
+                    <br/>
+                    <p:fieldset legend="Filtros para exportação" collapsed="true" toggleable="true" toggleSpeed="500">
+                        <h:panelGrid columns="4">
+                            <h:outputLabel value="De" />
+                            <p:selectOneMenu id="blocoDe" value="#{formularioController.filtroExportacao.blocoIni}">
+                                <p:ajax update="mainForm" />
+                                <f:selectItems value="#{formularioController.filtroExportacao.listaBlocosDe()}"  />
+                            </p:selectOneMenu>
+                            <h:outputLabel value="a" />
+                            <p:selectOneMenu id="blocoPara" value="#{formularioController.filtroExportacao.blocoFim}">
+                                <p:ajax update="mainForm"/>
+                                <f:selectItems value="#{formularioController.filtroExportacao.listaBlocosAte()}"  />
+                            </p:selectOneMenu>
+                        </h:panelGrid>
+                        <br/>
+                        <h:panelGrid columns="2">
+                            <p:fieldset legend="Bloco 1" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(1)}">
+                                <h:panelGrid columns="4">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco1QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(1)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco1QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(1)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset>
+
+                            <p:fieldset legend="Bloco 2" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(2)}">
+                                <h:panelGrid columns="4">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco2QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(2)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco2QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(2)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset> 
+
+                            <p:fieldset legend="Bloco 3" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(3)}">
+                                <h:panelGrid columns="4">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco3QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(3)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco3QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(3)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset>
+                            <p:fieldset legend="Bloco 4" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(4)}">
+                                <h:panelGrid columns="4">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco4QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(4)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco4QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(4)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset>
+                            <p:fieldset legend="Bloco 5" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(5)}">
+                                <h:panelGrid columns="5">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco5QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(5)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco5QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(5)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset>
+                            <p:fieldset legend="Bloco 6" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(6)}">
+                                <h:panelGrid columns="6">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco6QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(6)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco6QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(6)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset>
+                            <p:fieldset legend="Bloco 7" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(7)}">
+                                <h:panelGrid columns="7">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco7QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(7)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco7QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(7)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset>
+                            <p:fieldset legend="Bloco 8" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(8)}">
+                                <h:panelGrid columns="8">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco8QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(8)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco8QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(8)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset>
+                            <p:fieldset legend="Bloco 9" toggleable="false" rendered="#{formularioController.filtroExportacao.renderizaBloco(9)}">
+                                <h:panelGrid columns="9">
+                                    <h:outputLabel value="De" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco9QuestaoIni}">
+                                        <p:ajax update="mainForm" />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesDe(9)}"/>
+                                    </p:selectOneMenu>
+                                    <h:outputLabel value="a" />
+                                    <p:selectOneMenu value="#{formularioController.filtroExportacao.bloco9QuestaoFim}">
+                                        <p:ajax />
+                                        <f:selectItems value="#{formularioController.filtroExportacao.listaQuestoesAte(9)}"/>
+                                    </p:selectOneMenu>
+                                </h:panelGrid>
+                            </p:fieldset>
+                        </h:panelGrid>
+                    </p:fieldset>
+
                     <br/><br/>
 
                     <p:commandButton id="btnPesquisar"
@@ -85,18 +232,7 @@
                         action="#{formularioController.limparFiltro()}" update="mainForm"
                         value="Limpar Filtros"/>
                 </p:tab>
-
             </p:accordionPanel>
-            <br />
-
-            <hr />
-            <center>
-                <p:button value="Exportar Planilha"
-                          disabled="#{formularioController.getTotalFormularios() == 0}"
-                          href="#{formularioController.urlExportacao}"
-                          target="_blank">
-                </p:button>
-            </center>
 
 
             <!-- <a href="/appesca-web/rest/formulario/exportacaoDeFormulario?tipo=#{formularioController.tipoFormulario}" target="_blank">
@@ -105,6 +241,11 @@
 
             <br />
             <center>
+                <hr/>
+                <p:button value="Exportar Planilha"
+                          disabled="#{formularioController.getTotalFormularios() == 0}"
+                          href="#{formularioController.urlExportacao}"
+                          target="_blank"/><br/><br/>
                 <i><b>#{formularioController.getTotalFormularios()} </b></i>
                 formulários encontrados.
             </center>

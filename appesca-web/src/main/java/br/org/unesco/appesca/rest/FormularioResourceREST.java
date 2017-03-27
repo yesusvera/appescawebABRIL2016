@@ -199,7 +199,7 @@ public class FormularioResourceREST extends BaseREST {
         nomeGerado += sdf.format(new Date());
         nomeGerado += ".csv";
 
-        TemplateCVS templateCVS = new TemplateCVS();
+        TemplateCVS templateCVS = new TemplateCVS(formularioController.getFiltroExportacao());
         templateCVS.execute(new File(context.getRealPath("/WEB-INF/exportacaoTemplates/" + nomeTemplate)));
 
         List<Formulario> listaFormulario = formularioController.getListaFormularios();
@@ -257,7 +257,7 @@ public class FormularioResourceREST extends BaseREST {
 
             for (RowExportCVS row : templateCVS.getListRowCVS()) {
                 try {
-                    if (!TemplateCVS.codigoExportacaoValido(row.getCodigoExportacao())) {
+                    if (!templateCVS.exportarColuna(row)) {
                         continue;
                     }
 
