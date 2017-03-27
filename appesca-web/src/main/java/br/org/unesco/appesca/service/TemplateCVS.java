@@ -21,7 +21,7 @@ import java.util.Date;
 public class TemplateCVS {
 
     private List<RowExportCVS> listRowCVS = new ArrayList<>();
-    private FormFiltroExportacao filtroExportacao;
+    public FormFiltroExportacao filtroExportacao;
 
     public TemplateCVS(FormFiltroExportacao filtroExportacao) {
         this.filtroExportacao = filtroExportacao;
@@ -81,34 +81,39 @@ public class TemplateCVS {
 
     public String montaCabecalho(FormFiltroPesquisa filtroFormulario, int qtdeRegistros, ArrayList<String> arrayListLinhasCSV) {
 
-        arrayListLinhasCSV.add("FILTROS FORMULÁRIO");
-        String labelSituacao = "";
-        switch (filtroFormulario.getSituacao()) {
-            case "-1":
-                labelSituacao = "DEVOLVIDO";
-                break;
-            case "1":
-                labelSituacao = "PENDENTE DE APROVAÇÃO";
-                break;
-            case "2":
-                labelSituacao = "FINALIZADO";
-                break;
+        if(filtroFormulario!=null){
+            arrayListLinhasCSV.add("FILTROS FORMULÁRIO");
+            String labelSituacao = "";
+            switch (filtroFormulario.getSituacao()) {
+                case "-1":
+                    labelSituacao = "DEVOLVIDO";
+                    break;
+                case "1":
+                    labelSituacao = "PENDENTE DE APROVAÇÃO";
+                    break;
+                case "2":
+                    labelSituacao = "FINALIZADO";
+                    break;
+            }
+            linhaInformativoFiltro(arrayListLinhasCSV, "Situação:", labelSituacao, true);
+            linhaInformativoFiltro(arrayListLinhasCSV, "Nome Pesquisador:", filtroFormulario.getPesquisador());
+            linhaInformativoFiltro(arrayListLinhasCSV, "Código Registro:", filtroFormulario.getCodigoRegistro());
+            linhaInformativoFiltro(arrayListLinhasCSV, "Data Início:", filtroFormulario.getDataInicio());
+            linhaInformativoFiltro(arrayListLinhasCSV, "Data Fim:", filtroFormulario.getDataFim());
+            arrayListLinhasCSV.add("");
+            arrayListLinhasCSV.add("FILTROS ENTREVISTADO");
+            linhaInformativoFiltro(arrayListLinhasCSV, "UF:", filtroFormulario.getUf(), true);
+            linhaInformativoFiltro(arrayListLinhasCSV, "Município:", filtroFormulario.getMunicipio());
+            linhaInformativoFiltro(arrayListLinhasCSV, "Comunidade:", filtroFormulario.getComunidade());
+            linhaInformativoFiltro(arrayListLinhasCSV, "Idade mínima:", filtroFormulario.getIdadeInicial());
+            linhaInformativoFiltro(arrayListLinhasCSV, "Idade máxima:", filtroFormulario.getIdadeFim());
+            linhaInformativoFiltro(arrayListLinhasCSV, "Sexo:", filtroFormulario.getSexo(), true);
+            linhaInformativoFiltro(arrayListLinhasCSV, "Pescador:", filtroFormulario.isPescadorB2Q1Ra() ? "Sim" : "Não");
+            linhaInformativoFiltro(arrayListLinhasCSV, "Pescador Camarão/Caranguejo:", filtroFormulario.isPescadorCamCarB2Rb() ? "Sim" : "Não");
+        }else{
+            arrayListLinhasCSV.add("TODOS OS FORMULÁRIOS FINALIZADOS");
         }
-        linhaInformativoFiltro(arrayListLinhasCSV, "Situação:", labelSituacao, true);
-        linhaInformativoFiltro(arrayListLinhasCSV, "Nome Pesquisador:", filtroFormulario.getPesquisador());
-        linhaInformativoFiltro(arrayListLinhasCSV, "Código Registro:", filtroFormulario.getCodigoRegistro());
-        linhaInformativoFiltro(arrayListLinhasCSV, "Data Início:", filtroFormulario.getDataInicio());
-        linhaInformativoFiltro(arrayListLinhasCSV, "Data Fim:", filtroFormulario.getDataFim());
-        arrayListLinhasCSV.add("");
-        arrayListLinhasCSV.add("FILTROS ENTREVISTADO");
-        linhaInformativoFiltro(arrayListLinhasCSV, "UF:", filtroFormulario.getUf(), true);
-        linhaInformativoFiltro(arrayListLinhasCSV, "Município:", filtroFormulario.getMunicipio());
-        linhaInformativoFiltro(arrayListLinhasCSV, "Comunidade:", filtroFormulario.getComunidade());
-        linhaInformativoFiltro(arrayListLinhasCSV, "Idade mínima:", filtroFormulario.getIdadeInicial());
-        linhaInformativoFiltro(arrayListLinhasCSV, "Idade máxima:", filtroFormulario.getIdadeFim());
-        linhaInformativoFiltro(arrayListLinhasCSV, "Sexo:", filtroFormulario.getSexo(), true);
-        linhaInformativoFiltro(arrayListLinhasCSV, "Pescador:", filtroFormulario.isPescadorB2Q1Ra() ? "Sim" : "Não");
-        linhaInformativoFiltro(arrayListLinhasCSV, "Pescador Camarão/Caranguejo:", filtroFormulario.isPescadorCamCarB2Rb() ? "Sim" : "Não");
+        
         arrayListLinhasCSV.add("Total de registros encontrados:;" + qtdeRegistros + ";");
         arrayListLinhasCSV.add("");
 
@@ -189,15 +194,19 @@ public class TemplateCVS {
             if(row.getNumeroBloco() == 0 ) return true;
             
             try {
-                if (row.getNumeroBloco() >= filtroExportacao.getBlocoIni()
-                        && row.getNumeroBloco() <= filtroExportacao.getBlocoFim()) {
+                if(filtroExportacao == null){
+                    return true;
+                }else{
+                    if (row.getNumeroBloco() >= filtroExportacao.getBlocoIni()
+                            && row.getNumeroBloco() <= filtroExportacao.getBlocoFim()) {
 
-                    int questaoIni = filtroExportacao.getBlocosQuestaoIni()[row.getNumeroBloco() - 1];
-                    int questaoFim = filtroExportacao.getBlocosQuestaoFim()[row.getNumeroBloco() - 1];
+                        int questaoIni = filtroExportacao.getBlocosQuestaoIni()[row.getNumeroBloco() - 1];
+                        int questaoFim = filtroExportacao.getBlocosQuestaoFim()[row.getNumeroBloco() - 1];
 
-                    if (row.getNumeroQuestao() >= questaoIni
-                            && row.getNumeroQuestao() <= questaoFim) {
-                        return true;
+                        if (row.getNumeroQuestao() >= questaoIni
+                                && row.getNumeroQuestao() <= questaoFim) {
+                            return true;
+                        }
                     }
                 }
             } catch (NullPointerException e) {

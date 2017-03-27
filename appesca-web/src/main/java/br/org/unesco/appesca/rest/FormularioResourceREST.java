@@ -210,17 +210,23 @@ public class FormularioResourceREST extends BaseREST {
 
         List<Formulario> listaFormulario = formularioController.getListaFormularios();
 
+        //        String conteudoCSV = "";
+        ArrayList<String> arrayListLinhasCSV = new ArrayList<>();
+        
         if (todos) {
-            listaFormulario = formularioService.listByTipoFormulario((int) tipoFormulario);
+            //SOMENTE FINALIZADOS
+            listaFormulario = formularioService.listByTipoSituacaoFormulario((int) tipoFormulario, 2);
+            templateCVS.filtroExportacao = null;
+            templateCVS.montaCabecalho(null, listaFormulario.size(), arrayListLinhasCSV);
+        }else{
+            templateCVS.montaCabecalho(formularioController.getFiltroFormulario(), listaFormulario.size(), arrayListLinhasCSV);
         }
 
-//        String conteudoCSV = "";
-        ArrayList<String> arrayListLinhasCSV = new ArrayList<>();
 
-        // CABEÇALHO
-//        conteudoCSV = templateCVS.montaCabecalho(conteudoCSV, formularioController.getFiltroFormulario(), listaFormulario.size());
+        // CABEÇALHO    
+        // conteudoCSV = templateCVS.montaCabecalho(conteudoCSV, formularioController.getFiltroFormulario(), listaFormulario.size());
 
-        templateCVS.montaCabecalho(formularioController.getFiltroFormulario(), listaFormulario.size(), arrayListLinhasCSV);
+        
 
 
         List<Usuario> listaUsuarios = new ArrayList<>();
@@ -234,12 +240,12 @@ public class FormularioResourceREST extends BaseREST {
         int x = 1;
 
         for (Formulario form : listaFormulario) {
-            if (todos) {
-                // SOMENTE PARA FORMULARIOS FINALIZADOS.
-                if (form.getSituacao() < 2) {
-                    continue;
-                }
-            }
+//            if (todos) {
+//                // SOMENTE PARA FORMULARIOS FINALIZADOS.
+//                if (form.getSituacao() < 2) {
+//                    continue;
+//                }
+//            }
             System.out.println("-_-_-> Processando formulário (" + x++ + ") " + form.getIdSincronizacao());
 
 //			ExportacaoCSV expCSV = exportacaoCSVService.findByIdFormulario(form.getId());
@@ -337,6 +343,7 @@ public class FormularioResourceREST extends BaseREST {
         try {
             ByteArrayOutputStream bos =  CSVToExcel.convert(arrayListLinhasCSV);
             bytes = bos.toByteArray();
+            bos.close();
         } catch (IOException ex) {
             Logger.getLogger(FormularioResourceREST.class.getName()).log(Level.SEVERE, null, ex);
         }

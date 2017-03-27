@@ -239,6 +239,20 @@ public class FormularioRepository {
         criteria.select(formulario).where(cb.equal(formulario.get("idTipoFormulario"), tipoFormulario));
         return em.createQuery(criteria).getResultList();
     }
+    
+    
+    public List<Formulario> listByTipoSituacaoFormulario(int tipoFormulario, int situacao) {
+
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+        CriteriaQuery<Formulario> criteria = cb.createQuery(Formulario.class);
+        Root<Formulario> formulario = criteria.from(Formulario.class);
+        criteria.select(formulario).where( cb.and(
+                                                cb.equal(formulario.get("idTipoFormulario"), tipoFormulario), 
+                                                cb.equal(formulario.get("situacao"), situacao) 
+                                            )
+                                         );
+        return em.createQuery(criteria).getResultList();
+    }
 
     public List<Formulario> findListByUsuario(Usuario usuario) {
 

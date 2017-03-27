@@ -73,7 +73,7 @@ public class Resposta implements java.io.Serializable {
 
     @Column(name = "texto")
     public String getTexto() {
-        return this.texto == null ? " " : this.texto.replace(";", ".");
+        return this.texto == null ? "" : this.texto.replace(";", ".");
     }
 
     public void setTexto(String texto) {

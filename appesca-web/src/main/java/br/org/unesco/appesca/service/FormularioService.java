@@ -61,6 +61,10 @@ public class FormularioService {
 		return formularioRepository.listByTipoFormulario(tipoFormulario);
 	}
         
+	public List<Formulario> listByTipoSituacaoFormulario(int tipoFormulario, int situacao) {
+		return formularioRepository.listByTipoSituacaoFormulario(tipoFormulario, situacao);
+	}
+        
         public List<Formulario> listarPorFiltro(FormFiltroPesquisa filtro, int tipoFormulario){
             return formularioRepository.listarPorFiltro(filtro, tipoFormulario);
         }
