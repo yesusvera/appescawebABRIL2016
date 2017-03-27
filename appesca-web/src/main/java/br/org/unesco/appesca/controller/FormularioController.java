@@ -39,6 +39,7 @@ import br.org.unesco.appesca.service.QuestaoService;
 import br.org.unesco.appesca.service.RespostaService;
 import br.org.unesco.appesca.service.UsuarioService;
 import br.org.unesco.appesca.util.StringUtils;
+import java.io.InputStream;
 
 @Model
 @SessionScoped
@@ -91,6 +92,8 @@ public class FormularioController implements Serializable {
     private FormFiltroPesquisa filtroFormulario = new FormFiltroPesquisa();
     private FormFiltroExportacao filtroExportacao;
 
+    private StreamedContent arquivoMapa;
+    
     public String listarFormularios(long tipoFormulario) {
 
         limparFiltro();
@@ -100,22 +103,33 @@ public class FormularioController implements Serializable {
         this.tipoFormulario = (int) tipoFormulario;
         listaFormularios = new ArrayList<>();
 
+        
+        
 //		listaFormularios = formularioService.listByTipoFormulario((int) tipoFormulario);
+
+        String nomeArquivoMapa = "";
+        
         switch (this.tipoFormulario) {
             case 1:
                 setTitulo("Formulário Camarão Regional");
                 filtroExportacao = new FormFiltroExportacao(new int[]{15, 6, 9, 11, 5, 7, 12, 7, 1});
+                nomeArquivoMapa = "Dados_mapa_regional_05Dez16_AJUSTADAS_FINAL.xlsx";
                 break;
             case 2:
                 setTitulo("Formulário Caranguejo");
                 filtroExportacao = new FormFiltroExportacao(new int[]{15, 6, 9, 11, 5, 8, 13, 6, 1});
+                nomeArquivoMapa = "Dados_mapa_caranguejo_05Dez16_AJUSTADAS_FINAL.xlsx";
                 break;
             case 3:
                 setTitulo("Formulário Camarão Piticaia e Branco");
                 filtroExportacao = new FormFiltroExportacao(new int[]{15, 6, 9, 11, 5, 6, 2, 6, 1});
+                nomeArquivoMapa = "Dados_mapa_piti_branco_05Dez16_AJUSTADAS_FINAL.xlsx";
                 break;
         }
-
+        
+        InputStream stream = FacesContext.getCurrentInstance().getExternalContext().getResourceAsStream("/WEB-INF/exportacaoTemplatesUNESCO/"+nomeArquivoMapa);
+        arquivoMapa = new DefaultStreamedContent(stream, "application/vnd.ms-excel", nomeArquivoMapa);
+        
         try {
             listaUsuarios = usuarioService.listAll();
         } catch (Exception e) {
@@ -167,7 +181,7 @@ public class FormularioController implements Serializable {
                 }
             }
         }
-        System.out.println(formExp);
+//        System.out.println(formExp);
 
         htmlExportacao = "<table border='1' style='border: 1px solid gray' width='100%'>";
 
@@ -803,6 +817,10 @@ public class FormularioController implements Serializable {
      */
     public void setFiltroExportacao(FormFiltroExportacao filtroExportacao) {
         this.filtroExportacao = filtroExportacao;
+    }
+    
+     public StreamedContent getArquivoMapa() {
+        return arquivoMapa;
     }
 
 }

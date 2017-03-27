@@ -14,102 +14,97 @@ import javax.persistence.Transient;
 import br.org.unesco.appesca.util.ConstantesUNESCO;
 
 @Entity
-@Table(name = "TB_RESPOSTA", schema=ConstantesUNESCO.SCHEMA_APPESCA)
+@Table(name = "TB_RESPOSTA", schema = ConstantesUNESCO.SCHEMA_APPESCA)
 public class Resposta implements java.io.Serializable {
 
-	private static final long serialVersionUID = 6100540469341649847L;
-	
-	private Integer id;
-	private Integer opcao;
-	private String texto;
-	private byte[] audio;
-	private Pergunta pergunta;
-	private Integer ordem;
-	private String tipoComponente; // cb ou rb ou et
+    private static final long serialVersionUID = 6100540469341649847L;
 
-	@Id
-	@GeneratedValue(strategy = IDENTITY)
+    private Integer id;
+    private Integer opcao;
+    private String texto;
+    private byte[] audio;
+    private Pergunta pergunta;
+    private Integer ordem;
+    private String tipoComponente; // cb ou rb ou et
 
-	@Column(name = "id", unique = true, nullable = false)
-	public Integer getId() {
-		return this.id;
-	}
+    @Id
+    @GeneratedValue(strategy = IDENTITY)
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    @Column(name = "id", unique = true, nullable = false)
+    public Integer getId() {
+        return this.id;
+    }
 
-	@Column(name = "opcao")
-	public Integer getOpcao() {
-		return this.opcao;
-	}
-	
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
-	public void setOpcao(Integer opcao) {
-		this.opcao = opcao;
-	}
-	
+    @Column(name = "opcao")
+    public Integer getOpcao() {
+        return this.opcao;
+    }
 
-	@Column(name = "ordem")
-	public Integer getOrdem() {
-		return ordem;
-	}
+    public void setOpcao(Integer opcao) {
+        this.opcao = opcao;
+    }
 
-	public void setOrdem(Integer ordem) {
-		this.ordem = ordem;
-	}
+    @Column(name = "ordem")
+    public Integer getOrdem() {
+        return ordem;
+    }
 
-	@Column(name = "tipo_componente")
-	public String getTipoComponente() {
-		return tipoComponente;
-	}
+    public void setOrdem(Integer ordem) {
+        this.ordem = ordem;
+    }
 
-	public void setTipoComponente(String tipoComponente) {
-		this.tipoComponente = tipoComponente;
-	}
+    @Column(name = "tipo_componente")
+    public String getTipoComponente() {
+        return tipoComponente;
+    }
 
-	@Transient
-	public boolean getOpcaoBoleana() {
-		return this.opcao != null ? true : false;
-	}
-	
-	@Column(name = "texto")
-	public String getTexto() {
-		return this.texto == null ? " " : this.texto;
-	}
+    public void setTipoComponente(String tipoComponente) {
+        this.tipoComponente = tipoComponente;
+    }
 
-	public void setTexto(String texto) {
-		this.texto = texto;
-	}
+    @Transient
+    public boolean getOpcaoBoleana() {
+        return this.opcao != null ? true : false;
+    }
 
-	@Column(name = "audio")
-	public byte[] getAudio() {
-		return this.audio;
-	}
+    @Column(name = "texto")
+    public String getTexto() {
+        return this.texto == null ? " " : this.texto.replace(";", ".");
+    }
 
-	public void setAudio(byte[] audio) {
-		this.audio = audio;
-	}
+    public void setTexto(String texto) {
+        this.texto = texto;
+    }
 
-	@ManyToOne
-	@JoinColumn(name="id_pergunta")
-	public Pergunta getPergunta() {
-		return pergunta;
-	}
+    @Column(name = "audio")
+    public byte[] getAudio() {
+        return this.audio;
+    }
 
+    public void setAudio(byte[] audio) {
+        this.audio = audio;
+    }
 
-	public void setPergunta(Pergunta pergunta) {
-		this.pergunta = pergunta;
-	}
-	
-	@Transient
-	public String[] getColuna(){
-		if(this.texto == null){
-			this.texto = " ; ; ; ; ; ; ";
-		}
-		return this.texto.split(";");
-	}
+    @ManyToOne
+    @JoinColumn(name = "id_pergunta")
+    public Pergunta getPergunta() {
+        return pergunta;
+    }
 
+    public void setPergunta(Pergunta pergunta) {
+        this.pergunta = pergunta;
+    }
 
+    @Transient
+    public String[] getColuna() {
+        if (this.texto == null) {
+            this.texto = " ; ; ; ; ; ; ";
+        }
+        return this.texto.split(";");
+    }
 
 }

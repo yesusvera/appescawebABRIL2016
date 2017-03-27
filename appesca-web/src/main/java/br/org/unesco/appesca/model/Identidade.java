@@ -42,7 +42,9 @@ public class Identidade implements Serializable{
 
 	public boolean eDegravador(){
 		if(usuarioLogado==null) return false;
-		return usuarioLogado.getPerfil().equals(PerfilEnum.DEGRAVADOR);
+		return usuarioLogado.getPerfil().equals(PerfilEnum.DEGRAVADOR) ||
+                        usuarioLogado.getPerfil().equals(PerfilEnum.ADMINISTRADOR) ||
+                        usuarioLogado.getPerfil().equals(PerfilEnum.COORDENADOR);
 	}
 
 	public boolean ePesquisador(){

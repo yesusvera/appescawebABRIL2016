@@ -26,7 +26,7 @@ public class TemplateCVS {
     public TemplateCVS(FormFiltroExportacao filtroExportacao) {
         this.filtroExportacao = filtroExportacao;
     }
-    
+
     public void execute(File file) {
         try {
             BufferedReader buffReader = new BufferedReader(new FileReader(file));
@@ -79,70 +79,79 @@ public class TemplateCVS {
         return row;
     }
 
-    public String montaCabecalho(String conteudoCSV, FormFiltroPesquisa filtroFormulario, int qtdeRegistros) {
+    public String montaCabecalho(FormFiltroPesquisa filtroFormulario, int qtdeRegistros, ArrayList<String> arrayListLinhasCSV) {
 
-        conteudoCSV += "FILTROS FORMULÁRIO" + ";\n";
+        arrayListLinhasCSV.add("FILTROS FORMULÁRIO");
         String labelSituacao = "";
-        switch(filtroFormulario.getSituacao()){
-            case "-1" : labelSituacao = "DEVOLVIDO"; break;
-            case "1" : labelSituacao = "PENDENTE DE APROVAÇÃO";  break;
-            case "2" : labelSituacao = "FINALIZADO";  break;
+        switch (filtroFormulario.getSituacao()) {
+            case "-1":
+                labelSituacao = "DEVOLVIDO";
+                break;
+            case "1":
+                labelSituacao = "PENDENTE DE APROVAÇÃO";
+                break;
+            case "2":
+                labelSituacao = "FINALIZADO";
+                break;
         }
-        conteudoCSV += linhaInformativoFiltro("Situação:", labelSituacao, true);
-        conteudoCSV += linhaInformativoFiltro("Nome Pesquisador:", filtroFormulario.getPesquisador());
-        conteudoCSV += linhaInformativoFiltro("Código Registro:", filtroFormulario.getCodigoRegistro());
-        conteudoCSV += linhaInformativoFiltro("Data Início:", filtroFormulario.getDataInicio());
-        conteudoCSV += linhaInformativoFiltro("Data Fim:", filtroFormulario.getDataFim());
-        conteudoCSV += "\n\n";
-
-        conteudoCSV += "FILTROS ENTREVISTADO" + ";\n";
-        conteudoCSV += linhaInformativoFiltro("UF:", filtroFormulario.getUf(), true);
-        conteudoCSV += linhaInformativoFiltro("Município:", filtroFormulario.getMunicipio());
-        conteudoCSV += linhaInformativoFiltro("Comunidade:", filtroFormulario.getComunidade());
-        conteudoCSV += linhaInformativoFiltro("Idade mínima:", filtroFormulario.getIdadeInicial());
-        conteudoCSV += linhaInformativoFiltro("Idade máxima:", filtroFormulario.getIdadeFim());
-        conteudoCSV += linhaInformativoFiltro("Sexo:", filtroFormulario.getSexo(), true);
-        conteudoCSV += linhaInformativoFiltro("Pescador:", filtroFormulario.isPescadorB2Q1Ra() ? "Sim" : "Não");
-        conteudoCSV += linhaInformativoFiltro("Pescador Camarão/Caranguejo:", filtroFormulario.isPescadorCamCarB2Rb() ? "Sim" : "Não");
-
-        conteudoCSV += "Total de registros encontrados:;" + qtdeRegistros + ";\n;;\n;;\n";
+        linhaInformativoFiltro(arrayListLinhasCSV, "Situação:", labelSituacao, true);
+        linhaInformativoFiltro(arrayListLinhasCSV, "Nome Pesquisador:", filtroFormulario.getPesquisador());
+        linhaInformativoFiltro(arrayListLinhasCSV, "Código Registro:", filtroFormulario.getCodigoRegistro());
+        linhaInformativoFiltro(arrayListLinhasCSV, "Data Início:", filtroFormulario.getDataInicio());
+        linhaInformativoFiltro(arrayListLinhasCSV, "Data Fim:", filtroFormulario.getDataFim());
+        arrayListLinhasCSV.add("");
+        arrayListLinhasCSV.add("FILTROS ENTREVISTADO");
+        linhaInformativoFiltro(arrayListLinhasCSV, "UF:", filtroFormulario.getUf(), true);
+        linhaInformativoFiltro(arrayListLinhasCSV, "Município:", filtroFormulario.getMunicipio());
+        linhaInformativoFiltro(arrayListLinhasCSV, "Comunidade:", filtroFormulario.getComunidade());
+        linhaInformativoFiltro(arrayListLinhasCSV, "Idade mínima:", filtroFormulario.getIdadeInicial());
+        linhaInformativoFiltro(arrayListLinhasCSV, "Idade máxima:", filtroFormulario.getIdadeFim());
+        linhaInformativoFiltro(arrayListLinhasCSV, "Sexo:", filtroFormulario.getSexo(), true);
+        linhaInformativoFiltro(arrayListLinhasCSV, "Pescador:", filtroFormulario.isPescadorB2Q1Ra() ? "Sim" : "Não");
+        linhaInformativoFiltro(arrayListLinhasCSV, "Pescador Camarão/Caranguejo:", filtroFormulario.isPescadorCamCarB2Rb() ? "Sim" : "Não");
+        arrayListLinhasCSV.add("Total de registros encontrados:;" + qtdeRegistros + ";");
+        arrayListLinhasCSV.add("");
 
         //PRIMEIRA LINHA DE CABECALHO BLOCO
-        conteudoCSV += ";;;;;;;;;";
+        String linhaCSV = ";;;;;;;";
         for (RowExportCVS row : getListRowCVS()) {
             if (exportarColuna(row)) {
-                conteudoCSV += "Bloco " + row.getNumeroBloco() + ";";
+                linhaCSV += "Bloco " + row.getNumeroBloco() + ";";
             }
         }
-        conteudoCSV += "\n";
-        
-         //SEGUNDA LINHA DE CABECALHO QUESTAO
-        conteudoCSV += ";;;;;;;;;";
+
+        arrayListLinhasCSV.add(linhaCSV);
+//        linhaCSV += "\n";
+
+        //SEGUNDA LINHA DE CABECALHO QUESTAO
+        linhaCSV = ";;;;;;;";
         for (RowExportCVS row : getListRowCVS()) {
             if (exportarColuna(row)) {
-                conteudoCSV += "Quest. " + row.getQuestao() + ";";
+                linhaCSV += "Quest. " + row.getQuestao() + ";";
             }
         }
-        conteudoCSV += "\n";
-         
-         //SEGUNDA LINHA DE CABECALHO 
-        conteudoCSV += "Codigo;Pesquisador;Recurso;Estado;Municipio;Comunidade;UC;lat;long;";
+        arrayListLinhasCSV.add(linhaCSV);
+
+        //Terceira LINHA DE CABECALHO 
+//        linhaCSV = "Codigo;Pesquisador;Recurso;Estado;Municipio;Comunidade;UC;lat;long;";
+        linhaCSV = "Codigo;Pesquisador;Estado;Municipio;Comunidade;lat;long;";
         for (RowExportCVS row : getListRowCVS()) {
             if (exportarColuna(row)) {
-                conteudoCSV += row.getCodigoExportacao() + ";";
+                linhaCSV += row.getCodigoExportacao() + ";";
             }
         }
-        conteudoCSV += "\n";
-        return conteudoCSV;
+        arrayListLinhasCSV.add(linhaCSV);
+
+        return linhaCSV;
     }
 
-     public String linhaInformativoFiltro(String label, Object valorParam){
-         return linhaInformativoFiltro(label, valorParam, false);
-     } 
-    
-    public String linhaInformativoFiltro(String label, Object valorParam, boolean todosPadrao) {
+    public void linhaInformativoFiltro(ArrayList<String> arrayListLinhasCSV, String label, Object valorParam) {
+        linhaInformativoFiltro(arrayListLinhasCSV,label, valorParam, false);
+    }
+
+    public void linhaInformativoFiltro(ArrayList<String> arrayListLinhasCSV, String label, Object valorParam, boolean todosPadrao) {
         String valor = "-";
-        if(todosPadrao){
+        if (todosPadrao) {
             valor = "TODOS";
         }
 
@@ -150,45 +159,48 @@ public class TemplateCVS {
             if (valorParam instanceof String) {
                 if (!((String) valorParam).isEmpty()) {
                     valor = (String) valorParam;
-                }else{
-                    return "";
+                } else if(!todosPadrao) {
+                    return;
                 }
             } else if (valorParam instanceof Date) {
                 SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
                 valor = sdf.format((Date) valorParam);
             }
-        }else{
-            return "";
+        } else if(!todosPadrao) {
+            return;
         }
 
-        String linhaFiltro = label + ";" + valor + ";\n";
-        return linhaFiltro;
+        String linhaFiltro = label + ";" + valor + ";";
+        arrayListLinhasCSV.add(linhaFiltro);
     }
 
     /**
-     * IMPORTANTE PARA VALIDAR SE ESTA COLUNA PODE SER EXPORTADA,
-     * BASEADO NO CODIGO DE EXPORTACAO VALIDO E
-     * SE ESTA NOS FILTROS DE EXPORTACAO
+     * IMPORTANTE PARA VALIDAR SE ESTA COLUNA PODE SER EXPORTADA, BASEADO NO
+     * CODIGO DE EXPORTACAO VALIDO E SE ESTA NOS FILTROS DE EXPORTACAO
+     *
      * @param codigoExportacao
-     * @return 
+     * @return
      */
     public boolean exportarColuna(RowExportCVS row) {
-        if(row.getCodigoExportacao() != null
+        if (row.getCodigoExportacao() != null
                 && !row.getCodigoExportacao().isEmpty()
-                && row.getCodigoExportacao().toLowerCase().startsWith("var")){
-            try{
-                if(row.getNumeroBloco()>=filtroExportacao.getBlocoIni() && 
-                        row.getNumeroBloco()<=filtroExportacao.getBlocoFim()){
-                    
-                    int questaoIni = filtroExportacao.getBlocosQuestaoIni()[row.getNumeroBloco()-1];
-                    int questaoFim = filtroExportacao.getBlocosQuestaoFim()[row.getNumeroBloco()-1];
-                    
-                    if(row.getNumeroQuestao()>=questaoIni && 
-                       row.getNumeroQuestao()<=questaoFim){
+                && row.getCodigoExportacao().toLowerCase().startsWith("var")) {
+            
+            if(row.getNumeroBloco() == 0 ) return true;
+            
+            try {
+                if (row.getNumeroBloco() >= filtroExportacao.getBlocoIni()
+                        && row.getNumeroBloco() <= filtroExportacao.getBlocoFim()) {
+
+                    int questaoIni = filtroExportacao.getBlocosQuestaoIni()[row.getNumeroBloco() - 1];
+                    int questaoFim = filtroExportacao.getBlocosQuestaoFim()[row.getNumeroBloco() - 1];
+
+                    if (row.getNumeroQuestao() >= questaoIni
+                            && row.getNumeroQuestao() <= questaoFim) {
                         return true;
                     }
                 }
-            }catch(NullPointerException e){
+            } catch (NullPointerException e) {
                 e.printStackTrace();
             }
         }

@@ -38,6 +38,11 @@ import br.org.unesco.appesca.rest.model.RespFormularioREST;
 import br.org.unesco.appesca.service.FormularioService;
 import br.org.unesco.appesca.service.TemplateCVS;
 import br.org.unesco.appesca.service.UsuarioService;
+import br.org.unesco.appesca.util.CSVToExcel;
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * @author yesus
@@ -173,7 +178,8 @@ public class FormularioResourceREST extends BaseREST {
 
     @GET
     @Path("/exportacaoDeFormulario")
-    @Produces("text/csv")
+    @Produces("application/vnd.ms-excel")
+//    @Produces("text/csv")
     public Response exportacaoDeFormulario(@QueryParam("tipo") String strTipo, @QueryParam("todos") boolean todos) {
         Integer tipoFormulario = Integer.valueOf(strTipo);
         String nomeTemplate = "";
@@ -208,10 +214,14 @@ public class FormularioResourceREST extends BaseREST {
             listaFormulario = formularioService.listByTipoFormulario((int) tipoFormulario);
         }
 
-        String conteudoCSV = "";
+//        String conteudoCSV = "";
+        ArrayList<String> arrayListLinhasCSV = new ArrayList<>();
 
         // CABEÇALHO
-        conteudoCSV = templateCVS.montaCabecalho(conteudoCSV, formularioController.getFiltroFormulario(), listaFormulario.size());
+//        conteudoCSV = templateCVS.montaCabecalho(conteudoCSV, formularioController.getFiltroFormulario(), listaFormulario.size());
+
+        templateCVS.montaCabecalho(formularioController.getFiltroFormulario(), listaFormulario.size(), arrayListLinhasCSV);
+
 
         List<Usuario> listaUsuarios = new ArrayList<>();
 
@@ -247,11 +257,11 @@ public class FormularioResourceREST extends BaseREST {
             }
             linhaCSV += form.getIdSincronizacao() + ";";
             linhaCSV += formularioService.getRespostaTexto(0, 1, 1, form) + ";";
-            linhaCSV += "?" + ";";
+//            linhaCSV += "?" + ";";
             linhaCSV += formularioService.getUF(form) + ";";
             linhaCSV += formularioService.getRespostaTexto(0, 4, 1, form) + ";";
             linhaCSV += formularioService.getRespostaTexto(0, 5, 1, form) + ";";
-            linhaCSV += "?" + ";";
+//            linhaCSV += "?" + ";";
             linhaCSV += (form.getLatitude() == null ? "" : form.getLatitude()) + ";";
             linhaCSV += (form.getLongitude() == null ? "" : form.getLongitude()) + ";";
 
@@ -306,7 +316,10 @@ public class FormularioResourceREST extends BaseREST {
                 }
                 linhaCSV += ";";
             }
-            conteudoCSV += linhaCSV.replace("\n", "").replace("\r", "");
+            linhaCSV = linhaCSV.replace("\n", "").replace("\r", "");
+//            conteudoCSV += linhaCSV;
+            
+            arrayListLinhasCSV.add(linhaCSV);
 
 //			expCSV = new ExportacaoCSV();
 //			expCSV.setIdFormulario(form.getId());
@@ -315,9 +328,19 @@ public class FormularioResourceREST extends BaseREST {
 //			expCSV.setLinhaCSV(linhaCSV);
             // exportacaoCSVService.save(expCSV);
             // }
-            conteudoCSV += "\n";
+//            conteudoCSV += "\n";
+        }
+        
+        byte [] bytes = null;
+        
+        //CONVERSÃO EXCEL
+        try {
+            ByteArrayOutputStream bos =  CSVToExcel.convert(arrayListLinhasCSV);
+            bytes = bos.toByteArray();
+        } catch (IOException ex) {
+            Logger.getLogger(FormularioResourceREST.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        return Response.ok(conteudoCSV).header("Content-Disposition", "attachment; filename=" + nomeGerado).build();
+        return Response.ok(bytes).header("Content-Disposition", "attachment; filename=" + nomeGerado.replace("csv", "xlsx")).build();
     }
 }

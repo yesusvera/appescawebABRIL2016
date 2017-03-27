@@ -31,10 +31,10 @@
                             <h:outputLabel value=""/><h:outputLabel value=""/>
 
                             <h:outputLabel for="dataFiltro" value="Data Início" />
-                            <p:calendar id="dataFiltro" converterMessage="Data Início Inválida" validatorMessage="Data Início Inválida" value="#{formularioController.filtroFormulario.dataInicio}" showOn="button" />
+                            <p:calendar id="dataFiltro" pattern="dd/MM/yyyy" mask="true" converterMessage="Data Início Inválida" validatorMessage="Data Início Inválida" value="#{formularioController.filtroFormulario.dataInicio}" showOn="button" />
 
                             <h:outputLabel for="dataFim" value="Data Fim" />
-                            <p:calendar id="dataFim" converterMessage="Data Fim Inválida" validatorMessage="Data Fim Inválida" value="#{formularioController.filtroFormulario.dataFim}" showOn="button" />
+                            <p:calendar id="dataFim" pattern="dd/MM/yyyy" mask="true" converterMessage="Data Fim Inválida" validatorMessage="Data Fim Inválida" value="#{formularioController.filtroFormulario.dataFim}" showOn="button" />
                         </h:panelGrid>
                     </p:fieldset>
 
@@ -77,7 +77,7 @@
                         </h:panelGrid>
                     </p:fieldset>
                     <br/>
-                    <p:fieldset legend="Filtros para exportação" collapsed="true" toggleable="true" toggleSpeed="500">
+                    <p:fieldset legend="Filtros para exportação (#{formularioController.getTotalFormularios()} registros)"  collapsed="true" toggleable="#{formularioController.getTotalFormularios() > 0}" toggleSpeed="500">
                         <h:panelGrid columns="4">
                             <h:outputLabel value="De" />
                             <p:selectOneMenu id="blocoDe" value="#{formularioController.filtroExportacao.blocoIni}">
@@ -242,10 +242,15 @@
             <br />
             <center>
                 <hr/>
-                <p:button value="Exportar Planilha"
+                <p:button value="Exportar Planilha (#{formularioController.getTotalFormularios()} registros)"
                           disabled="#{formularioController.getTotalFormularios() == 0}"
                           href="#{formularioController.urlExportacao}"
-                          target="_blank"/><br/><br/>
+                          target="_blank"/>
+
+                <p:commandButton value="Baixar Mapa" ajax="false" onclick="PrimeFaces.monitorDownload(start, stop);" icon="ui-icon-arrowthick-1-s">
+                    <p:fileDownload value="#{formularioController.arquivoMapa}" />
+                </p:commandButton>
+                <br/><br/>
                 <i><b>#{formularioController.getTotalFormularios()} </b></i>
                 formulários encontrados.
             </center>
